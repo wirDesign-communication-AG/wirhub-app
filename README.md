@@ -1,4 +1,6 @@
 # wirHub-doc
-Öffentliche Informationen und Dokumentation zum wirHub
+Öffentliche Informationen und Dokumentation zum [wirHub](https://wirhub.de/):rainbow:.
 
-[Über wirHub](https://wirhub.de/)
+
+
+
