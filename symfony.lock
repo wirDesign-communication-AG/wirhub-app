@@ -237,5 +237,14 @@
     },
     "twig/extra-bundle": {
         "version": "v3.5.1"
+    },
+    "wirdesign-communication-ag/wirhub": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
+            "branch": "main",
+            "version": "3.0",
+            "ref": "42fdad6169baccce8e0a17dc15f452bccf69c62e"
+        }
     }
 }
