@@ -1,0 +1,130 @@
+imports:
+  - { resource: security.yml }
+  - { resource: services.yml }
+  - { resource: doctrine.php }
+  - { resource: doctrine_migrations.php }
+  - { resource: '@AppBundle/Resources/config/services.yml' }
+
+framework:
+  assets: ~
+  #esi: ~
+  translator:
+    fallbacks: [ '%env(string:APP_LOCALE)%' ]
+  secret: '%env(APP_SECRET)%'
+  router:
+    resource: '%kernel.root_dir%/config/routing.yml'
+    strict_requirements: ~
+  form: ~
+  csrf_protection: ~
+  validation: { enable_annotations: true }
+  #serializer: { enable_annotations: true }
+  default_locale: '%env(string:APP_LOCALE)%'
+  trusted_hosts: ~
+  session:
+    # handler_id set to null will use default session handler from php.ini
+    handler_id: ~
+  fragments: ~
+  http_method_override: true
+  http_client:
+    max_host_connections: 10
+    default_options:
+      max_redirects: 7
+  mailer:
+    dsn: '%env(MAILER_URL)%'
+    envelope:
+      sender: '%env(MAILER_SENDER)%'
+
+# Twig Configuration
+twig:
+  debug: '%kernel.debug%'
+  exception_controller: null
+  form_themes: [ '@App/_components/form/default.html.twig' ]
+  strict_variables: '%kernel.debug%'
+  globals:
+    version: '%env(string:VERSION)%'
+    debug_javascript: '%env(bool:DEBUG_JAVASCRIPT)%'
+
+httplug:
+  clients:
+    default:
+      factory: 'httplug.factory.guzzle7'
+      config:
+        timeout: "%env(int:OAUTH_TIMEOUT)%"
+        verify: "%env(bool:OAUTH_VERIFY_SSL)%"
+
+
+hwi_oauth:
+  firewall_name: main
+
+  #    fosub:
+  #        username_iterations: 30
+  #        properties:
+  #            oauth: oauthId
+  #            azure: azureId
+  #            okta:  oktaId
+
+  connect:
+    confirmation: false
+
+  resource_owners:
+    oauth:
+      type: oauth2
+      client_id: '%env(OAUTH_CUSTOM_CLIENT_ID)%'
+      client_secret: '%env(OAUTH_CUSTOM_CLIENT_SECRET)%'
+      access_token_url: '%env(OAUTH_CUSTOM_URL_ACCESS_TOKEN)%'
+      authorization_url: '%env(OAUTH_CUSTOM_URL_AUTHORIZATION)%'
+      infos_url: '%env(OAUTH_CUSTOM_URL_INFOS)%'
+      scope: 'user:email'
+      user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
+      paths:
+        identifier: id
+        nickname: username
+        realname: displayname
+
+    azure:
+      type: azure
+      client_id: '%env(OAUTH_AZURE_CLIENT_ID)%'
+      client_secret: '%env(OAUTH_AZURE_CLIENT_SECRET)%'
+      access_token_url: '%env(OAUTH_AZURE_URL_ACCESS_TOKEN)%'
+      authorization_url: '%env(OAUTH_AZURE_URL_AUTHORIZATION)%'
+      scope: '%env(OAUTH_AZURE_OPTION_SCOPE)%'
+
+      options:
+        application: common
+
+    okta:
+      type: oauth2
+      client_id: '%env(OAUTH_OKTA_CLIENT_ID)%'
+      client_secret: '%env(OAUTH_OKTA_CLIENT_SECRET)%'
+      access_token_url: '%env(OAUTH_OKTA_URL_ACCESS_TOKEN)%'
+      authorization_url: '%env(OAUTH_OKTA_URL_AUTHORIZATION)%'
+      infos_url: '%env(OAUTH_OKTA_URL_INFOS)%'
+      scope: 'openid email profile'
+      options:
+        csrf: true
+      user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
+      paths:
+        identifier: sub
+        nickname: email
+        email: email
+        realname: [ "given_name", "family_name" ]
+        firstname: given_name
+        lastname: family_name
+
+
+knp_menu:
+  twig:
+    template: '@App/menu.html.twig'
+
+knp_paginator:
+  template:
+    pagination: '@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig'
+
+stof_doctrine_extensions:
+  orm:
+    default:
+      sluggable: true
+      loggable: true
+
+sensio_framework_extra:
+  router: { annotations: false }

@@ -1,0 +1,32 @@
+# Learn more about services, parameters and containers at
+# https://symfony.com/doc/current/service_container.html
+parameters:
+  container.autowiring.strict_mode: true
+  default_locale: '%env(string:APP_LOCALE)%'
+
+services:
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  # Global Services
+  Twig\Extra\Intl\IntlExtension:
+    tags: [ { name: twig.extension } ]
+
+  Twig\Extra\String\StringExtension:
+    tags: [ { name: twig.extension } ]
+
+  Twig\Extension\StringLoaderExtension:
+    tags: [ { name: twig.extension } ]
+
+  Symfony\Component\Mailer\Transport\NullTransport: ~
+
+  Symfony\Component\Mailer\Mailer:
+    $transport: '@Symfony\Component\Mailer\Transport\NullTransport'
+
+
+  PMDevelopment\Mailer\Bridge\Microsoft\Transport\GraphTransportFactory:
+    tags:
+      - { name: mailer.transport_factory }

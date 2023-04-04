@@ -1,0 +1,32 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+app_plugin:
+    resource: .
+    type: plugin
+
+# OAuth2 Logins
+oauth_login:
+    path: /login/check-oauth
+
+azure_login:
+    path: /login/check-azure
+
+okta_login:
+    path: /login/check-okta
+
+hwi_oauth_redirect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+    prefix:   /connect
+
+hwi_oauth_connect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/connect.xml"
+    prefix:   /connect
+
+hwi_oauth_login:
+    resource: "@HWIOAuthBundle/Resources/config/routing/login.xml"
+    prefix:   /login
+
+#app_plugin_annotation:
+#    resource: 'plugin_routes.php'

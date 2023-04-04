@@ -1,0 +1,63 @@
+security:
+  encoders:
+    AppBundle\Entity\User: sha512
+
+  role_hierarchy:
+    ROLE_EDITOR: ROLE_USER
+    ROLE_ADMIN: [ ROLE_USER, ROLE_EDITOR ]
+
+  providers:
+    app:
+      id: AppBundle\Security\UserProvider
+
+  firewalls:
+    public:
+      pattern: ^/(_wdt|_profiler|compiled|css|theme)
+      security: false
+    public_space:
+      pattern: ^/asset/space
+      security: false
+    public_grunt:
+      pattern: ^/asset/grunt
+      security: false
+    main:
+      anonymous: true
+      switch_user: { role: CAN_SWITCH_USER }
+      form_login:
+        check_path: /login_check
+        csrf_token_generator: security.csrf.token_manager
+        login_path: /login
+        success_handler: AppBundle\Security\RedirectAfterLoginHandler
+
+      logout:
+        path: app_user_security_logout
+        success_handler: AppBundle\Security\AccessTokenLogoutSuccessHandler
+      pattern: ^/
+      provider: app
+      oauth:
+        resource_owners:
+          oauth: '/login/check-oauth'
+          azure: '/login/check-azure'
+          okta: '/login/check-okta'
+        login_path: /login
+        failure_path: /login
+
+        oauth_user_provider:
+          service: AppBundle\Component\Security\OAuthProvider
+
+      guard:
+        authenticators:
+          - AppBundle\Security\AccessTokenAuthenticator
+
+    login:
+      pattern: ^/login$
+      security: false
+
+  access_control:
+    - { path: ^/setup, role: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/share, role: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/invitation, role: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/settings, role: ROLE_EDITOR }
+    - { path: ^/admin, role: ROLE_ADMIN }
