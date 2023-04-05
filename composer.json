@@ -88,6 +88,7 @@
     },
     "type": "project",
     "require-dev": {
+        "symfony/debug-bundle": "6.2.*",
         "symfony/maker-bundle": "*",
         "symfony/web-profiler-bundle": "6.2.*"
     }

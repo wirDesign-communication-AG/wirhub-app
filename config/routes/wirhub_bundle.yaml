@@ -1,0 +1,2 @@
+#wirdesign_wirhub:
+    #resource: '@AppBundle/Resources/config/routing/app.yaml'

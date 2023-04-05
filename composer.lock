@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad71993d693175bc324b67179e772eba",
+    "content-hash": "f20eddb1b2da514c3733b7a55c1277ff",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -10010,12 +10010,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirHub.git",
-                "reference": "5451fce0f61ce3c3ccd4ed96a8762a82a23927f9"
+                "reference": "55f7805e2e605b3c78bb5ab49bf8cfe82b4a58af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirHub/zipball/5451fce0f61ce3c3ccd4ed96a8762a82a23927f9",
-                "reference": "5451fce0f61ce3c3ccd4ed96a8762a82a23927f9",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirHub/zipball/55f7805e2e605b3c78bb5ab49bf8cfe82b4a58af",
+                "reference": "55f7805e2e605b3c78bb5ab49bf8cfe82b4a58af",
                 "shasum": ""
             },
             "require": {
@@ -10066,6 +10066,7 @@
                 "symfony/http-client": "^6.2",
                 "symfony/mailer": "^6.2",
                 "symfony/monolog-bundle": "^v3.8.0",
+                "symfony/security-bundle": "^6.2",
                 "symfony/serializer": "^6.2",
                 "symfony/string": "^6.2",
                 "symfony/twig-pack": "^1.0",
@@ -10102,7 +10103,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirHub/tree/main",
                 "issues": "https://github.com/wirDesign-communication-AG/wirHub/issues"
             },
-            "time": "2023-04-05T13:12:27+00:00"
+            "time": "2023-04-05T14:05:06+00:00"
         }
     ],
     "packages-dev": [
@@ -10162,6 +10163,85 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/4.x"
             },
             "time": "2023-03-06T22:12:36+00:00"
+        },
+        {
+            "name": "symfony/debug-bundle",
+            "version": "6.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug-bundle.git",
+                "reference": "8ff6c96d09c462beade7512137899e400c76d994"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug-bundle/zipball/8ff6c96d09c462beade7512137899e400c76d994",
+                "reference": "8ff6c96d09c462beade7512137899e400c76d994",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": ">=8.1",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/twig-bridge": "^5.4|^6.0",
+                "symfony/var-dumper": "^5.4|^6.0"
+            },
+            "conflict": {
+                "symfony/config": "<5.4",
+                "symfony/dependency-injection": "<5.4"
+            },
+            "require-dev": {
+                "symfony/config": "^5.4|^6.0",
+                "symfony/web-profiler-bundle": "^5.4|^6.0"
+            },
+            "suggest": {
+                "symfony/config": "For service container configuration",
+                "symfony/dependency-injection": "For using as a service from the container"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\DebugBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a tight integration of the Symfony VarDumper component and the ServerLogCommand from MonologBridge into the Symfony full-stack framework",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/debug-bundle/tree/v6.2.7"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-02-14T08:44:56+00:00"
         },
         {
             "name": "symfony/maker-bundle",
