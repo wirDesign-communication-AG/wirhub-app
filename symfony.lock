@@ -105,6 +105,18 @@
             "config/packages/stof_doctrine_extensions.yaml"
         ]
     },
+    "symfony/apache-pack": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "efb318193e48384eb5c5aadff15396ed698f8ffc"
+        },
+        "files": [
+            "public/.htaccess"
+        ]
+    },
     "symfony/console": {
         "version": "6.2",
         "recipe": {
@@ -159,6 +171,15 @@
         "files": [
             "config/packages/mailer.yaml"
         ]
+    },
+    "symfony/maker-bundle": {
+        "version": "1.48",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
+        }
     },
     "symfony/monolog-bundle": {
         "version": "3.8",
@@ -235,17 +256,32 @@
             "config/packages/validator.yaml"
         ]
     },
+    "symfony/web-profiler-bundle": {
+        "version": "6.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "6.1",
+            "ref": "e42b3f0177df239add25373083a564e5ead4e13a"
+        },
+        "files": [
+            "config/packages/web_profiler.yaml",
+            "config/routes/web_profiler.yaml"
+        ]
+    },
     "twig/extra-bundle": {
         "version": "v3.5.1"
     },
     "wirdesign-communication-ag/wirhub": {
-        "version": "9999999.9999999",
+        "version": "3.0.1",
         "recipe": {
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
             "version": "3.0.1",
-            "ref": "d40cf8634bb31a74b86236cdf4a57218abfd1b30"
+            "ref": "036b7343a5298892be14ede13543bc36b110e270"
         },
-        "files": []
+        "files": [
+            "config/routes/wirhub_bundle.yaml"
+        ]
     }
 }
