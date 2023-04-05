@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.263.2",
+            "version": "3.263.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5516a7edae70fff66223b2fd320c20b3b17ced56"
+                "reference": "be23e6b278e9a3f4a5b15394f85e9c3f54c9dd7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5516a7edae70fff66223b2fd320c20b3b17ced56",
-                "reference": "5516a7edae70fff66223b2fd320c20b3b17ced56",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/be23e6b278e9a3f4a5b15394f85e9c3f54c9dd7e",
+                "reference": "be23e6b278e9a3f4a5b15394f85e9c3f54c9dd7e",
                 "shasum": ""
             },
             "require": {
@@ -150,9 +150,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.263.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.263.3"
             },
-            "time": "2023-04-03T18:19:25+00:00"
+            "time": "2023-04-04T18:24:59+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -9984,12 +9984,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirHub.git",
-                "reference": "a45b4940064cdef4c264ceb64ae2593ae65a0290"
+                "reference": "890ea8e557f51bf113aaede84100e6a9c434320b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirHub/zipball/a45b4940064cdef4c264ceb64ae2593ae65a0290",
-                "reference": "a45b4940064cdef4c264ceb64ae2593ae65a0290",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirHub/zipball/890ea8e557f51bf113aaede84100e6a9c434320b",
+                "reference": "890ea8e557f51bf113aaede84100e6a9c434320b",
                 "shasum": ""
             },
             "require": {
@@ -9999,7 +9999,7 @@
                 "doctrine/cache": "^2.1",
                 "doctrine/doctrine-bundle": "^2.4.2",
                 "doctrine/doctrine-migrations-bundle": "^3.0.1",
-                "doctrine/orm": "^2.5",
+                "doctrine/orm": "^2.9",
                 "egulias/email-validator": "^3.1",
                 "erusev/parsedown": "^1.7.3",
                 "ext-bcmath": "^8.1",
@@ -10054,7 +10054,7 @@
                 "liip/test-fixtures-bundle": "^2.1.0",
                 "phpstan/phpstan": "^1.8.5",
                 "phpunit/phpunit": "^9",
-                "rector/rector": "^0.14.2"
+                "rector/rector": "^0.15.23"
             },
             "default-branch": true,
             "type": "symfony-bundle",
@@ -10076,7 +10076,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirHub/tree/main",
                 "issues": "https://github.com/wirDesign-communication-AG/wirHub/issues"
             },
-            "time": "2023-04-04T15:24:18+00:00"
+            "time": "2023-04-05T08:08:56+00:00"
         }
     ],
     "packages-dev": [],
