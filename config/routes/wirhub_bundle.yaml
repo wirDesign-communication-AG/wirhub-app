@@ -1,3 +1,2 @@
 wirdesign_wirhub:
     resource: '@AppBundle/config/routing/app.yaml'
-    prefix: /

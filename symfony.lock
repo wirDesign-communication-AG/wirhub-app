@@ -285,16 +285,18 @@
         "version": "v3.5.1"
     },
     "wirdesign-communication-ag/wirhub": {
-        "version": "3.0.1",
+        "version": "9999999.9999999",
         "recipe": {
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
             "version": "3.0.1",
-            "ref": "af515136a1c5b47dd68e0990d23a7def2bafac7c"
+            "ref": "88615a828be4b60e8adcf627ba369a291cb02cda"
         },
         "files": [
             "config/packages/wirhub_bundle.yaml",
-            "config/routes/wirhub_bundle.yaml"
+            "config/routes/wirhub_bundle.yaml",
+            ".env.panther",
+            ".env.test"
         ]
     }
 }

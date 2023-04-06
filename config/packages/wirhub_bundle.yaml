@@ -12,3 +12,170 @@ when@prod:
                 level: debug
             console:
                 type: console
+
+when@dev:
+    framework:
+        session:
+            handler_id: session.handler.native_file
+            save_path: '%env(DEV_FRAMEWORK_SESSION_SAVE_PATH)%'
+
+    maker:
+        root_namespace: 'AppBundle'
+
+    web_profiler:
+        excluded_ajax_paths: '^/((index|app(_[\w]+)?)\.php/)?_wdt|\/feature\/metrics'
+
+when@test:
+    framework:
+        mailer:
+            dsn: 'null://null'
+    parameters:
+        locale: de
+    services:
+        Symfony\Contracts\HttpClient\HttpClientInterface:
+            public: true
+            alias: .debug.http_client
+
+when@panther:
+    framework:
+        test: ~
+        mailer:
+            dsn: 'null://null'
+    profiler:
+        collect: false
+    parameters:
+        locale: de
+    web_profiler:
+        toolbar: false
+        intercept_redirects: false
+
+framework:
+    default_locale: '%env(string:APP_LOCALE)%'
+    mailer:
+        dsn: '%env(MAILER_URL)%'
+        envelope:
+            sender: '%env(MAILER_SENDER)%'
+
+httplug:
+    clients:
+        default:
+            factory: 'httplug.factory.guzzle7'
+            config:
+                timeout: "%env(int:OAUTH_TIMEOUT)%"
+                verify: "%env(bool:OAUTH_VERIFY_SSL)%"
+
+hwi_oauth:
+    firewall_name: main
+    connect:
+        confirmation: false
+    resource_owners:
+        oauth:
+            type: oauth2
+            client_id: '%env(OAUTH_CUSTOM_CLIENT_ID)%'
+            client_secret: '%env(OAUTH_CUSTOM_CLIENT_SECRET)%'
+            access_token_url: '%env(OAUTH_CUSTOM_URL_ACCESS_TOKEN)%'
+            authorization_url: '%env(OAUTH_CUSTOM_URL_AUTHORIZATION)%'
+            infos_url: '%env(OAUTH_CUSTOM_URL_INFOS)%'
+            scope: 'user:email'
+            user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
+            paths:
+                identifier: id
+                nickname: username
+                realname: displayname
+        azure:
+            type: azure
+            client_id: '%env(OAUTH_AZURE_CLIENT_ID)%'
+            client_secret: '%env(OAUTH_AZURE_CLIENT_SECRET)%'
+            access_token_url: '%env(OAUTH_AZURE_URL_ACCESS_TOKEN)%'
+            authorization_url: '%env(OAUTH_AZURE_URL_AUTHORIZATION)%'
+            scope: '%env(OAUTH_AZURE_OPTION_SCOPE)%'
+            options:
+                application: common
+        okta:
+            type: oauth2
+            client_id: '%env(OAUTH_OKTA_CLIENT_ID)%'
+            client_secret: '%env(OAUTH_OKTA_CLIENT_SECRET)%'
+            access_token_url: '%env(OAUTH_OKTA_URL_ACCESS_TOKEN)%'
+            authorization_url: '%env(OAUTH_OKTA_URL_AUTHORIZATION)%'
+            infos_url: '%env(OAUTH_OKTA_URL_INFOS)%'
+            scope: 'openid email profile'
+            options:
+                csrf: true
+            user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
+            paths:
+                identifier: sub
+                nickname: email
+                email: email
+                realname: [ "given_name", "family_name" ]
+                firstname: given_name
+                lastname: family_name
+
+knp_menu:
+    twig:
+        template: '@App/menu.html.twig'
+
+knp_paginator:
+    template:
+        pagination: '@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig'
+
+security:
+    encoders:
+        AppBundle\Entity\User: sha512
+    role_hierarchy:
+        ROLE_EDITOR: ROLE_USER
+        ROLE_ADMIN: [ ROLE_USER, ROLE_EDITOR ]
+    providers:
+        app:
+            id: AppBundle\Security\UserProvider
+    firewalls:
+        public:
+            pattern: ^/(_wdt|_profiler|compiled|css|theme)
+            security: false
+        public_space:
+            pattern: ^/asset/space
+            security: false
+        public_grunt:
+            pattern: ^/asset/grunt
+            security: false
+        main:
+            anonymous: true
+            switch_user: { role: CAN_SWITCH_USER }
+            form_login:
+                check_path: /login_check
+                csrf_token_generator: security.csrf.token_manager
+                login_path: /login
+                success_handler: AppBundle\Security\RedirectAfterLoginHandler
+            logout:
+                path: app_user_security_logout
+                success_handler: AppBundle\Security\AccessTokenLogoutSuccessHandler
+            pattern: ^/
+            provider: app
+            oauth:
+                resource_owners:
+                    oauth: '/login/check-oauth'
+                    azure: '/login/check-azure'
+                    okta: '/login/check-okta'
+                login_path: /login
+                failure_path: /login
+                oauth_user_provider:
+                    service: AppBundle\Component\Security\OAuthProvider
+            guard:
+                authenticators:
+                    - AppBundle\Security\AccessTokenAuthenticator
+        login:
+            pattern: ^/login$
+            security: false
+    access_control:
+        - { path: ^/setup, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/share, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/invitation, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/settings, role: ROLE_EDITOR }
+        - { path: ^/admin, role: ROLE_ADMIN }
+
+twig:
+    form_themes: [ '@App/_components/form/default.html.twig' ]
+    globals:
+        version: '%env(string:VERSION)%'
+        debug_javascript: '%env(bool:APP_DEBUG_JAVASCRIPT)%'
