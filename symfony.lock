@@ -285,7 +285,7 @@
         "version": "v3.5.1"
     },
     "wirdesign-communication-ag/wirhub": {
-        "version": "9999999.9999999",
+        "version": "3.0.1",
         "recipe": {
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
