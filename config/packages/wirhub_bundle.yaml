@@ -49,6 +49,14 @@ when@panther:
         toolbar: false
         intercept_redirects: false
 
+doctrine_migrations:
+    migrations_paths:
+        'Application\Migrations': '@AppBundle/Migrations'
+    organize_migrations: 'BY_YEAR'
+    storage:
+        table_storage:
+            table_name: 'migration_versions'
+
 framework:
     csrf_protection: ~
     default_locale: '%env(string:APP_LOCALE)%'
@@ -123,12 +131,17 @@ security:
     role_hierarchy:
         ROLE_EDITOR: ROLE_USER
         ROLE_ADMIN: [ ROLE_USER, ROLE_EDITOR ]
+    password_hashers:
+        Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface:
+            algorithm: 'auto'
+            migrate_from:
+                - sha512
     providers:
         app:
             id: AppBundle\Security\UserProvider
     firewalls:
         public:
-            pattern: ^/(_wdt|_profiler|asset)
+            pattern: ^/(_wdt|_profiler|asset)/
             security: false
         main:
             access_token:

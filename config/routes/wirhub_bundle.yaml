@@ -1,2 +1,2 @@
 wirdesign_wirhub:
-    resource: '@AppBundle/config/routing/app.yaml'
+    resource: '@AppBundle/Resources/config/routing/app.yaml'
