@@ -8,16 +8,6 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
-/.idea/
-
-/bin/phpunit
-
-/files/*
-!files/.gitkeep
-/public/asset
-
-/composer.phar
-/composer
 ###> symfony/phpunit-bridge ###
 .phpunit.result.cache
 /phpunit.xml
@@ -30,7 +20,6 @@
 
 ###> wirdesign-communication-ag/wirhub ###
 /.idea/
-/bin/phpunit
 /files/*
 !files/.gitkeep
 /public/asset
