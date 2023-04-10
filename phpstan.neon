@@ -1,6 +1,6 @@
 parameters:
     bootstrapFiles:
-        - vendor/bin/.phpunit/phpunit/vendor/autoload.php
+        - tests/bootstrap.php
     excludePaths:
         - vendor/wirdesign-communication-ag/wirhub/asset
         - vendor/wirdesign-communication-ag/wirhub/build
