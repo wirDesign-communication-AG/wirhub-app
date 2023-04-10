@@ -17,7 +17,7 @@
         },
         "optimize-autoloader": false,
         "platform": {
-            "php": "8.1.2"
+            "php": "8.1"
         },
         "preferred-install": {
             "wirdesign-communication-ag/wirhub": "source"
