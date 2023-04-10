@@ -27,3 +27,13 @@
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+
+###> wirdesign-communication-ag/wirhub ###
+/.idea/
+/bin/phpunit
+/files/*
+!files/.gitkeep
+/public/asset
+/composer.phar
+/composer
+###< wirdesign-communication-ag/wirhub ###

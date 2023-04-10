@@ -219,6 +219,15 @@
             "config/packages/monolog.yaml"
         ]
     },
+    "symfony/panther": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "877d853a05c6713665a2f4b954734592680abff6"
+        }
+    },
     "symfony/phpunit-bridge": {
         "version": "6.2",
         "recipe": {
@@ -319,13 +328,16 @@
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
             "version": "3.0.1",
-            "ref": "88615a828be4b60e8adcf627ba369a291cb02cda"
+            "ref": "b03806d803e3854d10ecca82db0f6dc46f951117"
         },
         "files": [
+            ".github/workflows/ci.yaml",
             "config/packages/wirhub_bundle.yaml",
             "config/routes/wirhub_bundle.yaml",
             ".env.panther",
-            ".env.test"
+            ".env.test",
+            "Makefile",
+            "phpunit.xml.dist"
         ]
     }
 }

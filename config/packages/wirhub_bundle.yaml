@@ -12,7 +12,7 @@ when@prod:
                 level: debug
             console:
                 type: console
-
+    
 when@dev:
     framework:
         session:
@@ -27,8 +27,11 @@ when@dev:
 
 when@test:
     framework:
-        mailer:
-            dsn: 'null://null'
+       mailer:
+           dsn: 'null://null'
+       session:
+           handler_id: 'session.handler.native_file'
+           save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
     parameters:
         locale: de
     services:
@@ -41,6 +44,9 @@ when@panther:
         test: ~
         mailer:
             dsn: 'null://null'
+        session:
+            handler_id: 'session.handler.native_file'
+            save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
     profiler:
         collect: false
     parameters:
@@ -141,7 +147,7 @@ security:
             id: AppBundle\Security\UserProvider
     firewalls:
         public:
-            pattern: ^/(_wdt|_profiler|asset)/
+            pattern: ^/(_wdt|_profiler|asset)
             security: false
         main:
             access_token:
@@ -153,6 +159,8 @@ security:
                 check_path: /login_check
                 enable_csrf: true
                 login_path: /login
+            logout:
+               path: app_user_security_logout
             provider: app
             oauth:
                 resource_owners:
