@@ -13,6 +13,10 @@ init:
 	endif
 
 test:
+	APP_ENV=test php bin/console lint:twig templates/ vendor/wirdesign-communication-ag/wirhub/
+	APP_ENV=test php bin/console lint:yaml config/ vendor/wirdesign-communication-ag/wirhub/Resources/config/
+	APP_ENV=test php bin/console lint:container
+	vendor/bin/phpstan analyse -c phpstan.neon
 	APP_ENV=test php bin/console app:test
 	APP_ENV=test php bin/console doctrine:database:create
 	APP_ENV=test php bin/console doctrine:schema:update --force

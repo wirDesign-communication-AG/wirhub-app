@@ -119,6 +119,9 @@ knp_paginator:
     template:
         pagination: '@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig'
 
+parameters:
+    hwi_oauth.connect.registration_form: ''
+
 security:
     role_hierarchy:
         ROLE_EDITOR: ROLE_USER

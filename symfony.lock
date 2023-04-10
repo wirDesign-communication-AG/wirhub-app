@@ -343,7 +343,7 @@
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
             "version": "3.0.1",
-            "ref": "0220f7a6a2956718df8954fc9582d9889c15e03f"
+            "ref": "444c290ab25efcaacf30c17642cba7c7cc793559"
         },
         "files": [
             ".github/workflows/ci.yaml",
@@ -352,6 +352,7 @@
             ".env.panther",
             ".env.test",
             "Makefile",
+            "phpstan.neon",
             "phpunit.xml.dist"
         ]
     }
