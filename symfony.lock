@@ -338,12 +338,12 @@
         "version": "v3.5.1"
     },
     "wirdesign-communication-ag/wirhub": {
-        "version": "3.0.1",
+        "version": "9999999.9999999",
         "recipe": {
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
             "version": "3.0.1",
-            "ref": "b03806d803e3854d10ecca82db0f6dc46f951117"
+            "ref": "add72e4a28085a2fa854bef977e0cbf264c339f4"
         },
         "files": [
             ".github/workflows/ci.yaml",

@@ -8,9 +8,6 @@ jobs:
         steps:
             -   uses: actions/checkout@v3
 
-            -   name: Add GitHub OAuth credentials
-                run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
-
             -   name: Install extensions
                 uses: shivammathur/setup-php@v2
                 with:
