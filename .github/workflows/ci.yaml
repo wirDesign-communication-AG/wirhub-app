@@ -32,6 +32,9 @@ jobs:
             -   name: Install dependencies
                 run: APP_ENV=test composer install --prefer-dist --no-progress
 
+            -   name: Dump environment
+                run: APP_ENV=test composer dump-env test
+
             -   name: Install Symfony Server
                 run: wget https://get.symfony.com/cli/installer -O - | bash
 
@@ -48,6 +51,7 @@ jobs:
                     name: debug
                     if-no-files-found: ignore
                     path: |
+                        .env.local.php
                         vendor/wirdesign-communications-ag/wirhub/build/debug/*
                         var/cache/test/*.log
                         var/cache/wdc-styleguide.db
