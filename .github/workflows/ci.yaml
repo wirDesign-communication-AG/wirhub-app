@@ -52,7 +52,7 @@ jobs:
                     if-no-files-found: ignore
                     path: |
                         .env.local.php
-                        vendor/wirdesign-communications-ag/wirhub/build/debug/*
+                        vendor/wirdesign-communication-ag/wirhub/build/debug/*
                         var/cache/test/*.log
                         var/cache/wdc-styleguide.db
                         ~/.symfony5/log/*.log
