@@ -343,7 +343,7 @@
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
             "version": "3.0.1",
-            "ref": "5bf019e5ddeda6a9d13bc9ea13602951452d13c5"
+            "ref": "47e5a661acae123045cbd5938ba1ad199c909aa5"
         },
         "files": [
             ".github/workflows/ci.yaml",

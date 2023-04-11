@@ -4,10 +4,10 @@ update:
 	php bin/console doctrine:migrations:migrate --no-interaction
 	php bin/console app:theme:refresh
 	php bin/console app:update
-	ifeq ($(shell id -u), 0)
-		chown -R www-data:www-data public/
-		chown -R www-data:www-data var/cache/
-	endif
+ifeq ($(shell id -u), 0)
+	chown -R www-data:www-data public/
+	chown -R www-data:www-data var/cache/
+endif
 
 test:
 	APP_ENV=test php bin/console lint:twig templates/ vendor/wirdesign-communication-ag/wirhub/
