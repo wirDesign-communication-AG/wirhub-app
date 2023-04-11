@@ -3260,16 +3260,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "1.93.0",
+            "version": "1.94.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "61b408f4c54e3523ff230dcd2d3ada656389b0a0"
+                "reference": "c0a41246827cf2dadcd4d3bae1ab87fdbe51edf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/61b408f4c54e3523ff230dcd2d3ada656389b0a0",
-                "reference": "61b408f4c54e3523ff230dcd2d3ada656389b0a0",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/c0a41246827cf2dadcd4d3bae1ab87fdbe51edf8",
+                "reference": "c0a41246827cf2dadcd4d3bae1ab87fdbe51edf8",
                 "shasum": ""
             },
             "require": {
@@ -3305,9 +3305,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.93.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.94.0"
             },
-            "time": "2023-04-04T12:59:39+00:00"
+            "time": "2023-04-11T13:23:45+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -9964,12 +9964,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirHub.git",
-                "reference": "5e418bbded585e19a87bb4f8534bfa8ba22a431f"
+                "reference": "4d0c48f158a5fcdcbfa14d3d295d26e3a5c129e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirHub/zipball/5e418bbded585e19a87bb4f8534bfa8ba22a431f",
-                "reference": "5e418bbded585e19a87bb4f8534bfa8ba22a431f",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirHub/zipball/4d0c48f158a5fcdcbfa14d3d295d26e3a5c129e4",
+                "reference": "4d0c48f158a5fcdcbfa14d3d295d26e3a5c129e4",
                 "shasum": ""
             },
             "require": {
@@ -10059,7 +10059,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirHub/tree/main",
                 "issues": "https://github.com/wirDesign-communication-AG/wirHub/issues"
             },
-            "time": "2023-04-11T12:39:06+00:00"
+            "time": "2023-04-11T13:34:40+00:00"
         }
     ],
     "packages-dev": [
