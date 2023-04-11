@@ -1,9 +1,6 @@
 update:
 	git pull
 	COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader
-	init
-
-init:
 	php bin/console doctrine:migrations:migrate --no-interaction
 	php bin/console app:theme:refresh
 	php bin/console app:update
