@@ -6,7 +6,7 @@ update:
 	php bin/console app:update
 ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data public/
-	chown -R www-data:www-data var/cache/
+	chown -R www-data:www-data var/
 endif
 
 test:
