@@ -5,6 +5,7 @@ parameters:
         - vendor/wirdesign-communication-ag/wirhub/asset
         - vendor/wirdesign-communication-ag/wirhub/build
         - vendor/wirdesign-communication-ag/wirhub/Domain/Config/Vendor
+        - vendor/wirdesign-communication-ag/wirhub/Resources
         - vendor/wirdesign-communication-ag/wirhub/vendor
     level: 1
     paths:
