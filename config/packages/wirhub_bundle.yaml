@@ -135,7 +135,7 @@ security:
                 login_path: /login
                 success_handler: AppBundle\Security\RedirectAfterLoginHandler
             logout:
-                path: app_user_security_logout
+               path: app_user_security_logout
             provider: app
             oauth:
                 resource_owners:

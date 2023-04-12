@@ -7,6 +7,7 @@ update:
 ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data public/
 	chown -R www-data:www-data var/
+	chown -R www-data:www-data files/
 endif
 
 test:

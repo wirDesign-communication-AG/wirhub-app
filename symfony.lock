@@ -338,6 +338,22 @@
         "version": "v3.5.1"
     },
     "wirdesign-communication-ag/wirhub": {
-        "version": "v3.0.1.x-dev"
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
+            "branch": "main",
+            "version": "3.0",
+            "ref": "2089838639846626cabfa0c66313f8cfa662d3cd"
+        },
+        "files": [
+            ".github/workflows/ci.yaml",
+            "config/packages/wirhub_bundle.yaml",
+            "config/routes/wirhub_bundle.yaml",
+            ".env.panther",
+            ".env.test",
+            "Makefile",
+            "phpstan.neon",
+            "phpunit.xml.dist"
+        ]
     }
 }
