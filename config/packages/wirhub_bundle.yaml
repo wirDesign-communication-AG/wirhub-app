@@ -24,6 +24,26 @@ when@test:
             public: true
             alias: .debug.http_client
 
+doctrine:
+    orm:
+        entity_managers:
+            default:
+                connection: 'default'
+                dql:
+                    string_functions:
+                        MATCH_AGAINST: AppBundle\Domain\Doctrine\MatchAgainst
+                mappings:
+                    AppBundle:
+                        type: 'attribute'
+                        dir: '%kernel.project_dir%/vendor/wirdesign-communication-ag/wirhub/Entity'
+                        prefix: AppBundle\Entity
+                    GedmoLoggable:
+                        type: 'attribute'
+                        alias: 'GedmoLoggable'
+                        prefix: Gedmo\Loggable\Entity
+                        dir: '%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Loggable/Entity'
+                        is_bundle: false
+
 doctrine_migrations:
     migrations_paths:
         'Application\Migrations': '@AppBundle/Migrations'
@@ -153,6 +173,11 @@ security:
         - { path: ^/, roles: PUBLIC_ACCESS }
         - { path: ^/settings, role: ROLE_EDITOR }
         - { path: ^/admin, role: ROLE_ADMIN }
+
+stof_doctrine_extensions:
+    orm:
+        default:
+            loggable: true
 
 twig:
     form_themes: [ '@App/_components/form/default.html.twig' ]
