@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CSettings%255CFeature%255CNewsController%2523sort
+
+return [PHP_INT_MAX, []];

@@ -1,0 +1,3 @@
+<?php //AppBundle%255CEntity%255CConfig%2524array
+
+return [PHP_INT_MAX, []];

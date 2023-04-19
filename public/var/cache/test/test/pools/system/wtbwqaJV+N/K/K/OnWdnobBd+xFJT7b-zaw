@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CSettingsController%2523index
+
+return [PHP_INT_MAX, []];

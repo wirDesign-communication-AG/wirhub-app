@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CAdmin%255CSpaceController%2523delete
+
+return [PHP_INT_MAX, []];

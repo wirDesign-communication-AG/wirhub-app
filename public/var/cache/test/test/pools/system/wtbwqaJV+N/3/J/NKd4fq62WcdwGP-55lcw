@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CElementController%2523uploadCollection
+
+return [PHP_INT_MAX, []];

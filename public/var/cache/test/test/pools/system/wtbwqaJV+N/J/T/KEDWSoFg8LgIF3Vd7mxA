@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CFeature%255CNewsController%2523load
+
+return [PHP_INT_MAX, []];

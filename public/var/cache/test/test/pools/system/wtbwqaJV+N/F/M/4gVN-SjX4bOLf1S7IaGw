@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CAjaxController%2523toggleAsideSorting
+
+return [PHP_INT_MAX, []];

@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CSettings%255CThemeController%2523refresh
+
+return [PHP_INT_MAX, []];

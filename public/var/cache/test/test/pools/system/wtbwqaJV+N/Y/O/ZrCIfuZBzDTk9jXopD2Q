@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CSettings%255CSmartTool%255CFramingController%2523index
+
+return [PHP_INT_MAX, []];

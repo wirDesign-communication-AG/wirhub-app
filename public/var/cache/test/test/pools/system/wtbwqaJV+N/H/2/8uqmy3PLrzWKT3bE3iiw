@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CUser%255CPasswordResetController%2523reset
+
+return [PHP_INT_MAX, []];

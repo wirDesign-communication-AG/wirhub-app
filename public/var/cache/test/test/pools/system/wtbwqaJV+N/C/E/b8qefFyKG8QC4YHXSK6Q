@@ -1,0 +1,3 @@
+<?php //AppBundle%255CEntity%255CFile%2524size
+
+return [PHP_INT_MAX, []];

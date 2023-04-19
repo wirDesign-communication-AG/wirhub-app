@@ -1,0 +1,3 @@
+<?php //AppBundle%255CEntity%255CFile%2524uploader
+
+return [PHP_INT_MAX, []];

@@ -1,0 +1,3 @@
+<?php //AppBundle%255CEntity%255CMetrics%255CLogin
+
+return [PHP_INT_MAX, []];

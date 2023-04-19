@@ -1,0 +1,3 @@
+<?php //AppBundle%255CEntity%255CCategory%2524seenByUsersWithoutGroup
+
+return [PHP_INT_MAX, []];

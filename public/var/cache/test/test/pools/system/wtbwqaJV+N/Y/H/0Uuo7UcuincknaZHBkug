@@ -1,0 +1,3 @@
+<?php //AppBundle%255CDomain%255CModel%255CElementEntityModel%2523isMovable
+
+return [PHP_INT_MAX, []];

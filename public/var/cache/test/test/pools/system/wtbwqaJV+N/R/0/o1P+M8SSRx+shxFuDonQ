@@ -1,0 +1,3 @@
+<?php //AppBundle%255CEntity%255CConnection
+
+return [PHP_INT_MAX, []];

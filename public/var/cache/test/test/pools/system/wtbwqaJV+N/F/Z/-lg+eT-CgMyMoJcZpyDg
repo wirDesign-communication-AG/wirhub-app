@@ -1,0 +1,3 @@
+<?php //AppBundle%255CEntity%255CDashboard%255CSetting
+
+return [PHP_INT_MAX, []];

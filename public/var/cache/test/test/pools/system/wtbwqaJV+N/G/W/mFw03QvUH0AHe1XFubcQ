@@ -1,0 +1,3 @@
+<?php //AppBundle%255CController%255CUser%255CSecurityController%2523logout
+
+return [PHP_INT_MAX, []];

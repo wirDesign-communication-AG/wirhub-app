@@ -1,0 +1,3 @@
+<?php //AppBundle%255CEntity%255CSetting%255CColor%2524cmyk
+
+return [PHP_INT_MAX, []];

@@ -1,0 +1,3 @@
+<?php //Closure
+
+return [PHP_INT_MAX, []];
