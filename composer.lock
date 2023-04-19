@@ -4131,16 +4131,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.19.0",
+            "version": "1.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "178b33aa1c8b8d7725f0abee618ef47337e607ce"
+                "reference": "f545fc30978190a056832aa7ed995e36a66267f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/178b33aa1c8b8d7725f0abee618ef47337e607ce",
-                "reference": "178b33aa1c8b8d7725f0abee618ef47337e607ce",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/f545fc30978190a056832aa7ed995e36a66267f3",
+                "reference": "f545fc30978190a056832aa7ed995e36a66267f3",
                 "shasum": ""
             },
             "require": {
@@ -4170,9 +4170,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.19.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.19.1"
             },
-            "time": "2023-04-17T13:16:52+00:00"
+            "time": "2023-04-18T11:30:56+00:00"
         },
         {
             "name": "pmdevelopment/microsoft-symfony-mailer",
@@ -9946,12 +9946,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "0819e7693e6c819b3ddee88aecd39bf352901de5"
+                "reference": "66ee29f0ca2ae6e767bca9498a7953760f61d8a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/0819e7693e6c819b3ddee88aecd39bf352901de5",
-                "reference": "0819e7693e6c819b3ddee88aecd39bf352901de5",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/66ee29f0ca2ae6e767bca9498a7953760f61d8a1",
+                "reference": "66ee29f0ca2ae6e767bca9498a7953760f61d8a1",
                 "shasum": ""
             },
             "require": {
@@ -10040,7 +10040,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.1",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-04-18T11:11:12+00:00"
+            "time": "2023-04-19T08:09:16+00:00"
         }
     ],
     "packages-dev": [
