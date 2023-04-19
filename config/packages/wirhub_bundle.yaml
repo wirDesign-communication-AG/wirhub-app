@@ -10,6 +10,9 @@ when@dev:
     web_profiler:
         excluded_ajax_paths: '^/((index|app(_[\w]+)?)\.php/)?_wdt|\/feature\/metrics'
 
+    services:
+        Symfony\Component\HttpKernel\Profiler\Profiler: '@profiler'
+
 when@test:
     framework:
         mailer:
