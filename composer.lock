@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d8c9616032aba07cd22972bcea1d185",
+    "content-hash": "451c05dc5cde19daafe605875fc57ea3",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -9947,16 +9947,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.0.1.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "88ce52d80c31b1ab033a7b8a6fd4c971aa9eceb2"
+                "reference": "53da6047abede997be2ec6a1181780db3dc62d6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/88ce52d80c31b1ab033a7b8a6fd4c971aa9eceb2",
-                "reference": "88ce52d80c31b1ab033a7b8a6fd4c971aa9eceb2",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/53da6047abede997be2ec6a1181780db3dc62d6d",
+                "reference": "53da6047abede997be2ec6a1181780db3dc62d6d",
                 "shasum": ""
             },
             "require": {
@@ -10023,6 +10023,7 @@
                 "ext-sqlite3": "*",
                 "phpstan/phpstan": "^1.8.5"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -10042,10 +10043,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.1",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/main",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-04-28T08:46:44+00:00"
+            "time": "2023-04-28T08:56:05+00:00"
         }
     ],
     "packages-dev": [
