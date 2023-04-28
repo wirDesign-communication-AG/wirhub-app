@@ -10,6 +10,9 @@ when@dev:
     web_profiler:
         excluded_ajax_paths: '^/((index|app(_[\w]+)?)\.php/)?_wdt|\/feature\/metrics'
 
+    services:
+        Symfony\Component\HttpKernel\Profiler\Profiler: '@profiler'
+
 when@test:
     framework:
         mailer:
@@ -23,6 +26,26 @@ when@test:
         Symfony\Contracts\HttpClient\HttpClientInterface:
             public: true
             alias: .debug.http_client
+
+doctrine:
+    orm:
+        entity_managers:
+            default:
+                connection: 'default'
+                dql:
+                    string_functions:
+                        MATCH_AGAINST: AppBundle\Domain\Doctrine\MatchAgainst
+                mappings:
+                    AppBundle:
+                        type: 'attribute'
+                        dir: '%kernel.project_dir%/vendor/wirdesign-communication-ag/wirhub/Entity'
+                        prefix: AppBundle\Entity
+                    GedmoLoggable:
+                        type: 'attribute'
+                        alias: 'GedmoLoggable'
+                        prefix: Gedmo\Loggable\Entity
+                        dir: '%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Loggable/Entity'
+                        is_bundle: false
 
 doctrine_migrations:
     migrations_paths:
@@ -135,7 +158,7 @@ security:
                 login_path: /login
                 success_handler: AppBundle\Security\RedirectAfterLoginHandler
             logout:
-                path: app_user_security_logout
+               path: app_user_security_logout
             provider: app
             oauth:
                 resource_owners:
@@ -153,6 +176,11 @@ security:
         - { path: ^/, roles: PUBLIC_ACCESS }
         - { path: ^/settings, role: ROLE_EDITOR }
         - { path: ^/admin, role: ROLE_ADMIN }
+
+stof_doctrine_extensions:
+    orm:
+        default:
+            loggable: true
 
 twig:
     form_themes: [ '@App/_components/form/default.html.twig' ]
