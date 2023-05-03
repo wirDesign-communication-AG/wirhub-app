@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.269.2",
+            "version": "3.269.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "29318777b1a259471827d0f9f174e48677903d60"
+                "reference": "1f9661f019cb4173e527f0c30fdd6efe190a413e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/29318777b1a259471827d0f9f174e48677903d60",
-                "reference": "29318777b1a259471827d0f9f174e48677903d60",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1f9661f019cb4173e527f0c30fdd6efe190a413e",
+                "reference": "1f9661f019cb4173e527f0c30fdd6efe190a413e",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.269.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.269.4"
             },
-            "time": "2023-04-28T18:22:53+00:00"
+            "time": "2023-05-02T18:22:12+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -4136,16 +4136,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.20.3",
+            "version": "1.20.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "6c04009f6cae6eda2f040745b6b846080ef069c2"
+                "reference": "7d568c87a9df9c5f7e8b5f075fc469aa8cb0a4cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6c04009f6cae6eda2f040745b6b846080ef069c2",
-                "reference": "6c04009f6cae6eda2f040745b6b846080ef069c2",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/7d568c87a9df9c5f7e8b5f075fc469aa8cb0a4cd",
+                "reference": "7d568c87a9df9c5f7e8b5f075fc469aa8cb0a4cd",
                 "shasum": ""
             },
             "require": {
@@ -4175,9 +4175,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.20.3"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.20.4"
             },
-            "time": "2023-04-25T09:01:03+00:00"
+            "time": "2023-05-02T09:19:37+00:00"
         },
         {
             "name": "pmdevelopment/microsoft-symfony-mailer",
@@ -9951,12 +9951,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "08a51da398c47bd063e5f5d26522d2850c6ceedc"
+                "reference": "921be4a34ce2c07b57d0bb0cf018c21225990c7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/08a51da398c47bd063e5f5d26522d2850c6ceedc",
-                "reference": "08a51da398c47bd063e5f5d26522d2850c6ceedc",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/921be4a34ce2c07b57d0bb0cf018c21225990c7b",
+                "reference": "921be4a34ce2c07b57d0bb0cf018c21225990c7b",
                 "shasum": ""
             },
             "require": {
@@ -10045,7 +10045,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.2",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-05-01T14:01:26+00:00"
+            "time": "2023-05-03T09:49:44+00:00"
         }
     ],
     "packages-dev": [
@@ -10186,16 +10186,16 @@
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
-            "version": "3.4.3",
+            "version": "3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
-                "reference": "fd39829fed8f090ef6e185d33449d47c2fb59c9c"
+                "reference": "9ec3139c52a42e94c9fd1e95f8d2bca94326edfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/fd39829fed8f090ef6e185d33449d47c2fb59c9c",
-                "reference": "fd39829fed8f090ef6e185d33449d47c2fb59c9c",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/9ec3139c52a42e94c9fd1e95f8d2bca94326edfb",
+                "reference": "9ec3139c52a42e94c9fd1e95f8d2bca94326edfb",
                 "shasum": ""
             },
             "require": {
@@ -10249,7 +10249,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineFixturesBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineFixturesBundle/tree/3.4.3"
+                "source": "https://github.com/doctrine/DoctrineFixturesBundle/tree/3.4.4"
             },
             "funding": [
                 {
@@ -10265,7 +10265,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-11T12:37:36+00:00"
+            "time": "2023-05-02T15:12:16+00:00"
         },
         {
             "name": "liip/test-fixtures-bundle",
