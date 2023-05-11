@@ -5,7 +5,11 @@ on:
         branches: [ 'main' ]
         tags: [ 'v*.*.*' ]
     pull_request:
-        branches: [ 'wip/docker' ]
+        paths:
+            - 'dockerfiles/*.sh'
+            - 'docker-compose.yaml'
+            - 'Dockerfile'
+
 env:
     # Use docker.io for Docker Hub if empty
     REGISTRY: ghcr.io
@@ -13,7 +17,7 @@ env:
     IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-    build:
+    image:
         runs-on: ubuntu-latest
         permissions:
             contents: read
