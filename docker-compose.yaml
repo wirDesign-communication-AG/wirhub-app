@@ -16,7 +16,7 @@ services:
             - wirhub-sessions:/var/lib/php/sessions
             -   type: bind
                 source: ./.env.local
-                target: /var/www/wirHub/.env.local
+                target: /var/www/wirhub/.env.local
                 read_only: true
 
     db:
