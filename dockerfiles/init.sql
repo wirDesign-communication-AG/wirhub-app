@@ -1,0 +1,3 @@
+CREATE DATABASE wirhub;
+GRANT ALL PRIVILEGES ON wirhub.* TO wdc@localhost IDENTIFIED BY 'wirhubwirhub';
+FLUSH PRIVILEGES;
