@@ -19,13 +19,8 @@ php bin/console app:setup
 echo "--"
 echo "--"
 echo "--"
-echo "--call make update"
-make update
-
-# set the rights
-chown -R www-data:www-data ../wirhub
-
-# TODO: remove github token
+echo "--call make init"
+make init
 
 # # this will make it run indefinitely
 # apachectl -D FOREGROUND
