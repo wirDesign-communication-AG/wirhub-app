@@ -1,0 +1,68 @@
+name: Docker CI publish package
+
+on:
+    push:
+        tags: [ 'v*.*.*', 'v*.*.*.*' ]
+    pull_request:
+        paths:
+            - '.github/workflows/docker.yaml'
+            - 'dockerfiles/*.sh'
+            - 'docker-compose.yaml'
+            - 'Dockerfile'
+
+env:
+    # Use docker.io for Docker Hub if empty
+    REGISTRY: ghcr.io
+    # github.repository as <account>/<repo>
+    IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+    image:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            packages: write
+            # This is used to complete the identity challenge
+            # with sigstore/fulcio when running outside of PRs.
+            id-token: write
+
+        steps:
+            -   name: Checkout repository
+                uses: actions/checkout@v3
+
+            -   name: Setup Docker buildx
+                uses: docker/setup-buildx-action@v2
+
+            -   name: Log into registry ${{ env.REGISTRY }}
+                if: github.event_name != 'pull_request'
+                uses: docker/login-action@v2
+                with:
+                    registry: ${{ env.REGISTRY }}
+                    username: ${{ github.actor }}
+                    password: ${{ secrets.GITHUB_TOKEN }}
+
+            -   name: Extract Docker metadata
+                id: meta
+                uses: docker/metadata-action@v4
+                with:
+                    images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+
+            -   name: Set VERSION number from .env file
+                id: set_version
+                run: echo "$(cat .env | grep ^VERSION | cut -d "=" -f2 | cut -d "-" -f1 )"
+                env:
+                    WHVERSION: ${{ steps.set_version.outputs.whversion }}
+
+            -   name: Add GitHub OAuth credentials
+                run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > ./auth.json
+
+            -   name: Build and push Docker image
+                id: build-and-push
+                uses: docker/build-push-action@v4
+                with:
+                    context: .
+                    push: ${{ github.event_name != 'pull_request' }}
+                    tags: ${{ steps.meta.outputs.tags }}
+                    labels: ${{ steps.meta.outputs.labels }}
+                    cache-from: type=gha
+                    cache-to: type=gha,mode=max

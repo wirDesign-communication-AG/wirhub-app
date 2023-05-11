@@ -1,0 +1,37 @@
+version: '3.8'
+
+# docker compose up only loads .env. Use this to start:
+# docker compose --env-file .env.local up
+
+services:
+    app:
+        env_file: .env.local
+        container_name: wirhub-apache-${CONTAINER_ID_ADDITION}
+        image: ghcr.io/wirdesign-communication-ag/wirhub-app:docker
+        platform: linux/amd64
+        ports:
+            - '${CONTAINER_PORT}:80'
+        volumes:
+            - wirhub-files:/var/www/wirhub/files
+            - wirhub-sessions:/var/lib/php/sessions
+            -   type: bind
+                source: ./.env.local
+                target: /var/www/wirHub/.env.local
+                read_only: true
+
+    db:
+        container_name: wirhub-mysql-${CONTAINER_ID_ADDITION}
+        image: mariadb:${MARIADB_VERSION}
+        platform: linux/amd64
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        volumes:
+            - './dockerfiles/init.sql:/docker-entrypoint-initdb.d/1.sql'
+            - wirhub:/var/lib/mysql/
+        environment:
+            MARIADB_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+
+volumes:
+    wirhub:
+    wirhub-files:
+    wirhub-sessions:
