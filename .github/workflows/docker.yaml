@@ -6,6 +6,7 @@ on:
         tags: [ 'v*.*.*' ]
     pull_request:
         paths:
+            - '.github/workflows/docker.yaml'
             - 'dockerfiles/*.sh'
             - 'docker-compose.yaml'
             - 'Dockerfile'
@@ -32,7 +33,7 @@ jobs:
 
             # Workaround: https://github.com/docker/build-push-action/issues/461
             -   name: Setup Docker buildx
-                uses: docker/setup-buildx-action@v4
+                uses: docker/setup-buildx-action@v2
 
             # Login against a Docker registry except on PR
             # https://github.com/docker/login-action
