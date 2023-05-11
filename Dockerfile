@@ -76,7 +76,6 @@ RUN  a2enmod ssl
 
 
 # Folder rights
-RUN mkdir web/theme/
 RUN chmod +x bin/console
 
 WORKDIR /var/www/wirhub
