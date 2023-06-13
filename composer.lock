@@ -9913,12 +9913,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "52e3fd3b38b5f4fe835e6d67755c20b6867c4a4b"
+                "reference": "ed4a7db983f5489372585b715f5ecb24131721ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/52e3fd3b38b5f4fe835e6d67755c20b6867c4a4b",
-                "reference": "52e3fd3b38b5f4fe835e6d67755c20b6867c4a4b",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/ed4a7db983f5489372585b715f5ecb24131721ce",
+                "reference": "ed4a7db983f5489372585b715f5ecb24131721ce",
                 "shasum": ""
             },
             "require": {
@@ -10007,7 +10007,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.5",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-06-13T13:38:05+00:00"
+            "time": "2023-06-13T13:54:36+00:00"
         }
     ],
     "packages-dev": [
