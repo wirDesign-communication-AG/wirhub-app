@@ -5,8 +5,7 @@ service apache2 start
 
 service cron start
 
-# wait for the database server and only then continue
-./wait-for-it.sh db:3306 --timeout=0
+# TODO: implement command to wait for successful mysql connection
 
 # trigger the setup (register users etc)
 echo "--"
