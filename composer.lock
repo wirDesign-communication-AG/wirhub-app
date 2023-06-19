@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3577a49257bdf3288d2738c66ce3c0b8",
+    "content-hash": "aef850d705e091d55cd1e3c88f7f7bdc",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.273.1",
+            "version": "3.273.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "615adf6a83800936de345193b5c869f96aab1132"
+                "reference": "10631467bdf9869a45197a25b490948af2ef7acd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/615adf6a83800936de345193b5c869f96aab1132",
-                "reference": "615adf6a83800936de345193b5c869f96aab1132",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/10631467bdf9869a45197a25b490948af2ef7acd",
+                "reference": "10631467bdf9869a45197a25b490948af2ef7acd",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.273.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.273.2"
             },
-            "time": "2023-06-15T18:23:27+00:00"
+            "time": "2023-06-16T18:53:48+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -3539,16 +3539,16 @@
         },
         {
             "name": "php-http/discovery",
-            "version": "1.18.1",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/discovery.git",
-                "reference": "f258b3a1d16acb7b21f3b42d7a2494a733365237"
+                "reference": "1856a119a0b0ba8da8b5c33c080aa7af8fac25b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/discovery/zipball/f258b3a1d16acb7b21f3b42d7a2494a733365237",
-                "reference": "f258b3a1d16acb7b21f3b42d7a2494a733365237",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/1856a119a0b0ba8da8b5c33c080aa7af8fac25b4",
+                "reference": "1856a119a0b0ba8da8b5c33c080aa7af8fac25b4",
                 "shasum": ""
             },
             "require": {
@@ -3611,9 +3611,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/discovery/issues",
-                "source": "https://github.com/php-http/discovery/tree/1.18.1"
+                "source": "https://github.com/php-http/discovery/tree/1.19.0"
             },
-            "time": "2023-05-17T08:53:10+00:00"
+            "time": "2023-06-19T08:45:36+00:00"
         },
         {
             "name": "php-http/guzzle7-adapter",
@@ -9910,16 +9910,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.0.5",
+            "version": "v3.0.6.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "4b335cfd6b516992e187ce191793a4d10a2b83d7"
+                "reference": "314062ce55165876ddfd991138d471e553c40ee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/4b335cfd6b516992e187ce191793a4d10a2b83d7",
-                "reference": "4b335cfd6b516992e187ce191793a4d10a2b83d7",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/314062ce55165876ddfd991138d471e553c40ee7",
+                "reference": "314062ce55165876ddfd991138d471e553c40ee7",
                 "shasum": ""
             },
             "require": {
@@ -10006,10 +10006,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.5",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.6",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-06-16T13:33:49+00:00"
+            "time": "2023-06-19T11:50:14+00:00"
         }
     ],
     "packages-dev": [
@@ -12804,7 +12804,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
