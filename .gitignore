@@ -23,6 +23,7 @@
 /files/*
 !files/.gitkeep
 /public/asset
+/public/file
 /composer.phar
 /composer
 ###< wirdesign-communication-ag/wirhub ###
