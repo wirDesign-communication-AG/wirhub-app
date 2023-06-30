@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aef850d705e091d55cd1e3c88f7f7bdc",
+    "content-hash": "e624caaef09301af2d964ec96ae0074d",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.273.7",
+            "version": "3.275.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1d3e7ae37f31dfe1d4e9d9e361fd8e6702074fbe"
+                "reference": "a0dfb094d3f94da2ebc86ed9583e14fdc9000f06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1d3e7ae37f31dfe1d4e9d9e361fd8e6702074fbe",
-                "reference": "1d3e7ae37f31dfe1d4e9d9e361fd8e6702074fbe",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a0dfb094d3f94da2ebc86ed9583e14fdc9000f06",
+                "reference": "a0dfb094d3f94da2ebc86ed9583e14fdc9000f06",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.273.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.275.0"
             },
-            "time": "2023-06-23T18:19:24+00:00"
+            "time": "2023-06-29T19:21:55+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -1003,16 +1003,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.10.0",
+            "version": "2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "b2ec6c2668f6dc514e8bf51257d19c7c19398afe"
+                "reference": "f9d59c90b6f525dfc2a2064a695cb56e0ab40311"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/b2ec6c2668f6dc514e8bf51257d19c7c19398afe",
-                "reference": "b2ec6c2668f6dc514e8bf51257d19c7c19398afe",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/f9d59c90b6f525dfc2a2064a695cb56e0ab40311",
+                "reference": "f9d59c90b6f525dfc2a2064a695cb56e0ab40311",
                 "shasum": ""
             },
             "require": {
@@ -1099,7 +1099,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.10.0"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.10.1"
             },
             "funding": [
                 {
@@ -1115,7 +1115,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-05T14:43:41+00:00"
+            "time": "2023-06-28T07:47:41+00:00"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -3256,16 +3256,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "1.100.0",
+            "version": "1.101.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "1e2d24e4702180962938de89ee7e7e0c24bca3a9"
+                "reference": "71a41f6a6673e0a839fc940bc4cb7befebad6328"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/1e2d24e4702180962938de89ee7e7e0c24bca3a9",
-                "reference": "1e2d24e4702180962938de89ee7e7e0c24bca3a9",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/71a41f6a6673e0a839fc940bc4cb7befebad6328",
+                "reference": "71a41f6a6673e0a839fc940bc4cb7befebad6328",
                 "shasum": ""
             },
             "require": {
@@ -3302,9 +3302,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.100.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.101.0"
             },
-            "time": "2023-06-21T09:58:03+00:00"
+            "time": "2023-06-29T14:38:52+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4797,16 +4797,16 @@
         },
         {
             "name": "stof/doctrine-extensions-bundle",
-            "version": "v1.7.1",
+            "version": "v1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
-                "reference": "fa650e60e174afa06c09e28a54fb1854af04c7fe"
+                "reference": "5cfabc774ee0df1904b10cd03ceb39d993bb61bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/fa650e60e174afa06c09e28a54fb1854af04c7fe",
-                "reference": "fa650e60e174afa06c09e28a54fb1854af04c7fe",
+                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/5cfabc774ee0df1904b10cd03ceb39d993bb61bd",
+                "reference": "5cfabc774ee0df1904b10cd03ceb39d993bb61bd",
                 "shasum": ""
             },
             "require": {
@@ -4865,9 +4865,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stof/StofDoctrineExtensionsBundle/issues",
-                "source": "https://github.com/stof/StofDoctrineExtensionsBundle/tree/v1.7.1"
+                "source": "https://github.com/stof/StofDoctrineExtensionsBundle/tree/v1.7.2"
             },
-            "time": "2022-09-30T11:52:24+00:00"
+            "time": "2023-05-22T18:25:15+00:00"
         },
         {
             "name": "symfony/apache-pack",
@@ -9914,12 +9914,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "e49bb1cdf5fb1fd385d0e6506da95b55432b5407"
+                "reference": "02a0129357811a9d9348e335345489c24df05053"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/e49bb1cdf5fb1fd385d0e6506da95b55432b5407",
-                "reference": "e49bb1cdf5fb1fd385d0e6506da95b55432b5407",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/02a0129357811a9d9348e335345489c24df05053",
+                "reference": "02a0129357811a9d9348e335345489c24df05053",
                 "shasum": ""
             },
             "require": {
@@ -10009,7 +10009,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.6",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-06-26T12:32:44+00:00"
+            "time": "2023-06-30T10:55:09+00:00"
         }
     ],
     "packages-dev": [
@@ -12804,9 +12804,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
