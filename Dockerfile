@@ -32,7 +32,9 @@ RUN apt -y install software-properties-common apache2 libapache2-mod-fcgid && \
     libmagickcore-6.q16-6 \
     libmagickcore-6.q16-6-extra \
     inkscape \
-    libapache2-mod-php8.1
+    libapache2-mod-php8.1 \
+    unoconv \
+    libreoffice
 
 
 ## Additional software
