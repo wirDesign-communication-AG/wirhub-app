@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa641f28855087924a6aedda028dbc3e",
+    "content-hash": "2cf0c348f87a8d0fe4d155819709ff1c",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.275.6",
+            "version": "3.275.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a048b1d7110f62fb67cc69b93efc24e62ea8b64b"
+                "reference": "54dcef3349c81b46c0f5f6e54b5f9bfb5db19903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a048b1d7110f62fb67cc69b93efc24e62ea8b64b",
-                "reference": "a048b1d7110f62fb67cc69b93efc24e62ea8b64b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/54dcef3349c81b46c0f5f6e54b5f9bfb5db19903",
+                "reference": "54dcef3349c81b46c0f5f6e54b5f9bfb5db19903",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.275.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.275.7"
             },
-            "time": "2023-07-11T04:45:11+00:00"
+            "time": "2023-07-13T18:21:04+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -9928,16 +9928,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "dev-wip/623",
+            "version": "v3.0.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "436398f0a9e3fe954149228d1644799b57f89817"
+                "reference": "4f46615dfb22fb8b280895d6a5d633b4527f942f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/436398f0a9e3fe954149228d1644799b57f89817",
-                "reference": "436398f0a9e3fe954149228d1644799b57f89817",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/4f46615dfb22fb8b280895d6a5d633b4527f942f",
+                "reference": "4f46615dfb22fb8b280895d6a5d633b4527f942f",
                 "shasum": ""
             },
             "require": {
@@ -10024,10 +10024,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/623",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.7",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-07-11T11:45:58+00:00"
+            "time": "2023-07-14T09:12:33+00:00"
         }
     ],
     "packages-dev": [
