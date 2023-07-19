@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.275.7",
+            "version": "3.275.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "54dcef3349c81b46c0f5f6e54b5f9bfb5db19903"
+                "reference": "1ef08ba5109591751257ad1eaa52c2e2fbd53cf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/54dcef3349c81b46c0f5f6e54b5f9bfb5db19903",
-                "reference": "54dcef3349c81b46c0f5f6e54b5f9bfb5db19903",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1ef08ba5109591751257ad1eaa52c2e2fbd53cf1",
+                "reference": "1ef08ba5109591751257ad1eaa52c2e2fbd53cf1",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.275.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.275.9"
             },
-            "time": "2023-07-13T18:21:04+00:00"
+            "time": "2023-07-18T18:20:13+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -3273,16 +3273,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "1.102.0",
+            "version": "1.103.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "4b450b06ac9df3868bbdbddb31bfcc4595f643bc"
+                "reference": "6e325c22145dbed4e51970ffecca4d7648c3c27e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/4b450b06ac9df3868bbdbddb31bfcc4595f643bc",
-                "reference": "4b450b06ac9df3868bbdbddb31bfcc4595f643bc",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/6e325c22145dbed4e51970ffecca4d7648c3c27e",
+                "reference": "6e325c22145dbed4e51970ffecca4d7648c3c27e",
                 "shasum": ""
             },
             "require": {
@@ -3319,9 +3319,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.102.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.103.0"
             },
-            "time": "2023-07-05T13:07:19+00:00"
+            "time": "2023-07-19T03:27:15+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -9932,12 +9932,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "4f46615dfb22fb8b280895d6a5d633b4527f942f"
+                "reference": "0b03290d6b9e8b83dfc2830a7b5f8c0915444a54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/4f46615dfb22fb8b280895d6a5d633b4527f942f",
-                "reference": "4f46615dfb22fb8b280895d6a5d633b4527f942f",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/0b03290d6b9e8b83dfc2830a7b5f8c0915444a54",
+                "reference": "0b03290d6b9e8b83dfc2830a7b5f8c0915444a54",
                 "shasum": ""
             },
             "require": {
@@ -10027,7 +10027,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.7",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-07-14T09:12:33+00:00"
+            "time": "2023-07-18T11:27:35+00:00"
         }
     ],
     "packages-dev": [
