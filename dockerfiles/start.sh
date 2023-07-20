@@ -7,19 +7,19 @@ service cron start
 
 # TODO: implement command to wait for successful mysql connection
 
-# trigger the setup (register users etc)
-echo "--"
-echo "--"
-echo "--"
-echo "--call app:setup"
-php bin/console app:setup
-
 # initialize the project
 echo "--"
 echo "--"
 echo "--"
 echo "--call make init"
 make init
+
+# trigger the setup (register users etc)
+echo "--"
+echo "--"
+echo "--"
+echo "--call app:setup"
+php bin/console app:setup
 
 # # this will make it run indefinitely
 # apachectl -D FOREGROUND
