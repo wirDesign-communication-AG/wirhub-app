@@ -48,8 +48,8 @@ RUN cd /root && \
 ## Configuration
 
 ### Increase upload limits by replacing the default values
-RUN sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 64M/g' /etc/php/8.1/apache2/php.ini
-RUN sed -i 's/post_max_size = 8M/post_max_size = 64M/g' /etc/php/8.1/apache2/php.ini
+RUN sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 64M/g' /etc/php/8.2/apache2/php.ini
+RUN sed -i 's/post_max_size = 8M/post_max_size = 64M/g' /etc/php/8.2/apache2/php.ini
 
 
 
