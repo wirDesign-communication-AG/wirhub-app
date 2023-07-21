@@ -4,10 +4,10 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=nonintercative
 
 # Basic packages
-RUN apt update && apt -y upgrade && apt -y install apt-transport-https make wget zip unzip lsb-release git
+RUN apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https make wget zip unzip lsb-release git
 
 # Advanced packages + apache2
-RUN apt -y install software-properties-common apache2 libapache2-mod-fcgid && \
+RUN apt -q -y install software-properties-common apache2 libapache2-mod-fcgid && \
     a2enmod rewrite actions fcgid alias proxy_fcgi && \
     add-apt-repository ppa:ondrej/php && \
     apt-get update && \
