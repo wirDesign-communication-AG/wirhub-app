@@ -4,7 +4,7 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=nonintercative
 
 # Basic packages
-RUN apt update && apt -y upgrade && apt -y install apt-transport-https wget zip unzip lsb-release git
+RUN apt update && apt -y upgrade && apt -y install apt-transport-https make wget zip unzip lsb-release git
 
 # Advanced packages + apache2
 RUN apt -y install software-properties-common apache2 libapache2-mod-fcgid && \
@@ -12,27 +12,27 @@ RUN apt -y install software-properties-common apache2 libapache2-mod-fcgid && \
     add-apt-repository ppa:ondrej/php && \
     apt-get update && \
     apt install -y \
-    php8.1 \
-    php8.1-zip \
-    php8.1-imagick \
-    php8.1-gd \
-    php8.1-intl \
-    php8.1-bcmath \
-    php8.1-curl \
-    php8.1-mbstring \
-    php8.1-mysql \
-    php8.1-cli \
-    php8.1-cgi \
-    php8.1-xml \
-    php8.1-xml \
-    php8.1-gd \
+    php8.2 \
+    php8.2-zip \
+    php8.2-imagick \
+    php8.2-gd \
+    php8.2-intl \
+    php8.2-bcmath \
+    php8.2-curl \
+    php8.2-mbstring \
+    php8.2-mysql \
+    php8.2-cli \
+    php8.2-cgi \
+    php8.2-xml \
+    php8.2-xml \
+    php8.2-gd \
     imagemagick-6.q16 \
     libxml2 \
     librsvg2-bin \
     libmagickcore-6.q16-6 \
     libmagickcore-6.q16-6-extra \
     inkscape \
-    libapache2-mod-php8.1 \
+    libapache2-mod-php8.2 \
     unoconv \
     libreoffice
 
