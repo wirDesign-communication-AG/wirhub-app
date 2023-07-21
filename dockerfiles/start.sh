@@ -9,17 +9,24 @@ service cron start
 
 # initialize the project
 echo "--"
-echo "--"
-echo "--"
-echo "--call make init"
-make init
+echo "-- Update envs"
+COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
 
-# trigger the setup (register users etc)
 echo "--"
+echo "-- Migrations"
+php bin/console doctrine:migrations:migrate --no-interaction
+
 echo "--"
+echo "-- Refresh theme"
+php bin/console app:theme:refresh
+
 echo "--"
-echo "--call app:setup"
+echo "-- Setup spaces and users"
 php bin/console app:setup
+
+echo "--"
+echo "-- Update database to latest update"
+php bin/console app:update
 
 # # this will make it run indefinitely
 # apachectl -D FOREGROUND
