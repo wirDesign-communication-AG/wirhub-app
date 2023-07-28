@@ -28,6 +28,13 @@ echo "--"
 echo "-- Update database to latest update"
 php bin/console app:update
 
+
+echo "--"
+echo "-- Hand over directories to webserver"
+chown -R www-data:www-data public/
+chown -R www-data:www-data var/
+chown -R www-data:www-data files/
+
 # # this will make it run indefinitely
 # apachectl -D FOREGROUND
 tail -f /var/log/apache2/error.log
