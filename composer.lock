@@ -9928,16 +9928,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.0.7",
+            "version": "3.0.7.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "587a1f9ac30245fdb26e4d5892c9e6138ec2d5e1"
+                "reference": "3de8d7122a3d51f503f1f1b9f5cb7b440eb05473"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/587a1f9ac30245fdb26e4d5892c9e6138ec2d5e1",
-                "reference": "587a1f9ac30245fdb26e4d5892c9e6138ec2d5e1",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/3de8d7122a3d51f503f1f1b9f5cb7b440eb05473",
+                "reference": "3de8d7122a3d51f503f1f1b9f5cb7b440eb05473",
                 "shasum": ""
             },
             "require": {
@@ -10024,10 +10024,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.7",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.7.5",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-07-19T12:13:37+00:00"
+            "time": "2023-07-31T13:45:34+00:00"
         }
     ],
     "packages-dev": [
