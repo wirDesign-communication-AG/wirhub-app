@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=nonintercative
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 # Packages
-RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https make wget zip unzip lsb-release cron git software-properties-common apache2 libapache2-mod-fcgid && \
+RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https make wget zip unzip lsb-release cron git vim software-properties-common apache2 libapache2-mod-fcgid && \
     a2enmod rewrite actions fcgid alias proxy_fcgi && \
     add-apt-repository ppa:ondrej/php && \
     apt-get update && \
