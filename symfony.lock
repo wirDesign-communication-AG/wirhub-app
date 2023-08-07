@@ -12,12 +12,12 @@
         }
     },
     "doctrine/doctrine-bundle": {
-        "version": "2.9",
+        "version": "2.10",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
-            "version": "2.8",
-            "ref": "6b43b7b6ff6bf2551f2933ebeb66721fa3db8fbc"
+            "version": "2.10",
+            "ref": "e025a6cb69b195970543820b2f18ad21724473fa"
         },
         "files": [
             "config/packages/doctrine.yaml",
@@ -125,8 +125,8 @@
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
-            "version": "9.3",
-            "ref": "a6249a6c4392e9169b87abf93225f7f9f59025e6"
+            "version": "9.6",
+            "ref": "7364a21d87e658eb363c5020c072ecfdc12e2326"
         },
         "files": [
             ".env.test",
@@ -259,21 +259,21 @@
         ]
     },
     "symfony/panther": {
-        "version": "2.0",
+        "version": "2.1",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
             "version": "1.0",
-            "ref": "877d853a05c6713665a2f4b954734592680abff6"
+            "ref": "292a3236e81f55b545b09b9954ab097248972ab3"
         }
     },
     "symfony/phpunit-bridge": {
-        "version": "6.2",
+        "version": "6.3",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
-            "version": "5.3",
-            "ref": "819d3d2ffa4590eba0b8f4f3e5e89415ee4e45c3"
+            "version": "6.3",
+            "ref": "01dfaa98c58f7a7b5a9b30e6edb7074af7ed9819"
         },
         "files": [
             ".env.test",
@@ -359,7 +359,7 @@
         ]
     },
     "twig/extra-bundle": {
-        "version": "v3.5.1"
+        "version": "v3.7.0"
     },
     "wirdesign-communication-ag/wirhub": {
         "version": "3.0",
@@ -367,12 +367,18 @@
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
             "version": "3.0",
-            "ref": "a906fa0d3b92d4b2a5738b42452db09e70267114"
+            "ref": "0d2e77b7eef0439d2e839dd7b46ce3fc4cf023fa"
         },
         "files": [
             ".github/workflows/ci.yaml",
             "config/packages/wirhub_bundle.yaml",
             "config/routes/wirhub_bundle.yaml",
+            "templates/bundles/TwigBundle/Exception/error404.html.twig",
+            "templates/bundles/TwigBundle/Exception/error500.html.twig",
+            "templates/bundles/TwigBundle/Exception/error501.html.twig",
+            "templates/bundles/TwigBundle/Exception/error502.html.twig",
+            "templates/bundles/TwigBundle/Exception/error503.html.twig",
+            "templates/bundles/TwigBundle/Exception/error504.html.twig",
             ".env.test",
             "Makefile",
             "phpstan.neon",
