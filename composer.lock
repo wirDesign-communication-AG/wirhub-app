@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b02c77d8c68e7703a0d7713c57fc4ee0",
+    "content-hash": "462539f78c249737e611962e15fbc619",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.277.9",
+            "version": "3.278.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f2437a755b70756425bf8f1bd588a7c583891900"
+                "reference": "ed7cba5c8888421b89cdb3561dcd5e40e4bd4395"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f2437a755b70756425bf8f1bd588a7c583891900",
-                "reference": "f2437a755b70756425bf8f1bd588a7c583891900",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ed7cba5c8888421b89cdb3561dcd5e40e4bd4395",
+                "reference": "ed7cba5c8888421b89cdb3561dcd5e40e4bd4395",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.277.9"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.278.1"
             },
-            "time": "2023-08-04T18:16:19+00:00"
+            "time": "2023-08-11T18:07:09+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -1003,16 +1003,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.10.1",
+            "version": "2.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "f9d59c90b6f525dfc2a2064a695cb56e0ab40311"
+                "reference": "f28b1f78de3a2938ff05cfe751233097624cc756"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/f9d59c90b6f525dfc2a2064a695cb56e0ab40311",
-                "reference": "f9d59c90b6f525dfc2a2064a695cb56e0ab40311",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/f28b1f78de3a2938ff05cfe751233097624cc756",
+                "reference": "f28b1f78de3a2938ff05cfe751233097624cc756",
                 "shasum": ""
             },
             "require": {
@@ -1099,7 +1099,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.10.1"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.10.2"
             },
             "funding": [
                 {
@@ -1115,7 +1115,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-28T07:47:41+00:00"
+            "time": "2023-08-06T09:31:40+00:00"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -1636,16 +1636,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.16.0",
+            "version": "2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "495cd06b9a630f9c38a21ceb249ed008edbe8414"
+                "reference": "597a63a86ca8c5f9d1ec2dc74fe3d1269d43434a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/495cd06b9a630f9c38a21ceb249ed008edbe8414",
-                "reference": "495cd06b9a630f9c38a21ceb249ed008edbe8414",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/597a63a86ca8c5f9d1ec2dc74fe3d1269d43434a",
+                "reference": "597a63a86ca8c5f9d1ec2dc74fe3d1269d43434a",
                 "shasum": ""
             },
             "require": {
@@ -1674,14 +1674,14 @@
                 "doctrine/annotations": "^1.13 || ^2",
                 "doctrine/coding-standard": "^9.0.2 || ^12.0",
                 "phpbench/phpbench": "^0.16.10 || ^1.0",
-                "phpstan/phpstan": "~1.4.10 || 1.10.25",
+                "phpstan/phpstan": "~1.4.10 || 1.10.28",
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6",
                 "psr/log": "^1 || ^2 || ^3",
                 "squizlabs/php_codesniffer": "3.7.2",
                 "symfony/cache": "^4.4 || ^5.4 || ^6.0",
                 "symfony/var-exporter": "^4.4 || ^5.4 || ^6.2",
                 "symfony/yaml": "^3.4 || ^4.0 || ^5.0 || ^6.0",
-                "vimeo/psalm": "4.30.0 || 5.13.1"
+                "vimeo/psalm": "4.30.0 || 5.14.1"
             },
             "suggest": {
                 "ext-dom": "Provides support for XSD validation for XML mapping files",
@@ -1731,9 +1731,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.16.0"
+                "source": "https://github.com/doctrine/orm/tree/2.16.1"
             },
-            "time": "2023-08-01T12:07:04+00:00"
+            "time": "2023-08-09T13:05:08+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -3273,16 +3273,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "1.103.0",
+            "version": "1.104.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "6e325c22145dbed4e51970ffecca4d7648c3c27e"
+                "reference": "fc2a3549e8efc9501dbf5d55d350882d8d641295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/6e325c22145dbed4e51970ffecca4d7648c3c27e",
-                "reference": "6e325c22145dbed4e51970ffecca4d7648c3c27e",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/fc2a3549e8efc9501dbf5d55d350882d8d641295",
+                "reference": "fc2a3549e8efc9501dbf5d55d350882d8d641295",
                 "shasum": ""
             },
             "require": {
@@ -3319,9 +3319,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.103.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.104.0"
             },
-            "time": "2023-07-19T03:27:15+00:00"
+            "time": "2023-08-11T07:41:39+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -9930,16 +9930,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.0.9.x-dev",
+            "version": "3.0.9",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "d43862f824b038ff38999c202d859d58f7c0fd0b"
+                "reference": "5d2e714dae62e0a07d93eaaddef3da404ddb787d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d43862f824b038ff38999c202d859d58f7c0fd0b",
-                "reference": "d43862f824b038ff38999c202d859d58f7c0fd0b",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/5d2e714dae62e0a07d93eaaddef3da404ddb787d",
+                "reference": "5d2e714dae62e0a07d93eaaddef3da404ddb787d",
                 "shasum": ""
             },
             "require": {
@@ -10029,7 +10029,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.9",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-08-07T13:04:03+00:00"
+            "time": "2023-08-14T11:45:07+00:00"
         }
     ],
     "packages-dev": [
@@ -10468,16 +10468,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.16.0",
+            "version": "v4.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "19526a33fb561ef417e822e85f08a00db4059c17"
+                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/19526a33fb561ef417e822e85f08a00db4059c17",
-                "reference": "19526a33fb561ef417e822e85f08a00db4059c17",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
+                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
                 "shasum": ""
             },
             "require": {
@@ -10518,9 +10518,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.16.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.17.1"
             },
-            "time": "2023-06-25T14:52:30+00:00"
+            "time": "2023-08-13T19:53:39+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -10701,16 +10701,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.27",
+            "version": "1.10.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "a9f44dcea06f59d1363b100bb29f297b311fa640"
+                "reference": "e4545b55904ebef470423d3ddddb74fa7325497a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a9f44dcea06f59d1363b100bb29f297b311fa640",
-                "reference": "a9f44dcea06f59d1363b100bb29f297b311fa640",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e4545b55904ebef470423d3ddddb74fa7325497a",
+                "reference": "e4545b55904ebef470423d3ddddb74fa7325497a",
                 "shasum": ""
             },
             "require": {
@@ -10759,7 +10759,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-05T09:57:55+00:00"
+            "time": "2023-08-08T12:33:42+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -12826,9 +12826,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
