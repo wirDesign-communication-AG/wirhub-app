@@ -40,6 +40,7 @@
     "replace": {
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-mbstring": "*",
         "symfony/polyfill-php72": "*",
         "symfony/polyfill-php73": "*",
         "symfony/polyfill-php74": "*",
@@ -60,6 +61,7 @@
         "ext-ctype": "*",
         "ext-gd": "*",
         "ext-iconv": "*",
+        "ext-mbstring": "*",
         "doctrine/doctrine-bundle": "^2.9",
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^2.14",
@@ -71,7 +73,7 @@
         "symfony/framework-bundle": "6.2.*",
         "symfony/runtime": "6.2.*",
         "symfony/yaml": "6.2.*",
-        "wirdesign-communication-ag/wirhub": "^3.0.9"
+        "wirdesign-communication-ag/wirhub": "^3.0.10"
     },
     "scripts": {
         "auto-scripts": {
