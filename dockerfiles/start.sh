@@ -35,6 +35,15 @@ chown -R www-data:www-data public/
 chown -R www-data:www-data var/
 chown -R www-data:www-data files/
 
+
+if grep -q MAILER_URL=sendmail://default .env.local; then
+  echo "--"
+  echo "-- Installing postfix"
+  apt install -y postfix
+  sed -i 's/inet_interfaces = all/inet_interfaces = loopback-only/' /etc/postfix/main.cf
+  postfix reload
+fi
+
 # # this will make it run indefinitely
 # apachectl -D FOREGROUND
 tail -f /var/log/apache2/error.log
