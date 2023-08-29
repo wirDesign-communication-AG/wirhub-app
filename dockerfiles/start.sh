@@ -41,7 +41,8 @@ if grep -q MAILER_URL=sendmail://default .env.local; then
   echo "-- Installing postfix"
   apt install -y postfix
   sed -i 's/inet_interfaces = all/inet_interfaces = loopback-only/' /etc/postfix/main.cf
-  postfix reload
+  cp /etc/resolv.conf /var/spool/postfix/etc/resolv.conf
+  postfix start
 fi
 
 # # this will make it run indefinitely
