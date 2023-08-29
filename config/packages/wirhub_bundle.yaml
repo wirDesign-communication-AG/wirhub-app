@@ -72,7 +72,6 @@ httplug:
                 verify: "%env(bool:OAUTH_VERIFY_SSL)%"
 
 hwi_oauth:
-    firewall_name: main
     connect:
         confirmation: false
     resource_owners:
