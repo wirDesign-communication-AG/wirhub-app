@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.279.8",
+            "version": "3.280.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "47a454538ec6bf38cf658cf5573585c64915691a"
+                "reference": "2b2bb8cc5be21e252fb5803d229f1d7fbbec0222"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/47a454538ec6bf38cf658cf5573585c64915691a",
-                "reference": "47a454538ec6bf38cf658cf5573585c64915691a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2b2bb8cc5be21e252fb5803d229f1d7fbbec0222",
+                "reference": "2b2bb8cc5be21e252fb5803d229f1d7fbbec0222",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.279.8"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.280.1"
             },
-            "time": "2023-08-28T18:14:34+00:00"
+            "time": "2023-08-31T18:56:31+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -3771,16 +3771,16 @@
         },
         {
             "name": "php-http/httplug-bundle",
-            "version": "1.29.1",
+            "version": "1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/HttplugBundle.git",
-                "reference": "7c638710c3d4d4fe14de9e28e9a98c073a289cea"
+                "reference": "a36919772e929586e5c7f7f06d7b5249d64685fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/HttplugBundle/zipball/7c638710c3d4d4fe14de9e28e9a98c073a289cea",
-                "reference": "7c638710c3d4d4fe14de9e28e9a98c073a289cea",
+                "url": "https://api.github.com/repos/php-http/HttplugBundle/zipball/a36919772e929586e5c7f7f06d7b5249d64685fd",
+                "reference": "a36919772e929586e5c7f7f06d7b5249d64685fd",
                 "shasum": ""
             },
             "require": {
@@ -3866,9 +3866,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/HttplugBundle/issues",
-                "source": "https://github.com/php-http/HttplugBundle/tree/1.29.1"
+                "source": "https://github.com/php-http/HttplugBundle/tree/1.30.0"
             },
-            "time": "2023-06-01T08:55:47+00:00"
+            "time": "2023-08-31T12:40:51+00:00"
         },
         {
             "name": "php-http/logger-plugin",
@@ -9916,12 +9916,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "ca3322d0c1397f2598834d1384d1ca736516b6eb"
+                "reference": "b4e48f97cc5edd2bc2566ac603155cb88b7a840f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/ca3322d0c1397f2598834d1384d1ca736516b6eb",
-                "reference": "ca3322d0c1397f2598834d1384d1ca736516b6eb",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/b4e48f97cc5edd2bc2566ac603155cb88b7a840f",
+                "reference": "b4e48f97cc5edd2bc2566ac603155cb88b7a840f",
                 "shasum": ""
             },
             "require": {
@@ -10011,7 +10011,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.11",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-08-29T13:00:59+00:00"
+            "time": "2023-09-01T11:25:31+00:00"
         }
     ],
     "packages-dev": [
@@ -10617,16 +10617,16 @@
         },
         {
             "name": "php-webdriver/webdriver",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-webdriver/php-webdriver.git",
-                "reference": "3ea4f924afb43056bf9c630509e657d951608563"
+                "reference": "a1578689290055586f1ee51eaf0ec9d52895bb6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-webdriver/php-webdriver/zipball/3ea4f924afb43056bf9c630509e657d951608563",
-                "reference": "3ea4f924afb43056bf9c630509e657d951608563",
+                "url": "https://api.github.com/repos/php-webdriver/php-webdriver/zipball/a1578689290055586f1ee51eaf0ec9d52895bb6d",
+                "reference": "a1578689290055586f1ee51eaf0ec9d52895bb6d",
                 "shasum": ""
             },
             "require": {
@@ -10677,9 +10677,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-webdriver/php-webdriver/issues",
-                "source": "https://github.com/php-webdriver/php-webdriver/tree/1.14.0"
+                "source": "https://github.com/php-webdriver/php-webdriver/tree/1.15.0"
             },
-            "time": "2023-02-09T12:12:19+00:00"
+            "time": "2023-08-29T13:52:26+00:00"
         },
         {
             "name": "phpstan/phpstan",
