@@ -27,6 +27,10 @@ when@test:
             public: true
             alias: .debug.http_client
 
+    liip_test_fixtures:
+        cache_db:
+            sqlite: 'Liip\TestFixturesBundle\Services\DatabaseBackup\SqliteDatabaseBackup'
+
 doctrine:
     orm:
         entity_managers:
@@ -158,7 +162,7 @@ security:
                 login_path: /login
                 success_handler: AppBundle\Security\RedirectAfterLoginHandler
             logout:
-               path: app_user_security_logout
+                path: app_user_security_logout
             provider: app
             oauth:
                 resource_owners:

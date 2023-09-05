@@ -60,6 +60,6 @@ jobs:
                         .env.local.php
                         vendor/wirdesign-communication-ag/wirhub/build/debug/*
                         var/cache/test/*.log
-                        var/cache/wdc-styleguide.db
                         var/log/*.log
+                        ~/var/cache/wdc-styleguide.db
                         ~/.symfony5/log/*.log
