@@ -9916,12 +9916,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "d3a28b275b65ae453588953ce28dd5496be1af95"
+                "reference": "37585afbc4c92f35b8c1a4fd38fb43f100398b75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d3a28b275b65ae453588953ce28dd5496be1af95",
-                "reference": "d3a28b275b65ae453588953ce28dd5496be1af95",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/37585afbc4c92f35b8c1a4fd38fb43f100398b75",
+                "reference": "37585afbc4c92f35b8c1a4fd38fb43f100398b75",
                 "shasum": ""
             },
             "require": {
@@ -9985,7 +9985,7 @@
                 "twig/twig": "^3.3.0"
             },
             "require-dev": {
-                "doctrine/doctrine-fixtures-bundle": "^3.2",
+                "doctrine/doctrine-fixtures-bundle": "^3.4",
                 "ext-sqlite3": "*",
                 "phpstan/phpstan": "^1.8.5"
             },
@@ -10011,7 +10011,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.11",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-09-05T11:52:46+00:00"
+            "time": "2023-09-05T13:20:56+00:00"
         }
     ],
     "packages-dev": [
