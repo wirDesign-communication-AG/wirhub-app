@@ -3,12 +3,6 @@ name: Docker CI publish package
 on:
     push:
         tags: [ 'v*.*.*', 'v*.*.*.*' ]
-    pull_request:
-        paths:
-            - '.github/workflows/docker.yaml'
-            - 'dockerfiles/*.sh'
-            - 'docker-compose.yaml'
-            - 'Dockerfile'
 
 env:
     # Use docker.io for Docker Hub if empty
