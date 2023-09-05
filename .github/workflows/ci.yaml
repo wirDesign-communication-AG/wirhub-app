@@ -61,4 +61,5 @@ jobs:
                         vendor/wirdesign-communication-ag/wirhub/build/debug/*
                         var/cache/test/*.log
                         var/cache/wdc-styleguide.db
+                        var/log/*.log
                         ~/.symfony5/log/*.log
