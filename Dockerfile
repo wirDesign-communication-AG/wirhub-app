@@ -6,12 +6,13 @@ ENV DEBIAN_FRONTEND=nonintercative
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 # Packages
-RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https make wget zip unzip lsb-release cron git vim software-properties-common apache2 libapache2-mod-fcgid && \
-    a2enmod rewrite actions fcgid alias proxy_fcgi && \
+RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https make wget zip unzip cron git vim software-properties-common apache2 && \
+    a2enmod rewrite && \
     add-apt-repository ppa:ondrej/php && \
     apt-get update && \
     apt install -y \
     php8.2 \
+    php8.2-common \
     php8.2-zip \
     php8.2-imagick \
     php8.2-gd \
@@ -33,7 +34,8 @@ RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https
     inkscape \
     libapache2-mod-php8.2 \
     unoconv \
-    libreoffice
+    libreoffice \
+    ghostscript
 
 
 ## Additional software
@@ -46,6 +48,9 @@ RUN cd /root && \
 
 ## Configuration
 
+### Imagick
+RUN sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/g' /etc/ImageMagick-6/policy.xml
+
 ### PHP
 RUN sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 64M/g' /etc/php/8.2/apache2/php.ini
 RUN sed -i 's/post_max_size = 8M/post_max_size = 64M/g' /etc/php/8.2/apache2/php.ini
@@ -55,9 +60,6 @@ RUN sed -i 's/;date.timezone =/date.timezone = Europe\/Berlin/g' /etc/php/8.2/ap
 # vorerst die alte 00-default.conf löschen und ersetzen. so funktionert es ohne https
 RUN rm /etc/apache2/sites-available/000-default.conf
 COPY dockerfiles/virtual_hosts /etc/apache2/sites-available
-
-# important. otherwise the setup apache2 will throw an error:
-RUN echo 'ServerName localhost' >> /etc/apache2/apache2.conf
 
 ### Configure Webserver
 RUN  echo "<h1>Apache server started: cd /var/www/html/index.html</h1>" > /var/www/html/index.html
