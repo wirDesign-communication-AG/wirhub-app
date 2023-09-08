@@ -74,7 +74,7 @@
         "symfony/framework-bundle": "6.3.*",
         "symfony/runtime": "6.3.*",
         "symfony/yaml": "6.3.*",
-        "wirdesign-communication-ag/wirhub": "v3.0.11.x-dev"
+        "wirdesign-communication-ag/wirhub": "^v3.0.11"
     },
     "scripts": {
         "auto-scripts": {
