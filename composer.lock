@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.281.2",
+            "version": "3.281.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5b33690b4ebc32a75164be0d6805d393a3ca9df9"
+                "reference": "a3cfb20dbfb11117b7174b2594fc597745252e0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5b33690b4ebc32a75164be0d6805d393a3ca9df9",
-                "reference": "5b33690b4ebc32a75164be0d6805d393a3ca9df9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a3cfb20dbfb11117b7174b2594fc597745252e0c",
+                "reference": "a3cfb20dbfb11117b7174b2594fc597745252e0c",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.281.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.281.3"
             },
-            "time": "2023-09-07T18:06:59+00:00"
+            "time": "2023-09-08T18:06:26+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -9916,12 +9916,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "a99e465a432016624d2a609a3fceec3f8f87a545"
+                "reference": "646031f32021b33289fb360486822da4364db464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/a99e465a432016624d2a609a3fceec3f8f87a545",
-                "reference": "a99e465a432016624d2a609a3fceec3f8f87a545",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/646031f32021b33289fb360486822da4364db464",
+                "reference": "646031f32021b33289fb360486822da4364db464",
                 "shasum": ""
             },
             "require": {
@@ -10011,7 +10011,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.11",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-09-08T13:48:36+00:00"
+            "time": "2023-09-11T08:41:53+00:00"
         }
     ],
     "packages-dev": [
