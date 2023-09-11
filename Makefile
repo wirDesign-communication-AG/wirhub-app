@@ -30,6 +30,6 @@ test:
 	vendor/bin/phpstan analyse -c phpstan.neon
 	APP_ENV=test php bin/console app:test
 	APP_ENV=test php bin/console doctrine:database:create
-	APP_ENV=test php bin/console doctrine:schema:update --force
+	APP_ENV=test php bin/console doctrine:schema:update --force --complete
 	APP_ENV=test php bin/console app:theme:refresh
 	php bin/phpunit

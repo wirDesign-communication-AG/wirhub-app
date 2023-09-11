@@ -14,7 +14,7 @@ jobs:
             -   name: Install extensions
                 uses: shivammathur/setup-php@v2
                 with:
-                    php-version: '8.1'
+                    php-version: '8.2'
                     extensions: imagick, sqlite3
                     ini-values: error_log=/home/runner/.symfony5/log/php.log
 
@@ -29,14 +29,20 @@ jobs:
                     composer --version
                     echo "---------------------------"
 
+            -   name: Install Symfony Server
+                run: wget https://get.symfony.com/cli/installer -O - | bash
+
             -   name: Install dependencies
                 run: APP_ENV=test composer install --prefer-dist --no-progress
 
             -   name: Dump environment
                 run: APP_ENV=test composer dump-env test
 
-            -   name: Install Symfony Server
-                run: wget https://get.symfony.com/cli/installer -O - | bash
+            -   name: Clear cache
+                run: APP_ENV=test php bin/console cache:clear
+
+            -   name: Recreate assets
+                run: APP_ENV=test php bin/console assets:install public/
 
             -   name: Start Server
                 run: APP_ENV=test /home/runner/.symfony5/bin/symfony server:start -d --no-tls
@@ -54,5 +60,6 @@ jobs:
                         .env.local.php
                         vendor/wirdesign-communication-ag/wirhub/build/debug/*
                         var/cache/test/*.log
-                        var/cache/wdc-styleguide.db
+                        var/log/*.log
+                        ~/var/cache/wdc-styleguide.db
                         ~/.symfony5/log/*.log

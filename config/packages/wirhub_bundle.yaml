@@ -27,6 +27,11 @@ when@test:
             public: true
             alias: .debug.http_client
 
+    liip_test_fixtures:
+        cache_db:
+            sqlite: 'Liip\TestFixturesBundle\Services\DatabaseBackup\SqliteDatabaseBackup'
+        keep_database_and_schema: true
+
 doctrine:
     orm:
         entity_managers:
@@ -72,24 +77,25 @@ httplug:
                 verify: "%env(bool:OAUTH_VERIFY_SSL)%"
 
 hwi_oauth:
-    firewall_name: main
     connect:
         confirmation: false
     resource_owners:
-        oauth:
-            type: oauth2
+        openid:
             class: AppBundle\Security\OAuth2ResourceOwner
-            client_id: '%env(OAUTH_CUSTOM_CLIENT_ID)%'
-            client_secret: '%env(OAUTH_CUSTOM_CLIENT_SECRET)%'
-            access_token_url: '%env(OAUTH_CUSTOM_URL_ACCESS_TOKEN)%'
-            authorization_url: '%env(OAUTH_CUSTOM_URL_AUTHORIZATION)%'
-            infos_url: '%env(OAUTH_CUSTOM_URL_INFOS)%'
-            scope: 'user:email'
+            client_id: '%env(OAUTH_OPENID_CLIENT_ID)%'
+            client_secret: '%env(OAUTH_OPENID_CLIENT_SECRET)%'
+            access_token_url: '%env(OAUTH_OPENID_URL_ACCESS_TOKEN)%'
+            authorization_url: '%env(OAUTH_OPENID_URL_AUTHORIZATION)%'
+            infos_url: '%env(OAUTH_OPENID_URL_INFOS)%'
+            scope: '%env(OAUTH_OPENID_SCOPE)%'
             user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
             paths:
-                identifier: id
-                nickname: username
-                realname: displayname
+                identifier: sub
+                nickname: email
+                email: email
+                realname: [ "given_name", "family_name" ]
+                firstname: given_name
+                lastname: family_name
         azure:
             type: azure
             client_id: '%env(OAUTH_AZURE_CLIENT_ID)%'
@@ -100,7 +106,6 @@ hwi_oauth:
             options:
                 application: common
         okta:
-            type: oauth2
             class: AppBundle\Security\OAuth2ResourceOwner
             client_id: '%env(OAUTH_OKTA_CLIENT_ID)%'
             client_secret: '%env(OAUTH_OKTA_CLIENT_SECRET)%'
@@ -158,11 +163,11 @@ security:
                 login_path: /login
                 success_handler: AppBundle\Security\RedirectAfterLoginHandler
             logout:
-               path: app_user_security_logout
+                path: app_user_security_logout
             provider: app
             oauth:
                 resource_owners:
-                    oauth: '/login/check-oauth'
+                    openid: '/login/check-openid'
                     azure: '/login/check-azure'
                     okta: '/login/check-okta'
                 login_path: /login
@@ -173,9 +178,9 @@ security:
             pattern: ^/login$
             security: false
     access_control:
-        - { path: ^/, roles: PUBLIC_ACCESS }
         - { path: ^/settings, role: ROLE_EDITOR }
         - { path: ^/admin, role: ROLE_ADMIN }
+        - { path: ^/, roles: PUBLIC_ACCESS }
 
 stof_doctrine_extensions:
     orm:
