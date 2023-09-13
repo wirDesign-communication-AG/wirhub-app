@@ -24,10 +24,15 @@ ifeq ($(shell id -u), 0)
 endif
 
 test:
+	echo "--------------------------------"
 	google-chrome --version
+	echo "--------------------------------"
 	chromedriver --version
+	echo "--------------------------------"
 	php --version
+	echo "--------------------------------"
 	composer --version
+	echo "--------------------------------"
 	APP_ENV=test php bin/console lint:twig templates/ vendor/wirdesign-communication-ag/wirhub/
 	APP_ENV=test php bin/console lint:yaml config/ vendor/wirdesign-communication-ag/wirhub/Resources/config/
 	APP_ENV=test php bin/console lint:container
@@ -36,4 +41,5 @@ test:
 	APP_ENV=test php bin/console doctrine:database:create
 	APP_ENV=test php bin/console doctrine:schema:update --force --complete
 	APP_ENV=test php bin/console app:theme:refresh
+	echo "--------------------------------"
 	php bin/phpunit
