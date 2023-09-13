@@ -28,6 +28,8 @@ jobs:
                     echo "---------------------------"
                     composer --version
                     echo "---------------------------"
+                    chromedriver --version
+                    echo "---------------------------"
 
             -   name: Install Symfony Server
                 run: wget https://get.symfony.com/cli/installer -O - | bash
