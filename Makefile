@@ -27,10 +27,14 @@ test:
 	@echo "--------------------------------------"
 	@echo "------------ Log versions ------------"
 	@echo "--------------------------------------"
-	google-chrome --version
-	chromedriver --version
-	php --version
-	composer --version
+	@google-chrome --version
+	@echo "---"
+	@chromedriver --version
+	@echo "---"
+	@php --version
+	@echo "---"
+	@composer --version
+	@echo "---"
 	@echo ""
 	@echo ""
 	@echo "--------------------------------------"
