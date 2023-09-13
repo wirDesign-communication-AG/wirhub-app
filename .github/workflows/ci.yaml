@@ -18,19 +18,6 @@ jobs:
                     extensions: imagick, sqlite3
                     ini-values: error_log=/home/runner/.symfony5/log/php.log
 
-            -   name: Log some versions
-                run: |
-                    echo ""
-                    echo "---------------------------"
-                    google-chrome --version
-                    echo "---------------------------"
-                    php --version
-                    echo "---------------------------"
-                    composer --version
-                    echo "---------------------------"
-                    chromedriver --version
-                    echo "---------------------------"
-
             -   name: Install Symfony Server
                 run: wget https://get.symfony.com/cli/installer -O - | bash
 

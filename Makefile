@@ -24,6 +24,10 @@ ifeq ($(shell id -u), 0)
 endif
 
 test:
+	google-chrome --version
+	chromedriver --version
+	php --version
+	composer --version
 	APP_ENV=test php bin/console lint:twig templates/ vendor/wirdesign-communication-ag/wirhub/
 	APP_ENV=test php bin/console lint:yaml config/ vendor/wirdesign-communication-ag/wirhub/Resources/config/
 	APP_ENV=test php bin/console lint:container
