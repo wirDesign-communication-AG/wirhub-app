@@ -88,6 +88,7 @@ hwi_oauth:
             authorization_url: '%env(OAUTH_OPENID_URL_AUTHORIZATION)%'
             infos_url: '%env(OAUTH_OPENID_URL_INFOS)%'
             scope: '%env(OAUTH_OPENID_SCOPE)%'
+            use_bearer_authorization: true
             user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
             paths:
                 identifier: sub
