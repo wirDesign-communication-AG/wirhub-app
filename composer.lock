@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.281.8",
+            "version": "3.281.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "eb349b9f31502a05c70362f57913b9fed6b65b1f"
+                "reference": "049604298f769fa218549d8ff5cac1981f0a349a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eb349b9f31502a05c70362f57913b9fed6b65b1f",
-                "reference": "eb349b9f31502a05c70362f57913b9fed6b65b1f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/049604298f769fa218549d8ff5cac1981f0a349a",
+                "reference": "049604298f769fa218549d8ff5cac1981f0a349a",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.281.8"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.281.10"
             },
-            "time": "2023-09-15T18:34:59+00:00"
+            "time": "2023-09-19T18:33:42+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -9916,12 +9916,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "3687105a280f27310f2101650245a1dcd7310087"
+                "reference": "325d9c5346182ec9d2cb79e64232b78e5fd68a9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/3687105a280f27310f2101650245a1dcd7310087",
-                "reference": "3687105a280f27310f2101650245a1dcd7310087",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/325d9c5346182ec9d2cb79e64232b78e5fd68a9a",
+                "reference": "325d9c5346182ec9d2cb79e64232b78e5fd68a9a",
                 "shasum": ""
             },
             "require": {
@@ -10012,7 +10012,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.12",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-09-18T12:48:29+00:00"
+            "time": "2023-09-20T09:08:46+00:00"
         }
     ],
     "packages-dev": [
@@ -10684,16 +10684,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.34",
+            "version": "1.10.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "7f806b6f1403e6914c778140e2ba07c293cb4901"
+                "reference": "e730e5facb75ffe09dfb229795e8c01a459f26c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/7f806b6f1403e6914c778140e2ba07c293cb4901",
-                "reference": "7f806b6f1403e6914c778140e2ba07c293cb4901",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e730e5facb75ffe09dfb229795e8c01a459f26c3",
+                "reference": "e730e5facb75ffe09dfb229795e8c01a459f26c3",
                 "shasum": ""
             },
             "require": {
@@ -10742,20 +10742,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-13T09:49:47+00:00"
+            "time": "2023-09-19T15:27:56+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.28",
+            "version": "9.2.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "7134a5ccaaf0f1c92a4f5501a6c9f98ac4dcc0ef"
+                "reference": "6a3a87ac2bbe33b25042753df8195ba4aa534c76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/7134a5ccaaf0f1c92a4f5501a6c9f98ac4dcc0ef",
-                "reference": "7134a5ccaaf0f1c92a4f5501a6c9f98ac4dcc0ef",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/6a3a87ac2bbe33b25042753df8195ba4aa534c76",
+                "reference": "6a3a87ac2bbe33b25042753df8195ba4aa534c76",
                 "shasum": ""
             },
             "require": {
@@ -10812,7 +10812,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.28"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.29"
             },
             "funding": [
                 {
@@ -10820,7 +10820,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-12T14:36:20+00:00"
+            "time": "2023-09-19T04:57:46+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -11065,16 +11065,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.12",
+            "version": "9.6.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a122c2ebd469b751d774aa0f613dc0d67697653f"
+                "reference": "f3d767f7f9e191eab4189abe41ab37797e30b1be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a122c2ebd469b751d774aa0f613dc0d67697653f",
-                "reference": "a122c2ebd469b751d774aa0f613dc0d67697653f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f3d767f7f9e191eab4189abe41ab37797e30b1be",
+                "reference": "f3d767f7f9e191eab4189abe41ab37797e30b1be",
                 "shasum": ""
             },
             "require": {
@@ -11148,7 +11148,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.12"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.13"
             },
             "funding": [
                 {
@@ -11164,7 +11164,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-12T14:39:31+00:00"
+            "time": "2023-09-19T05:39:22+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -12406,16 +12406,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.51.0",
+            "version": "v1.51.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "d5684e5628d545a67ba833adcd216e7029f3e506"
+                "reference": "0890fd3cf1e2a5221f9b3c6ee1769c537aef683d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/d5684e5628d545a67ba833adcd216e7029f3e506",
-                "reference": "d5684e5628d545a67ba833adcd216e7029f3e506",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/0890fd3cf1e2a5221f9b3c6ee1769c537aef683d",
+                "reference": "0890fd3cf1e2a5221f9b3c6ee1769c537aef683d",
                 "shasum": ""
             },
             "require": {
@@ -12478,7 +12478,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/maker-bundle/issues",
-                "source": "https://github.com/symfony/maker-bundle/tree/v1.51.0"
+                "source": "https://github.com/symfony/maker-bundle/tree/v1.51.1"
             },
             "funding": [
                 {
@@ -12494,7 +12494,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-12T18:09:19+00:00"
+            "time": "2023-09-18T18:17:31+00:00"
         },
         {
             "name": "symfony/panther",
