@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ba9739b8b35647bfc5ac05dd6f0c30f",
+    "content-hash": "78ef351e2b885fab527720570d55110e",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.282.2",
+            "version": "3.283.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b9b4013f68f1bd5f219f9784c1b2a47da02c1261"
+                "reference": "0d1857ca3392ec9f8ee0b1605ba09842cced6351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b9b4013f68f1bd5f219f9784c1b2a47da02c1261",
-                "reference": "b9b4013f68f1bd5f219f9784c1b2a47da02c1261",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0d1857ca3392ec9f8ee0b1605ba09842cced6351",
+                "reference": "0d1857ca3392ec9f8ee0b1605ba09842cced6351",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.282.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.1"
             },
-            "time": "2023-10-03T18:07:23+00:00"
+            "time": "2023-10-05T18:07:42+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -9913,16 +9913,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.0.13.x-dev",
+            "version": "3.0.13",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "3931fb62efd1ec2ec2365146178f6f38f6881e16"
+                "reference": "8ef99b4c83982e73c32a52d85c153eebd4de552f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/3931fb62efd1ec2ec2365146178f6f38f6881e16",
-                "reference": "3931fb62efd1ec2ec2365146178f6f38f6881e16",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/8ef99b4c83982e73c32a52d85c153eebd4de552f",
+                "reference": "8ef99b4c83982e73c32a52d85c153eebd4de552f",
                 "shasum": ""
             },
             "require": {
@@ -10013,7 +10013,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.13",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-10-04T13:55:43+00:00"
+            "time": "2023-10-06T15:08:30+00:00"
         }
     ],
     "packages-dev": [
@@ -10685,16 +10685,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.37",
+            "version": "1.10.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "058ba07e92f744d4dcf6061ae75283d0c6456f2e"
+                "reference": "5302bb402c57f00fb3c2c015bac86e0827e4b691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/058ba07e92f744d4dcf6061ae75283d0c6456f2e",
-                "reference": "058ba07e92f744d4dcf6061ae75283d0c6456f2e",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5302bb402c57f00fb3c2c015bac86e0827e4b691",
+                "reference": "5302bb402c57f00fb3c2c015bac86e0827e4b691",
                 "shasum": ""
             },
             "require": {
@@ -10743,7 +10743,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-02T16:18:37+00:00"
+            "time": "2023-10-06T14:19:14+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -12801,9 +12801,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
