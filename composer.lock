@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78ef351e2b885fab527720570d55110e",
+    "content-hash": "7f507bcd640041bcacaac4423c86b436",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.283.1",
+            "version": "3.283.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "0d1857ca3392ec9f8ee0b1605ba09842cced6351"
+                "reference": "6616677d76e39af28138512740199d38a461859f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0d1857ca3392ec9f8ee0b1605ba09842cced6351",
-                "reference": "0d1857ca3392ec9f8ee0b1605ba09842cced6351",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6616677d76e39af28138512740199d38a461859f",
+                "reference": "6616677d76e39af28138512740199d38a461859f",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.2"
             },
-            "time": "2023-10-05T18:07:42+00:00"
+            "time": "2023-10-06T18:09:54+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -844,16 +844,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.7.0",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "00d03067f07482f025d41ab55e4ba0db5eca2cdf"
+                "reference": "5b7bd66c9ff58c04c5474ab85edce442f8081cb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/00d03067f07482f025d41ab55e4ba0db5eca2cdf",
-                "reference": "00d03067f07482f025d41ab55e4ba0db5eca2cdf",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/5b7bd66c9ff58c04c5474ab85edce442f8081cb2",
+                "reference": "5b7bd66c9ff58c04c5474ab85edce442f8081cb2",
                 "shasum": ""
             },
             "require": {
@@ -937,7 +937,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.7.0"
+                "source": "https://github.com/doctrine/dbal/tree/3.7.1"
             },
             "funding": [
                 {
@@ -953,7 +953,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-26T20:56:55+00:00"
+            "time": "2023-10-06T05:06:20+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -3287,16 +3287,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "1.107.0",
+            "version": "1.108.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "63fed05d4d9c348db094f8d8a1d44ff9ce6887c7"
+                "reference": "96b940ab530c693832648bdf5ffbb975e29d2233"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/63fed05d4d9c348db094f8d8a1d44ff9ce6887c7",
-                "reference": "63fed05d4d9c348db094f8d8a1d44ff9ce6887c7",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/96b940ab530c693832648bdf5ffbb975e29d2233",
+                "reference": "96b940ab530c693832648bdf5ffbb975e29d2233",
                 "shasum": ""
             },
             "require": {
@@ -3333,9 +3333,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.107.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.108.0"
             },
-            "time": "2023-09-27T06:43:40+00:00"
+            "time": "2023-10-11T11:00:38+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -9913,16 +9913,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.0.13",
+            "version": "v3.0.14.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "8ef99b4c83982e73c32a52d85c153eebd4de552f"
+                "reference": "1085baf38777cbf7611e718e2cf9bdcb1abaf105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/8ef99b4c83982e73c32a52d85c153eebd4de552f",
-                "reference": "8ef99b4c83982e73c32a52d85c153eebd4de552f",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/1085baf38777cbf7611e718e2cf9bdcb1abaf105",
+                "reference": "1085baf38777cbf7611e718e2cf9bdcb1abaf105",
                 "shasum": ""
             },
             "require": {
@@ -10010,10 +10010,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.13",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.14",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-10-06T15:08:30+00:00"
+            "time": "2023-10-12T12:18:13+00:00"
         }
     ],
     "packages-dev": [
@@ -12801,7 +12801,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
