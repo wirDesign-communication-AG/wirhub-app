@@ -25,8 +25,8 @@ jobs:
             -   name: Move project to web
                 run: |
                     sudo mkdir /var/www/wirhub
-                    sudo mv /home/runner/work/wirhub-customer-app/wirhub-customer-app/* /var/www/wirhub
-                    sudo mv /home/runner/work/wirhub-customer-app/wirhub-customer-app/.env* /var/www/wirhub
+                    sudo mv /home/runner/work/wirhub-app/wirhub-app/* /var/www/wirhub
+                    sudo mv /home/runner/work/wirhub-app/wirhub-app/.env* /var/www/wirhub
                     sudo chown -R www-data:www-data /var/www
 
             -   name: Prepare symfony
