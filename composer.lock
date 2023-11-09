@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.283.14",
+            "version": "3.285.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "331894cd4751a06a4e5b3e4e2918a9233c9568dc"
+                "reference": "93165f8e241678b17f15212523dfe96f50307af1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/331894cd4751a06a4e5b3e4e2918a9233c9568dc",
-                "reference": "331894cd4751a06a4e5b3e4e2918a9233c9568dc",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/93165f8e241678b17f15212523dfe96f50307af1",
+                "reference": "93165f8e241678b17f15212523dfe96f50307af1",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.14"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.285.2"
             },
-            "time": "2023-10-27T18:06:59+00:00"
+            "time": "2023-11-09T01:20:37+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -3287,16 +3287,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "1.108.0",
+            "version": "1.109.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "96b940ab530c693832648bdf5ffbb975e29d2233"
+                "reference": "14b1b9f24a6b6ace91323b1121030c96a0988ee0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/96b940ab530c693832648bdf5ffbb975e29d2233",
-                "reference": "96b940ab530c693832648bdf5ffbb975e29d2233",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/14b1b9f24a6b6ace91323b1121030c96a0988ee0",
+                "reference": "14b1b9f24a6b6ace91323b1121030c96a0988ee0",
                 "shasum": ""
             },
             "require": {
@@ -3333,9 +3333,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.108.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.109.0"
             },
-            "time": "2023-10-11T11:00:38+00:00"
+            "time": "2023-11-02T10:25:39+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3772,16 +3772,16 @@
         },
         {
             "name": "php-http/httplug-bundle",
-            "version": "1.30.1",
+            "version": "1.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/HttplugBundle.git",
-                "reference": "57284fb032bcafc3e978a1d7e4a2b591045f7e15"
+                "reference": "7ab6206f5dd90e05e566aeba5dd2b798485020c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/HttplugBundle/zipball/57284fb032bcafc3e978a1d7e4a2b591045f7e15",
-                "reference": "57284fb032bcafc3e978a1d7e4a2b591045f7e15",
+                "url": "https://api.github.com/repos/php-http/HttplugBundle/zipball/7ab6206f5dd90e05e566aeba5dd2b798485020c8",
+                "reference": "7ab6206f5dd90e05e566aeba5dd2b798485020c8",
                 "shasum": ""
             },
             "require": {
@@ -3791,7 +3791,7 @@
                 "php-http/discovery": "^1.14",
                 "php-http/httplug": "^2.0",
                 "php-http/logger-plugin": "^1.1",
-                "php-http/message": "^1.4",
+                "php-http/message": "^1.9",
                 "php-http/message-factory": "^1.0.2",
                 "php-http/stopwatch-plugin": "^1.2",
                 "psr/http-message": "^1.0 || ^2.0",
@@ -3867,9 +3867,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/HttplugBundle/issues",
-                "source": "https://github.com/php-http/HttplugBundle/tree/1.30.1"
+                "source": "https://github.com/php-http/HttplugBundle/tree/1.31.0"
             },
-            "time": "2023-09-07T08:04:12+00:00"
+            "time": "2023-11-06T11:10:42+00:00"
         },
         {
             "name": "php-http/logger-plugin",
@@ -4056,16 +4056,16 @@
         },
         {
             "name": "php-http/promise",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/promise.git",
-                "reference": "ef4905bfb492ff389eb7f12e26925a0f20073050"
+                "reference": "44a67cb59f708f826f3bec35f22030b3edb90119"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/promise/zipball/ef4905bfb492ff389eb7f12e26925a0f20073050",
-                "reference": "ef4905bfb492ff389eb7f12e26925a0f20073050",
+                "url": "https://api.github.com/repos/php-http/promise/zipball/44a67cb59f708f826f3bec35f22030b3edb90119",
+                "reference": "44a67cb59f708f826f3bec35f22030b3edb90119",
                 "shasum": ""
             },
             "require": {
@@ -4102,9 +4102,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/promise/issues",
-                "source": "https://github.com/php-http/promise/tree/1.2.0"
+                "source": "https://github.com/php-http/promise/tree/1.2.1"
             },
-            "time": "2023-10-24T09:20:26+00:00"
+            "time": "2023-11-08T12:57:08+00:00"
         },
         {
             "name": "php-http/stopwatch-plugin",
@@ -6209,16 +6209,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v2.4.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "46bebc3d097d1bb1dce04c5ba83658afd79988f9"
+                "reference": "ae6dea68771c5fca9d172e0c0910bdd06199f6f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/46bebc3d097d1bb1dce04c5ba83658afd79988f9",
-                "reference": "46bebc3d097d1bb1dce04c5ba83658afd79988f9",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/ae6dea68771c5fca9d172e0c0910bdd06199f6f4",
+                "reference": "ae6dea68771c5fca9d172e0c0910bdd06199f6f4",
                 "shasum": ""
             },
             "require": {
@@ -6254,7 +6254,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v2.4.0"
+                "source": "https://github.com/symfony/flex/tree/v2.4.1"
             },
             "funding": [
                 {
@@ -6270,7 +6270,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-22T18:05:25+00:00"
+            "time": "2023-10-30T18:35:17+00:00"
         },
         {
             "name": "symfony/form",
@@ -7199,30 +7199,30 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v3.8.0",
+            "version": "v3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/monolog-bundle.git",
-                "reference": "a41bbcdc1105603b6d73a7d9a43a3788f8e0fb7d"
+                "reference": "414f951743f4aa1fd0f5bf6a0e9c16af3fe7f181"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/a41bbcdc1105603b6d73a7d9a43a3788f8e0fb7d",
-                "reference": "a41bbcdc1105603b6d73a7d9a43a3788f8e0fb7d",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/414f951743f4aa1fd0f5bf6a0e9c16af3fe7f181",
+                "reference": "414f951743f4aa1fd0f5bf6a0e9c16af3fe7f181",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "^1.22 || ^2.0 || ^3.0",
-                "php": ">=7.1.3",
-                "symfony/config": "~4.4 || ^5.0 || ^6.0",
-                "symfony/dependency-injection": "^4.4 || ^5.0 || ^6.0",
-                "symfony/http-kernel": "~4.4 || ^5.0 || ^6.0",
-                "symfony/monolog-bridge": "~4.4 || ^5.0 || ^6.0"
+                "monolog/monolog": "^1.25.1 || ^2.0 || ^3.0",
+                "php": ">=7.2.5",
+                "symfony/config": "^5.4 || ^6.0 || ^7.0",
+                "symfony/dependency-injection": "^5.4 || ^6.0 || ^7.0",
+                "symfony/http-kernel": "^5.4 || ^6.0 || ^7.0",
+                "symfony/monolog-bridge": "^5.4 || ^6.0 || ^7.0"
             },
             "require-dev": {
-                "symfony/console": "~4.4 || ^5.0 || ^6.0",
-                "symfony/phpunit-bridge": "^5.2 || ^6.0",
-                "symfony/yaml": "~4.4 || ^5.0 || ^6.0"
+                "symfony/console": "^5.4 || ^6.0 || ^7.0",
+                "symfony/phpunit-bridge": "^6.3 || ^7.0",
+                "symfony/yaml": "^5.4 || ^6.0 || ^7.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -7260,7 +7260,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/monolog-bundle/issues",
-                "source": "https://github.com/symfony/monolog-bundle/tree/v3.8.0"
+                "source": "https://github.com/symfony/monolog-bundle/tree/v3.10.0"
             },
             "funding": [
                 {
@@ -7276,7 +7276,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-10T14:24:36+00:00"
+            "time": "2023-11-06T17:08:13+00:00"
         },
         {
             "name": "symfony/options-resolver",
@@ -9914,12 +9914,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "c2b318787638128058afefc68e51ba31ed499e2d"
+                "reference": "288d4b8b53e80c62974af27dedba1bf9351ee0de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/c2b318787638128058afefc68e51ba31ed499e2d",
-                "reference": "c2b318787638128058afefc68e51ba31ed499e2d",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/288d4b8b53e80c62974af27dedba1bf9351ee0de",
+                "reference": "288d4b8b53e80c62974af27dedba1bf9351ee0de",
                 "shasum": ""
             },
             "require": {
@@ -10010,7 +10010,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.15",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-10-27T13:08:00+00:00"
+            "time": "2023-11-09T15:22:08+00:00"
         }
     ],
     "packages-dev": [
@@ -10682,16 +10682,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.39",
+            "version": "1.10.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "d9dedb0413f678b4d03cbc2279a48f91592c97c4"
+                "reference": "c6174523c2a69231df55bdc65b61655e72876d76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d9dedb0413f678b4d03cbc2279a48f91592c97c4",
-                "reference": "d9dedb0413f678b4d03cbc2279a48f91592c97c4",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c6174523c2a69231df55bdc65b61655e72876d76",
+                "reference": "c6174523c2a69231df55bdc65b61655e72876d76",
                 "shasum": ""
             },
             "require": {
@@ -10740,7 +10740,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-17T15:46:26+00:00"
+            "time": "2023-11-05T12:57:57+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
