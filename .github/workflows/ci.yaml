@@ -18,26 +18,40 @@ jobs:
                     extensions: imagick, sqlite3
                     ini-values: error_log=/home/runner/.symfony5/log/php.log
 
-            -   name: Install Symfony Server
-                run: wget https://get.symfony.com/cli/installer -O - | bash
+            -   name: Install Webserver
+                run: |
+                    sudo apt install -y apache2 libapache2-mod-php8.2
 
-            -   name: Install dependencies
-                run: APP_ENV=test composer install --prefer-dist --no-progress
+            -   name: Move project to web
+                run: |
+                    sudo mkdir /var/www/wirhub
+                    sudo mv /home/runner/work/wirhub-app/wirhub-app/* /var/www/wirhub
+                    sudo mv /home/runner/work/wirhub-app/wirhub-app/.env* /var/www/wirhub
+                    sudo chown -R www-data:www-data /var/www
 
-            -   name: Dump environment
-                run: APP_ENV=test composer dump-env test
+            -   name: Prepare symfony
+                run: |
+                    sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
+                    sudo -u www-data composer dump-env test --working-dir /var/www/wirhub
+                    sudo -u www-data php /var/www/wirhub/bin/console cache:clear
+                    sudo -u www-data php /var/www/wirhub/bin/console assets:install public/
+                    sudo -u www-data php /var/www/wirhub/bin/console doctrine:database:create
+                    sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions 
 
-            -   name: Clear cache
-                run: APP_ENV=test php bin/console cache:clear
+            -   name: Update folder permissions
+                run: |
+                    sudo chmod -R 777 /var/www/wirhub
 
-            -   name: Recreate assets
-                run: APP_ENV=test php bin/console assets:install public/
-
-            -   name: Start Server
-                run: APP_ENV=test /home/runner/.symfony5/bin/symfony server:start -d --no-tls
+            -   name: Finish webserver
+                run: |
+                    sudo rm /etc/apache2/sites-available/000-default.conf
+                    sudo cp /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/Tests/Config/vhost_github.conf /etc/apache2/sites-available/000-default.conf
+                    
+                    sudo a2enmod rewrite
+                    sudo systemctl restart apache2
 
             -   name: Run tests
-                run: chmod -R 0777 ./ && make test
+                run: cd /var/www/wirhub && make test
 
             -   name: Archive debugging files
                 uses: actions/upload-artifact@v3
@@ -46,9 +60,8 @@ jobs:
                     name: debug
                     if-no-files-found: ignore
                     path: |
-                        .env.local.php
-                        vendor/wirdesign-communication-ag/wirhub/build/debug/*
-                        var/cache/test/*.log
-                        var/log/*.log
-                        ~/var/cache/wdc-styleguide.db
-                        ~/.symfony5/log/*.log
+                        /var/www/wirhub/.env.local.php
+                        /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/build/debug/*
+                        /var/www/wirhub/var/cache/test/*.log
+                        /var/www/wirhub/var/cache/wdc-styleguide.db
+                        /var/www/wirhub/var/log/*
