@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.293.0",
+            "version": "3.293.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4bcac7125bf72fa38aa8a537fb5b175862470c64"
+                "reference": "a87d99b181c95c0bffb2869dfb26243a9c8c9ee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4bcac7125bf72fa38aa8a537fb5b175862470c64",
-                "reference": "4bcac7125bf72fa38aa8a537fb5b175862470c64",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a87d99b181c95c0bffb2869dfb26243a9c8c9ee7",
+                "reference": "a87d99b181c95c0bffb2869dfb26243a9c8c9ee7",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.293.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.293.1"
             },
-            "time": "2023-11-30T01:10:12+00:00"
+            "time": "2023-11-30T18:56:27+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -3297,16 +3297,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "1.109.1",
+            "version": "1.109.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "ae0eb22c2d425e79ed75b0754235647fedcd950b"
+                "reference": "c4490238f65fc68e2263ff4d5dbdebe02e7f0517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/ae0eb22c2d425e79ed75b0754235647fedcd950b",
-                "reference": "ae0eb22c2d425e79ed75b0754235647fedcd950b",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/c4490238f65fc68e2263ff4d5dbdebe02e7f0517",
+                "reference": "c4490238f65fc68e2263ff4d5dbdebe02e7f0517",
                 "shasum": ""
             },
             "require": {
@@ -3343,9 +3343,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.109.1"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.109.2"
             },
-            "time": "2023-11-30T00:40:18+00:00"
+            "time": "2023-12-01T09:41:49+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3585,16 +3585,16 @@
         },
         {
             "name": "php-http/discovery",
-            "version": "1.19.1",
+            "version": "1.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/discovery.git",
-                "reference": "57f3de01d32085fea20865f9b16fb0e69347c39e"
+                "reference": "61e1a1eb69c92741f5896d9e05fb8e9d7e8bb0cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/discovery/zipball/57f3de01d32085fea20865f9b16fb0e69347c39e",
-                "reference": "57f3de01d32085fea20865f9b16fb0e69347c39e",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/61e1a1eb69c92741f5896d9e05fb8e9d7e8bb0cb",
+                "reference": "61e1a1eb69c92741f5896d9e05fb8e9d7e8bb0cb",
                 "shasum": ""
             },
             "require": {
@@ -3657,9 +3657,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/discovery/issues",
-                "source": "https://github.com/php-http/discovery/tree/1.19.1"
+                "source": "https://github.com/php-http/discovery/tree/1.19.2"
             },
-            "time": "2023-07-11T07:02:26+00:00"
+            "time": "2023-11-30T16:49:05+00:00"
         },
         {
             "name": "php-http/guzzle7-adapter",
@@ -9925,12 +9925,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "96af757a7a6ba98a4aeb2769a98beca196a3cdd7"
+                "reference": "3dfbf6818f2bd0e1fd728de1a252d3aad97d7e5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/96af757a7a6ba98a4aeb2769a98beca196a3cdd7",
-                "reference": "96af757a7a6ba98a4aeb2769a98beca196a3cdd7",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/3dfbf6818f2bd0e1fd728de1a252d3aad97d7e5f",
+                "reference": "3dfbf6818f2bd0e1fd728de1a252d3aad97d7e5f",
                 "shasum": ""
             },
             "require": {
@@ -10021,7 +10021,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/768",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2023-11-30T16:08:34+00:00"
+            "time": "2023-12-01T14:31:41+00:00"
         }
     ],
     "packages-dev": [
@@ -11080,16 +11080,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.13",
+            "version": "9.6.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f3d767f7f9e191eab4189abe41ab37797e30b1be"
+                "reference": "43653e6ad7adc22e7b667dd561bf8fcb74c10cf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f3d767f7f9e191eab4189abe41ab37797e30b1be",
-                "reference": "f3d767f7f9e191eab4189abe41ab37797e30b1be",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/43653e6ad7adc22e7b667dd561bf8fcb74c10cf0",
+                "reference": "43653e6ad7adc22e7b667dd561bf8fcb74c10cf0",
                 "shasum": ""
             },
             "require": {
@@ -11163,7 +11163,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.13"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.14"
             },
             "funding": [
                 {
@@ -11179,7 +11179,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-19T05:39:22+00:00"
+            "time": "2023-12-01T06:10:48+00:00"
         },
         {
             "name": "sebastian/cli-parser",
