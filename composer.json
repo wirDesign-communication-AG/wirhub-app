@@ -75,7 +75,7 @@
         "symfony/framework-bundle": "6.3.*",
         "symfony/runtime": "6.3.*",
         "symfony/yaml": "6.3.*",
-        "wirdesign-communication-ag/wirhub": "dev-wip/768"
+        "wirdesign-communication-ag/wirhub": "^3.0.17"
     },
     "scripts": {
         "auto-scripts": {
@@ -104,7 +104,7 @@
         "symfony/panther": "^2.0",
         "symfony/phpunit-bridge": "^6.3",
         "symfony/stopwatch": "6.3.*",
-        "symfony/var-exporter": "6.3.*, !=6.3.9",
+        "symfony/var-exporter": "6.3.*, <6.3.9",
         "symfony/web-profiler-bundle": "6.3.*"
     }
 }
