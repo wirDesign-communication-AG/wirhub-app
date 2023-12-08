@@ -28,6 +28,10 @@ echo "--"
 echo "-- Update database to latest update"
 php bin/console app:update
 
+echo "--"
+echo "-- Trigger Update after 10 Minutes again to send version"
+(sleep 600 ; (php bin/console app:update)) > /dev/null 2>&1 &
+
 
 echo "--"
 echo "-- Hand over directories to webserver"
