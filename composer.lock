@@ -9918,21 +9918,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-<<<<<<< HEAD
                 "reference": "ae350fe506c3f1774d03bb3b2e37e310252411ee"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/ae350fe506c3f1774d03bb3b2e37e310252411ee",
                 "reference": "ae350fe506c3f1774d03bb3b2e37e310252411ee",
-=======
-                "reference": "4512a02b9950f9e19a0e8a06bbfd8160a982e3d2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/4512a02b9950f9e19a0e8a06bbfd8160a982e3d2",
-                "reference": "4512a02b9950f9e19a0e8a06bbfd8160a982e3d2",
->>>>>>> 066abfc (Hotfix)
                 "shasum": ""
             },
             "require": {
@@ -10024,11 +10015,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.18",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-<<<<<<< HEAD
             "time": "2023-12-20T08:27:33+00:00"
-=======
-            "time": "2023-12-11T14:56:07+00:00"
->>>>>>> 066abfc (Hotfix)
         }
     ],
     "packages-dev": [
