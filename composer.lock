@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32b8b2eb921ff7db8c2b39d493a90046",
+    "content-hash": "fabcfc615f920531f39dd173ed461a45",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.295.8",
+            "version": "3.295.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "dc23d1d1e2e0413a3707d5dd90d8c43cb6c7521b"
+                "reference": "4d8b4f47639275248e212bd61b6bc51f9dd709f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/dc23d1d1e2e0413a3707d5dd90d8c43cb6c7521b",
-                "reference": "dc23d1d1e2e0413a3707d5dd90d8c43cb6c7521b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4d8b4f47639275248e212bd61b6bc51f9dd709f2",
+                "reference": "4d8b4f47639275248e212bd61b6bc51f9dd709f2",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.8"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.10"
             },
-            "time": "2024-01-08T19:04:58+00:00"
+            "time": "2024-01-11T19:04:31+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -412,52 +412,58 @@
         },
         {
             "name": "craue/formflow-bundle",
-            "version": "3.6.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craue/CraueFormFlowBundle.git",
-                "reference": "af3db3519a9e62920c439b80d17ff4db689a5d60"
+                "reference": "8fea7ced6145451a5ccca2e8d4d87c74e6d42b56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craue/CraueFormFlowBundle/zipball/af3db3519a9e62920c439b80d17ff4db689a5d60",
-                "reference": "af3db3519a9e62920c439b80d17ff4db689a5d60",
+                "url": "https://api.github.com/repos/craue/CraueFormFlowBundle/zipball/8fea7ced6145451a5ccca2e8d4d87c74e6d42b56",
+                "reference": "8fea7ced6145451a5ccca2e8d4d87c74e6d42b56",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3|^8",
-                "symfony/config": "~4.4|~5.3|^6.0",
-                "symfony/dependency-injection": "~4.4|~5.3|^6.0",
-                "symfony/event-dispatcher": "~4.4|~5.3|^6.0",
-                "symfony/form": "~4.4|~5.3|^6.0",
-                "symfony/http-foundation": "~4.4|~5.3|^6.0",
-                "symfony/http-kernel": "~4.4|~5.3|^6.0",
-                "symfony/options-resolver": "~4.4|~5.3|^6.0",
-                "symfony/security-core": "~4.4|~5.3|^6.0",
-                "symfony/translation": "~4.4|~5.3|^6.0",
-                "symfony/validator": "~4.4|~5.3|^6.0",
-                "symfony/yaml": "~4.4|~5.3|^6.0"
+                "php": "^7.3 || ^8",
+                "symfony/config": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/event-dispatcher": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/form": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/http-foundation": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/http-kernel": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/options-resolver": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/security-core": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/translation": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/validator": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/yaml": "^4.4 || ^5.4 || ^6.3 || ^7.0"
+            },
+            "conflict": {
+                "doctrine/dbal": "<2.10"
             },
             "require-dev": {
                 "craue/translations-tests": "^1.1",
-                "doctrine/annotations": "^1.6",
-                "doctrine/common": "~2.9|~3.0",
-                "doctrine/doctrine-bundle": "~1.10|~2.0",
+                "doctrine/collections": "^1.8 || ^2.1",
+                "doctrine/common": "^2.9 || ^3.0",
+                "doctrine/dbal": "^2.10 || ^3.0",
+                "doctrine/doctrine-bundle": "^1.10 || ^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.1",
+                "phpstan/phpstan-symfony": "^1.1",
                 "phpunit/phpunit": "^9.5",
-                "symfony/browser-kit": "~4.4|~5.3|^6.0",
-                "symfony/css-selector": "~4.4|~5.3|^6.0",
-                "symfony/mime": "~4.4|~5.3|^6.0",
-                "symfony/phpunit-bridge": "^6",
-                "symfony/security-bundle": "~4.4|~5.3|^6.0",
-                "symfony/twig-bundle": "~4.4|~5.3|^6.0"
+                "symfony/browser-kit": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/css-selector": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/mime": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/phpunit-bridge": "^7.0",
+                "symfony/security-bundle": "^4.4 || ^5.4 || ^6.3 || ^7.0",
+                "symfony/twig-bundle": "^4.4 || ^5.4 || ^6.3 || ^7.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.6.x-dev"
-                },
-                "symfony": {
-                    "require": "~4.4|~5.3|^6.0"
+                    "dev-master": "3.7.x-dev"
                 }
             },
             "autoload": {
@@ -492,9 +498,9 @@
             ],
             "support": {
                 "issues": "https://github.com/craue/CraueFormFlowBundle/issues",
-                "source": "https://github.com/craue/CraueFormFlowBundle/tree/3.6.0"
+                "source": "https://github.com/craue/CraueFormFlowBundle/tree/3.7.0"
             },
-            "time": "2022-01-24T14:43:05+00:00"
+            "time": "2024-01-11T01:03:17+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -9914,16 +9920,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.0.18.x-dev",
+            "version": "3.0.18",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "d1aff161ed92cda3a16ece7224d963700b71965d"
+                "reference": "9f81499cf5008cb81f4729b948846ab97670ed9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d1aff161ed92cda3a16ece7224d963700b71965d",
-                "reference": "d1aff161ed92cda3a16ece7224d963700b71965d",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/9f81499cf5008cb81f4729b948846ab97670ed9c",
+                "reference": "9f81499cf5008cb81f4729b948846ab97670ed9c",
                 "shasum": ""
             },
             "require": {
@@ -10015,7 +10021,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.18",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-01-10T14:36:46+00:00"
+            "time": "2024-01-12T10:08:25+00:00"
         }
     ],
     "packages-dev": [
@@ -12809,9 +12815,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
