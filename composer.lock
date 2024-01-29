@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.295.10",
+            "version": "3.297.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4d8b4f47639275248e212bd61b6bc51f9dd709f2"
+                "reference": "5be6a9c74e1d72af75f24b4f4a9cfac51ccd6a56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4d8b4f47639275248e212bd61b6bc51f9dd709f2",
-                "reference": "4d8b4f47639275248e212bd61b6bc51f9dd709f2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5be6a9c74e1d72af75f24b4f4a9cfac51ccd6a56",
+                "reference": "5be6a9c74e1d72af75f24b4f4a9cfac51ccd6a56",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.10"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.297.1"
             },
-            "time": "2024-01-11T19:04:31+00:00"
+            "time": "2024-01-25T19:18:40+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -850,16 +850,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.7.2",
+            "version": "3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "0ac3c270590e54910715e9a1a044cc368df282b2"
+                "reference": "d244f2e6e6bf32bff5174e6729b57214923ecec9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/0ac3c270590e54910715e9a1a044cc368df282b2",
-                "reference": "0ac3c270590e54910715e9a1a044cc368df282b2",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/d244f2e6e6bf32bff5174e6729b57214923ecec9",
+                "reference": "d244f2e6e6bf32bff5174e6729b57214923ecec9",
                 "shasum": ""
             },
             "require": {
@@ -875,14 +875,14 @@
                 "doctrine/coding-standard": "12.0.0",
                 "fig/log-test": "^1",
                 "jetbrains/phpstorm-stubs": "2023.1",
-                "phpstan/phpstan": "1.10.42",
+                "phpstan/phpstan": "1.10.56",
                 "phpstan/phpstan-strict-rules": "^1.5",
-                "phpunit/phpunit": "9.6.13",
+                "phpunit/phpunit": "9.6.15",
                 "psalm/plugin-phpunit": "0.18.4",
                 "slevomat/coding-standard": "8.13.1",
-                "squizlabs/php_codesniffer": "3.7.2",
-                "symfony/cache": "^5.4|^6.0",
-                "symfony/console": "^4.4|^5.4|^6.0",
+                "squizlabs/php_codesniffer": "3.8.1",
+                "symfony/cache": "^5.4|^6.0|^7.0",
+                "symfony/console": "^4.4|^5.4|^6.0|^7.0",
                 "vimeo/psalm": "4.30.0"
             },
             "suggest": {
@@ -943,7 +943,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.7.2"
+                "source": "https://github.com/doctrine/dbal/tree/3.8.0"
             },
             "funding": [
                 {
@@ -959,7 +959,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-19T08:06:58+00:00"
+            "time": "2024-01-25T21:44:02+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -1311,16 +1311,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff"
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/2930cd5ef353871c821d5c43ed030d39ac8cfe65",
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65",
                 "shasum": ""
             },
             "require": {
@@ -1382,7 +1382,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.8"
+                "source": "https://github.com/doctrine/inflector/tree/2.0.9"
             },
             "funding": [
                 {
@@ -1398,7 +1398,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-16T13:40:37+00:00"
+            "time": "2024-01-15T18:05:13+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -1652,16 +1652,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.17.2",
+            "version": "2.17.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "393679a4795e49b0b3ac317dce84d0f8888f2b77"
+                "reference": "398ab0547aaf90bdb352b560a94c24f44ff00670"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/393679a4795e49b0b3ac317dce84d0f8888f2b77",
-                "reference": "393679a4795e49b0b3ac317dce84d0f8888f2b77",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/398ab0547aaf90bdb352b560a94c24f44ff00670",
+                "reference": "398ab0547aaf90bdb352b560a94c24f44ff00670",
                 "shasum": ""
             },
             "require": {
@@ -1747,9 +1747,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.17.2"
+                "source": "https://github.com/doctrine/orm/tree/2.17.3"
             },
-            "time": "2023-12-20T21:47:52+00:00"
+            "time": "2024-01-16T21:32:04+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -3296,21 +3296,21 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "1.109.2",
+            "version": "1.110.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "c4490238f65fc68e2263ff4d5dbdebe02e7f0517"
+                "reference": "da45ea4a5d5dda97549313129748bd10fdb2930c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/c4490238f65fc68e2263ff4d5dbdebe02e7f0517",
-                "reference": "c4490238f65fc68e2263ff4d5dbdebe02e7f0517",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/da45ea4a5d5dda97549313129748bd10fdb2930c",
+                "reference": "da45ea4a5d5dda97549313129748bd10fdb2930c",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/guzzle": "^6.0 || ^7.0",
+                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5",
                 "php": "^8.0 || ^7.3",
                 "psr/http-message": "^1.0 || ^2.0"
             },
@@ -3342,9 +3342,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.109.2"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.110.0"
             },
-            "time": "2023-12-01T09:41:49+00:00"
+            "time": "2024-01-15T18:49:30+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4727,16 +4727,16 @@
         },
         {
             "name": "scssphp/scssphp",
-            "version": "v1.12.0",
+            "version": "v1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scssphp/scssphp.git",
-                "reference": "a6b20c170ddb95f116b3d148a466a7bed1e85c35"
+                "reference": "394ed1e960138710a60d035c1a85d43d0bf0faeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/a6b20c170ddb95f116b3d148a466a7bed1e85c35",
-                "reference": "a6b20c170ddb95f116b3d148a466a7bed1e85c35",
+                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/394ed1e960138710a60d035c1a85d43d0bf0faeb",
+                "reference": "394ed1e960138710a60d035c1a85d43d0bf0faeb",
                 "shasum": ""
             },
             "require": {
@@ -4801,9 +4801,9 @@
             ],
             "support": {
                 "issues": "https://github.com/scssphp/scssphp/issues",
-                "source": "https://github.com/scssphp/scssphp/tree/v1.12.0"
+                "source": "https://github.com/scssphp/scssphp/tree/v1.12.1"
             },
-            "time": "2023-11-14T14:56:09+00:00"
+            "time": "2024-01-13T12:36:40+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -9920,16 +9920,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.0.18",
+            "version": "3.0.19",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "9f81499cf5008cb81f4729b948846ab97670ed9c"
+                "reference": "6e9161c8114f1df7bacd22d84d4273c77056a65a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/9f81499cf5008cb81f4729b948846ab97670ed9c",
-                "reference": "9f81499cf5008cb81f4729b948846ab97670ed9c",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/6e9161c8114f1df7bacd22d84d4273c77056a65a",
+                "reference": "6e9161c8114f1df7bacd22d84d4273c77056a65a",
                 "shasum": ""
             },
             "require": {
@@ -10018,10 +10018,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.18",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.19",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-01-12T10:08:25+00:00"
+            "time": "2024-01-26T16:05:06+00:00"
         }
     ],
     "packages-dev": [
@@ -10251,16 +10251,16 @@
         },
         {
             "name": "liip/test-fixtures-bundle",
-            "version": "2.7.0",
+            "version": "2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liip/LiipTestFixturesBundle.git",
-                "reference": "0ae684eca2db6583b357bdbe2e46787ba7505498"
+                "reference": "f2827703a8e67cf407079d62cb394acdfdd5b1d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liip/LiipTestFixturesBundle/zipball/0ae684eca2db6583b357bdbe2e46787ba7505498",
-                "reference": "0ae684eca2db6583b357bdbe2e46787ba7505498",
+                "url": "https://api.github.com/repos/liip/LiipTestFixturesBundle/zipball/f2827703a8e67cf407079d62cb394acdfdd5b1d5",
+                "reference": "f2827703a8e67cf407079d62cb394acdfdd5b1d5",
                 "shasum": ""
             },
             "require": {
@@ -10334,9 +10334,9 @@
             ],
             "support": {
                 "issues": "https://github.com/liip/LiipTestFixturesBundle/issues",
-                "source": "https://github.com/liip/LiipTestFixturesBundle/tree/2.7.0"
+                "source": "https://github.com/liip/LiipTestFixturesBundle/tree/2.7.2"
             },
-            "time": "2023-11-30T12:31:58+00:00"
+            "time": "2024-01-20T13:27:16+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -10699,16 +10699,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.55",
+            "version": "1.10.57",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "9a88f9d18ddf4cf54c922fbeac16c4cb164c5949"
+                "reference": "1627b1d03446904aaa77593f370c5201d2ecc34e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9a88f9d18ddf4cf54c922fbeac16c4cb164c5949",
-                "reference": "9a88f9d18ddf4cf54c922fbeac16c4cb164c5949",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/1627b1d03446904aaa77593f370c5201d2ecc34e",
+                "reference": "1627b1d03446904aaa77593f370c5201d2ecc34e",
                 "shasum": ""
             },
             "require": {
@@ -10757,7 +10757,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-08T12:32:40+00:00"
+            "time": "2024-01-24T11:51:34+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -11080,16 +11080,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.15",
+            "version": "9.6.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "05017b80304e0eb3f31d90194a563fd53a6021f1"
+                "reference": "3767b2c56ce02d01e3491046f33466a1ae60a37f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/05017b80304e0eb3f31d90194a563fd53a6021f1",
-                "reference": "05017b80304e0eb3f31d90194a563fd53a6021f1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3767b2c56ce02d01e3491046f33466a1ae60a37f",
+                "reference": "3767b2c56ce02d01e3491046f33466a1ae60a37f",
                 "shasum": ""
             },
             "require": {
@@ -11163,7 +11163,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.15"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.16"
             },
             "funding": [
                 {
@@ -11179,7 +11179,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-01T16:55:19+00:00"
+            "time": "2024-01-19T07:03:14+00:00"
         },
         {
             "name": "sebastian/cli-parser",
