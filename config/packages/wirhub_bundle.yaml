@@ -64,6 +64,8 @@ doctrine_migrations:
 
 
 framework:
+    #annotations:
+    #    enabled: false
     csrf_protection: ~
     default_locale: '%env(string:APP_LOCALE)%'
     mailer:

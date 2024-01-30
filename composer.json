@@ -31,7 +31,7 @@
                 "https://api.github.com/repos/wirdesign-communication-ag/wirhub-recipes/contents/index.json",
                 "flex://defaults"
             ],
-            "require": "6.3.*"
+            "require": "6.4.*"
         }
     },
     "license": "proprietary",
@@ -68,13 +68,13 @@
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^2.17.0",
         "symfony/apache-pack": "^1.0",
-        "symfony/console": "6.3.*",
-        "symfony/dotenv": "6.3.*",
-        "symfony/expression-language": "^6.3",
+        "symfony/console": "6.4.*",
+        "symfony/dotenv": "6.4.*",
+        "symfony/expression-language": "^6.4",
         "symfony/flex": "^2",
-        "symfony/framework-bundle": "6.3.*",
-        "symfony/runtime": "6.3.*",
-        "symfony/yaml": "6.3.*",
+        "symfony/framework-bundle": "6.4.*",
+        "symfony/runtime": "6.4.*",
+        "symfony/yaml": "6.4.*",
         "wirdesign-communication-ag/wirhub": "^3.0.18"
     },
     "scripts": {
@@ -97,14 +97,14 @@
         "liip/test-fixtures-bundle": "^2.6",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^9.5",
-        "symfony/browser-kit": "6.3.*",
-        "symfony/css-selector": "6.3.*",
-        "symfony/debug-bundle": "6.3.*",
+        "symfony/browser-kit": "6.4.*",
+        "symfony/css-selector": "6.4.*",
+        "symfony/debug-bundle": "6.4.*",
         "symfony/maker-bundle": "^1.48",
         "symfony/panther": "^2.0",
-        "symfony/phpunit-bridge": "^6.3",
-        "symfony/stopwatch": "6.3.*",
-        "symfony/var-exporter": "6.3.*, <6.3.9",
-        "symfony/web-profiler-bundle": "6.3.*"
+        "symfony/phpunit-bridge": "^6.4",
+        "symfony/stopwatch": "6.4.*",
+        "symfony/var-exporter": "6.4.*",
+        "symfony/web-profiler-bundle": "6.4.*"
     }
 }
