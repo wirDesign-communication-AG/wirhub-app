@@ -4223,22 +4223,22 @@
         },
         {
             "name": "pmdevelopment/microsoft-symfony-mailer",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmdevelopment/microsoft-symfony-mailer.git",
-                "reference": "4fcd6e8ef0be78e6fcb89ae93c8393d499e7c6f8"
+                "reference": "375a49c219a4b33e973e2a3ba4bfb76a503e10b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmdevelopment/microsoft-symfony-mailer/zipball/4fcd6e8ef0be78e6fcb89ae93c8393d499e7c6f8",
-                "reference": "4fcd6e8ef0be78e6fcb89ae93c8393d499e7c6f8",
+                "url": "https://api.github.com/repos/pmdevelopment/microsoft-symfony-mailer/zipball/375a49c219a4b33e973e2a3ba4bfb76a503e10b8",
+                "reference": "375a49c219a4b33e973e2a3ba4bfb76a503e10b8",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.0|^7.0",
                 "microsoft/microsoft-graph": "^1.110.0",
-                "php": "^8.2",
+                "php": "^8.1",
                 "symfony/event-dispatcher-contracts": "*",
                 "symfony/mailer": "^6.0|^7.0"
             },
@@ -4268,9 +4268,9 @@
             "homepage": "https://pmdevelopment.de",
             "support": {
                 "issues": "https://github.com/pmdevelopment/microsoft-symfony-mailer/issues",
-                "source": "https://github.com/pmdevelopment/microsoft-symfony-mailer/tree/v1.1.0"
+                "source": "https://github.com/pmdevelopment/microsoft-symfony-mailer/tree/v1.1.1"
             },
-            "time": "2024-02-15T16:54:28+00:00"
+            "time": "2024-02-22T13:03:52+00:00"
         },
         {
             "name": "psr/cache",
