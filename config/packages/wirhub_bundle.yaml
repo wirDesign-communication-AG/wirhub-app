@@ -42,7 +42,7 @@ doctrine:
                         MATCH_AGAINST: AppBundle\Domain\Doctrine\MatchAgainst
                 mappings:
                     AppBundle:
-                        type: 'attribute'
+                        type: attribute
                         dir: '%kernel.project_dir%/vendor/wirdesign-communication-ag/wirhub/Entity'
                         prefix: AppBundle\Entity
                     GedmoLoggable:
