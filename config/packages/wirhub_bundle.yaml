@@ -75,14 +75,6 @@ framework:
     router:
         default_uri: '%env(string:APP_URL)%'
 
-httplug:
-    clients:
-        default:
-            factory: 'httplug.factory.guzzle7'
-            config:
-                timeout: "%env(int:OAUTH_TIMEOUT)%"
-                verify: "%env(bool:OAUTH_VERIFY_SSL)%"
-
 hwi_oauth:
     connect:
         confirmation: false
