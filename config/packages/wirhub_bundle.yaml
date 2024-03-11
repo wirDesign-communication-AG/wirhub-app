@@ -64,8 +64,8 @@ doctrine_migrations:
 
 
 framework:
-    #annotations:
-    #    enabled: false
+    annotations:
+        enabled: false
     csrf_protection: ~
     default_locale: '%env(string:APP_LOCALE)%'
     mailer:
@@ -74,14 +74,6 @@ framework:
             sender: '%env(MAILER_SENDER)%'
     router:
         default_uri: '%env(string:APP_URL)%'
-
-httplug:
-    clients:
-        default:
-            factory: 'httplug.factory.guzzle7'
-            config:
-                timeout: "%env(int:OAUTH_TIMEOUT)%"
-                verify: "%env(bool:OAUTH_VERIFY_SSL)%"
 
 hwi_oauth:
     connect:

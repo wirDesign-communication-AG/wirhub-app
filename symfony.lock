@@ -2,15 +2,6 @@
     "craue/formflow-bundle": {
         "version": "3.6.0"
     },
-    "doctrine/annotations": {
-        "version": "2.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "1.10",
-            "ref": "64d8583af5ea57b7afa4aba4b159907f3a148b05"
-        }
-    },
     "doctrine/doctrine-bundle": {
         "version": "2.10",
         "recipe": {
@@ -63,18 +54,6 @@
             "config/routes/hwi_oauth_routing.yaml"
         ]
     },
-    "jms/serializer-bundle": {
-        "version": "4.2",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "main",
-            "version": "4.0",
-            "ref": "cc04e10cf7171525b50c18b36004edf64cb478be"
-        },
-        "files": [
-            "config/packages/jms_serializer.yaml"
-        ]
-    },
     "knplabs/knp-menu-bundle": {
         "version": "v3.2.0"
     },
@@ -83,30 +62,6 @@
     },
     "liip/test-fixtures-bundle": {
         "version": "2.6.0"
-    },
-    "php-http/discovery": {
-        "version": "1.18",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "1.18",
-            "ref": "f45b5dd173a27873ab19f5e3180b2f661c21de02"
-        },
-        "files": [
-            "config/packages/http_discovery.yaml"
-        ]
-    },
-    "php-http/httplug-bundle": {
-        "version": "1.27",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "main",
-            "version": "1.6",
-            "ref": "87b3d491d593d2c6e3b90bf0689ac69a188bfa5f"
-        },
-        "files": [
-            "config/packages/httplug.yaml"
-        ]
     },
     "phpstan/phpstan": {
         "version": "1.10",
@@ -132,18 +87,6 @@
             ".env.test",
             "phpunit.xml.dist",
             "tests/bootstrap.php"
-        ]
-    },
-    "sensio/framework-extra-bundle": {
-        "version": "6.2",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "5.2",
-            "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
-        },
-        "files": [
-            "config/packages/sensio_framework_extra.yaml"
         ]
     },
     "stof/doctrine-extensions-bundle": {
