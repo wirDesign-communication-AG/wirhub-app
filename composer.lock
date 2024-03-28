@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.301.7",
+            "version": "3.301.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2fd8cae93e87326f2263c420fa9031ad8903a2f2"
+                "reference": "23eda9eeb6c44a3ed6a12951b61020dc6048f7f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2fd8cae93e87326f2263c420fa9031ad8903a2f2",
-                "reference": "2fd8cae93e87326f2263c420fa9031ad8903a2f2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/23eda9eeb6c44a3ed6a12951b61020dc6048f7f5",
+                "reference": "23eda9eeb6c44a3ed6a12951b61020dc6048f7f5",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.301.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.301.9"
             },
-            "time": "2024-03-25T18:14:28+00:00"
+            "time": "2024-03-27T18:26:04+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -8756,16 +8756,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.0.23",
+            "version": "3.0.23.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "778c9183cc0bd77975e84504b88d8702c00bc7c4"
+                "reference": "d6dc2eb0dc315c6472237b839d1350361d958464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/778c9183cc0bd77975e84504b88d8702c00bc7c4",
-                "reference": "778c9183cc0bd77975e84504b88d8702c00bc7c4",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d6dc2eb0dc315c6472237b839d1350361d958464",
+                "reference": "d6dc2eb0dc315c6472237b839d1350361d958464",
                 "shasum": ""
             },
             "require": {
@@ -8849,10 +8849,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.23",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.23.1",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-03-26T09:32:51+00:00"
+            "time": "2024-03-28T12:07:26+00:00"
         }
     ],
     "packages-dev": [
