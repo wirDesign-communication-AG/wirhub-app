@@ -45,12 +45,6 @@ doctrine:
                         type: attribute
                         dir: '%kernel.project_dir%/vendor/wirdesign-communication-ag/wirhub/Entity'
                         prefix: AppBundle\Entity
-                    GedmoLoggable:
-                        type: 'attribute'
-                        alias: 'GedmoLoggable'
-                        prefix: Gedmo\Loggable\Entity
-                        dir: '%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Loggable/Entity'
-                        is_bundle: false
 
 doctrine_migrations:
     migrations_paths:
@@ -181,11 +175,6 @@ security:
         - { path: ^/settings, role: ROLE_EDITOR }
         - { path: ^/admin, role: ROLE_ADMIN }
         - { path: ^/, roles: PUBLIC_ACCESS }
-
-stof_doctrine_extensions:
-    orm:
-        default:
-            loggable: true
 
 twig:
     form_themes: [ '@App/_components/form/default.html.twig' ]
