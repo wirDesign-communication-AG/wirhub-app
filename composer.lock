@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "110b11ab6b89e6bb95271d8f288aeb44",
+    "content-hash": "54fba330e89354d7c3ad762b8115435f",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.304.6",
+            "version": "3.304.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "02abf9b8e2afbdf281e28757c582049d3db16df7"
+                "reference": "0079eaa0a0eaef2d73d0a4a11389cdfce1d33189"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/02abf9b8e2afbdf281e28757c582049d3db16df7",
-                "reference": "02abf9b8e2afbdf281e28757c582049d3db16df7",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0079eaa0a0eaef2d73d0a4a11389cdfce1d33189",
+                "reference": "0079eaa0a0eaef2d73d0a4a11389cdfce1d33189",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.304.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.304.8"
             },
-            "time": "2024-04-17T18:27:31+00:00"
+            "time": "2024-04-19T18:13:09+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -1331,28 +1331,27 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "2.1.1",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6"
+                "reference": "31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6",
-                "reference": "861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd",
+                "reference": "31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd",
                 "shasum": ""
             },
             "require": {
-                "doctrine/deprecations": "^1.0",
-                "php": "^7.1 || ^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^9 || ^12",
-                "phpstan/phpstan": "^1.3",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6",
+                "doctrine/coding-standard": "^12",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.5",
                 "psalm/plugin-phpunit": "^0.18.3",
-                "vimeo/psalm": "^4.11 || ^5.21"
+                "vimeo/psalm": "^5.21"
             },
             "type": "library",
             "autoload": {
@@ -1389,7 +1388,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/lexer/issues",
-                "source": "https://github.com/doctrine/lexer/tree/2.1.1"
+                "source": "https://github.com/doctrine/lexer/tree/3.0.1"
             },
             "funding": [
                 {
@@ -1405,7 +1404,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-05T11:35:39+00:00"
+            "time": "2024-02-05T11:56:58+00:00"
         },
         {
             "name": "doctrine/migrations",
@@ -1762,26 +1761,26 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "3.2.6",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "e5997fa97e8790cdae03a9cbd5e78e45e3c7bda7"
+                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/e5997fa97e8790cdae03a9cbd5e78e45e3c7bda7",
-                "reference": "e5997fa97e8790cdae03a9cbd5e78e45e3c7bda7",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ebaaf5be6c0286928352e054f2d5125608e5405e",
+                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e",
                 "shasum": ""
             },
             "require": {
-                "doctrine/lexer": "^1.2|^2",
-                "php": ">=7.2",
-                "symfony/polyfill-intl-idn": "^1.15"
+                "doctrine/lexer": "^2.0 || ^3.0",
+                "php": ">=8.1",
+                "symfony/polyfill-intl-idn": "^1.26"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5.8|^9.3.3",
-                "vimeo/psalm": "^4"
+                "phpunit/phpunit": "^10.2",
+                "vimeo/psalm": "^5.12"
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
@@ -1789,7 +1788,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "4.0.x-dev"
                 }
             },
             "autoload": {
@@ -1817,7 +1816,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/3.2.6"
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.2"
             },
             "funding": [
                 {
@@ -1825,7 +1824,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-01T07:04:22+00:00"
+            "time": "2023-10-06T06:47:41+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -8482,16 +8481,16 @@
         },
         {
             "name": "twig/extra-bundle",
-            "version": "v3.9.0",
+            "version": "v3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/twig-extra-bundle.git",
-                "reference": "3a68ffc7747ecc25823cabe2127710ced516a16a"
+                "reference": "ef6869adf1fdab66f7e495771a7ba01496ffc0d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/twig-extra-bundle/zipball/3a68ffc7747ecc25823cabe2127710ced516a16a",
-                "reference": "3a68ffc7747ecc25823cabe2127710ced516a16a",
+                "url": "https://api.github.com/repos/twigphp/twig-extra-bundle/zipball/ef6869adf1fdab66f7e495771a7ba01496ffc0d5",
+                "reference": "ef6869adf1fdab66f7e495771a7ba01496ffc0d5",
                 "shasum": ""
             },
             "require": {
@@ -8540,7 +8539,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/twig-extra-bundle/tree/v3.9.0"
+                "source": "https://github.com/twigphp/twig-extra-bundle/tree/v3.9.3"
             },
             "funding": [
                 {
@@ -8552,7 +8551,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-07T08:24:24+00:00"
+            "time": "2024-04-18T09:24:21+00:00"
         },
         {
             "name": "twig/intl-extra",
@@ -8687,16 +8686,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.9.2",
+            "version": "v3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "856cb5a6cfd6f3e4dc1f6c9a8f54e259503f7cf3"
+                "reference": "a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/856cb5a6cfd6f3e4dc1f6c9a8f54e259503f7cf3",
-                "reference": "856cb5a6cfd6f3e4dc1f6c9a8f54e259503f7cf3",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58",
+                "reference": "a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58",
                 "shasum": ""
             },
             "require": {
@@ -8750,7 +8749,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.9.2"
+                "source": "https://github.com/twigphp/Twig/tree/v3.9.3"
             },
             "funding": [
                 {
@@ -8762,20 +8761,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-17T14:16:25+00:00"
+            "time": "2024-04-18T11:59:33+00:00"
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "dev-wip/894",
+            "version": "3.0.25",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "17c139d7515bfc47edc6b993b019ce96946b975c"
+                "reference": "d6f3c997e933880b1f917c8db32f987b1704fbd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/17c139d7515bfc47edc6b993b019ce96946b975c",
-                "reference": "17c139d7515bfc47edc6b993b019ce96946b975c",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d6f3c997e933880b1f917c8db32f987b1704fbd0",
+                "reference": "d6f3c997e933880b1f917c8db32f987b1704fbd0",
                 "shasum": ""
             },
             "require": {
@@ -8786,7 +8785,6 @@
                 "doctrine/doctrine-bundle": "^2.4.2",
                 "doctrine/doctrine-migrations-bundle": "^3.0.1",
                 "doctrine/orm": "^2.17.1|^3.0",
-                "egulias/email-validator": "^3.1",
                 "erusev/parsedown": "^1.7.3",
                 "ext-bcmath": "^8.1",
                 "ext-ctype": "^8.1",
@@ -8804,7 +8802,6 @@
                 "ext-simplexml": "^8.1",
                 "ext-xml": "^8.1",
                 "ext-zip": "^1.15.4",
-                "gedmo/doctrine-extensions": "^3.6",
                 "guzzlehttp/guzzle": "^7.5",
                 "hwi/oauth-bundle": "^2.1",
                 "knplabs/knp-menu-bundle": "^3.0.0",
@@ -8815,19 +8812,19 @@
                 "pmdevelopment/microsoft-symfony-mailer": "^1.1.1",
                 "scssphp/scssphp": "^1.0.9",
                 "stof/doctrine-extensions-bundle": "^1.3.0",
-                "symfony/asset": "^6.4",
-                "symfony/cache": "^6.4",
-                "symfony/dotenv": "^6.4",
-                "symfony/expression-language": "^6.4",
-                "symfony/filesystem": "^6.4",
-                "symfony/http-client": "^6.4",
-                "symfony/mailer": "^6.4",
+                "symfony/asset": "^6.4|^7.0",
+                "symfony/cache": "^6.4|^7.0",
+                "symfony/dotenv": "^6.4|^7.0",
+                "symfony/expression-language": "^6.4|^7.0",
+                "symfony/filesystem": "^6.4|^7.0",
+                "symfony/http-client": "^6.4|^7.0",
+                "symfony/mailer": "^6.4|^7.0",
                 "symfony/monolog-bundle": "^v3.8.0",
-                "symfony/property-access": "^6.4, !=6.4.6",
-                "symfony/security-bundle": "^6.4",
-                "symfony/security-csrf": "^6.4",
-                "symfony/serializer": "^6.4",
-                "symfony/string": "^6.4",
+                "symfony/property-access": "^6.4, !=6.4.6|^7.0",
+                "symfony/security-bundle": "^6.4|^7.0",
+                "symfony/security-csrf": "^6.4|^7.0",
+                "symfony/serializer": "^6.4|^7.0",
+                "symfony/string": "^6.4|^7.0",
                 "symfony/twig-pack": "^1.0",
                 "twig/extra-bundle": "^3.3",
                 "twig/intl-extra": "^3.3",
@@ -8839,7 +8836,7 @@
                 "ext-sqlite3": "*",
                 "phpstan/phpstan": "^1.8.5",
                 "rector/rector": "^0.18.2",
-                "symfony/var-exporter": "6.4.*"
+                "symfony/var-exporter": "6.4.*|^7.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -8860,10 +8857,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/894",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.25",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-04-18T09:12:57+00:00"
+            "time": "2024-04-22T09:33:12+00:00"
         }
     ],
     "packages-dev": [
@@ -11726,9 +11723,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
