@@ -39,7 +39,7 @@ doctrine:
                 connection: 'default'
                 dql:
                     string_functions:
-                        MATCH_AGAINST: AppBundle\Domain\Doctrine\MatchAgainst
+                        MATCH: AppBundle\Domain\Doctrine\MatchAgainst
                 mappings:
                     AppBundle:
                         type: attribute
