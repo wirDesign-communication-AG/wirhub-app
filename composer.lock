@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4d178f2721c94f784a0fee49a549676",
+    "content-hash": "0cefefd858ecd21b73dc97dff1661261",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -8512,16 +8512,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "dev-main",
+            "version": "3.0.26",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "7db48c0c9338752f3c3125bbfa0bd79e0958c159"
+                "reference": "21615dae23d709d2852170ede7715e7573390d92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/7db48c0c9338752f3c3125bbfa0bd79e0958c159",
-                "reference": "7db48c0c9338752f3c3125bbfa0bd79e0958c159",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/21615dae23d709d2852170ede7715e7573390d92",
+                "reference": "21615dae23d709d2852170ede7715e7573390d92",
                 "shasum": ""
             },
             "require": {
@@ -8584,7 +8584,6 @@
                 "rector/rector": "^0.18.2",
                 "symfony/var-exporter": "6.4.*|^7.0"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -8604,10 +8603,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/main",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.26",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-05-06T07:56:36+00:00"
+            "time": "2024-05-06T08:33:10+00:00"
         }
     ],
     "packages-dev": [
@@ -11470,9 +11469,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
