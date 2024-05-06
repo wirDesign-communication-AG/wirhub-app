@@ -1,14 +1,13 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
-# important because the installation will otherwise get stuck at a "geo" question
-ENV DEBIAN_FRONTEND=nonintercative
-
-RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+RUN apt -q update
+RUN DEBIAN_FRONTEND=noninteractive TZ=Europe/Berlin apt -y install tzdata
 
 # Packages
 RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https make wget zip unzip cron git vim software-properties-common apache2 && \
     a2enmod rewrite && \
     add-apt-repository ppa:ondrej/php && \
+    add-apt-repository ppa:ondrej/apache2 && \
     apt-get update && \
     apt install -y \
     php8.2 \
