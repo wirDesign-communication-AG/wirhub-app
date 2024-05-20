@@ -3,6 +3,9 @@ FROM ubuntu:22.04
 RUN apt -q update
 RUN DEBIAN_FRONTEND=noninteractive TZ=Europe/Berlin apt -y install tzdata
 
+
+RUN echo "postfix postfix/main_mailer_type string 'Internet Site'" | debconf-set-selections
+
 # Packages
 RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https make wget zip unzip cron git vim software-properties-common apache2 && \
     a2enmod rewrite && \
