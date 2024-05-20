@@ -15,6 +15,7 @@ RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https
     php8.2-zip \
     php8.2-imagick \
     php8.2-gd \
+    php8.2-imap \
     php8.2-intl \
     php8.2-bcmath \
     php8.2-curl \
