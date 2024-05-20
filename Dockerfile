@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 RUN apt -q update
 RUN DEBIAN_FRONTEND=noninteractive TZ=Europe/Berlin apt -y install tzdata
 
-
+RUN echo "postfix postfix/mailname string wirdesign.de" | debconf-set-selections
 RUN echo "postfix postfix/main_mailer_type string 'Internet Site'" | debconf-set-selections
 
 # Packages
