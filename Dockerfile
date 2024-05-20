@@ -35,7 +35,8 @@ RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https
     libapache2-mod-php8.2 \
     unoconv \
     libreoffice \
-    ghostscript
+    ghostscript \
+    postfix
 
 
 ## Additional software

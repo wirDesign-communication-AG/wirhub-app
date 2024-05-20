@@ -49,8 +49,7 @@ chown -R www-data:www-data files/
 
 if grep -q MAILER_URL=sendmail://default .env.local; then
   echo "--"
-  echo "-- Installing postfix"
-  apt update && apt install -y postfix
+  echo "-- Setup postfix"
   sed -i 's/inet_interfaces = all/inet_interfaces = loopback-only/' /etc/postfix/main.cf
   cp /etc/resolv.conf /var/spool/postfix/etc/resolv.conf
   uname -n > /etc/mailname
