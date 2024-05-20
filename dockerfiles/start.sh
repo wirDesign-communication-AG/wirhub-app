@@ -13,6 +13,10 @@ echo "-- Update envs"
 COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
 
 echo "--"
+echo "-- Clear cache"
+php bin/console cache:clear
+
+echo "--"
 echo "-- Migrations"
 php bin/console doctrine:migrations:migrate --no-interaction
 
@@ -32,6 +36,9 @@ echo "--"
 echo "-- Trigger Update after 10 Minutes again to send version"
 (sleep 600 ; (php bin/console app:update)) > /dev/null 2>&1 &
 
+echo "--"
+echo "-- Link secret folder"
+ln -s /opt/wirhub-secret/ secret
 
 echo "--"
 echo "-- Hand over directories to webserver"
