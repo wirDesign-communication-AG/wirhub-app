@@ -45,6 +45,7 @@ echo "-- Hand over directories to webserver"
 chown -R www-data:www-data public/
 chown -R www-data:www-data var/
 chown -R www-data:www-data files/
+chown -R www-data:www-data /opt/wirhub-secret/
 
 
 if grep -q MAILER_URL=sendmail://default .env.local; then

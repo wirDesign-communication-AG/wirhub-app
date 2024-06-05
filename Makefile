@@ -10,6 +10,13 @@ ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data files/
 endif
 
+dkim:
+	openssl genrsa -out secret/dkim.pem 2048;
+	@echo '';
+	@echo -n 'wirhub._domainkey.domain.de. 86400 IN TXT v=DKIM1; k=rsa; p=';
+	@openssl rsa -in secret/dkim.pem -pubout -outform der 2>/dev/null | openssl base64 -A;
+	@echo '';
+
 update:
 	git pull
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
