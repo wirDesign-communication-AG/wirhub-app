@@ -54,6 +54,7 @@ if grep -q MAILER_URL=sendmail://default .env.local; then
   cp /etc/resolv.conf /var/spool/postfix/etc/resolv.conf
   uname -n > /etc/mailname
   postconf maillog_file=/var/log/mail.log
+  postconf "myhostname=$(< /etc/mailname)"
   postfix start
 fi
 
