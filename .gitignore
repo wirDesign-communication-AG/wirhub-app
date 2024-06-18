@@ -24,8 +24,13 @@
 !files/.gitkeep
 /public/asset
 /public/file
+/tools/php-cs-fixer/vendor
 /composer.phar
 /composer
 ###< wirdesign-communication-ag/wirhub ###
 
 /secret/*
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###

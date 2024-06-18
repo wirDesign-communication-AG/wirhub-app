@@ -11,6 +11,11 @@ jobs:
             -   name: Add GitHub OAuth credentials
                 run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
+            -   name: PHP-CS-Fixer
+                uses: docker://ghcr.io/php-cs-fixer/php-cs-fixer:3-php8.2
+                with:
+                    args: check
+
             -   name: Install extensions
                 uses: shivammathur/setup-php@v2
                 with:
