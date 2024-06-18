@@ -29,9 +29,14 @@ jobs:
                     sudo mv /home/runner/work/wirhub-app/wirhub-app/.env* /var/www/wirhub
                     sudo chown -R www-data:www-data /var/www
 
+            -   name: Composer install
+                run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
+
+            -   name: PHP CS Fixer
+                run: /var/www/wirhub/vendor/bin/php-cs-fixer check /var/www/wirhub
+
             -   name: Prepare symfony
                 run: |
-                    sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
                     sudo -u www-data composer dump-env test --working-dir /var/www/wirhub
                     sudo -u www-data php /var/www/wirhub/bin/console cache:clear
                     sudo -u www-data php /var/www/wirhub/bin/console assets:install public/
@@ -41,11 +46,6 @@ jobs:
             -   name: Update folder permissions
                 run: |
                     sudo chmod -R 777 /var/www/wirhub
-
-            -   name: PHP-CS-Fixer
-                uses: docker://ghcr.io/php-cs-fixer/php-cs-fixer:3-php8.2
-                with:
-                    args: check ../../var/www/wirhub/
 
             -   name: Finish webserver
                 run: |

@@ -94,6 +94,7 @@
         "ext-sqlite3": "*",
         "dg/bypass-finals": "^1.4",
         "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "friendsofphp/php-cs-fixer": "^3.59",
         "liip/test-fixtures-bundle": "^2.6",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^9.5",
