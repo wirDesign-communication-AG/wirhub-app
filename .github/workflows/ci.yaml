@@ -45,8 +45,7 @@ jobs:
             -   name: PHP-CS-Fixer
                 uses: docker://ghcr.io/php-cs-fixer/php-cs-fixer:3-php8.2
                 with:
-                    working-directory: /var/www/wirhub
-                    args: check
+                    args: check ../../var/www/wirhub/
 
             -   name: Finish webserver
                 run: |
