@@ -38,14 +38,14 @@ jobs:
                     sudo -u www-data php /var/www/wirhub/bin/console doctrine:database:create
                     sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions 
 
+            -   name: Update folder permissions
+                run: |
+                    sudo chmod -R 777 /var/www/wirhub
+
             -   name: PHP-CS-Fixer
                 uses: docker://ghcr.io/php-cs-fixer/php-cs-fixer:3-php8.2
                 with:
                     args: check /var/www/wirhub
-
-            -   name: Update folder permissions
-                run: |
-                    sudo chmod -R 777 /var/www/wirhub
 
             -   name: Finish webserver
                 run: |
