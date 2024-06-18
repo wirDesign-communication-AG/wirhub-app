@@ -33,7 +33,7 @@ jobs:
                 run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
 
             -   name: PHP CS Fixer
-                run: /var/www/wirhub/vendor/bin/php-cs-fixer check /var/www/wirhub
+                run: sudo -u www-data /var/www/wirhub/vendor/bin/php-cs-fixer check --config=/var/www/wirhub/.php-cs-fixer.dist.php
 
             -   name: Prepare symfony
                 run: |
