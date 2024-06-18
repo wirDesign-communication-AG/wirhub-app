@@ -27,11 +27,17 @@ jobs:
                     sudo mkdir /var/www/wirhub
                     sudo mv /home/runner/work/wirhub-app/wirhub-app/* /var/www/wirhub
                     sudo mv /home/runner/work/wirhub-app/wirhub-app/.env* /var/www/wirhub
+                    sudo mv /home/runner/work/wirhub-app/wirhub-app/.php-* /var/www/wirhub
                     sudo chown -R www-data:www-data /var/www
+
+            -   name: Composer install
+                run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
+
+            -   name: PHP CS Fixer
+                run: /var/www/wirhub/vendor/bin/php-cs-fixer check --stop-on-violation --config=/var/www/wirhub/.php-cs-fixer.dist.php
 
             -   name: Prepare symfony
                 run: |
-                    sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
                     sudo -u www-data composer dump-env test --working-dir /var/www/wirhub
                     sudo -u www-data php /var/www/wirhub/bin/console cache:clear
                     sudo -u www-data php /var/www/wirhub/bin/console assets:install public/

@@ -75,7 +75,7 @@
         "symfony/framework-bundle": "6.4.*",
         "symfony/runtime": "6.4.*",
         "symfony/yaml": "6.4.*",
-        "wirdesign-communication-ag/wirhub": "^3.0.28"
+        "wirdesign-communication-ag/wirhub": "v3.0.29.x-dev"
     },
     "scripts": {
         "auto-scripts": {
@@ -94,6 +94,7 @@
         "ext-sqlite3": "*",
         "dg/bypass-finals": "^1.4",
         "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "friendsofphp/php-cs-fixer": "^3.59",
         "liip/test-fixtures-bundle": "^2.6",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^9.5",
