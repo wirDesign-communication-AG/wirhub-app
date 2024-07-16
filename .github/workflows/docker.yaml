@@ -2,7 +2,7 @@ name: Docker CI publish package
 
 on:
     push:
-        tags: [ 'v*.*.*', 'v*.*.*.*' ]
+        tags: [ 'v*.*.*', 'v*.*.*.*', 'beta-*' ]
 
 env:
     # Use docker.io for Docker Hub if empty
