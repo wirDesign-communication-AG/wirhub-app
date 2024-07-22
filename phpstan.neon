@@ -6,6 +6,7 @@ parameters:
         - vendor/wirdesign-communication-ag/wirhub/build
         - vendor/wirdesign-communication-ag/wirhub/Domain/Config/Vendor
         - vendor/wirdesign-communication-ag/wirhub/Resources
+        - vendor/wirdesign-communication-ag/wirhub/tools
         - vendor/wirdesign-communication-ag/wirhub/vendor
         - vendor/wirdesign-communication-ag/wirhub/rector.php
     level: 5

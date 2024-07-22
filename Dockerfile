@@ -39,7 +39,8 @@ RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https
     unoconv \
     libreoffice \
     ghostscript \
-    postfix
+    postfix \
+    wkhtmltopdf
 
 
 ## Additional software
