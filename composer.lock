@@ -2570,16 +2570,16 @@
         },
         {
             "name": "knplabs/knp-paginator-bundle",
-            "version": "dev-master",
+            "version": "v6.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
-                "reference": "cf9d768aa08a3de9f511fa650ac29393c73e180c"
+                "reference": "a9cbcb3c6be5868a2e16a599c7438149c40b4bda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/cf9d768aa08a3de9f511fa650ac29393c73e180c",
-                "reference": "cf9d768aa08a3de9f511fa650ac29393c73e180c",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/a9cbcb3c6be5868a2e16a599c7438149c40b4bda",
+                "reference": "a9cbcb3c6be5868a2e16a599c7438149c40b4bda",
                 "shasum": ""
             },
             "require": {
@@ -2600,7 +2600,6 @@
                 "symfony/expression-language": "^6.4 || ^7.0",
                 "symfony/templating": "^6.4 || ^7.0"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2639,9 +2638,9 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/KnpPaginatorBundle/issues",
-                "source": "https://github.com/KnpLabs/KnpPaginatorBundle/tree/master"
+                "source": "https://github.com/KnpLabs/KnpPaginatorBundle/tree/v6.4.0"
             },
-            "time": "2024-07-02T11:23:28+00:00"
+            "time": "2024-05-21T16:15:16+00:00"
         },
         {
             "name": "knplabs/knp-snappy",
@@ -8515,12 +8514,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "0aa024bda89e1b0d937677f4577949d76b2ccf12"
+                "reference": "9b99fe62546f382952b71b76d3bd50d0f02a3c02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/0aa024bda89e1b0d937677f4577949d76b2ccf12",
-                "reference": "0aa024bda89e1b0d937677f4577949d76b2ccf12",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/9b99fe62546f382952b71b76d3bd50d0f02a3c02",
+                "reference": "9b99fe62546f382952b71b76d3bd50d0f02a3c02",
                 "shasum": ""
             },
             "require": {
@@ -8551,7 +8550,7 @@
                 "guzzlehttp/guzzle": "^7.5",
                 "hwi/oauth-bundle": "^2.1",
                 "knplabs/knp-menu-bundle": "^3.0.0",
-                "knplabs/knp-paginator-bundle": "^5.1.1",
+                "knplabs/knp-paginator-bundle": "^6.4.0",
                 "knplabs/knp-snappy": "^1.2",
                 "leafo/lessphp": "^0.5.0",
                 "php": "^8.1.8|^8.2",
@@ -8605,7 +8604,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.31",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-07-19T07:51:33+00:00"
+            "time": "2024-07-22T08:56:27+00:00"
         }
     ],
     "packages-dev": [
