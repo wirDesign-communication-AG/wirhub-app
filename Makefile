@@ -2,9 +2,10 @@ init:
 	COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
 	php bin/console doctrine:migrations:migrate --no-interaction
-    php bin/console app:theme:refresh
-    php bin/console app:update
 	php bin/console app:theme:refresh
+	php bin/console app:update
+	php bin/console app:theme:refresh
+
 ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data public/
 	chown -R www-data:www-data var/
