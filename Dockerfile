@@ -62,12 +62,16 @@ RUN sed -i 's/post_max_size = 8M/post_max_size = 64M/g' /etc/php/8.2/apache2/php
 RUN sed -i 's/;date.timezone =/date.timezone = Europe\/Berlin/g' /etc/php/8.2/cli/php.ini
 RUN sed -i 's/;date.timezone =/date.timezone = Europe\/Berlin/g' /etc/php/8.2/apache2/php.ini
 
+RUN rm /etc/php/8.2/apache2/conf.d/10-opcache.ini
+COPY dockerfiles/php/10-opcache.ini /etc/php/8.2/apache2/conf.d
+
+
 # vorerst die alte 00-default.conf löschen und ersetzen. so funktionert es ohne https
 RUN rm /etc/apache2/sites-available/000-default.conf
 COPY dockerfiles/virtual_hosts /etc/apache2/sites-available
 
 ### Configure Webserver
-RUN  echo "<h1>Apache server started: cd /var/www/html/index.html</h1>" > /var/www/html/index.html
+RUN  echo "<h1>Webserver running</h1>" > /var/www/html/index.html
 RUN  a2enmod rewrite
 
 # setting the correct server timezone
