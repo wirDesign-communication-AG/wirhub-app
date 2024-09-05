@@ -46,6 +46,7 @@ chown -R www-data:www-data public/
 chown -R www-data:www-data var/
 chown -R www-data:www-data files/
 chown -R www-data:www-data /opt/wirhub-secret/
+chown -R www-data:www-data /var/lib/php/sessions
 
 
 if grep -q MAILER_URL=sendmail://default .env.local; then
