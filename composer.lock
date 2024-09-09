@@ -8512,12 +8512,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "1fe04ad719f96f910d1092f1eebfbae90d521630"
+                "reference": "3b9d3545a832962862e7f8ecfc4f47492c6c2fae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/1fe04ad719f96f910d1092f1eebfbae90d521630",
-                "reference": "1fe04ad719f96f910d1092f1eebfbae90d521630",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/3b9d3545a832962862e7f8ecfc4f47492c6c2fae",
+                "reference": "3b9d3545a832962862e7f8ecfc4f47492c6c2fae",
                 "shasum": ""
             },
             "require": {
@@ -8602,7 +8602,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.33",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-09-09T07:59:48+00:00"
+            "time": "2024-09-09T08:29:56+00:00"
         }
     ],
     "packages-dev": [
@@ -9887,16 +9887,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.2",
+            "version": "1.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "0ca1c7bb55fca8fe6448f16fff0f311ccec960a1"
+                "reference": "0fcbf194ab63d8159bb70d9aa3e1350051632009"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/0ca1c7bb55fca8fe6448f16fff0f311ccec960a1",
-                "reference": "0ca1c7bb55fca8fe6448f16fff0f311ccec960a1",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/0fcbf194ab63d8159bb70d9aa3e1350051632009",
+                "reference": "0fcbf194ab63d8159bb70d9aa3e1350051632009",
                 "shasum": ""
             },
             "require": {
@@ -9941,7 +9941,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-05T16:09:28+00:00"
+            "time": "2024-09-09T08:10:35+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
