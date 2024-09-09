@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b055dea5cb2183bf7d6ae513a698489e",
+    "content-hash": "ec23af10a3a101a5bb2f394dcf1c9f78",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.321.5",
+            "version": "3.321.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8cd434985ca76335c5de9d5cf76f42c380252dd2"
+                "reference": "3dc53a79677dd1f0e682dfc05f9815901ec7bf58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8cd434985ca76335c5de9d5cf76f42c380252dd2",
-                "reference": "8cd434985ca76335c5de9d5cf76f42c380252dd2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3dc53a79677dd1f0e682dfc05f9815901ec7bf58",
+                "reference": "3dc53a79677dd1f0e682dfc05f9815901ec7bf58",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.321.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.321.6"
             },
-            "time": "2024-09-05T18:04:31+00:00"
+            "time": "2024-09-06T18:06:38+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -8224,23 +8224,23 @@
         },
         {
             "name": "twig/extra-bundle",
-            "version": "v3.12.0",
+            "version": "v3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/twig-extra-bundle.git",
-                "reference": "a5427976a23c50b98d034d2f4c215ffaaaf5875f"
+                "reference": "21a9a7aa9f79d4493bb6fed4eb2794339f9551f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/twig-extra-bundle/zipball/a5427976a23c50b98d034d2f4c215ffaaaf5875f",
-                "reference": "a5427976a23c50b98d034d2f4c215ffaaaf5875f",
+                "url": "https://api.github.com/repos/twigphp/twig-extra-bundle/zipball/21a9a7aa9f79d4493bb6fed4eb2794339f9551f5",
+                "reference": "21a9a7aa9f79d4493bb6fed4eb2794339f9551f5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0.2",
                 "symfony/framework-bundle": "^5.4|^6.4|^7.0",
                 "symfony/twig-bundle": "^5.4|^6.4|^7.0",
-                "twig/twig": "^3.0"
+                "twig/twig": "^3.0|^4.0"
             },
             "require-dev": {
                 "league/commonmark": "^1.0|^2.0",
@@ -8282,7 +8282,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/twig-extra-bundle/tree/v3.12.0"
+                "source": "https://github.com/twigphp/twig-extra-bundle/tree/v3.13.0"
             },
             "funding": [
                 {
@@ -8294,26 +8294,26 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-10T10:32:24+00:00"
+            "time": "2024-09-01T20:39:12+00:00"
         },
         {
             "name": "twig/intl-extra",
-            "version": "v3.12.0",
+            "version": "v3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/intl-extra.git",
-                "reference": "61e1189333120a475d2b67b93664b8002668fc27"
+                "reference": "1b8d78c5db08bdc61015fd55009d2e84b3aa7e38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/intl-extra/zipball/61e1189333120a475d2b67b93664b8002668fc27",
-                "reference": "61e1189333120a475d2b67b93664b8002668fc27",
+                "url": "https://api.github.com/repos/twigphp/intl-extra/zipball/1b8d78c5db08bdc61015fd55009d2e84b3aa7e38",
+                "reference": "1b8d78c5db08bdc61015fd55009d2e84b3aa7e38",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0.2",
                 "symfony/intl": "^5.4|^6.4|^7.0",
-                "twig/twig": "^3.10"
+                "twig/twig": "^3.13|^4.0"
             },
             "require-dev": {
                 "symfony/phpunit-bridge": "^6.4|^7.0"
@@ -8346,7 +8346,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/intl-extra/tree/v3.12.0"
+                "source": "https://github.com/twigphp/intl-extra/tree/v3.13.0"
             },
             "funding": [
                 {
@@ -8358,27 +8358,27 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-10T10:32:24+00:00"
+            "time": "2024-09-03T13:08:40+00:00"
         },
         {
             "name": "twig/string-extra",
-            "version": "v3.12.0",
+            "version": "v3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/string-extra.git",
-                "reference": "0abea0e39f24db0bd847165533d77c93fcbb5025"
+                "reference": "148e869d87cf4bea9d97896ab49e048e4add3310"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/string-extra/zipball/0abea0e39f24db0bd847165533d77c93fcbb5025",
-                "reference": "0abea0e39f24db0bd847165533d77c93fcbb5025",
+                "url": "https://api.github.com/repos/twigphp/string-extra/zipball/148e869d87cf4bea9d97896ab49e048e4add3310",
+                "reference": "148e869d87cf4bea9d97896ab49e048e4add3310",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0.2",
                 "symfony/string": "^5.4|^6.4|^7.0",
                 "symfony/translation-contracts": "^1.1|^2|^3",
-                "twig/twig": "^3.0"
+                "twig/twig": "^3.13|^4.0"
             },
             "require-dev": {
                 "symfony/phpunit-bridge": "^6.4|^7.0"
@@ -8413,7 +8413,7 @@
                 "unicode"
             ],
             "support": {
-                "source": "https://github.com/twigphp/string-extra/tree/v3.12.0"
+                "source": "https://github.com/twigphp/string-extra/tree/v3.13.0"
             },
             "funding": [
                 {
@@ -8425,20 +8425,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-10T10:32:24+00:00"
+            "time": "2024-09-03T13:08:40+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v3.12.0",
+            "version": "v3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "4d19472d4ac1838e0b1f0e029ce1fa4040eb34ea"
+                "reference": "afc0eb63dc66c248c5a94504dc2b255bc9b86575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4d19472d4ac1838e0b1f0e029ce1fa4040eb34ea",
-                "reference": "4d19472d4ac1838e0b1f0e029ce1fa4040eb34ea",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/afc0eb63dc66c248c5a94504dc2b255bc9b86575",
+                "reference": "afc0eb63dc66c248c5a94504dc2b255bc9b86575",
                 "shasum": ""
             },
             "require": {
@@ -8492,7 +8492,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.12.0"
+                "source": "https://github.com/twigphp/Twig/tree/v3.13.0"
             },
             "funding": [
                 {
@@ -8504,20 +8504,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-29T09:51:12+00:00"
+            "time": "2024-09-07T08:01:12+00:00"
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.0.33.x-dev",
+            "version": "3.0.33",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "bbc989ce2f8aa174e64cc727196652a5c275d1c7"
+                "reference": "d226036dd60d103305748cbca916ab860682a3ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/bbc989ce2f8aa174e64cc727196652a5c275d1c7",
-                "reference": "bbc989ce2f8aa174e64cc727196652a5c275d1c7",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d226036dd60d103305748cbca916ab860682a3ab",
+                "reference": "d226036dd60d103305748cbca916ab860682a3ab",
                 "shasum": ""
             },
             "require": {
@@ -8602,7 +8602,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.33",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-09-06T07:45:52+00:00"
+            "time": "2024-09-09T07:48:22+00:00"
         }
     ],
     "packages-dev": [
@@ -10897,21 +10897,21 @@
         },
         {
             "name": "rector/rector",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "42a4aa23b48b4cfc8ebfeac2b570364e27744381"
+                "reference": "e98aa793ca3fcd17e893cfaf9103ac049775d339"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/42a4aa23b48b4cfc8ebfeac2b570364e27744381",
-                "reference": "42a4aa23b48b4cfc8ebfeac2b570364e27744381",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/e98aa793ca3fcd17e893cfaf9103ac049775d339",
+                "reference": "e98aa793ca3fcd17e893cfaf9103ac049775d339",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2|^8.0",
-                "phpstan/phpstan": "^1.11.11"
+                "phpstan/phpstan": "^1.12.2"
             },
             "conflict": {
                 "rector/rector-doctrine": "*",
@@ -10944,7 +10944,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/1.2.4"
+                "source": "https://github.com/rectorphp/rector/tree/1.2.5"
             },
             "funding": [
                 {
@@ -10952,7 +10952,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-23T09:03:01+00:00"
+            "time": "2024-09-08T17:43:24+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -12588,9 +12588,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
