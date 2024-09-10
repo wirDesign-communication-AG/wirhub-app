@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec23af10a3a101a5bb2f394dcf1c9f78",
+    "content-hash": "aebd9368f53e0ab4f150edd62753fd13",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -8507,16 +8507,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.0.33.1",
+            "version": "dev-wip/new-font-size-base",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "196468e784d7f54f00fe1a12ae86cbc32f722109"
+                "reference": "e37610a6a1009a06d97b937e8e6954ca8955eaa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/196468e784d7f54f00fe1a12ae86cbc32f722109",
-                "reference": "196468e784d7f54f00fe1a12ae86cbc32f722109",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/e37610a6a1009a06d97b937e8e6954ca8955eaa1",
+                "reference": "e37610a6a1009a06d97b937e8e6954ca8955eaa1",
                 "shasum": ""
             },
             "require": {
@@ -8598,10 +8598,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.33.1",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/new-font-size-base",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-09-10T13:24:26+00:00"
+            "time": "2024-09-10T14:10:27+00:00"
         }
     ],
     "packages-dev": [
@@ -12587,7 +12587,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
