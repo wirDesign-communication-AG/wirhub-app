@@ -8511,12 +8511,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "012ed4bd42ed75845597649366857d4f6a3d1a50"
+                "reference": "98fd9a6a90cf329e5e5fc1b7af7b1b308aed881b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/012ed4bd42ed75845597649366857d4f6a3d1a50",
-                "reference": "012ed4bd42ed75845597649366857d4f6a3d1a50",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/98fd9a6a90cf329e5e5fc1b7af7b1b308aed881b",
+                "reference": "98fd9a6a90cf329e5e5fc1b7af7b1b308aed881b",
                 "shasum": ""
             },
             "require": {
@@ -8601,7 +8601,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/new-font-size-base",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-09-10T14:13:37+00:00"
+            "time": "2024-09-10T14:23:35+00:00"
         }
     ],
     "packages-dev": [
