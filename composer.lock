@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.321.7",
+            "version": "3.321.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c64ee32d80ec2ab5d8d6a0b77297c2d69602ef3b"
+                "reference": "a81a9a2cb5f451e03f8ef68b02ebfecfbf1fa7f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c64ee32d80ec2ab5d8d6a0b77297c2d69602ef3b",
-                "reference": "c64ee32d80ec2ab5d8d6a0b77297c2d69602ef3b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a81a9a2cb5f451e03f8ef68b02ebfecfbf1fa7f2",
+                "reference": "a81a9a2cb5f451e03f8ef68b02ebfecfbf1fa7f2",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.321.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.321.10"
             },
-            "time": "2024-09-09T18:09:23+00:00"
+            "time": "2024-09-12T18:08:32+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -3286,16 +3286,16 @@
         },
         {
             "name": "psr/log",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "79dff0b268932c640297f5208d6298f71855c03e"
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/79dff0b268932c640297f5208d6298f71855c03e",
-                "reference": "79dff0b268932c640297f5208d6298f71855c03e",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
                 "shasum": ""
             },
             "require": {
@@ -3330,9 +3330,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/3.0.1"
+                "source": "https://github.com/php-fig/log/tree/3.0.2"
             },
-            "time": "2024-08-21T13:31:24+00:00"
+            "time": "2024-09-11T13:17:53+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -8511,12 +8511,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "98fd9a6a90cf329e5e5fc1b7af7b1b308aed881b"
+                "reference": "8e903352c83f4c7f0f1f873233ebc7302128e5f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/98fd9a6a90cf329e5e5fc1b7af7b1b308aed881b",
-                "reference": "98fd9a6a90cf329e5e5fc1b7af7b1b308aed881b",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/8e903352c83f4c7f0f1f873233ebc7302128e5f4",
+                "reference": "8e903352c83f4c7f0f1f873233ebc7302128e5f4",
                 "shasum": ""
             },
             "require": {
@@ -8601,7 +8601,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/new-font-size-base",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-09-10T14:23:35+00:00"
+            "time": "2024-09-13T09:35:50+00:00"
         }
     ],
     "packages-dev": [
