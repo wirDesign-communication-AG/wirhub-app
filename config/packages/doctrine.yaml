@@ -1,16 +1,11 @@
 doctrine:
     dbal:
         url: '%env(resolve:DATABASE_URL)%'
-
-        # IMPORTANT: You MUST configure your server version,
-        # either here or in the DATABASE_URL env var (see .env file)
-        #server_version: '15'
-
         profiling_collect_backtrace: '%kernel.debug%'
     orm:
         auto_generate_proxy_classes: true
         controller_resolver:
-            auto_mapping: true
+            auto_mapping: false
         enable_lazy_ghost_objects: true
         report_fields_where_declared: true
         validate_xml_mapping: true
@@ -29,11 +24,17 @@ when@test:
         dbal:
             # "TEST_TOKEN" is typically set by ParaTest
             dbname_suffix: '_test%env(default::TEST_TOKEN)%'
+        orm:
+            controller_resolver:
+                auto_mapping: true
+
 
 when@prod:
     doctrine:
         orm:
             auto_generate_proxy_classes: false
+            controller_resolver:
+                auto_mapping: true
             proxy_dir: '%kernel.build_dir%/doctrine/orm/Proxies'
             query_cache_driver:
                 type: pool
