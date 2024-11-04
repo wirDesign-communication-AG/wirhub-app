@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e8e6cf0f41e43911a3875c37d3eb4b3",
+    "content-hash": "bd819909155a46bfa062c4007b6f3d00",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.325.1",
+            "version": "3.325.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5ac57c98062f1c45d094c2baa94a7e557989465f"
+                "reference": "9e354a5e0cd1d563ec85245e3000e98e16a44fce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5ac57c98062f1c45d094c2baa94a7e557989465f",
-                "reference": "5ac57c98062f1c45d094c2baa94a7e557989465f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9e354a5e0cd1d563ec85245e3000e98e16a44fce",
+                "reference": "9e354a5e0cd1d563ec85245e3000e98e16a44fce",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.325.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.325.2"
             },
-            "time": "2024-10-31T18:15:14+00:00"
+            "time": "2024-11-01T18:08:38+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -8516,16 +8516,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.0.37",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "a8f79232f4d3bdb5485c253a53dce3c270eb8d05"
+                "reference": "13554a95908e22056a8c42eefcde2f444bff46fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/a8f79232f4d3bdb5485c253a53dce3c270eb8d05",
-                "reference": "a8f79232f4d3bdb5485c253a53dce3c270eb8d05",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/13554a95908e22056a8c42eefcde2f444bff46fd",
+                "reference": "13554a95908e22056a8c42eefcde2f444bff46fd",
                 "shasum": ""
             },
             "require": {
@@ -8588,6 +8588,7 @@
                 "rector/rector": "^0.18.2",
                 "symfony/var-exporter": "6.4.*|^7.0"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -8607,10 +8608,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.37",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.37.1",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-11-01T14:29:48+00:00"
+            "time": "2024-11-04T16:23:59+00:00"
         }
     ],
     "packages-dev": [
@@ -12596,7 +12597,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
