@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "9bedffbe22c40ffb84e68f60d8e479b8",
+=======
+    "content-hash": "bd819909155a46bfa062c4007b6f3d00",
+>>>>>>> 66f313c (v3.0.40.1)
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,6 +66,7 @@
         },
         {
             "name": "aws/aws-sdk-php",
+<<<<<<< HEAD
             "version": "3.335.0",
             "source": {
                 "type": "git",
@@ -72,6 +77,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/104c61bff0f7fb55763c67baee8c1f0e46e2d021",
                 "reference": "104c61bff0f7fb55763c67baee8c1f0e46e2d021",
+=======
+            "version": "3.334.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "2b0be3aded849d3b7bb0b53ea3295c7cecdeeee7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2b0be3aded849d3b7bb0b53ea3295c7cecdeeee7",
+                "reference": "2b0be3aded849d3b7bb0b53ea3295c7cecdeeee7",
+>>>>>>> 66f313c (v3.0.40.1)
                 "shasum": ""
             },
             "require": {
@@ -154,9 +171,15 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/aws/aws-sdk-php/tree/3.335.0"
             },
             "time": "2024-12-17T19:04:01+00:00"
+=======
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.334.6"
+            },
+            "time": "2024-12-13T19:18:29+00:00"
+>>>>>>> 66f313c (v3.0.40.1)
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -8606,6 +8629,7 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
+<<<<<<< HEAD
             "version": "dev-wip/1076",
             "source": {
                 "type": "git",
@@ -8616,6 +8640,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/02c0c353d89045af06a898e11b40d67e6d82f4b8",
                 "reference": "02c0c353d89045af06a898e11b40d67e6d82f4b8",
+=======
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
+                "reference": "68685f6314157ad700cb8edbb79c74d129fb0b4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/68685f6314157ad700cb8edbb79c74d129fb0b4f",
+                "reference": "68685f6314157ad700cb8edbb79c74d129fb0b4f",
+>>>>>>> 66f313c (v3.0.40.1)
                 "shasum": ""
             },
             "require": {
@@ -8679,6 +8715,7 @@
                 "rector/rector": "^0.18.2",
                 "symfony/var-exporter": "6.4.*|^7.0"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -8698,10 +8735,17 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1076",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
             "time": "2024-12-18T16:00:16+00:00"
+=======
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.40.1",
+                "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
+            },
+            "time": "2024-12-16T14:52:03+00:00"
+>>>>>>> 66f313c (v3.0.40.1)
         }
     ],
     "packages-dev": [
