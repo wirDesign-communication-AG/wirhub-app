@@ -83,4 +83,5 @@ test:
 	@echo "--------------------------------------"
 	@echo "------------- PHPUnit ----------------"
 	@echo "--------------------------------------"
-	php bin/phpunit $(TARGET)
+	APP_1076=deprecated php bin/phpunit $(TARGET)
+	APP_1076=new php bin/phpunit $(TARGET)
