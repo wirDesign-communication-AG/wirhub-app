@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "9bedffbe22c40ffb84e68f60d8e479b8",
-=======
-    "content-hash": "bd819909155a46bfa062c4007b6f3d00",
->>>>>>> 66f313c (v3.0.40.1)
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -66,29 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-<<<<<<< HEAD
-            "version": "3.335.0",
+            "version": "3.336.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "104c61bff0f7fb55763c67baee8c1f0e46e2d021"
+                "reference": "5a62003bf183e32da038056a4b9077c27224e034"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/104c61bff0f7fb55763c67baee8c1f0e46e2d021",
-                "reference": "104c61bff0f7fb55763c67baee8c1f0e46e2d021",
-=======
-            "version": "3.334.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2b0be3aded849d3b7bb0b53ea3295c7cecdeeee7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2b0be3aded849d3b7bb0b53ea3295c7cecdeeee7",
-                "reference": "2b0be3aded849d3b7bb0b53ea3295c7cecdeeee7",
->>>>>>> 66f313c (v3.0.40.1)
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5a62003bf183e32da038056a4b9077c27224e034",
+                "reference": "5a62003bf183e32da038056a4b9077c27224e034",
                 "shasum": ""
             },
             "require": {
@@ -171,15 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-<<<<<<< HEAD
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.335.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.336.0"
             },
-            "time": "2024-12-17T19:04:01+00:00"
-=======
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.334.6"
-            },
-            "time": "2024-12-13T19:18:29+00:00"
->>>>>>> 66f313c (v3.0.40.1)
+            "time": "2024-12-18T19:04:32+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -1506,16 +1483,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "3.3.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "69958152e661aa9c14e80d1ee4962863485aa60b"
+                "reference": "b1f8253105aa5382c495e5f9f8ef34e297775428"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/69958152e661aa9c14e80d1ee4962863485aa60b",
-                "reference": "69958152e661aa9c14e80d1ee4962863485aa60b",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/b1f8253105aa5382c495e5f9f8ef34e297775428",
+                "reference": "b1f8253105aa5382c495e5f9f8ef34e297775428",
                 "shasum": ""
             },
             "require": {
@@ -1527,7 +1504,7 @@
                 "doctrine/inflector": "^1.4 || ^2.0",
                 "doctrine/instantiator": "^1.3 || ^2",
                 "doctrine/lexer": "^3",
-                "doctrine/persistence": "^3.3.1",
+                "doctrine/persistence": "^3.3.1 || ^4",
                 "ext-ctype": "*",
                 "php": "^8.1",
                 "psr/cache": "^1 || ^2 || ^3",
@@ -1539,13 +1516,12 @@
                 "phpbench/phpbench": "^1.0",
                 "phpdocumentor/guides-cli": "^1.4",
                 "phpstan/extension-installer": "^1.4",
-                "phpstan/phpstan": "1.12.6",
-                "phpstan/phpstan-deprecation-rules": "^1.2",
+                "phpstan/phpstan": "2.0.3",
+                "phpstan/phpstan-deprecation-rules": "^2",
                 "phpunit/phpunit": "^10.4.0",
                 "psr/log": "^1 || ^2 || ^3",
                 "squizlabs/php_codesniffer": "3.7.2",
-                "symfony/cache": "^5.4 || ^6.2 || ^7.0",
-                "vimeo/psalm": "5.24.0"
+                "symfony/cache": "^5.4 || ^6.2 || ^7.0"
             },
             "suggest": {
                 "ext-dom": "Provides support for XSD validation for XML mapping files",
@@ -1591,9 +1567,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/3.3.0"
+                "source": "https://github.com/doctrine/orm/tree/3.3.1"
             },
-            "time": "2024-10-12T20:07:18+00:00"
+            "time": "2024-12-19T07:08:14+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -8629,29 +8605,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-<<<<<<< HEAD
             "version": "dev-wip/1076",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "02c0c353d89045af06a898e11b40d67e6d82f4b8"
+                "reference": "d208a2fb6a36b06390657baae3b2931582d7d790"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/02c0c353d89045af06a898e11b40d67e6d82f4b8",
-                "reference": "02c0c353d89045af06a898e11b40d67e6d82f4b8",
-=======
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "68685f6314157ad700cb8edbb79c74d129fb0b4f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/68685f6314157ad700cb8edbb79c74d129fb0b4f",
-                "reference": "68685f6314157ad700cb8edbb79c74d129fb0b4f",
->>>>>>> 66f313c (v3.0.40.1)
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d208a2fb6a36b06390657baae3b2931582d7d790",
+                "reference": "d208a2fb6a36b06390657baae3b2931582d7d790",
                 "shasum": ""
             },
             "require": {
@@ -8715,7 +8678,6 @@
                 "rector/rector": "^0.18.2",
                 "symfony/var-exporter": "6.4.*|^7.0"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -8735,17 +8697,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-<<<<<<< HEAD
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1076",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2024-12-18T16:00:16+00:00"
-=======
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.40.1",
-                "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
-            },
-            "time": "2024-12-16T14:52:03+00:00"
->>>>>>> 66f313c (v3.0.40.1)
+            "time": "2024-12-19T12:21:04+00:00"
         }
     ],
     "packages-dev": [
