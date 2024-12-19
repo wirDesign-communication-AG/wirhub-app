@@ -33,6 +33,21 @@ ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data files/
 endif
 
+test-deprecated-rights:
+	@echo ""
+	@echo ""
+	@echo "--------------------------------------"
+	@echo "--------- Prepare database -----------"
+	@echo "--------------------------------------"
+	APP_ENV=test php bin/console doctrine:database:create
+	APP_ENV=test php bin/console doctrine:schema:update --force
+	@echo ""
+	@echo ""
+	@echo "--------------------------------------"
+	@echo "------------- PHPUnit ----------------"
+	@echo "--------------------------------------"
+	APP_1076=deprecated php bin/phpunit $(TARGET)
+
 test:
 	@echo "--------------------------------------"
 	@echo "------------ Log versions ------------"
@@ -83,5 +98,4 @@ test:
 	@echo "--------------------------------------"
 	@echo "------------- PHPUnit ----------------"
 	@echo "--------------------------------------"
-	APP_1076=deprecated php bin/phpunit $(TARGET)
 	APP_1076=new php bin/phpunit $(TARGET)
