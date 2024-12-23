@@ -46,7 +46,7 @@ test-deprecated-rights:
 	@echo "--------------------------------------"
 	@echo "------------- PHPUnit ----------------"
 	@echo "--------------------------------------"
-	APP_1076=deprecated php bin/phpunit $(TARGET)
+	php bin/phpunit -c phpunit-deprecated.xml.dist $(TARGET)
 
 test:
 	@echo "--------------------------------------"
@@ -98,4 +98,4 @@ test:
 	@echo "--------------------------------------"
 	@echo "------------- PHPUnit ----------------"
 	@echo "--------------------------------------"
-	APP_1076=new php bin/phpunit $(TARGET)
+	php bin/phpunit -c phpunit.xml.dist $(TARGET)
