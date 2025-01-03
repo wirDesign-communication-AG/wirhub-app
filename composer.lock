@@ -8609,12 +8609,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "78940f985e6dee9424ef3d265adebfa4a2c896e4"
+                "reference": "42d8a1cbc084ff53762d345e08953feecacba44b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/78940f985e6dee9424ef3d265adebfa4a2c896e4",
-                "reference": "78940f985e6dee9424ef3d265adebfa4a2c896e4",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/42d8a1cbc084ff53762d345e08953feecacba44b",
+                "reference": "42d8a1cbc084ff53762d345e08953feecacba44b",
                 "shasum": ""
             },
             "require": {
@@ -8672,10 +8672,10 @@
                 "twig/twig": "^3.3.0"
             },
             "require-dev": {
-                "doctrine/doctrine-fixtures-bundle": "^3.4|^4.0",
+                "doctrine/doctrine-fixtures-bundle": "^4.0",
                 "ext-sqlite3": "*",
                 "phpstan/phpstan": "^2.1",
-                "rector/rector": "^0.18.2|^2.0",
+                "rector/rector": "^2.0",
                 "symfony/var-exporter": "^7.2"
             },
             "type": "symfony-bundle",
@@ -8700,7 +8700,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1076",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-01-03T13:17:16+00:00"
+            "time": "2025-01-03T13:38:58+00:00"
         }
     ],
     "packages-dev": [
