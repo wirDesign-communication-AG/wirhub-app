@@ -37,13 +37,6 @@ test-deprecated-rights:
 	@echo ""
 	@echo ""
 	@echo "--------------------------------------"
-	@echo "--------- Prepare database -----------"
-	@echo "--------------------------------------"
-	APP_ENV=test php bin/console doctrine:database:create
-	APP_ENV=test php bin/console doctrine:schema:update --force
-	@echo ""
-	@echo ""
-	@echo "--------------------------------------"
 	@echo "------------- PHPUnit ----------------"
 	@echo "--------------------------------------"
 	php bin/phpunit -c phpunit-deprecated.xml.dist $(TARGET)
@@ -80,13 +73,6 @@ test:
 	@echo "--------- Custom validation ----------"
 	@echo "--------------------------------------"
 	APP_ENV=test php bin/console app:test
-	@echo ""
-	@echo ""
-	@echo "--------------------------------------"
-	@echo "--------- Prepare database -----------"
-	@echo "--------------------------------------"
-	APP_ENV=test php bin/console doctrine:database:create
-	APP_ENV=test php bin/console doctrine:schema:update --force
 	@echo ""
 	@echo ""
 	@echo "--------------------------------------"
