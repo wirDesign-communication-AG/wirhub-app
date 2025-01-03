@@ -41,8 +41,7 @@ jobs:
                     sudo -u www-data composer dump-env test --working-dir /var/www/wirhub
                     sudo -u www-data php /var/www/wirhub/bin/console cache:clear
                     sudo -u www-data php /var/www/wirhub/bin/console assets:install public/
-                    sudo -u www-data php /var/www/wirhub/bin/console doctrine:database:create
-                    sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions 
+                    sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions
 
             -   name: Update folder permissions
                 run: |
