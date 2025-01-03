@@ -24,8 +24,11 @@
     </coverage>
     <extensions>
         <extension class="Symfony\Component\Panther\ServerExtension"/>
-        <bootstrap class="AppBundle\Tests\BypassFinalsExtension"/>
+        <bootstrap class="DG\BypassFinals\PHPUnitExtension"/>
     </extensions>
+    <listeners>
+        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener"/>
+    </listeners>
     <testsuites>
         <testsuite name="Application Tests">
             <directory>vendor/wirdesign-communication-ag/wirhub/Tests</directory>

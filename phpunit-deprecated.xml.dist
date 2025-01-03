@@ -24,7 +24,7 @@
     </coverage>
     <extensions>
         <extension class="Symfony\Component\Panther\ServerExtension"/>
-         <bootstrap class="AppBundle\Tests\BypassFinalsExtension"/>
+         <bootstrap class="DG\BypassFinals\PHPUnitExtension"/>
     </extensions>
     <testsuites>
         <testsuite name="Application Tests">
