@@ -39,10 +39,10 @@ jobs:
             -   name: Prepare symfony
                 run: |
                     sudo -u www-data composer dump-env test --working-dir /var/www/wirhub
-                    sudo -u www-data php /var/www/wirhub/bin/console cache:clear
-                    sudo -u www-data php /var/www/wirhub/bin/console assets:install public/
-                    sudo -u www-data php /var/www/wirhub/bin/console doctrine:database:create
-                    sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions 
+                    sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console cache:clear
+                    sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console assets:install public/
+                    sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console doctrine:schema:update --force
+                    sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions
 
             -   name: Update folder permissions
                 run: |
@@ -58,6 +58,9 @@ jobs:
 
             -   name: Run tests
                 run: cd /var/www/wirhub && make test
+
+            -   name: Run tests (deprecated rights)
+                run: cd /var/www/wirhub && make test-deprecated-rights
 
             -   name: Archive debugging files
                 uses: actions/upload-artifact@v4

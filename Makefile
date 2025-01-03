@@ -33,6 +33,14 @@ ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data files/
 endif
 
+test-deprecated-rights:
+	@echo ""
+	@echo ""
+	@echo "--------------------------------------"
+	@echo "------------- PHPUnit ----------------"
+	@echo "--------------------------------------"
+	php bin/phpunit -c phpunit-deprecated.xml.dist $(TARGET)
+
 test:
 	@echo "--------------------------------------"
 	@echo "------------ Log versions ------------"
@@ -68,13 +76,6 @@ test:
 	@echo ""
 	@echo ""
 	@echo "--------------------------------------"
-	@echo "--------- Prepare database -----------"
-	@echo "--------------------------------------"
-	APP_ENV=test php bin/console doctrine:database:create
-	APP_ENV=test php bin/console doctrine:schema:update --force
-	@echo ""
-	@echo ""
-	@echo "--------------------------------------"
 	@echo "----------- Create theme -------------"
 	@echo "--------------------------------------"
 	APP_ENV=test php bin/console app:theme:refresh
@@ -83,4 +84,4 @@ test:
 	@echo "--------------------------------------"
 	@echo "------------- PHPUnit ----------------"
 	@echo "--------------------------------------"
-	php bin/phpunit $(TARGET)
+	php bin/phpunit -c phpunit.xml.dist $(TARGET)
