@@ -24,7 +24,7 @@
     </coverage>
     <extensions>
         <extension class="Symfony\Component\Panther\ServerExtension"/>
-        <extension class="AppBundle\Tests\Helper\Hooks\BypassFinalHook"/>
+        <bootstrap class="AppBundle\Tests\BypassFinalsExtension"/>
     </extensions>
     <testsuites>
         <testsuite name="Application Tests">
