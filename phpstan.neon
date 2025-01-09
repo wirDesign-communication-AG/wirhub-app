@@ -9,7 +9,6 @@ parameters:
         - vendor/wirdesign-communication-ag/wirhub/tools
         - vendor/wirdesign-communication-ag/wirhub/templates
         - vendor/wirdesign-communication-ag/wirhub/translations
-        - vendor/wirdesign-communication-ag/wirhub/Tests
         - vendor/wirdesign-communication-ag/wirhub/Twig
         - vendor/wirdesign-communication-ag/wirhub/vendor (?)
         - vendor/wirdesign-communication-ag/wirhub/rector.php
