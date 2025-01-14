@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.336.11",
+            "version": "3.336.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "442039c766a82f06ecfecb0ac2c610d6aaba228d"
+                "reference": "dc9ac0ab313bbfc4e41635ce6d6083f28d202bf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/442039c766a82f06ecfecb0ac2c610d6aaba228d",
-                "reference": "442039c766a82f06ecfecb0ac2c610d6aaba228d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/dc9ac0ab313bbfc4e41635ce6d6083f28d202bf0",
+                "reference": "dc9ac0ab313bbfc4e41635ce6d6083f28d202bf0",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.336.11"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.336.14"
             },
-            "time": "2025-01-08T19:06:59+00:00"
+            "time": "2025-01-13T19:04:40+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -8609,12 +8609,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "61aa89db478883af0a451e7f6fc2f98002514edb"
+                "reference": "a6f8185ea64ed7adb07a132d717508605f07452d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/61aa89db478883af0a451e7f6fc2f98002514edb",
-                "reference": "61aa89db478883af0a451e7f6fc2f98002514edb",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/a6f8185ea64ed7adb07a132d717508605f07452d",
+                "reference": "a6f8185ea64ed7adb07a132d717508605f07452d",
                 "shasum": ""
             },
             "require": {
@@ -8700,7 +8700,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1076",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-01-09T09:21:08+00:00"
+            "time": "2025-01-14T08:44:46+00:00"
         }
     ],
     "packages-dev": [
@@ -9326,16 +9326,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.67.0",
+            "version": "v3.68.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "0ad34c75d1172f7d30320460e803887981830cbf"
+                "reference": "73f78d8b2b34a0dd65fedb434a602ee4c2c8ad4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/0ad34c75d1172f7d30320460e803887981830cbf",
-                "reference": "0ad34c75d1172f7d30320460e803887981830cbf",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/73f78d8b2b34a0dd65fedb434a602ee4c2c8ad4c",
+                "reference": "73f78d8b2b34a0dd65fedb434a602ee4c2c8ad4c",
                 "shasum": ""
             },
             "require": {
@@ -9417,7 +9417,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.67.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.68.0"
             },
             "funding": [
                 {
@@ -9425,7 +9425,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-08T10:17:40+00:00"
+            "time": "2025-01-13T17:01:01+00:00"
         },
         {
             "name": "liip/test-fixtures-bundle",
@@ -10267,16 +10267,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.2",
+            "version": "11.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "153d0531b9f7e883c5053160cad6dd5ac28140b3"
+                "reference": "30e319e578a7b5da3543073e30002bf82042f701"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/153d0531b9f7e883c5053160cad6dd5ac28140b3",
-                "reference": "153d0531b9f7e883c5053160cad6dd5ac28140b3",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/30e319e578a7b5da3543073e30002bf82042f701",
+                "reference": "30e319e578a7b5da3543073e30002bf82042f701",
                 "shasum": ""
             },
             "require": {
@@ -10297,7 +10297,7 @@
                 "phpunit/php-timer": "^7.0.1",
                 "sebastian/cli-parser": "^3.0.2",
                 "sebastian/code-unit": "^3.0.2",
-                "sebastian/comparator": "^6.2.1",
+                "sebastian/comparator": "^6.3.0",
                 "sebastian/diff": "^6.0.2",
                 "sebastian/environment": "^7.2.0",
                 "sebastian/exporter": "^6.3.0",
@@ -10348,7 +10348,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.2"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.3"
             },
             "funding": [
                 {
@@ -10364,7 +10364,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-21T05:51:08+00:00"
+            "time": "2025-01-13T09:36:00+00:00"
         },
         {
             "name": "react/cache",
