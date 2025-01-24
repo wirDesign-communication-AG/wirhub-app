@@ -28,12 +28,15 @@ jobs:
                     chrome-version: stable
                     install-chromedriver: true
 
+            -   name: Update chrome binary symlink
+                run: |
+                    rm /usr/bin/google-chrome
+                    ln -s /opt/hostedtoolcache/setup-chrome/chromium/stable/x64/chrome /usr/bin/google-chrome
+
             -   name: Verify some versions
                 run: |
-                    which google-chrome
                     google-chrome --version
                     chromedriver --version
-                    php --version
                     composer --version
 
             -   name: Move project to web
