@@ -26,14 +26,14 @@ jobs:
             -   name: Install chrome
                 uses: browser-actions/setup-chrome@v1
                 with:
-                    chrome-version: 132
+                    chrome-version: 130
                     install-chromedriver: true
 
             -   name: Update chrome binary to custom setup
                 run: |
                     sudo rm -rf /opt/google
                     sudo rm /usr/bin/google-chrome
-                    sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/132.0.6834.110/x64/chrome /usr/bin/google-chrome
+                    sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/130.0.6723.116/x64/chrome /usr/bin/google-chrome
 
             -   name: Verify some versions
                 run: |
