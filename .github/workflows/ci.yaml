@@ -21,13 +21,20 @@ jobs:
             -   name: Install Webserver
                 run: |
                     sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.2
-                    sudo apt remove -y google-chrome
 
             -   name: Install chrome
                 uses: browser-actions/setup-chrome@v1
                 with:
                     chrome-version: stable
                     install-chromedriver: true
+
+            -   name: Verify some versions
+                run: |
+                    which google-chrome
+                    google-chrome --version
+                    chromedriver --version
+                    php --version
+                    composer --version
 
             -   name: Move project to web
                 run: |
