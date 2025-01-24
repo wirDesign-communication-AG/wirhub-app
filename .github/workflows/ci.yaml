@@ -30,8 +30,8 @@ jobs:
 
             -   name: Update chrome binary symlink
                 run: |
-                    rm /usr/bin/google-chrome
-                    ln -s /opt/hostedtoolcache/setup-chrome/chromium/stable/x64/chrome /usr/bin/google-chrome
+                    sudo rm /usr/bin/google-chrome
+                    sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/stable/x64/chrome /usr/bin/google-chrome
 
             -   name: Verify some versions
                 run: |
