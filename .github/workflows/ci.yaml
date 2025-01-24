@@ -25,12 +25,12 @@ jobs:
             -   name: Install chrome
                 uses: browser-actions/setup-chrome@v1
                 with:
-                    chrome-version: 131
+                    chrome-version: stable
                     install-chromedriver: true
 
             -   name: Update Google-Chrome path
                 run: |
-                    sudo ln -sf /opt/hostedtoolcache/setup-chrome/chromium/131.0.6778.264/x64/chrome /usr/bin/google-chrome
+                    sudo ln -sf /opt/hostedtoolcache/setup-chrome/chromium/stable/x64/chrome /usr/bin/google-chrome
 
             -   name: Move project to web
                 run: |
