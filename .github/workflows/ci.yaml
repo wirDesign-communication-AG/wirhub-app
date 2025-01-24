@@ -25,13 +25,13 @@ jobs:
             -   name: Install chrome
                 uses: browser-actions/setup-chrome@v1
                 with:
-                    chrome-version: 131
+                    chrome-version: 132
                     install-chromedriver: true
 
             -   name: Update chrome binary symlink
                 run: |
                     sudo rm /usr/bin/google-chrome
-                    sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/131.0.6778.264/x64/chrome /usr/bin/google-chrome
+                    sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/132.0.6834.110/x64/chrome /usr/bin/google-chrome
 
             -   name: Verify some versions
                 run: |
