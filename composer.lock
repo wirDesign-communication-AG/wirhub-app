@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfd1e8a1bf9dba0082d73906902262d9",
+    "content-hash": "c6d0ecc2329a3d68ca55e11fe9a5529d",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1570,16 +1570,16 @@
         },
         {
             "name": "doctrine/sql-formatter",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/sql-formatter.git",
-                "reference": "b784cbde727cf806721451dde40eff4fec3bbe86"
+                "reference": "d6d00aba6fd2957fe5216fe2b7673e9985db20c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/sql-formatter/zipball/b784cbde727cf806721451dde40eff4fec3bbe86",
-                "reference": "b784cbde727cf806721451dde40eff4fec3bbe86",
+                "url": "https://api.github.com/repos/doctrine/sql-formatter/zipball/d6d00aba6fd2957fe5216fe2b7673e9985db20c8",
+                "reference": "d6d00aba6fd2957fe5216fe2b7673e9985db20c8",
                 "shasum": ""
             },
             "require": {
@@ -1589,8 +1589,7 @@
                 "doctrine/coding-standard": "^12",
                 "ergebnis/phpunit-slow-test-detector": "^2.14",
                 "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^10.5",
-                "vimeo/psalm": "^5.24"
+                "phpunit/phpunit": "^10.5"
             },
             "bin": [
                 "bin/sql-formatter"
@@ -1620,9 +1619,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/sql-formatter/issues",
-                "source": "https://github.com/doctrine/sql-formatter/tree/1.5.1"
+                "source": "https://github.com/doctrine/sql-formatter/tree/1.5.2"
             },
-            "time": "2024-10-21T18:21:57+00:00"
+            "time": "2025-01-24T11:45:48+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -8507,16 +8506,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.0.41.x-dev",
+            "version": "3.0.41",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "c98ada9824bfc4fe4e0f34627b5d95b95b95b94e"
+                "reference": "c19e10e994683e2594adaea012d6b2be10cca281"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/c98ada9824bfc4fe4e0f34627b5d95b95b95b94e",
-                "reference": "c98ada9824bfc4fe4e0f34627b5d95b95b95b94e",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/c19e10e994683e2594adaea012d6b2be10cca281",
+                "reference": "c19e10e994683e2594adaea012d6b2be10cca281",
                 "shasum": ""
             },
             "require": {
@@ -8601,7 +8600,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.41",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-01-22T14:03:40+00:00"
+            "time": "2025-01-24T16:17:47+00:00"
         }
     ],
     "packages-dev": [
@@ -12582,9 +12581,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
