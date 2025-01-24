@@ -30,7 +30,7 @@ jobs:
 
             -   name: Update Google-Chrome path
                 run: |
-                    sudo ln -sf ${{ steps.setup-chrome.outputs.chrome-path }} /usr/bin/google-chrome
+                    sudo ln -sf /opt/hostedtoolcache/setup-chrome/chromium/131.0.6778.264/x64/chrome /usr/bin/google-chrome
 
             -   name: Move project to web
                 run: |
