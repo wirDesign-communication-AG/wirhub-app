@@ -20,7 +20,26 @@ jobs:
 
             -   name: Install Webserver
                 run: |
-                    sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.2 
+                    sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.2
+
+                #https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json
+            -   name: Install chrome
+                uses: browser-actions/setup-chrome@v1
+                with:
+                    chrome-version: 130
+                    install-chromedriver: true
+
+            -   name: Update chrome binary to custom setup
+                run: |
+                    sudo rm -rf /opt/google
+                    sudo rm /usr/bin/google-chrome
+                    sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/130.0.6723.116/x64/chrome /usr/bin/google-chrome
+
+            -   name: Verify some versions
+                run: |
+                    google-chrome --version
+                    chromedriver --version
+                    composer --version
 
             -   name: Move project to web
                 run: |
@@ -52,7 +71,7 @@ jobs:
                 run: |
                     sudo rm /etc/apache2/sites-available/000-default.conf
                     sudo cp /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/Tests/Config/vhost_github.conf /etc/apache2/sites-available/000-default.conf
-                    
+
                     sudo a2enmod rewrite
                     sudo systemctl restart apache2
 
