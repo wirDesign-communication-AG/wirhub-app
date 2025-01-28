@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6d0ecc2329a3d68ca55e11fe9a5529d",
+    "content-hash": "bd819909155a46bfa062c4007b6f3d00",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.338.1",
+            "version": "3.339.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "20f57e432a4696054598921e24734834ed034f5e"
+                "reference": "41bcd4a555649d276c8fbc0bc1738e59fda2221d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/20f57e432a4696054598921e24734834ed034f5e",
-                "reference": "20f57e432a4696054598921e24734834ed034f5e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/41bcd4a555649d276c8fbc0bc1738e59fda2221d",
+                "reference": "41bcd4a555649d276c8fbc0bc1738e59fda2221d",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.338.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.339.0"
             },
-            "time": "2025-01-23T19:07:00+00:00"
+            "time": "2025-01-27T19:25:50+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -866,16 +866,16 @@
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "a5c5fe0d2c6b911c03555046febb05a05a347078"
+                "reference": "e858ce0f5c12b266dce7dce24834448355155da7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/a5c5fe0d2c6b911c03555046febb05a05a347078",
-                "reference": "a5c5fe0d2c6b911c03555046febb05a05a347078",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/e858ce0f5c12b266dce7dce24834448355155da7",
+                "reference": "e858ce0f5c12b266dce7dce24834448355155da7",
                 "shasum": ""
             },
             "require": {
@@ -932,7 +932,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineMigrationsBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineMigrationsBundle/tree/3.4.0"
+                "source": "https://github.com/doctrine/DoctrineMigrationsBundle/tree/3.4.1"
             },
             "funding": [
                 {
@@ -948,7 +948,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-16T20:28:10+00:00"
+            "time": "2025-01-27T22:48:22+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -8506,16 +8506,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.0.41",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "c19e10e994683e2594adaea012d6b2be10cca281"
+                "reference": "749b7a77a70d7b557799840e1323cdc83637e604"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/c19e10e994683e2594adaea012d6b2be10cca281",
-                "reference": "c19e10e994683e2594adaea012d6b2be10cca281",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/749b7a77a70d7b557799840e1323cdc83637e604",
+                "reference": "749b7a77a70d7b557799840e1323cdc83637e604",
                 "shasum": ""
             },
             "require": {
@@ -8578,6 +8578,7 @@
                 "rector/rector": "^0.18.2",
                 "symfony/var-exporter": "6.4.*|^7.0"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -8597,10 +8598,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.0.41",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/main",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-01-24T16:17:47+00:00"
+            "time": "2025-01-27T13:02:29+00:00"
         }
     ],
     "packages-dev": [
@@ -12581,7 +12582,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
