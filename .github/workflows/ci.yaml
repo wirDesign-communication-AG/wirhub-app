@@ -49,6 +49,12 @@ jobs:
                     sudo mv /home/runner/work/wirhub-app/wirhub-app/.php-* /var/www/wirhub
                     sudo chown -R www-data:www-data /var/www
 
+            -   name: ESLint
+                run: |
+                    npm --prefix /var/www/wirhub/build install
+                    npx eslint -c /var/www/wirhub/build/eslint.config.mjs  vendor/wirdesign-communication-ag/wirhub/assets/js/
+
+
             -   name: Composer install
                 run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
 
