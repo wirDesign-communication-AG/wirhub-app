@@ -37,9 +37,14 @@ jobs:
 
             -   name: Verify some versions
                 run: |
+                    echo "-- Google Chrome --"
                     google-chrome --version
+                    echo "-- Chromedriver --"
                     chromedriver --version
+                    echo "-- Composer --"
                     composer --version
+                    echo "-- NodeJS --"
+                    node --version
 
             -   name: Move project to web
                 run: |
