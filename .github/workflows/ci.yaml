@@ -49,15 +49,14 @@ jobs:
                     sudo mv /home/runner/work/wirhub-app/wirhub-app/.php-* /var/www/wirhub
                     sudo chown -R www-data:www-data /var/www
 
+            -   name: Composer install
+                run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
+
             -   name: ESLint
                 run: |
                     sudo npm --prefix /var/www/wirhub/build install
                     sudo npx eslint -c /var/www/wirhub/build/eslint.config.mjs  /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/assets/js/
                     sudo npx eslint -c /var/www/wirhub/build/eslint.config.mjs  /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/assets/js_es6/
-
-
-            -   name: Composer install
-                run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
 
             -   name: PHP CS Fixer
                 run: /var/www/wirhub/vendor/bin/php-cs-fixer check --stop-on-violation --config=/var/www/wirhub/.php-cs-fixer.dist.php
