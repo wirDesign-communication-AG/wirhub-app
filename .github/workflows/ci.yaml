@@ -65,11 +65,15 @@ jobs:
             -   name: Composer install
                 run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
 
+            -   name: Update folder permissions
+                run: |
+                    sudo chmod -R 777 /var/www/wirhub
+
             -   name: ESLint
                 run: |
                     sudo -u www-data npm --prefix /var/www/wirhub/build install
-                    npx eslint -c /var/www/wirhub/build/eslint.config.mjs  /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/assets/js/
-                    npx eslint -c /var/www/wirhub/build/eslint.config.mjs  /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/assets/js_es6/
+                    sudo -u www-data npx eslint -c /var/www/wirhub/build/eslint.config.mjs  /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/assets/js/
+                    sudo -u www-data npx eslint -c /var/www/wirhub/build/eslint.config.mjs  /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/assets/js_es6/
 
             -   name: PHP CS Fixer
                 run: /var/www/wirhub/vendor/bin/php-cs-fixer check --stop-on-violation --config=/var/www/wirhub/.php-cs-fixer.dist.php
@@ -81,10 +85,6 @@ jobs:
                     sudo -u www-data php /var/www/wirhub/bin/console assets:install public/
                     sudo -u www-data php /var/www/wirhub/bin/console doctrine:database:create
                     sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions 
-
-            -   name: Update folder permissions
-                run: |
-                    sudo chmod -R 777 /var/www/wirhub
 
             -   name: Finish webserver
                 run: |
