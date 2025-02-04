@@ -51,8 +51,8 @@ jobs:
 
             -   name: ESLint
                 run: |
-                    npm --prefix /var/www/wirhub/build install
-                    npx eslint -c /var/www/wirhub/build/eslint.config.mjs  vendor/wirdesign-communication-ag/wirhub/assets/js/
+                    sudo npm --prefix /var/www/wirhub/build install
+                    sudo npx eslint -c /var/www/wirhub/build/eslint.config.mjs  vendor/wirdesign-communication-ag/wirhub/assets/js/
 
 
             -   name: Composer install
