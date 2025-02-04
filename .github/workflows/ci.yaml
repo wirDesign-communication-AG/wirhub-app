@@ -22,6 +22,14 @@ jobs:
                 run: |
                     sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.2
 
+
+            -   name: Install node
+                uses: actions/setup-node@v4
+                with:
+                    node-version: '22'
+                    cache: 'npm'
+                    cache-dependency-path: '**/package-lock.json'
+
                 #https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json
             -   name: Install chrome
                 uses: browser-actions/setup-chrome@v1
