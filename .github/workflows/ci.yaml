@@ -55,10 +55,6 @@ jobs:
             -   name: Composer install
                 run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
 
-            -   name: Update folder permissions
-                run: |
-                    sudo chmod -R 777 /var/www/wirhub
-
             -   name: PHP CS Fixer
                 run: /var/www/wirhub/vendor/bin/php-cs-fixer check --stop-on-violation --config=/var/www/wirhub/.php-cs-fixer.dist.php
 
@@ -77,6 +73,10 @@ jobs:
 
                     sudo a2enmod rewrite
                     sudo systemctl restart apache2
+
+            -   name: Update folder permissions
+                run: |
+                    sudo chmod -R 777 /var/www/wirhub
 
             -   name: Run tests
                 run: cd /var/www/wirhub && make test
