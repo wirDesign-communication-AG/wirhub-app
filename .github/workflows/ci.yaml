@@ -37,8 +37,11 @@ jobs:
 
             -   name: Verify some versions
                 run: |
+                    echo "-- Google Chrome --"
                     google-chrome --version
+                    echo "-- Chromedriver --"
                     chromedriver --version
+                    echo "-- Composer --"
                     composer --version
 
             -   name: Move project to web
@@ -63,10 +66,6 @@ jobs:
                     sudo -u www-data php /var/www/wirhub/bin/console doctrine:database:create
                     sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions 
 
-            -   name: Update folder permissions
-                run: |
-                    sudo chmod -R 777 /var/www/wirhub
-
             -   name: Finish webserver
                 run: |
                     sudo rm /etc/apache2/sites-available/000-default.conf
@@ -74,6 +73,10 @@ jobs:
 
                     sudo a2enmod rewrite
                     sudo systemctl restart apache2
+
+            -   name: Update folder permissions
+                run: |
+                    sudo chmod -R 777 /var/www/wirhub
 
             -   name: Run tests
                 run: cd /var/www/wirhub && make test
