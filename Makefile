@@ -33,14 +33,6 @@ ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data files/
 endif
 
-test-deprecated-rights:
-	@echo ""
-	@echo ""
-	@echo "--------------------------------------"
-	@echo "------------- PHPUnit ----------------"
-	@echo "--------------------------------------"
-	php bin/phpunit -c phpunit-deprecated.xml.dist $(TARGET)
-
 test:
 	@echo "--------------------------------------"
 	@echo "------------ Log versions ------------"
