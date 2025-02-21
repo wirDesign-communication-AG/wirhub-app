@@ -93,7 +93,7 @@ hwi_oauth:
                 firstname: given_name
                 lastname: family_name
         azure:
-            type: azure
+            class: AppBundle\Security\AzureResourceOwner
             client_id: '%env(OAUTH_AZURE_CLIENT_ID)%'
             client_secret: '%env(OAUTH_AZURE_CLIENT_SECRET)%'
             access_token_url: '%env(OAUTH_AZURE_URL_ACCESS_TOKEN)%'
