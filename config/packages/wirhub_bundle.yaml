@@ -70,6 +70,8 @@ framework:
             sender: '%env(MAILER_SENDER)%'
     router:
         default_uri: '%env(string:APP_URL)%'
+    trusted_proxies: '172.0.0.0/8'
+    trusted_headers: [ 'x-forwarded-for', 'x-forwarded-host', 'x-forwarded-proto', 'x-forwarded-port', 'x-forwarded-prefix' ]
 
 hwi_oauth:
     connect:
