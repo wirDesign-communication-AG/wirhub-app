@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7f93e774cc04c77cdf5d922dba4a1e5",
+    "content-hash": "634214ecfad9377a382572c49107fc6c",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.342.20",
+            "version": "3.342.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "eb68ff5bed48e653c1ddd84bd04a0d893f99ef46"
+                "reference": "4f5276e14b6d7ee21859aaf54aa0e8f5367ba0d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eb68ff5bed48e653c1ddd84bd04a0d893f99ef46",
-                "reference": "eb68ff5bed48e653c1ddd84bd04a0d893f99ef46",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4f5276e14b6d7ee21859aaf54aa0e8f5367ba0d4",
+                "reference": "4f5276e14b6d7ee21859aaf54aa0e8f5367ba0d4",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.20"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.22"
             },
-            "time": "2025-04-03T18:11:14+00:00"
+            "time": "2025-04-07T18:29:40+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -786,26 +786,29 @@
         },
         {
             "name": "doctrine/deprecations",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/deprecations.git",
-                "reference": "31610dbb31faa98e6b5447b62340826f54fbc4e9"
+                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/31610dbb31faa98e6b5447b62340826f54fbc4e9",
-                "reference": "31610dbb31faa98e6b5447b62340826f54fbc4e9",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
+                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
+            "conflict": {
+                "phpunit/phpunit": "<=7.5 || >=13"
+            },
             "require-dev": {
-                "doctrine/coding-standard": "^9 || ^12",
-                "phpstan/phpstan": "1.4.10 || 2.0.3",
+                "doctrine/coding-standard": "^9 || ^12 || ^13",
+                "phpstan/phpstan": "1.4.10 || 2.1.11",
                 "phpstan/phpstan-phpunit": "^1.0 || ^2",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6 || ^10.5 || ^11.5 || ^12",
                 "psr/log": "^1 || ^2 || ^3"
             },
             "suggest": {
@@ -825,9 +828,9 @@
             "homepage": "https://www.doctrine-project.org/",
             "support": {
                 "issues": "https://github.com/doctrine/deprecations/issues",
-                "source": "https://github.com/doctrine/deprecations/tree/1.1.4"
+                "source": "https://github.com/doctrine/deprecations/tree/1.1.5"
             },
-            "time": "2024-12-07T21:18:45+00:00"
+            "time": "2025-04-07T20:06:18+00:00"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -8907,16 +8910,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.1.2.x-dev",
+            "version": "dev-wip/1179",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "ea5c8dd020ab5163e6c7ef89a5dc8e9de6609c41"
+                "reference": "227b411ef4e082b09057d7fd1e4c56dc99466a2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/ea5c8dd020ab5163e6c7ef89a5dc8e9de6609c41",
-                "reference": "ea5c8dd020ab5163e6c7ef89a5dc8e9de6609c41",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/227b411ef4e082b09057d7fd1e4c56dc99466a2c",
+                "reference": "227b411ef4e082b09057d7fd1e4c56dc99466a2c",
                 "shasum": ""
             },
             "require": {
@@ -8999,10 +9002,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.2",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1179",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-04-04T15:02:12+00:00"
+            "time": "2025-04-08T10:38:29+00:00"
         }
     ],
     "packages-dev": [
@@ -10569,16 +10572,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.15",
+            "version": "11.5.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "4b6a4ee654e5e0c5e1f17e2f83c0f4c91dee1f9c"
+                "reference": "fd2e863a2995cdfd864fb514b5e0b28b09895b5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4b6a4ee654e5e0c5e1f17e2f83c0f4c91dee1f9c",
-                "reference": "4b6a4ee654e5e0c5e1f17e2f83c0f4c91dee1f9c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fd2e863a2995cdfd864fb514b5e0b28b09895b5c",
+                "reference": "fd2e863a2995cdfd864fb514b5e0b28b09895b5c",
                 "shasum": ""
             },
             "require": {
@@ -10650,7 +10653,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.15"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.17"
             },
             "funding": [
                 {
@@ -10666,7 +10669,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-23T16:02:11+00:00"
+            "time": "2025-04-08T07:59:11+00:00"
         },
         {
             "name": "react/cache",
