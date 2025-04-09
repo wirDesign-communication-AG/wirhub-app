@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.342.22",
+            "version": "3.342.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4f5276e14b6d7ee21859aaf54aa0e8f5367ba0d4"
+                "reference": "a5e9ba23ffecf1f71d8cfb177ef5cb3fbe2ecf05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4f5276e14b6d7ee21859aaf54aa0e8f5367ba0d4",
-                "reference": "4f5276e14b6d7ee21859aaf54aa0e8f5367ba0d4",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a5e9ba23ffecf1f71d8cfb177ef5cb3fbe2ecf05",
+                "reference": "a5e9ba23ffecf1f71d8cfb177ef5cb3fbe2ecf05",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.22"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.23"
             },
-            "time": "2025-04-07T18:29:40+00:00"
+            "time": "2025-04-08T18:35:41+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -8914,12 +8914,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "227b411ef4e082b09057d7fd1e4c56dc99466a2c"
+                "reference": "890315035e5a6bb00f6e917239586334ca0db50e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/227b411ef4e082b09057d7fd1e4c56dc99466a2c",
-                "reference": "227b411ef4e082b09057d7fd1e4c56dc99466a2c",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/890315035e5a6bb00f6e917239586334ca0db50e",
+                "reference": "890315035e5a6bb00f6e917239586334ca0db50e",
                 "shasum": ""
             },
             "require": {
@@ -9005,7 +9005,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1179",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-04-08T10:38:29+00:00"
+            "time": "2025-04-09T12:26:06+00:00"
         }
     ],
     "packages-dev": [
