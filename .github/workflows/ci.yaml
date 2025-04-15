@@ -1,7 +1,7 @@
 name: 'CI'
 on:
     pull_request:
-        branches: [ 'main', 'wip/*', 'v3.0.*', 'v3.1.*' ]
+        branches: [ 'main', 'wip/*', 'v3.0.*', 'v3.1',  'v3.1.*' ]
 jobs:
     build:
         runs-on: ubuntu-latest
