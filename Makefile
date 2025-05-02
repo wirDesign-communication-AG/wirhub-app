@@ -26,10 +26,13 @@ update:
 	COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader
 	php bin/console doctrine:migrations:migrate --no-interaction
 	php bin/console app:update
-	php bin/console app:theme:refresh
 ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data public/
 	chown -R www-data:www-data var/
+	chown -R www-data:www-data files/
+endif
+	php bin/console app:theme:refresh
+ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data files/
 endif
 
@@ -55,13 +58,6 @@ test:
 	@echo ""
 	@echo ""
 	@echo "--------------------------------------"
-	@echo "--------- Prepare database -----------"
-	@echo "--------------------------------------"
-	APP_ENV=test php bin/console doctrine:database:create
-	APP_ENV=test php bin/console doctrine:schema:update --force
-	@echo ""
-	@echo ""
-	@echo "--------------------------------------"
 	@echo "----------- Create theme -------------"
 	@echo "--------------------------------------"
 	APP_ENV=test php bin/console app:theme:refresh
@@ -70,4 +66,4 @@ test:
 	@echo "--------------------------------------"
 	@echo "------------- PHPUnit ----------------"
 	@echo "--------------------------------------"
-	php bin/phpunit $(TARGET)
+	php bin/phpunit -c phpunit.xml.dist $(TARGET)
