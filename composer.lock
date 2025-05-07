@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cfbaaf885251949450fce596b89d679b",
+    "content-hash": "2b3747c5cb4d7122a8d1b4ea3b7b3e23",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.343.4",
+            "version": "3.343.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "735a810caf3f48d6da7d4887e2c904ead7ed326e"
+                "reference": "69b4b232072c4eb01f6701ba3f137728dc8c7aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/735a810caf3f48d6da7d4887e2c904ead7ed326e",
-                "reference": "735a810caf3f48d6da7d4887e2c904ead7ed326e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/69b4b232072c4eb01f6701ba3f137728dc8c7aa8",
+                "reference": "69b4b232072c4eb01f6701ba3f137728dc8c7aa8",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.5"
             },
-            "time": "2025-05-05T18:06:12+00:00"
+            "time": "2025-05-06T18:08:44+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -1473,16 +1473,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "3.3.3",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "1f1891d3e20ef9881e81c2f32c53e9dc88dfc9a7"
+                "reference": "c9557c588b3a70ed93caff069d0aa75737f25609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/1f1891d3e20ef9881e81c2f32c53e9dc88dfc9a7",
-                "reference": "1f1891d3e20ef9881e81c2f32c53e9dc88dfc9a7",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/c9557c588b3a70ed93caff069d0aa75737f25609",
+                "reference": "c9557c588b3a70ed93caff069d0aa75737f25609",
                 "shasum": ""
             },
             "require": {
@@ -1502,7 +1502,7 @@
                 "symfony/var-exporter": "^6.3.9 || ^7.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^13.0",
+                "doctrine/coding-standard": "^12.0",
                 "phpbench/phpbench": "^1.0",
                 "phpdocumentor/guides-cli": "^1.4",
                 "phpstan/extension-installer": "^1.4",
@@ -1510,7 +1510,7 @@
                 "phpstan/phpstan-deprecation-rules": "^2",
                 "phpunit/phpunit": "^10.4.0",
                 "psr/log": "^1 || ^2 || ^3",
-                "squizlabs/php_codesniffer": "3.12.0",
+                "squizlabs/php_codesniffer": "3.7.2",
                 "symfony/cache": "^5.4 || ^6.2 || ^7.0"
             },
             "suggest": {
@@ -1557,9 +1557,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/3.3.3"
+                "source": "https://github.com/doctrine/orm/tree/3.3.2"
             },
-            "time": "2025-05-02T17:42:51+00:00"
+            "time": "2025-02-04T19:43:15+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -8913,12 +8913,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "3e634b6c271c132e6532931af4bc7826fdf36d73"
+                "reference": "e9dd568b360c1a450bb5b28582e801728fec1822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/3e634b6c271c132e6532931af4bc7826fdf36d73",
-                "reference": "3e634b6c271c132e6532931af4bc7826fdf36d73",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/e9dd568b360c1a450bb5b28582e801728fec1822",
+                "reference": "e9dd568b360c1a450bb5b28582e801728fec1822",
                 "shasum": ""
             },
             "require": {
@@ -9004,7 +9004,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1000",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-05-06T13:51:10+00:00"
+            "time": "2025-05-07T07:56:31+00:00"
         }
     ],
     "packages-dev": [
