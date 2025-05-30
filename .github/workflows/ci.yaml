@@ -66,6 +66,10 @@ jobs:
                     sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console doctrine:schema:update --force
                     sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions
 
+            -   name: Update folder permissions
+                run: |
+                    sudo chmod -R 777 /var/www/wirhub
+
             -   name: Finish webserver
                 run: |
                     sudo a2enmod rewrite
@@ -74,10 +78,6 @@ jobs:
                     sudo apachectl configtest
 
                     sudo systemctl restart apache2
-
-            -   name: Update folder permissions
-                run: |
-                    sudo chmod -R 777 /var/www/wirhub
 
             -   name: Run tests
                 run: cd /var/www/wirhub && make test
