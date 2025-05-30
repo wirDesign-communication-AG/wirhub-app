@@ -74,7 +74,7 @@ jobs:
                     sudo cp /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/Tests/Config/vhost_github.conf /etc/apache2/sites-available/000-default.conf
                     sudo apachectl configtest
                     sudo systemctl restart apache2
-                    
+
             -   name: Update folder permissions
                 run: |
                     sudo chmod -R 777 /var/www/wirhub
