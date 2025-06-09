@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.343.24",
+            "version": "3.344.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5308e15ca92655906d04d5945613ab9046b4f79f"
+                "reference": "3a6aaaea75f4605f89aa57ad63b9a077bf01e1e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5308e15ca92655906d04d5945613ab9046b4f79f",
-                "reference": "5308e15ca92655906d04d5945613ab9046b4f79f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3a6aaaea75f4605f89aa57ad63b9a077bf01e1e5",
+                "reference": "3a6aaaea75f4605f89aa57ad63b9a077bf01e1e5",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.24"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.344.2"
             },
-            "time": "2025-06-03T18:04:18+00:00"
+            "time": "2025-06-06T18:14:42+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -8930,12 +8930,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "ada8d81ed67d83ff763971ed24d6ffd4e4afcb59"
+                "reference": "bb6439d06757f06da0ff3cc6aaef678578042f32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/ada8d81ed67d83ff763971ed24d6ffd4e4afcb59",
-                "reference": "ada8d81ed67d83ff763971ed24d6ffd4e4afcb59",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/bb6439d06757f06da0ff3cc6aaef678578042f32",
+                "reference": "bb6439d06757f06da0ff3cc6aaef678578042f32",
                 "shasum": ""
             },
             "require": {
@@ -9021,7 +9021,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1207",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-06-04T14:57:53+00:00"
+            "time": "2025-06-09T10:29:15+00:00"
         }
     ],
     "packages-dev": [
@@ -9751,16 +9751,16 @@
         },
         {
             "name": "liip/test-fixtures-bundle",
-            "version": "3.3.0",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liip/LiipTestFixturesBundle.git",
-                "reference": "2b2e988554d58c8c51ada95ed009e77069d9a7e0"
+                "reference": "c21f1b65da157077db809bb4a9587d59a696bcd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liip/LiipTestFixturesBundle/zipball/2b2e988554d58c8c51ada95ed009e77069d9a7e0",
-                "reference": "2b2e988554d58c8c51ada95ed009e77069d9a7e0",
+                "url": "https://api.github.com/repos/liip/LiipTestFixturesBundle/zipball/c21f1b65da157077db809bb4a9587d59a696bcd6",
+                "reference": "c21f1b65da157077db809bb4a9587d59a696bcd6",
                 "shasum": ""
             },
             "require": {
@@ -9832,9 +9832,9 @@
             ],
             "support": {
                 "issues": "https://github.com/liip/LiipTestFixturesBundle/issues",
-                "source": "https://github.com/liip/LiipTestFixturesBundle/tree/3.3.0"
+                "source": "https://github.com/liip/LiipTestFixturesBundle/tree/3.4.0"
             },
-            "time": "2025-03-31T17:32:47+00:00"
+            "time": "2025-06-05T20:12:18+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -10588,16 +10588,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.21",
+            "version": "11.5.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d565e2cdc21a7db9dc6c399c1fc2083b8010f289"
+                "reference": "4cd72faaa8f811e4cc63040cba167757660a5538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d565e2cdc21a7db9dc6c399c1fc2083b8010f289",
-                "reference": "d565e2cdc21a7db9dc6c399c1fc2083b8010f289",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4cd72faaa8f811e4cc63040cba167757660a5538",
+                "reference": "4cd72faaa8f811e4cc63040cba167757660a5538",
                 "shasum": ""
             },
             "require": {
@@ -10669,7 +10669,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.21"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.22"
             },
             "funding": [
                 {
@@ -10693,7 +10693,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-21T12:35:00+00:00"
+            "time": "2025-06-06T02:48:05+00:00"
         },
         {
             "name": "react/cache",
