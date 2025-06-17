@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "428f078ffbdb935edaac3b4a3a006182",
+    "content-hash": "91ec52645fcf5825a2bc626301250052",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.344.6",
+            "version": "3.344.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "eb0bc621472592545539329499961a15a3f9f6dc"
+                "reference": "64ccde0a674425ea902232a6f7aa1a07dfcfe861"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eb0bc621472592545539329499961a15a3f9f6dc",
-                "reference": "eb0bc621472592545539329499961a15a3f9f6dc",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/64ccde0a674425ea902232a6f7aa1a07dfcfe861",
+                "reference": "64ccde0a674425ea902232a6f7aa1a07dfcfe861",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.344.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.344.7"
             },
-            "time": "2025-06-12T18:03:59+00:00"
+            "time": "2025-06-16T18:05:39+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -834,16 +834,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.14.1",
+            "version": "2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "0a118222ab21ba05bd9f17fbaa6a3800865274f4"
+                "reference": "d88294521a1bca943240adca65fa19ca8a7288c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/0a118222ab21ba05bd9f17fbaa6a3800865274f4",
-                "reference": "0a118222ab21ba05bd9f17fbaa6a3800865274f4",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/d88294521a1bca943240adca65fa19ca8a7288c6",
+                "reference": "d88294521a1bca943240adca65fa19ca8a7288c6",
                 "shasum": ""
             },
             "require": {
@@ -936,7 +936,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.14.1"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.15.0"
             },
             "funding": [
                 {
@@ -952,7 +952,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-09T20:22:28+00:00"
+            "time": "2025-06-16T19:53:58+00:00"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -1473,16 +1473,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "3.3.2",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "c9557c588b3a70ed93caff069d0aa75737f25609"
+                "reference": "4664373bd0668d71b40cc368b950de95e1dba2f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/c9557c588b3a70ed93caff069d0aa75737f25609",
-                "reference": "c9557c588b3a70ed93caff069d0aa75737f25609",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/4664373bd0668d71b40cc368b950de95e1dba2f8",
+                "reference": "4664373bd0668d71b40cc368b950de95e1dba2f8",
                 "shasum": ""
             },
             "require": {
@@ -1502,7 +1502,7 @@
                 "symfony/var-exporter": "^6.3.9 || ^7.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^12.0",
+                "doctrine/coding-standard": "^13.0",
                 "phpbench/phpbench": "^1.0",
                 "phpdocumentor/guides-cli": "^1.4",
                 "phpstan/extension-installer": "^1.4",
@@ -1510,7 +1510,7 @@
                 "phpstan/phpstan-deprecation-rules": "^2",
                 "phpunit/phpunit": "^10.4.0",
                 "psr/log": "^1 || ^2 || ^3",
-                "squizlabs/php_codesniffer": "3.7.2",
+                "squizlabs/php_codesniffer": "3.12.0",
                 "symfony/cache": "^5.4 || ^6.2 || ^7.0"
             },
             "suggest": {
@@ -1557,9 +1557,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/3.3.2"
+                "source": "https://github.com/doctrine/orm/tree/3.4.0"
             },
-            "time": "2025-02-04T19:43:15+00:00"
+            "time": "2025-06-14T11:47:14+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -8929,16 +8929,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.1.6",
+            "version": "dev-wip/1211",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "f6b67787863a2c06874fde66e657f91c97c1f790"
+                "reference": "795f78423b5f3307d45b5b7b322ed6fec2563525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/f6b67787863a2c06874fde66e657f91c97c1f790",
-                "reference": "f6b67787863a2c06874fde66e657f91c97c1f790",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/795f78423b5f3307d45b5b7b322ed6fec2563525",
+                "reference": "795f78423b5f3307d45b5b7b322ed6fec2563525",
                 "shasum": ""
             },
             "require": {
@@ -8976,19 +8976,19 @@
                 "php": "^8.2",
                 "pmdevelopment/microsoft-symfony-mailer": "^1.1.1",
                 "scssphp/scssphp": "^2.0.1",
-                "symfony/asset": "^7.2",
-                "symfony/cache": "^7.2",
-                "symfony/dotenv": "^7.2",
-                "symfony/expression-language": "^7.2",
-                "symfony/filesystem": "^7.2",
-                "symfony/http-client": "^7.2",
-                "symfony/mailer": "^7.2",
+                "symfony/asset": "^7.3",
+                "symfony/cache": "^7.3",
+                "symfony/dotenv": "^7.3",
+                "symfony/expression-language": "^7.3",
+                "symfony/filesystem": "^7.3",
+                "symfony/http-client": "^7.3",
+                "symfony/mailer": "^7.3",
                 "symfony/monolog-bundle": "^v3.10.0",
-                "symfony/property-access": "^7.2",
-                "symfony/security-bundle": "^7.2",
-                "symfony/security-csrf": "^7.2",
-                "symfony/serializer": "^7.2",
-                "symfony/string": "^7.2",
+                "symfony/property-access": "^7.3",
+                "symfony/security-bundle": "^7.3",
+                "symfony/security-csrf": "^7.3",
+                "symfony/serializer": "^7.3",
+                "symfony/string": "^7.3",
                 "symfony/twig-pack": "^1.0",
                 "twig/extra-bundle": "^3.3",
                 "twig/intl-extra": "^3.3",
@@ -9000,7 +9000,7 @@
                 "ext-sqlite3": "*",
                 "phpstan/phpstan": "^2.1",
                 "rector/rector": "^2.0",
-                "symfony/var-exporter": "^7.2"
+                "symfony/var-exporter": "^7.3"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -9021,10 +9021,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.6",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1211",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-06-16T07:40:51+00:00"
+            "time": "2025-06-17T07:47:16+00:00"
         }
     ],
     "packages-dev": [
@@ -12945,7 +12945,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
