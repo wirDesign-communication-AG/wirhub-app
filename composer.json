@@ -13,7 +13,8 @@
         "allow-plugins": {
             "php-http/discovery": true,
             "symfony/flex": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "tbachert/spi": true
         },
         "optimize-autoloader": false,
         "preferred-install": {
@@ -75,7 +76,7 @@
         "symfony/framework-bundle": "^7.3",
         "symfony/runtime": "^7.3",
         "symfony/yaml": "^7.3",
-        "wirdesign-communication-ag/wirhub": "wip/1211-dev"
+        "wirdesign-communication-ag/wirhub": "wip/969-dev"
     },
     "scripts": {
         "auto-scripts": {
