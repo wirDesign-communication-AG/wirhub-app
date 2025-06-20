@@ -69,8 +69,7 @@ jobs:
             -   name: Finish webserver
                 run: |
                     sudo a2enmod rewrite
-                    sudo mkdir /var/www/wirhub/var/log/
-                    sudo chmod 0777 /var/www/wirhub/var/log/
+                    sudo mkdir /var/www/wirhub/var/apache2/
                     sudo rm /etc/apache2/sites-available/000-default.conf
                     sudo cp /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/Tests/Config/vhost_github.conf /etc/apache2/sites-available/000-default.conf
                     sudo apachectl configtest
