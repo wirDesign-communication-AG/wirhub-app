@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6786061719e3bdd1b82ef091d6b5c5d3",
+    "content-hash": "becfb7476c0b9c3d114d0be667138a7a",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.347.2",
+            "version": "3.348.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "34dca6ffe2c307c5a617c6412efdc559b5e89af8"
+                "reference": "7ad94071b0429470e8d4f714c0bead44ea080ef2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/34dca6ffe2c307c5a617c6412efdc559b5e89af8",
-                "reference": "34dca6ffe2c307c5a617c6412efdc559b5e89af8",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7ad94071b0429470e8d4f714c0bead44ea080ef2",
+                "reference": "7ad94071b0429470e8d4f714c0bead44ea080ef2",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.347.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.348.0"
             },
-            "time": "2025-06-25T18:12:42+00:00"
+            "time": "2025-06-26T18:14:07+00:00"
         },
         {
             "name": "brick/math",
@@ -10380,16 +10380,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "dev-wip/1203",
+            "version": "v3.1.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "103f7e8010817a9d547c000962316b225326de99"
+                "reference": "d5d63994e74078c65b6fac4a10b30158632e8f83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/103f7e8010817a9d547c000962316b225326de99",
-                "reference": "103f7e8010817a9d547c000962316b225326de99",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d5d63994e74078c65b6fac4a10b30158632e8f83",
+                "reference": "d5d63994e74078c65b6fac4a10b30158632e8f83",
                 "shasum": ""
             },
             "require": {
@@ -10472,10 +10472,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1203",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.7",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-06-26T11:11:42+00:00"
+            "time": "2025-06-26T15:09:30+00:00"
         }
     ],
     "packages-dev": [
@@ -11124,16 +11124,16 @@
         },
         {
             "name": "liip/test-fixtures-bundle",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liip/LiipTestFixturesBundle.git",
-                "reference": "c21f1b65da157077db809bb4a9587d59a696bcd6"
+                "reference": "3ebebefffac05ae349e42364daf80e7ce5fd7a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liip/LiipTestFixturesBundle/zipball/c21f1b65da157077db809bb4a9587d59a696bcd6",
-                "reference": "c21f1b65da157077db809bb4a9587d59a696bcd6",
+                "url": "https://api.github.com/repos/liip/LiipTestFixturesBundle/zipball/3ebebefffac05ae349e42364daf80e7ce5fd7a38",
+                "reference": "3ebebefffac05ae349e42364daf80e7ce5fd7a38",
                 "shasum": ""
             },
             "require": {
@@ -11157,7 +11157,7 @@
                 "doctrine/doctrine-fixtures-bundle": "^3.5.1 || ^4.0",
                 "doctrine/mongodb-odm": "^2.5",
                 "doctrine/mongodb-odm-bundle": "^4.4 || ^5.0",
-                "doctrine/orm": "^2.14 || ^3.0",
+                "doctrine/orm": "^2.14 || ^3.1.0",
                 "monolog/monolog": "^1.25.1 || ^2.0 || ^3.0",
                 "phpunit/phpunit": "^10.5.11 || ^11.0.4",
                 "symfony/doctrine-bridge": "^5.4 || ^6.3 || ^7.0",
@@ -11205,9 +11205,9 @@
             ],
             "support": {
                 "issues": "https://github.com/liip/LiipTestFixturesBundle/issues",
-                "source": "https://github.com/liip/LiipTestFixturesBundle/tree/3.4.0"
+                "source": "https://github.com/liip/LiipTestFixturesBundle/tree/3.4.1"
             },
-            "time": "2025-06-05T20:12:18+00:00"
+            "time": "2025-06-26T15:09:22+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -11973,16 +11973,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.24",
+            "version": "11.5.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6b07ab1047155cf38f82dd691787a277782271dd"
+                "reference": "864ab32b3ff52058f917c5b19b3cef821e4a4f1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6b07ab1047155cf38f82dd691787a277782271dd",
-                "reference": "6b07ab1047155cf38f82dd691787a277782271dd",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/864ab32b3ff52058f917c5b19b3cef821e4a4f1b",
+                "reference": "864ab32b3ff52058f917c5b19b3cef821e4a4f1b",
                 "shasum": ""
             },
             "require": {
@@ -12054,7 +12054,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.24"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.25"
             },
             "funding": [
                 {
@@ -12078,7 +12078,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-20T11:31:02+00:00"
+            "time": "2025-06-27T04:36:07+00:00"
         },
         {
             "name": "react/cache",
