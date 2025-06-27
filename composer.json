@@ -13,7 +13,8 @@
         "allow-plugins": {
             "php-http/discovery": true,
             "symfony/flex": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "tbachert/spi": true
         },
         "optimize-autoloader": false,
         "preferred-install": {
@@ -31,7 +32,7 @@
                 "https://api.github.com/repos/wirdesign-communication-ag/wirhub-recipes/contents/index.json",
                 "flex://defaults"
             ],
-            "require": "^7.2"
+            "require": "^7.3"
         }
     },
     "license": "proprietary",
@@ -66,16 +67,16 @@
         "ext-mbstring": "*",
         "doctrine/doctrine-bundle": "^2.9",
         "doctrine/doctrine-migrations-bundle": "^3.0",
-        "doctrine/orm": "3.3.2",
+        "doctrine/orm": "3.4.0",
         "symfony/apache-pack": "^1.0",
-        "symfony/console": "^7.2",
-        "symfony/dotenv": "^7.2",
-        "symfony/expression-language": "^7.2",
+        "symfony/console": "^7.3",
+        "symfony/dotenv": "^7.3",
+        "symfony/expression-language": "^7.3",
         "symfony/flex": "^2",
-        "symfony/framework-bundle": "^7.2",
-        "symfony/runtime": "^7.2",
-        "symfony/yaml": "^7.2",
-        "wirdesign-communication-ag/wirhub": "v3.1.6"
+        "symfony/framework-bundle": "^7.3",
+        "symfony/runtime": "^7.3",
+        "symfony/yaml": "^7.3",
+        "wirdesign-communication-ag/wirhub": "v3.1.7"
     },
     "scripts": {
         "auto-scripts": {
@@ -99,14 +100,14 @@
         "phpstan/phpstan": "^2.1.0",
         "phpunit/phpunit": "^11.5.2",
         "rector/rector": "^2.0.5",
-        "symfony/browser-kit": "^7.2",
-        "symfony/css-selector": "^7.2",
-        "symfony/debug-bundle": "^7.2",
+        "symfony/browser-kit": "^7.3",
+        "symfony/css-selector": "^7.3",
+        "symfony/debug-bundle": "^7.3",
         "symfony/maker-bundle": "^1.48",
         "symfony/panther": "^2.0",
-        "symfony/phpunit-bridge": "^7.2",
-        "symfony/stopwatch": "^7.2",
-        "symfony/var-exporter": "^7.2",
-        "symfony/web-profiler-bundle": "^7.2"
+        "symfony/phpunit-bridge": "^7.3",
+        "symfony/stopwatch": "^7.3",
+        "symfony/var-exporter": "^7.3",
+        "symfony/web-profiler-bundle": "^7.3"
     }
 }

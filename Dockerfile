@@ -61,6 +61,7 @@ RUN sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 64M/g' /etc/php/8.2
 RUN sed -i 's/post_max_size = 8M/post_max_size = 64M/g' /etc/php/8.2/apache2/php.ini
 RUN sed -i 's/;date.timezone =/date.timezone = Europe\/Berlin/g' /etc/php/8.2/cli/php.ini
 RUN sed -i 's/;date.timezone =/date.timezone = Europe\/Berlin/g' /etc/php/8.2/apache2/php.ini
+RUN sed -i 's/memory_limit = 128M/memory_limit = 256M/g' /etc/php/8.2/apache2/php.ini
 
 RUN rm /etc/php/8.2/apache2/conf.d/10-opcache.ini
 COPY dockerfiles/php/10-opcache.ini /etc/php/8.2/apache2/conf.d
