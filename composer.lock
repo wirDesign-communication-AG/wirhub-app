@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffd767394d5383c656a263b14553f48e",
+    "content-hash": "b46483f3e04e27c999a7dcfcdf27c58f",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.349.2",
+            "version": "3.349.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "63cc727845f077d17cb94791deb327249e1626ce"
+                "reference": "b2d4718786398f47626add9c29840fc416175ef2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/63cc727845f077d17cb94791deb327249e1626ce",
-                "reference": "63cc727845f077d17cb94791deb327249e1626ce",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b2d4718786398f47626add9c29840fc416175ef2",
+                "reference": "b2d4718786398f47626add9c29840fc416175ef2",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.349.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.349.3"
             },
-            "time": "2025-07-03T18:08:27+00:00"
+            "time": "2025-07-09T18:10:17+00:00"
         },
         {
             "name": "brick/math",
@@ -3591,16 +3591,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "v2.39.0",
+            "version": "v2.40.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "42c23d78c4c0987114d6535e6d6290958bf87a71"
+                "reference": "c649df4b5ba2ef3fa0340b43f1fde120b7fd06eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/42c23d78c4c0987114d6535e6d6290958bf87a71",
-                "reference": "42c23d78c4c0987114d6535e6d6290958bf87a71",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/c649df4b5ba2ef3fa0340b43f1fde120b7fd06eb",
+                "reference": "c649df4b5ba2ef3fa0340b43f1fde120b7fd06eb",
                 "shasum": ""
             },
             "require": {
@@ -3632,9 +3632,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v2.39.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v2.40.0"
             },
-            "time": "2025-07-02T12:52:23+00:00"
+            "time": "2025-07-08T12:15:31+00:00"
         },
         {
             "name": "microsoft/microsoft-graph-core",
@@ -10380,16 +10380,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.1.8.x-dev",
+            "version": "dev-wip/1204",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "a9fc81af6dfc0a7a90a9c75d87e58ead7edd339e"
+                "reference": "e2259cced5782fec0da3c76efa7cec863ed2c307"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/a9fc81af6dfc0a7a90a9c75d87e58ead7edd339e",
-                "reference": "a9fc81af6dfc0a7a90a9c75d87e58ead7edd339e",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/e2259cced5782fec0da3c76efa7cec863ed2c307",
+                "reference": "e2259cced5782fec0da3c76efa7cec863ed2c307",
                 "shasum": ""
             },
             "require": {
@@ -10472,10 +10472,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.8",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1204",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-07-08T08:52:11+00:00"
+            "time": "2025-07-10T11:33:56+00:00"
         }
     ],
     "packages-dev": [
@@ -11020,16 +11020,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.82.0",
+            "version": "v3.82.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "db2a44dc899d40f20609f0ea53e952c64c028968"
+                "reference": "684ed3ab41008a2a4848de8bde17eb168c596247"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/db2a44dc899d40f20609f0ea53e952c64c028968",
-                "reference": "db2a44dc899d40f20609f0ea53e952c64c028968",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/684ed3ab41008a2a4848de8bde17eb168c596247",
+                "reference": "684ed3ab41008a2a4848de8bde17eb168c596247",
                 "shasum": ""
             },
             "require": {
@@ -11113,7 +11113,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.82.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.82.2"
             },
             "funding": [
                 {
@@ -11121,7 +11121,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-07T22:38:13+00:00"
+            "time": "2025-07-08T21:13:15+00:00"
         },
         {
             "name": "liip/test-fixtures-bundle",
@@ -12609,16 +12609,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "d513dea45a94394b660e15c155d1fa27826f8e30"
+                "reference": "d0917c069bb0d9bb06ed111cf052510f609015a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/d513dea45a94394b660e15c155d1fa27826f8e30",
-                "reference": "d513dea45a94394b660e15c155d1fa27826f8e30",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/d0917c069bb0d9bb06ed111cf052510f609015a4",
+                "reference": "d0917c069bb0d9bb06ed111cf052510f609015a4",
                 "shasum": ""
             },
             "require": {
@@ -12657,7 +12657,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.1.0"
+                "source": "https://github.com/rectorphp/rector/tree/2.1.1"
             },
             "funding": [
                 {
@@ -12665,7 +12665,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-24T20:26:57+00:00"
+            "time": "2025-07-10T11:31:31+00:00"
         },
         {
             "name": "sebastian/cli-parser",
