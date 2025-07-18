@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a266d65cf8d40204265dbead288a232",
+    "content-hash": "ffd767394d5383c656a263b14553f48e",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -10380,16 +10380,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.1.7",
+            "version": "v3.1.8.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "2cf34d2eeda78812ba9f8a9c3f8821c59cb1039e"
+                "reference": "1e953f396a87cec4d836b2c0fd58681062bc0262"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/2cf34d2eeda78812ba9f8a9c3f8821c59cb1039e",
-                "reference": "2cf34d2eeda78812ba9f8a9c3f8821c59cb1039e",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/1e953f396a87cec4d836b2c0fd58681062bc0262",
+                "reference": "1e953f396a87cec4d836b2c0fd58681062bc0262",
                 "shasum": ""
             },
             "require": {
@@ -10472,10 +10472,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.7",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.8",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-06-27T07:28:30+00:00"
+            "time": "2025-07-18T14:33:19+00:00"
         }
     ],
     "packages-dev": [
@@ -14333,7 +14333,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
