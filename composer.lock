@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3397e96c07fc9dff46af58a0b2ceda3c",
+    "content-hash": "93a966225468cf8468cc29c3d487bc01",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.351.1",
+            "version": "3.351.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f3e20c8cdd2cc5827d77a0b3c0872fab89cdf805"
+                "reference": "b418b41ceee47103f364e709c5f3a58a4bcf0894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f3e20c8cdd2cc5827d77a0b3c0872fab89cdf805",
-                "reference": "f3e20c8cdd2cc5827d77a0b3c0872fab89cdf805",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b418b41ceee47103f364e709c5f3a58a4bcf0894",
+                "reference": "b418b41ceee47103f364e709c5f3a58a4bcf0894",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.351.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.351.2"
             },
-            "time": "2025-07-17T18:07:08+00:00"
+            "time": "2025-07-18T18:06:44+00:00"
         },
         {
             "name": "brick/math",
@@ -10380,16 +10380,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.1.8",
+            "version": "dev-wip/1222-2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "c18b2dcd214f8ff3483a99bec83a1e2c24726cad"
+                "reference": "e23080e3b769fcaddf425c4e6ac8ef3c65a206de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/c18b2dcd214f8ff3483a99bec83a1e2c24726cad",
-                "reference": "c18b2dcd214f8ff3483a99bec83a1e2c24726cad",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/e23080e3b769fcaddf425c4e6ac8ef3c65a206de",
+                "reference": "e23080e3b769fcaddf425c4e6ac8ef3c65a206de",
                 "shasum": ""
             },
             "require": {
@@ -10472,10 +10472,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.8",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1222-2",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-07-18T16:21:53+00:00"
+            "time": "2025-07-21T15:17:34+00:00"
         }
     ],
     "packages-dev": [
@@ -14333,7 +14333,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
