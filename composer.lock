@@ -10384,12 +10384,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "bbc2e8f0df345255debd44b7503378823c66d388"
+                "reference": "21e19dd418767bf39e87eb60908108bfe12d17a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/bbc2e8f0df345255debd44b7503378823c66d388",
-                "reference": "bbc2e8f0df345255debd44b7503378823c66d388",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/21e19dd418767bf39e87eb60908108bfe12d17a0",
+                "reference": "21e19dd418767bf39e87eb60908108bfe12d17a0",
                 "shasum": ""
             },
             "require": {
@@ -10475,7 +10475,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/kws-201",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-07-24T12:16:04+00:00"
+            "time": "2025-07-24T14:41:16+00:00"
         }
     ],
     "packages-dev": [
