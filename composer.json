@@ -76,7 +76,7 @@
         "symfony/framework-bundle": "^7.3",
         "symfony/runtime": "^7.3",
         "symfony/yaml": "^7.3",
-        "wirdesign-communication-ag/wirhub": "dev-wip/1222-2"
+        "wirdesign-communication-ag/wirhub": "dev-wip/kws-201"
     },
     "scripts": {
         "auto-scripts": {
