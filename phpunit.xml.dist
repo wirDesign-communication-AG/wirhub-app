@@ -21,6 +21,10 @@
         <env name="APP_1076" value="new"/>
     </php>
     <extensions>
+        <bootstrap class="Symfony\Bridge\PhpUnit\SymfonyExtension">
+            <parameter name="clock-mock-namespaces" value="App" />
+            <parameter name="dns-mock-namespaces" value="App" />
+        </bootstrap>
         <bootstrap class="Symfony\Component\Panther\ServerExtension"/>
         <bootstrap class="DG\BypassFinals\PHPUnitExtension"/>
     </extensions>
