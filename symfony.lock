@@ -138,7 +138,7 @@
             "repo": "github.com/symfony/recipes-contrib",
             "branch": "main",
             "version": "1.0",
-            "ref": "efb318193e48384eb5c5aadff15396ed698f8ffc"
+            "ref": "5d454ec6cc4c700ed3d963f3803e1d427d9669fb"
         },
         "files": [
             "public/.htaccess"
