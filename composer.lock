@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5f4930fc7073ff621fde55c4cc07bf9",
+    "content-hash": "08f15bae55f4b597235fb16f6395b34a",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1685,16 +1685,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "3.4.0",
+            "version": "3.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "4664373bd0668d71b40cc368b950de95e1dba2f8"
+                "reference": "5a541b8b3a327ab1ea5f93b1615b4ff67a34e109"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/4664373bd0668d71b40cc368b950de95e1dba2f8",
-                "reference": "4664373bd0668d71b40cc368b950de95e1dba2f8",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/5a541b8b3a327ab1ea5f93b1615b4ff67a34e109",
+                "reference": "5a541b8b3a327ab1ea5f93b1615b4ff67a34e109",
                 "shasum": ""
             },
             "require": {
@@ -1769,9 +1769,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/3.4.0"
+                "source": "https://github.com/doctrine/orm/tree/3.5.2"
             },
-            "time": "2025-06-14T11:47:14+00:00"
+            "time": "2025-08-08T17:00:40+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -10556,16 +10556,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "dev-wip/1282",
+            "version": "v3.1.11.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "e558829e7e63051fdfa3d4cfd94e6fcbccb0351c"
+                "reference": "bc1c83a67f9020757f1ad64d92a913e4a1386ed8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/e558829e7e63051fdfa3d4cfd94e6fcbccb0351c",
-                "reference": "e558829e7e63051fdfa3d4cfd94e6fcbccb0351c",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/bc1c83a67f9020757f1ad64d92a913e4a1386ed8",
+                "reference": "bc1c83a67f9020757f1ad64d92a913e4a1386ed8",
                 "shasum": ""
             },
             "require": {
@@ -10648,10 +10648,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1282",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.11",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-09-05T09:55:54+00:00"
+            "time": "2025-09-05T11:30:34+00:00"
         }
     ],
     "packages-dev": [
