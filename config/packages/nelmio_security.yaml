@@ -20,28 +20,28 @@ nelmio_security:
             - 'strict-origin-when-cross-origin'
 
     csp:
+        hash:
+            algorithm: sha512
         hosts: [ ]
-        content_types: [  ]
+        content_types: [ ]
         enforce:
             level1_fallback: false
             browser_adaptive:
                 enabled: true
             #report-uri: '%router.request_context.base_url%/nelmio/csp/report'
-            default-src:
-                - 'self'
-                - 'unsafe-inline'
-                - 'unsafe-eval'
-                - 'blob:'
-            frame-src:
-                - 'self'
-                - 'data:'
-                - '*'
-            img-src:
-                - 'self'
-                - 'data:'
+            script-src:
+                - 'strict-dynamic'
                 - 'https:'
+            style-src:
+                - 'self'
+            object-src:
+                - 'none'
+            base-uri:
+                - 'none'
+            img-src:
+                - 'data:'
                 - 'blob:'
-                - '*'
+                - 'self'
             block-all-mixed-content: true
             frame-ancestors:
                 - self
