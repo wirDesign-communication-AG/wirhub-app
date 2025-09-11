@@ -33,7 +33,7 @@ jobs:
                 run: |
                     sudo rm -rf /opt/google
                     sudo rm /usr/bin/google-chrome
-                    sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/130.0.6723.116/x64/chrome /usr/bin/google-chrome
+                    sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/140.0.7339.82/x64/chrome /usr/bin/google-chrome
 
             -   name: Verify some versions
                 run: |
