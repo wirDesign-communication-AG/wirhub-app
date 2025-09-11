@@ -26,7 +26,7 @@ jobs:
             -   name: Install chrome
                 uses: browser-actions/setup-chrome@v1
                 with:
-                    chrome-version: 130
+                    chrome-version: 140
                     install-chromedriver: true
 
             -   name: Update chrome binary to custom setup
