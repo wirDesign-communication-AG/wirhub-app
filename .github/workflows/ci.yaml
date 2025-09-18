@@ -31,8 +31,6 @@ jobs:
 
             -   name: Update chrome binary to custom setup
                 run: |
-                    sudo rm -rf /opt/google
-                    sudo rm /usr/bin/google-chrome
                     sudo ln -s ${{ steps.setup-chrome.outputs.chrome-path }} /usr/bin/google-chrome
 
             -   name: Verify some versions
