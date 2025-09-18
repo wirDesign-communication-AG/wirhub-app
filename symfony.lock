@@ -370,23 +370,23 @@
         "version": "v3.7.0"
     },
     "wirdesign-communication-ag/wirhub": {
-        "version": "3.0",
+        "version": "3.1",
         "recipe": {
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
-            "version": "3.0",
-            "ref": "0d2e77b7eef0439d2e839dd7b46ce3fc4cf023fa"
+            "version": "3.1",
+            "ref": "9ed6037264389ab4e902dd868aef214ad2bb6bfb"
         },
         "files": [
-            ".github/workflows/ci.yaml",
-            "config/packages/wirhub_bundle.yaml",
-            "config/routes/wirhub_bundle.yaml",
+            "configpackages/wirhub_bundle.yaml",
+            "configroutes/wirhub_bundle.yaml",
             "templates/bundles/TwigBundle/Exception/error404.html.twig",
             "templates/bundles/TwigBundle/Exception/error500.html.twig",
             "templates/bundles/TwigBundle/Exception/error501.html.twig",
             "templates/bundles/TwigBundle/Exception/error502.html.twig",
             "templates/bundles/TwigBundle/Exception/error503.html.twig",
             "templates/bundles/TwigBundle/Exception/error504.html.twig",
+            "tests/bootstrap.php",
             ".env.test",
             "Makefile",
             "phpstan.neon",
