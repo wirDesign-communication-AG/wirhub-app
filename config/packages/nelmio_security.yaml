@@ -2,6 +2,8 @@ nelmio_security:
     # prevents framing of the entire site
     clickjacking:
         paths:
+            '^/element/.*/pattern/.*': SAMEORIGIN
+            '^/element/.*/scorm/.*': SAMEORIGIN
             '^/.*': DENY
 
     # disables content type sniffing for script resources
