@@ -22,16 +22,15 @@ jobs:
                 run: |
                     sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.2
 
-                #https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json
             -   name: Install chrome
                 uses: browser-actions/setup-chrome@v2
                 with:
-                    chrome-version: 140
+                    chrome-version: stable
                     install-chromedriver: true
 
             -   name: Update chrome binary to custom setup
                 run: |
-                    sudo ln -sf ${{ steps.setup-chrome.outputs.chrome-path }} /usr/bin/google-chrome
+                    sudo ln -sf /opt/hostedtoolcache/setup-chrome/chrome/stable/x64/chrome /usr/bin/google-chrome
 
             -   name: Verify some versions
                 run: |
