@@ -16,8 +16,8 @@
             "symfony/runtime": true,
             "tbachert/spi": true
         },
-        "classmap-authoritative": true,
-        "optimize-autoloader": true,
+        "classmap-authoritative": false,
+        "optimize-autoloader": false,
         "preferred-install": {
             "wirdesign-communication-ag/wirhub": "source"
         },
