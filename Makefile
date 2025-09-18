@@ -1,9 +1,8 @@
 init:
-	COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev
+	COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-autoload --no-dev --classmap-authoritative
 	php bin/console doctrine:migrations:migrate --no-interaction
-	php bin/console app:theme:refresh
 	php bin/console app:update
 	php bin/console app:theme:refresh
 
@@ -24,6 +23,7 @@ update:
 	git pull
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
 	COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader
+	COMPOSER_ALLOW_SUPERUSER=1 composer dump-autoload --no-dev --classmap-authoritative
 	php bin/console doctrine:migrations:migrate --no-interaction
 	php bin/console app:update
 ifeq ($(shell id -u), 0)
