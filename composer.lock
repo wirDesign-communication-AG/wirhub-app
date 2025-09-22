@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.20",
+            "version": "3.356.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7514867a6463fb68a60f5e17b4ccc56b4dc7d4f1"
+                "reference": "5b3f65a158a0e822586d110192ee78c6565b4f06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7514867a6463fb68a60f5e17b4ccc56b4dc7d4f1",
-                "reference": "7514867a6463fb68a60f5e17b4ccc56b4dc7d4f1",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5b3f65a158a0e822586d110192ee78c6565b4f06",
+                "reference": "5b3f65a158a0e822586d110192ee78c6565b4f06",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.20"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.22"
             },
-            "time": "2025-09-17T18:23:32+00:00"
+            "time": "2025-09-19T18:25:30+00:00"
         },
         {
             "name": "brick/math",
@@ -219,16 +219,16 @@
         },
         {
             "name": "chillerlan/php-qrcode",
-            "version": "5.0.3",
+            "version": "5.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillerlan/php-qrcode.git",
-                "reference": "42e215640e9ebdd857570c9e4e52245d1ee51de2"
+                "reference": "390393e97a6e42ccae0e0d6205b8d4200f7ddc43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillerlan/php-qrcode/zipball/42e215640e9ebdd857570c9e4e52245d1ee51de2",
-                "reference": "42e215640e9ebdd857570c9e4e52245d1ee51de2",
+                "url": "https://api.github.com/repos/chillerlan/php-qrcode/zipball/390393e97a6e42ccae0e0d6205b8d4200f7ddc43",
+                "reference": "390393e97a6e42ccae0e0d6205b8d4200f7ddc43",
                 "shasum": ""
             },
             "require": {
@@ -239,13 +239,13 @@
             "require-dev": {
                 "chillerlan/php-authenticator": "^4.3.1 || ^5.2.1",
                 "ext-fileinfo": "*",
-                "phan/phan": "^5.4.5",
+                "phan/phan": "^5.5.1",
                 "phpcompatibility/php-compatibility": "10.x-dev",
                 "phpmd/phpmd": "^2.15",
                 "phpunit/phpunit": "^9.6",
                 "setasign/fpdf": "^1.8.2",
-                "slevomat/coding-standard": "^8.15",
-                "squizlabs/php_codesniffer": "^3.11"
+                "slevomat/coding-standard": "^8.23.0",
+                "squizlabs/php_codesniffer": "^4.0.0"
             },
             "suggest": {
                 "chillerlan/php-authenticator": "Yet another Google authenticator! Also creates URIs for mobile apps.",
@@ -308,7 +308,7 @@
                     "type": "Ko-Fi"
                 }
             ],
-            "time": "2024-11-21T16:12:34+00:00"
+            "time": "2025-09-19T17:30:27+00:00"
         },
         {
             "name": "chillerlan/php-settings-container",
@@ -3659,16 +3659,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "v2.47.0",
+            "version": "v2.48.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "e37d7834228712ff0b0c14d3d6b1023384892d18"
+                "reference": "5d2f028941ab765fb09aa0b9b330765e64ec0590"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/e37d7834228712ff0b0c14d3d6b1023384892d18",
-                "reference": "e37d7834228712ff0b0c14d3d6b1023384892d18",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/5d2f028941ab765fb09aa0b9b330765e64ec0590",
+                "reference": "5d2f028941ab765fb09aa0b9b330765e64ec0590",
                 "shasum": ""
             },
             "require": {
@@ -3700,9 +3700,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v2.47.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v2.48.0"
             },
-            "time": "2025-09-10T23:41:00+00:00"
+            "time": "2025-09-18T20:24:27+00:00"
         },
         {
             "name": "microsoft/microsoft-graph-core",
@@ -3929,16 +3929,16 @@
         },
         {
             "name": "nelmio/security-bundle",
-            "version": "v3.5.1",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioSecurityBundle.git",
-                "reference": "b1c5e323d71152bc1a61a4f8fbf7d88c6fa3e2e7"
+                "reference": "f3a7bf628a0873788172a0d05d20c0224080f5eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioSecurityBundle/zipball/b1c5e323d71152bc1a61a4f8fbf7d88c6fa3e2e7",
-                "reference": "b1c5e323d71152bc1a61a4f8fbf7d88c6fa3e2e7",
+                "url": "https://api.github.com/repos/nelmio/NelmioSecurityBundle/zipball/f3a7bf628a0873788172a0d05d20c0224080f5eb",
+                "reference": "f3a7bf628a0873788172a0d05d20c0224080f5eb",
                 "shasum": ""
             },
             "require": {
@@ -3997,9 +3997,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nelmio/NelmioSecurityBundle/issues",
-                "source": "https://github.com/nelmio/NelmioSecurityBundle/tree/v3.5.1"
+                "source": "https://github.com/nelmio/NelmioSecurityBundle/tree/v3.6.0"
             },
-            "time": "2025-03-13T09:17:16+00:00"
+            "time": "2025-09-19T08:24:46+00:00"
         },
         {
             "name": "nyholm/psr7-server",
@@ -4069,20 +4069,20 @@
         },
         {
             "name": "open-telemetry/api",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/api.git",
-                "reference": "7692075f486c14d8cfd37fba98a08a5667f089e5"
+                "reference": "ee17d937652eca06c2341b6fadc0f74c1c1a5af2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/7692075f486c14d8cfd37fba98a08a5667f089e5",
-                "reference": "7692075f486c14d8cfd37fba98a08a5667f089e5",
+                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/ee17d937652eca06c2341b6fadc0f74c1c1a5af2",
+                "reference": "ee17d937652eca06c2341b6fadc0f74c1c1a5af2",
                 "shasum": ""
             },
             "require": {
-                "open-telemetry/context": "^1.0",
+                "open-telemetry/context": "^1.4",
                 "php": "^8.1",
                 "psr/log": "^1.1|^2.0|^3.0",
                 "symfony/polyfill-php82": "^1.26"
@@ -4135,20 +4135,20 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2025-08-07T23:07:38+00:00"
+            "time": "2025-09-19T00:05:49+00:00"
         },
         {
             "name": "open-telemetry/context",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/context.git",
-                "reference": "438f71812242db3f196fb4c717c6f92cbc819be6"
+                "reference": "d4c4470b541ce72000d18c339cfee633e4c8e0cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/context/zipball/438f71812242db3f196fb4c717c6f92cbc819be6",
-                "reference": "438f71812242db3f196fb4c717c6f92cbc819be6",
+                "url": "https://api.github.com/repos/opentelemetry-php/context/zipball/d4c4470b541ce72000d18c339cfee633e4c8e0cf",
+                "reference": "d4c4470b541ce72000d18c339cfee633e4c8e0cf",
                 "shasum": ""
             },
             "require": {
@@ -4194,27 +4194,27 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2025-08-13T01:12:00+00:00"
+            "time": "2025-09-19T00:05:49+00:00"
         },
         {
             "name": "open-telemetry/sdk",
-            "version": "1.7.1",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/sdk.git",
-                "reference": "52690d4b37ae4f091af773eef3c238ed2bc0aa06"
+                "reference": "105c6e81e3d86150bd5704b00c7e4e165e957b89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/52690d4b37ae4f091af773eef3c238ed2bc0aa06",
-                "reference": "52690d4b37ae4f091af773eef3c238ed2bc0aa06",
+                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/105c6e81e3d86150bd5704b00c7e4e165e957b89",
+                "reference": "105c6e81e3d86150bd5704b00c7e4e165e957b89",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "nyholm/psr7-server": "^1.1",
-                "open-telemetry/api": "^1.4",
-                "open-telemetry/context": "^1.0",
+                "open-telemetry/api": "^1.6",
+                "open-telemetry/context": "^1.4",
                 "open-telemetry/sem-conv": "^1.0",
                 "php": "^8.1",
                 "php-http/discovery": "^1.14",
@@ -4291,7 +4291,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2025-09-05T07:17:06+00:00"
+            "time": "2025-09-19T00:05:49+00:00"
         },
         {
             "name": "open-telemetry/sem-conv",
@@ -10769,12 +10769,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "d996e00934c8f5f17917aac639702fb81cdc038f"
+                "reference": "5c4da093ef978b54615fa7fe19d32fc3e8453b5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d996e00934c8f5f17917aac639702fb81cdc038f",
-                "reference": "d996e00934c8f5f17917aac639702fb81cdc038f",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/5c4da093ef978b54615fa7fe19d32fc3e8453b5f",
+                "reference": "5c4da093ef978b54615fa7fe19d32fc3e8453b5f",
                 "shasum": ""
             },
             "require": {
@@ -10861,7 +10861,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.12",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-09-18T10:07:10+00:00"
+            "time": "2025-09-22T08:45:17+00:00"
         }
     ],
     "packages-dev": [
@@ -11966,16 +11966,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.27",
+            "version": "2.1.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "25da374959afa391992792691093550b3098ef1e"
+                "reference": "578fa296a166605d97b94091f724f1257185d278"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/25da374959afa391992792691093550b3098ef1e",
-                "reference": "25da374959afa391992792691093550b3098ef1e",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/578fa296a166605d97b94091f724f1257185d278",
+                "reference": "578fa296a166605d97b94091f724f1257185d278",
                 "shasum": ""
             },
             "require": {
@@ -12020,7 +12020,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-17T09:55:13+00:00"
+            "time": "2025-09-19T08:58:49+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -13517,16 +13517,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "6.3.0",
+            "version": "6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "3473f61172093b2da7de1fb5782e1f24cc036dc3"
+                "reference": "8f67e53d3fcaf53105f95cc14f1630493d0fa2e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/3473f61172093b2da7de1fb5782e1f24cc036dc3",
-                "reference": "3473f61172093b2da7de1fb5782e1f24cc036dc3",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/8f67e53d3fcaf53105f95cc14f1630493d0fa2e6",
+                "reference": "8f67e53d3fcaf53105f95cc14f1630493d0fa2e6",
                 "shasum": ""
             },
             "require": {
@@ -13540,7 +13540,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.1-dev"
+                    "dev-main": "6.3-dev"
                 }
             },
             "autoload": {
@@ -13583,15 +13583,27 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
                 "security": "https://github.com/sebastianbergmann/exporter/security/policy",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/6.3.0"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/6.3.1"
             },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/exporter",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2024-12-05T09:17:50+00:00"
+            "time": "2025-09-22T05:34:00+00:00"
         },
         {
             "name": "sebastian/global-state",
