@@ -13,6 +13,10 @@ echo "-- Update envs"
 COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
 
 echo "--"
+echo "-- Preload autoload"
+COMPOSER_ALLOW_SUPERUSER=1 composer dump-autoload --no-dev --classmap-authoritative
+
+echo "--"
 echo "-- Clear cache"
 php bin/console cache:clear
 
