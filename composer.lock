@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95dfd6e2dab3c6e233a9a854492decf7",
+    "content-hash": "db78dd72c47d37da4a3d2fc70ed78c7e",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.27",
+            "version": "3.356.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "6f6b8cfdc1a1555b7a749395a79bda51910646e0"
+                "reference": "3e74e822177581c90faed3d607b022af9962bd00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6f6b8cfdc1a1555b7a749395a79bda51910646e0",
-                "reference": "6f6b8cfdc1a1555b7a749395a79bda51910646e0",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3e74e822177581c90faed3d607b022af9962bd00",
+                "reference": "3e74e822177581c90faed3d607b022af9962bd00",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.27"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.31"
             },
-            "time": "2025-09-26T18:12:38+00:00"
+            "time": "2025-10-02T18:59:02+00:00"
         },
         {
             "name": "brick/math",
@@ -4069,16 +4069,16 @@
         },
         {
             "name": "open-telemetry/api",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/api.git",
-                "reference": "ee17d937652eca06c2341b6fadc0f74c1c1a5af2"
+                "reference": "610b79ad9d6d97e8368bcb6c4d42394fbb87b522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/ee17d937652eca06c2341b6fadc0f74c1c1a5af2",
-                "reference": "ee17d937652eca06c2341b6fadc0f74c1c1a5af2",
+                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/610b79ad9d6d97e8368bcb6c4d42394fbb87b522",
+                "reference": "610b79ad9d6d97e8368bcb6c4d42394fbb87b522",
                 "shasum": ""
             },
             "require": {
@@ -4098,7 +4098,7 @@
                     ]
                 },
                 "branch-alias": {
-                    "dev-main": "1.4.x-dev"
+                    "dev-main": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -4135,7 +4135,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2025-09-19T00:05:49+00:00"
+            "time": "2025-10-02T23:44:28+00:00"
         },
         {
             "name": "open-telemetry/context",
@@ -4198,22 +4198,22 @@
         },
         {
             "name": "open-telemetry/sdk",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/sdk.git",
-                "reference": "105c6e81e3d86150bd5704b00c7e4e165e957b89"
+                "reference": "8986bcbcbea79cb1ba9e91c1d621541ad63d6b3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/105c6e81e3d86150bd5704b00c7e4e165e957b89",
-                "reference": "105c6e81e3d86150bd5704b00c7e4e165e957b89",
+                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/8986bcbcbea79cb1ba9e91c1d621541ad63d6b3e",
+                "reference": "8986bcbcbea79cb1ba9e91c1d621541ad63d6b3e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "nyholm/psr7-server": "^1.1",
-                "open-telemetry/api": "^1.6",
+                "open-telemetry/api": "^1.7",
                 "open-telemetry/context": "^1.4",
                 "open-telemetry/sem-conv": "^1.0",
                 "php": "^8.1",
@@ -4248,7 +4248,7 @@
                     ]
                 },
                 "branch-alias": {
-                    "dev-main": "1.0.x-dev"
+                    "dev-main": "1.9.x-dev"
                 }
             },
             "autoload": {
@@ -4291,7 +4291,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2025-09-19T00:05:49+00:00"
+            "time": "2025-10-02T23:44:28+00:00"
         },
         {
             "name": "open-telemetry/sem-conv",
@@ -5282,16 +5282,16 @@
         },
         {
             "name": "stduritemplate/stduritemplate",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/std-uritemplate/std-uritemplate-php.git",
-                "reference": "57f10976540d2fba3df5475c84dad6243eb3f36e"
+                "reference": "8d0f9938e977fdb9964f5d9465323923782f56d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/std-uritemplate/std-uritemplate-php/zipball/57f10976540d2fba3df5475c84dad6243eb3f36e",
-                "reference": "57f10976540d2fba3df5475c84dad6243eb3f36e",
+                "url": "https://api.github.com/repos/std-uritemplate/std-uritemplate-php/zipball/8d0f9938e977fdb9964f5d9465323923782f56d5",
+                "reference": "8d0f9938e977fdb9964f5d9465323923782f56d5",
                 "shasum": ""
             },
             "require": {
@@ -5315,9 +5315,9 @@
             ],
             "description": "Std UriTemplate, RFC 6570 implementation",
             "support": {
-                "source": "https://github.com/std-uritemplate/std-uritemplate-php/tree/2.0.5"
+                "source": "https://github.com/std-uritemplate/std-uritemplate-php/tree/2.0.6"
             },
-            "time": "2025-05-14T13:10:06+00:00"
+            "time": "2025-09-30T09:07:54+00:00"
         },
         {
             "name": "symfony/apache-pack",
@@ -10772,16 +10772,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.1.12",
+            "version": "dev-wip/1265",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "18dffdc9942b71979a08a84b913f9b56a0eaf051"
+                "reference": "cde658534ebf6f96dfc933ebd1d7105ccd9890a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/18dffdc9942b71979a08a84b913f9b56a0eaf051",
-                "reference": "18dffdc9942b71979a08a84b913f9b56a0eaf051",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/cde658534ebf6f96dfc933ebd1d7105ccd9890a9",
+                "reference": "cde658534ebf6f96dfc933ebd1d7105ccd9890a9",
                 "shasum": ""
             },
             "require": {
@@ -10865,10 +10865,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.12",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1265",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-09-28T10:12:58+00:00"
+            "time": "2025-10-03T14:51:12+00:00"
         }
     ],
     "packages-dev": [
@@ -11973,16 +11973,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.29",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpstan/phpstan-phar-composer-source.git",
-                "reference": "git"
-            },
+            "version": "2.1.30",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d618573eed4a1b6b75e37b2e0b65ac65c885d88e",
-                "reference": "d618573eed4a1b6b75e37b2e0b65ac65c885d88e",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a4a7f159927983dd4f7c8020ed227d80b7f39d7d",
+                "reference": "a4a7f159927983dd4f7c8020ed227d80b7f39d7d",
                 "shasum": ""
             },
             "require": {
@@ -12027,7 +12022,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-25T06:58:18+00:00"
+            "time": "2025-10-02T16:07:52+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -12366,16 +12361,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.41",
+            "version": "11.5.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b42782bcb947d2c197aea42ce9714ee2d974b283"
+                "reference": "1c6cb5dfe412af3d0dfd414cfd110e3b9cfdbc3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b42782bcb947d2c197aea42ce9714ee2d974b283",
-                "reference": "b42782bcb947d2c197aea42ce9714ee2d974b283",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c6cb5dfe412af3d0dfd414cfd110e3b9cfdbc3c",
+                "reference": "1c6cb5dfe412af3d0dfd414cfd110e3b9cfdbc3c",
                 "shasum": ""
             },
             "require": {
@@ -12447,7 +12442,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.41"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.42"
             },
             "funding": [
                 {
@@ -12471,7 +12466,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-24T06:32:10+00:00"
+            "time": "2025-09-28T12:09:13+00:00"
         },
         {
             "name": "react/cache",
@@ -14793,7 +14788,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
