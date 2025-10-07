@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.32",
+            "version": "3.356.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c564fb87e180da5ae45185a4526bb05a69998d05"
+                "reference": "b93da7b0eeec09b220daa9b598a94832f99cefa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c564fb87e180da5ae45185a4526bb05a69998d05",
-                "reference": "c564fb87e180da5ae45185a4526bb05a69998d05",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b93da7b0eeec09b220daa9b598a94832f99cefa7",
+                "reference": "b93da7b0eeec09b220daa9b598a94832f99cefa7",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.32"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.33"
             },
-            "time": "2025-10-03T18:12:05+00:00"
+            "time": "2025-10-06T19:01:41+00:00"
         },
         {
             "name": "brick/math",
@@ -3659,16 +3659,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "v2.48.0",
+            "version": "v2.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "5d2f028941ab765fb09aa0b9b330765e64ec0590"
+                "reference": "eba42c6802b562823fb4670afcdde51a668876cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/5d2f028941ab765fb09aa0b9b330765e64ec0590",
-                "reference": "5d2f028941ab765fb09aa0b9b330765e64ec0590",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/eba42c6802b562823fb4670afcdde51a668876cf",
+                "reference": "eba42c6802b562823fb4670afcdde51a668876cf",
                 "shasum": ""
             },
             "require": {
@@ -3700,9 +3700,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v2.48.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v2.49.0"
             },
-            "time": "2025-09-18T20:24:27+00:00"
+            "time": "2025-10-06T21:41:48+00:00"
         },
         {
             "name": "microsoft/microsoft-graph-core",
@@ -10776,12 +10776,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "aef992bd9cc29795ac33b55c2ea0b7f209b78fc0"
+                "reference": "389d500e810ec7588a48c8211eccc47b91f1a543"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/aef992bd9cc29795ac33b55c2ea0b7f209b78fc0",
-                "reference": "aef992bd9cc29795ac33b55c2ea0b7f209b78fc0",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/389d500e810ec7588a48c8211eccc47b91f1a543",
+                "reference": "389d500e810ec7588a48c8211eccc47b91f1a543",
                 "shasum": ""
             },
             "require": {
@@ -10868,7 +10868,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1265",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-10-06T10:26:04+00:00"
+            "time": "2025-10-07T11:54:19+00:00"
         }
     ],
     "packages-dev": [
@@ -11517,16 +11517,16 @@
         },
         {
             "name": "liip/test-fixtures-bundle",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liip/LiipTestFixturesBundle.git",
-                "reference": "f385458e47026b7bf5e73efe2a96c6b74805edc5"
+                "reference": "29942037076433f0189f33ccd7d53198dd818fe7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liip/LiipTestFixturesBundle/zipball/f385458e47026b7bf5e73efe2a96c6b74805edc5",
-                "reference": "f385458e47026b7bf5e73efe2a96c6b74805edc5",
+                "url": "https://api.github.com/repos/liip/LiipTestFixturesBundle/zipball/29942037076433f0189f33ccd7d53198dd818fe7",
+                "reference": "29942037076433f0189f33ccd7d53198dd818fe7",
                 "shasum": ""
             },
             "require": {
@@ -11598,9 +11598,9 @@
             ],
             "support": {
                 "issues": "https://github.com/liip/LiipTestFixturesBundle/issues",
-                "source": "https://github.com/liip/LiipTestFixturesBundle/tree/3.5.0"
+                "source": "https://github.com/liip/LiipTestFixturesBundle/tree/3.6.0"
             },
-            "time": "2025-07-06T19:52:28+00:00"
+            "time": "2025-10-06T18:40:34+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -12996,16 +12996,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "3c5a641c39f2def0c93d36df118fb2e75cfc2aae"
+                "reference": "e1aaf3061e9ae9342ed0824865e3a3360defddeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/3c5a641c39f2def0c93d36df118fb2e75cfc2aae",
-                "reference": "3c5a641c39f2def0c93d36df118fb2e75cfc2aae",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/e1aaf3061e9ae9342ed0824865e3a3360defddeb",
+                "reference": "e1aaf3061e9ae9342ed0824865e3a3360defddeb",
                 "shasum": ""
             },
             "require": {
@@ -13044,7 +13044,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.2.0"
+                "source": "https://github.com/rectorphp/rector/tree/2.2.1"
             },
             "funding": [
                 {
@@ -13052,7 +13052,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-06T12:18:16+00:00"
+            "time": "2025-10-06T21:25:14+00:00"
         },
         {
             "name": "sebastian/cli-parser",
