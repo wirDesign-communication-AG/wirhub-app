@@ -10777,12 +10777,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "3beea9e456250285e3c28b5226c2cbed764d2e4c"
+                "reference": "51aa05e2c7cb83f8d9026417025f1f1a477243aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/3beea9e456250285e3c28b5226c2cbed764d2e4c",
-                "reference": "3beea9e456250285e3c28b5226c2cbed764d2e4c",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/51aa05e2c7cb83f8d9026417025f1f1a477243aa",
+                "reference": "51aa05e2c7cb83f8d9026417025f1f1a477243aa",
                 "shasum": ""
             },
             "require": {
@@ -10869,7 +10869,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/822",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-10-19T11:59:06+00:00"
+            "time": "2025-10-20T15:01:34+00:00"
         }
     ],
     "packages-dev": [
@@ -11220,20 +11220,20 @@
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
-                "reference": "cd58d7738fe1fea1dbfd3e3f3bb421ee92d45e10"
+                "reference": "11941deb6f2899b91e8b8680b07ffe63899d864b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/cd58d7738fe1fea1dbfd3e3f3bb421ee92d45e10",
-                "reference": "cd58d7738fe1fea1dbfd3e3f3bb421ee92d45e10",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/11941deb6f2899b91e8b8680b07ffe63899d864b",
+                "reference": "11941deb6f2899b91e8b8680b07ffe63899d864b",
                 "shasum": ""
             },
             "require": {
-                "doctrine/data-fixtures": "^2.0",
+                "doctrine/data-fixtures": "^2.2",
                 "doctrine/doctrine-bundle": "^2.2 || ^3.0",
                 "doctrine/orm": "^2.14.0 || ^3.0",
                 "doctrine/persistence": "^2.4 || ^3.0 || ^4.0",
@@ -11286,7 +11286,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineFixturesBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineFixturesBundle/tree/4.2.0"
+                "source": "https://github.com/doctrine/DoctrineFixturesBundle/tree/4.3.0"
             },
             "funding": [
                 {
@@ -11302,7 +11302,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-10-12T16:50:54+00:00"
+            "time": "2025-10-20T06:18:40+00:00"
         },
         {
             "name": "evenement/evenement",
