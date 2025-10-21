@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1a7e3c7597bd2c67f897c8b021e5877",
+    "content-hash": "448d0d6e3f071abb7c844f7e37b3ed22",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -10773,16 +10773,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "dev-wip/822",
+            "version": "v3.1.13.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "51aa05e2c7cb83f8d9026417025f1f1a477243aa"
+                "reference": "85aee5a09c4ab9583142ec0b8c5bd8b1bdd6a177"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/51aa05e2c7cb83f8d9026417025f1f1a477243aa",
-                "reference": "51aa05e2c7cb83f8d9026417025f1f1a477243aa",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/85aee5a09c4ab9583142ec0b8c5bd8b1bdd6a177",
+                "reference": "85aee5a09c4ab9583142ec0b8c5bd8b1bdd6a177",
                 "shasum": ""
             },
             "require": {
@@ -10866,10 +10866,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/822",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.13",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-10-20T15:01:34+00:00"
+            "time": "2025-10-21T14:00:53+00:00"
         }
     ],
     "packages-dev": [
