@@ -31,6 +31,7 @@ jobs:
             -   name: Update chrome binary to custom setup
                 run: |
                     sudo ln -sf /opt/hostedtoolcache/setup-chrome/chrome/stable/x64/chrome /usr/bin/google-chrome
+                    sudo ln -sf /opt/hostedtoolcache/setup-chrome/chrome/stable/x64/chrome /opt/google/chrome/chrome
 
             -   name: Verify some versions
                 run: |
