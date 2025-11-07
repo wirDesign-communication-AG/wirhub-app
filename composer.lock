@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bdc85baa44720540aa368fce1219dcb1",
+    "content-hash": "c0cc6cbd1675f28da0452a8209a02464",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -11201,16 +11201,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.1.14.x-dev",
+            "version": "3.1.14",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "b2fdb05f32acb7ca75f75e33ebcfa352382319a2"
+                "reference": "7fda533ce4ab5018a5fb54297d506a34d9c8cb49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/b2fdb05f32acb7ca75f75e33ebcfa352382319a2",
-                "reference": "b2fdb05f32acb7ca75f75e33ebcfa352382319a2",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/7fda533ce4ab5018a5fb54297d506a34d9c8cb49",
+                "reference": "7fda533ce4ab5018a5fb54297d506a34d9c8cb49",
                 "shasum": ""
             },
             "require": {
@@ -11298,7 +11298,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.14",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-11-07T14:55:19+00:00"
+            "time": "2025-11-07T15:11:53+00:00"
         }
     ],
     "packages-dev": [
@@ -15142,9 +15142,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
