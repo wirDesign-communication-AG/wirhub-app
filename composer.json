@@ -69,6 +69,7 @@
         "doctrine/doctrine-bundle": "^2.9",
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^3.5.2",
+        "league/uri": "7.5.1",
         "symfony/apache-pack": "^1.0",
         "symfony/console": "^7.3",
         "symfony/dotenv": "^7.3",
