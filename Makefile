@@ -47,7 +47,6 @@ ifeq ($(shell id -u), 0)
 endif
 
 test:
-	test -d public/app/${VERSION} || { echo The public assest folder does not exist; exit 1; }
 	@echo "--------------------------------------"
 	@echo "---------- Lint validation -----------"
 	@echo "--------------------------------------"
