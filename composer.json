@@ -28,11 +28,8 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
-            "endpoint": [
-                "https://api.github.com/repos/wirdesign-communication-ag/wirhub-recipes/contents/index.json",
-                "flex://defaults"
-            ],
+            "allow-contrib": true,
+            "endpoint": ["https://api.github.com/repos/wirdesign-communication-ag/wirhub-recipes/contents/index.json", "flex://defaults"],
             "require": "^7.3"
         }
     },
