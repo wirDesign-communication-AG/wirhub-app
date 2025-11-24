@@ -68,12 +68,6 @@ test:
 	@echo ""
 	@echo ""
 	@echo "--------------------------------------"
-	@echo "----------- Create theme -------------"
-	@echo "--------------------------------------"
-	APP_ENV=test php bin/console app:theme:refresh
-	@echo ""
-	@echo ""
-	@echo "--------------------------------------"
 	@echo "------------- PHPUnit ----------------"
 	@echo "--------------------------------------"
 	php bin/phpunit -c phpunit.xml.dist $(TARGET)
