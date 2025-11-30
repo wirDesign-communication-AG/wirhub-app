@@ -22,17 +22,16 @@ when@test:
         session:
             handler_id: 'session.handler.native_file'
             save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
+    liip_test_fixtures:
+        cache_db:
+            sqlite: 'Liip\TestFixturesBundle\Services\DatabaseBackup\SqliteDatabaseBackup'
+        keep_database_and_schema: true
     parameters:
         locale: de
     services:
         Symfony\Contracts\HttpClient\HttpClientInterface:
             public: true
             alias: .debug.http_client
-
-    liip_test_fixtures:
-        cache_db:
-            sqlite: 'Liip\TestFixturesBundle\Services\DatabaseBackup\SqliteDatabaseBackup'
-        keep_database_and_schema: true
 
 doctrine:
     orm:
@@ -57,7 +56,6 @@ doctrine_migrations:
             table_name: 'migration_versions'
     all_or_nothing: true
     transactional: true
-
 
 framework:
     annotations:

@@ -40,6 +40,11 @@ jobs:
                 uses: docker/metadata-action@v5
                 with:
                     images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+                    flavor: |
+                        latest=false
+                    tags: |
+                        type=ref,event=tag
+                        type=sha
 
             -   name: Set VERSION number from .env file
                 id: set_version
@@ -60,3 +65,15 @@ jobs:
                     labels: ${{ steps.meta.outputs.labels }}
                     cache-from: type=gha
                     cache-to: type=gha,mode=max
+
+            -   name: Tag version as latest
+                if: startsWith(github.ref, 'refs/tags/v') &&
+                    !contains(github.ref, 'beta') &&
+                    !contains(github.ref, 'rc')
+                run: |
+                    VERSION=${GITHUB_REF#refs/tags/}
+
+                    docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${VERSION}
+                    docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${VERSION} ghcr.io/${{ github.repository }}:latest
+
+                    docker push ghcr.io/${{ github.repository }}:latest

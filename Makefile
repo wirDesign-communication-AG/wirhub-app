@@ -1,3 +1,23 @@
+include vendor/wirdesign-communication-ag/wirhub/.env
+export
+
+assets:
+	@echo "--------------------------------------"
+	@echo "----------- Remove Assets ------------"
+	@echo "--------------------------------------"
+	rm -rf public/app/3.*
+	@echo "--------------------------------------"
+	@echo "----------- Execute Grunt ------------"
+	@echo "--------------------------------------"
+	grunt --base build/ --gruntfile build/Gruntfile.js
+
+dkim:
+	openssl genrsa -out secret/dkim.pem 2048;
+	@echo '';,
+	@echo -n 'wirhub._domainkey.domain.de. 86400 IN TXT v=DKIM1; k=rsa; p=',
+	@openssl rsa -in secret/dkim.pem -pubout -outform der 2>/dev/null | openssl base64 -A;,
+	@echo '';,
+
 init:
 	COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
@@ -12,13 +32,6 @@ ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data files/
 endif
 
-dkim:
-	openssl genrsa -out secret/dkim.pem 2048;
-	@echo '';
-	@echo -n 'wirhub._domainkey.domain.de. 86400 IN TXT v=DKIM1; k=rsa; p=';
-	@openssl rsa -in secret/dkim.pem -pubout -outform der 2>/dev/null | openssl base64 -A;
-	@echo '';
-
 update:
 	git pull
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
@@ -26,13 +39,10 @@ update:
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-autoload --no-dev --classmap-authoritative
 	php bin/console doctrine:migrations:migrate --no-interaction
 	php bin/console app:update
+	php bin/console app:theme:refresh
 ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data public/
 	chown -R www-data:www-data var/
-	chown -R www-data:www-data files/
-endif
-	php bin/console app:theme:refresh
-ifeq ($(shell id -u), 0)
 	chown -R www-data:www-data files/
 endif
 
@@ -55,12 +65,6 @@ test:
 	@echo "--------- Custom validation ----------"
 	@echo "--------------------------------------"
 	APP_ENV=test php bin/console app:test
-	@echo ""
-	@echo ""
-	@echo "--------------------------------------"
-	@echo "----------- Create theme -------------"
-	@echo "--------------------------------------"
-	APP_ENV=test php bin/console app:theme:refresh
 	@echo ""
 	@echo ""
 	@echo "--------------------------------------"
