@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d8b9422cb1d2485bf7f56013344f0b6",
+    "content-hash": "1b6484a22e05ac8e385df05dc732478e",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -11174,16 +11174,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.22.0",
+            "version": "v3.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "4509984193026de413baf4ba80f68590a7f2c51d"
+                "reference": "1de2ec1fc43ab58a4b7e80b214b96bfc895750f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4509984193026de413baf4ba80f68590a7f2c51d",
-                "reference": "4509984193026de413baf4ba80f68590a7f2c51d",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/1de2ec1fc43ab58a4b7e80b214b96bfc895750f3",
+                "reference": "1de2ec1fc43ab58a4b7e80b214b96bfc895750f3",
                 "shasum": ""
             },
             "require": {
@@ -11237,7 +11237,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.22.0"
+                "source": "https://github.com/twigphp/Twig/tree/v3.22.1"
             },
             "funding": [
                 {
@@ -11249,7 +11249,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-10-29T15:56:47+00:00"
+            "time": "2025-11-16T16:01:12+00:00"
         },
         {
             "name": "ua-parser/uap-php",
@@ -11316,16 +11316,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.1.15.x-dev",
+            "version": "3.1.15",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "f03ba5e967b528e158cda1bc9d67eee8b0845cb8"
+                "reference": "d715ce06b92ca1b60a2b724e31445ae804b626ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/f03ba5e967b528e158cda1bc9d67eee8b0845cb8",
-                "reference": "f03ba5e967b528e158cda1bc9d67eee8b0845cb8",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d715ce06b92ca1b60a2b724e31445ae804b626ce",
+                "reference": "d715ce06b92ca1b60a2b724e31445ae804b626ce",
                 "shasum": ""
             },
             "require": {
@@ -11413,7 +11413,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.15",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-11-30T12:48:36+00:00"
+            "time": "2025-11-30T13:39:30+00:00"
         }
     ],
     "packages-dev": [
@@ -15261,9 +15261,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
