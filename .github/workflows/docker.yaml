@@ -8,7 +8,7 @@ env:
     # Use docker.io for Docker Hub if empty
     REGISTRY: ghcr.io
     # github.repository as <account>/<repo>
-    IMAGE_NAME: ${{ github.repository }}
+    IMAGE_NAME: wirdesign-communication-ag/wirhub-app
 
 jobs:
     image:
@@ -74,6 +74,6 @@ jobs:
                     VERSION=${GITHUB_REF#refs/tags/}
 
                     docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${VERSION}
-                    docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${VERSION} ghcr.io/${{ github.repository }}:latest
+                    docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${VERSION} ghcr.io/${{ env.IMAGE_NAME }}:latest
 
-                    docker push ghcr.io/${{ github.repository }}:latest
+                    docker push ghcr.io/${{ env.IMAGE_NAME }}:latest
