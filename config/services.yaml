@@ -4,12 +4,9 @@ services:
     _defaults:
         autowire: true
         autoconfigure: true
-        bind:
-            $kernelProjectDir: '%kernel.project_dir%'
 
     App\:
         resource: '../src/'
-
 
     App\Controller\:
         resource: '../src/Controller'
