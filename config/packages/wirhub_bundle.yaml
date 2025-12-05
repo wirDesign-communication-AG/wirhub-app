@@ -150,7 +150,7 @@ security:
         main:
             access_token:
                 token_handler: AppBundle\Security\AccessTokenHandler
-                token_extractors: query_string
+                token_extractors: [ 'header', 'query_string' ]
             entry_point: form_login
             switch_user: { role: CAN_SWITCH_USER }
             form_login:

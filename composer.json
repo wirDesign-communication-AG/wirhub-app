@@ -73,10 +73,10 @@
         "symfony/expression-language": "^7.4",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "^7.4",
-        "symfony/mcp-bundle": "^0.0.0@dev",
+        "symfony/mcp-bundle": "dev-main",
         "symfony/runtime": "^7.4",
         "symfony/yaml": "^7.4",
-        "wirdesign-communication-ag/wirhub": "3.1.15"
+        "wirdesign-communication-ag/wirhub": "dev-wip/1445"
     },
     "scripts": {
         "auto-scripts": {

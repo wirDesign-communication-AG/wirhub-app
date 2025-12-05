@@ -12,3 +12,12 @@ services:
         resource: '../src/Controller'
         public: true
         tags: [ 'controller.service_arguments' ]
+
+    AppBundle\Mcp\Builder:
+        decorates: 'mcp.server.builder'
+        arguments:
+            - '@.inner'
+            - '@AppBundle\Services\User\AccessControlService'
+            - '@AppBundle\Services\User\AccessTokenService'
+            - '@AppBundle\Repository\CategoryRepository'
+            - '@AppBundle\Services\SpaceService'
