@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0f75b91a5f7aaac20564ae4249e0acd",
+    "content-hash": "e048e9101b162afcbea4708e0cdd52ac",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.366.4",
+            "version": "3.367.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1861cc8eede21cdaab0732fd44f43f19ddf1effd"
+                "reference": "4155279437f17a51604f05f8373b685c058bc278"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1861cc8eede21cdaab0732fd44f43f19ddf1effd",
-                "reference": "1861cc8eede21cdaab0732fd44f43f19ddf1effd",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4155279437f17a51604f05f8373b685c058bc278",
+                "reference": "4155279437f17a51604f05f8373b685c058bc278",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.366.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.367.1"
             },
-            "time": "2025-12-09T19:21:22+00:00"
+            "time": "2025-12-11T19:13:06+00:00"
         },
         {
             "name": "brick/math",
@@ -8612,12 +8612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mcp-bundle.git",
-                "reference": "52a02ffa4eccdd08f67731793ccf5ae4ed94a8cb"
+                "reference": "79e690986417cc36feba384243f9aa857a981c23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mcp-bundle/zipball/52a02ffa4eccdd08f67731793ccf5ae4ed94a8cb",
-                "reference": "52a02ffa4eccdd08f67731793ccf5ae4ed94a8cb",
+                "url": "https://api.github.com/repos/symfony/mcp-bundle/zipball/79e690986417cc36feba384243f9aa857a981c23",
+                "reference": "79e690986417cc36feba384243f9aa857a981c23",
                 "shasum": ""
             },
             "require": {
@@ -8635,7 +8635,7 @@
             "require-dev": {
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-strict-rules": "^2.0",
-                "phpunit/phpunit": "^11.5"
+                "phpunit/phpunit": "^11.5.46"
             },
             "default-branch": true,
             "type": "symfony-bundle",
@@ -8689,7 +8689,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-12-09T09:15:24+00:00"
+            "time": "2025-12-12T10:42:14+00:00"
         },
         {
             "name": "symfony/mime",
@@ -12362,16 +12362,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "dev-wip/1445",
+            "version": "v3.1.16.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "6c4e8c14198c96c745132cadcc13f3bf94c1c1f2"
+                "reference": "cb44ed148917b7b9a30ded7d16a618e2294af1c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/6c4e8c14198c96c745132cadcc13f3bf94c1c1f2",
-                "reference": "6c4e8c14198c96c745132cadcc13f3bf94c1c1f2",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/cb44ed148917b7b9a30ded7d16a618e2294af1c5",
+                "reference": "cb44ed148917b7b9a30ded7d16a618e2294af1c5",
                 "shasum": ""
             },
             "require": {
@@ -12457,10 +12457,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1445",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.16",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2025-12-10T09:43:24+00:00"
+            "time": "2025-12-11T14:31:43+00:00"
         }
     ],
     "packages-dev": [
@@ -12757,16 +12757,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.91.3",
+            "version": "v3.92.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "9f10aa6390cea91da175ea608880e942d7c0226e"
+                "reference": "5646c2cd99b7cb4b658ff681fe27069ba86c7280"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/9f10aa6390cea91da175ea608880e942d7c0226e",
-                "reference": "9f10aa6390cea91da175ea608880e942d7c0226e",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/5646c2cd99b7cb4b658ff681fe27069ba86c7280",
+                "reference": "5646c2cd99b7cb4b658ff681fe27069ba86c7280",
                 "shasum": ""
             },
             "require": {
@@ -12848,7 +12848,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.91.3"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.92.0"
             },
             "funding": [
                 {
@@ -12856,7 +12856,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-05T19:45:37+00:00"
+            "time": "2025-12-12T10:29:19+00:00"
         },
         {
             "name": "liip/test-fixtures-bundle",

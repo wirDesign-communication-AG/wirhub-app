@@ -76,7 +76,7 @@
         "symfony/mcp-bundle": "dev-main",
         "symfony/runtime": "^7.4",
         "symfony/yaml": "^7.4",
-        "wirdesign-communication-ag/wirhub": "dev-wip/1445"
+        "wirdesign-communication-ag/wirhub": "v3.1.16.x-dev"
     },
     "scripts": {
         "auto-scripts": {
