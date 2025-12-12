@@ -39,6 +39,8 @@ doctrine:
             default:
                 connection: 'default'
                 dql:
+                    datetime_functions:
+                        YEAR: AppBundle\Domain\Doctrine\Year
                     string_functions:
                         MATCH: AppBundle\Domain\Doctrine\MatchAgainst
                 mappings:

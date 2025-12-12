@@ -387,7 +387,7 @@
             "repo": "github.com/wirdesign-communication-ag/wirhub-recipes",
             "branch": "main",
             "version": "3.1",
-            "ref": "351d40093bc2746653d70c35b6883407e9b2bbee"
+            "ref": "201d537087c755c362f95024834f6d9dbb6ff887"
         },
         "files": [
             "config/packages/wirhub_bundle.yaml",
