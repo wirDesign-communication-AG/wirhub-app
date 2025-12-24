@@ -14,13 +14,13 @@ jobs:
             -   name: Install extensions
                 uses: shivammathur/setup-php@v2
                 with:
-                    php-version: '8.2'
+                    php-version: '8.4'
                     extensions: imagick, sqlite3
                     ini-values: error_log=/home/runner/.symfony5/log/php.log
 
             -   name: Install Webserver
                 run: |
-                    sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.2
+                    sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.4
 
             -   name: Install chrome
                 uses: browser-actions/setup-chrome@v2
