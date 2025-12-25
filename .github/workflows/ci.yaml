@@ -91,4 +91,3 @@ jobs:
                         /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/build/debug/*
                         /var/www/wirhub/var/cache/test/*.log
                         /var/www/wirhub/var/cache/wdc-styleguide.db
-                        /var/www/wirhub/var/log/*
