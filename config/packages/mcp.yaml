@@ -1,0 +1,15 @@
+mcp:
+    app: 'wirhub'
+    version: '0.0.1'
+    pagination_limit: 50
+
+    client_transports:
+        stdio: false
+        http: true
+
+    http:
+        path: /_mcp
+        session:
+            store: file
+            directory: '%kernel.cache_dir%/mcp-sessions'
+            ttl: 3600
