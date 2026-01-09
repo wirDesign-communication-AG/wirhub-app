@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a2323af01cfeeb39aa67c308ba4918b2",
+    "content-hash": "e4190de952a50aa8636eb2bada26bf72",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -8517,12 +8517,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mcp-bundle.git",
-                "reference": "8b12cb42ebddfb8656743705d651848afc49f2c2"
+                "reference": "f8cb156b0864d9f0ccca539fc719b57f27e8ab46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mcp-bundle/zipball/8b12cb42ebddfb8656743705d651848afc49f2c2",
-                "reference": "8b12cb42ebddfb8656743705d651848afc49f2c2",
+                "url": "https://api.github.com/repos/symfony/mcp-bundle/zipball/f8cb156b0864d9f0ccca539fc719b57f27e8ab46",
+                "reference": "f8cb156b0864d9f0ccca539fc719b57f27e8ab46",
                 "shasum": ""
             },
             "require": {
@@ -8552,7 +8552,7 @@
                     "name": "symfony/ai"
                 },
                 "branch-alias": {
-                    "dev-main": "0.2.x-dev"
+                    "dev-main": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -8596,7 +8596,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-08T10:38:03+00:00"
+            "time": "2026-01-09T16:20:45+00:00"
         },
         {
             "name": "symfony/mime",
@@ -12273,16 +12273,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.1.16.x-dev",
+            "version": "3.1.16",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "b32a41e0ea783572ee6be5d60ea8afbcab0093a9"
+                "reference": "2284bb7395a21fd82fb8bde9c6e6d88816cee715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/b32a41e0ea783572ee6be5d60ea8afbcab0093a9",
-                "reference": "b32a41e0ea783572ee6be5d60ea8afbcab0093a9",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/2284bb7395a21fd82fb8bde9c6e6d88816cee715",
+                "reference": "2284bb7395a21fd82fb8bde9c6e6d88816cee715",
                 "shasum": ""
             },
             "require": {
@@ -12370,7 +12370,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.16",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-01-09T10:08:47+00:00"
+            "time": "2026-01-09T18:17:30+00:00"
         }
     ],
     "packages-dev": [
@@ -16050,9 +16050,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
