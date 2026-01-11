@@ -474,7 +474,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *         max_host_connections?: int, // The maximum number of connections to a single host.
  *         default_options?: array{
  *             headers?: array<string, mixed>,
- *             vars?: list<mixed>,
+ *             vars?: array<string, mixed>,
  *             max_redirects?: int, // The maximum number of redirects to follow.
  *             http_version?: scalar|null, // The default HTTP version, typically 1.1 or 2.0, leave to null for the best version.
  *             resolve?: array<string, scalar|null>,
@@ -497,7 +497,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *                 md5?: mixed,
  *             },
  *             crypto_method?: scalar|null, // The minimum version of TLS to accept; must be one of STREAM_CRYPTO_METHOD_TLSv*_CLIENT constants.
- *             extra?: list<mixed>,
+ *             extra?: array<string, mixed>,
  *             rate_limiter?: scalar|null, // Rate limiter name to use for throttling requests. // Default: null
  *             caching?: bool|array{ // Caching configuration.
  *                 enabled?: bool, // Default: false
@@ -550,7 +550,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *                 md5?: mixed,
  *             },
  *             crypto_method?: scalar|null, // The minimum version of TLS to accept; must be one of STREAM_CRYPTO_METHOD_TLSv*_CLIENT constants.
- *             extra?: list<mixed>,
+ *             extra?: array<string, mixed>,
  *             rate_limiter?: scalar|null, // Rate limiter name to use for throttling requests. // Default: null
  *             caching?: bool|array{ // Caching configuration.
  *                 enabled?: bool, // Default: false
@@ -643,7 +643,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *         }>,
  *     },
  *     uid?: bool|array{ // Uid configuration
- *         enabled?: bool, // Default: false
+ *         enabled?: bool, // Default: true
  *         default_uuid_version?: 7|6|4|1, // Default: 7
  *         name_based_uuid_version?: 5|3, // Default: 5
  *         name_based_uuid_namespace?: scalar|null,
@@ -1797,6 +1797,28 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *         },
  *     },
  * }
+ * @psalm-type McpConfig = array{
+ *     app?: scalar|null, // Default: "app"
+ *     version?: scalar|null, // Default: "0.0.1"
+ *     pagination_limit?: int, // Default: 50
+ *     instructions?: scalar|null, // Default: null
+ *     client_transports?: array{
+ *         stdio?: bool, // Default: false
+ *         http?: bool, // Default: false
+ *     },
+ *     discovery?: array{
+ *         scan_dirs?: list<scalar|null>,
+ *         exclude_dirs?: list<scalar|null>,
+ *     },
+ *     http?: array{
+ *         path?: scalar|null, // Default: "/_mcp"
+ *         session?: array{
+ *             store?: "file"|"memory", // Default: "file"
+ *             directory?: scalar|null, // Default: "%kernel.cache_dir%/mcp-sessions"
+ *             ttl?: int, // Default: 3600
+ *         },
+ *     },
+ * }
  * @psalm-type ConfigType = array{
  *     imports?: ImportsConfig,
  *     parameters?: ParametersConfig,
@@ -1813,6 +1835,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *     doctrine_migrations?: DoctrineMigrationsConfig,
  *     wir_design_wir_hub_bundle?: WirDesignWirHubBundleConfig,
  *     nelmio_security?: NelmioSecurityConfig,
+ *     mcp?: McpConfig,
  *     "when@dev"?: array{
  *         imports?: ImportsConfig,
  *         parameters?: ParametersConfig,
@@ -1833,6 +1856,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *         debug?: DebugConfig,
  *         liip_test_fixtures?: LiipTestFixturesConfig,
  *         nelmio_security?: NelmioSecurityConfig,
+ *         mcp?: McpConfig,
  *     },
  *     "when@prod"?: array{
  *         imports?: ImportsConfig,
@@ -1850,6 +1874,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *         doctrine_migrations?: DoctrineMigrationsConfig,
  *         wir_design_wir_hub_bundle?: WirDesignWirHubBundleConfig,
  *         nelmio_security?: NelmioSecurityConfig,
+ *         mcp?: McpConfig,
  *     },
  *     "when@test"?: array{
  *         imports?: ImportsConfig,
@@ -1869,6 +1894,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *         web_profiler?: WebProfilerConfig,
  *         liip_test_fixtures?: LiipTestFixturesConfig,
  *         nelmio_security?: NelmioSecurityConfig,
+ *         mcp?: McpConfig,
  *     },
  *     ...<string, ExtensionType|array{ // extra keys must follow the when@%env% pattern or match an extension alias
  *         imports?: ImportsConfig,
