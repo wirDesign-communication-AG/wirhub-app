@@ -12,11 +12,11 @@ assets:
 	grunt --base build/ --gruntfile build/Gruntfile.js
 
 dkim:
-	openssl genrsa -out secret/dkim.pem 2048;
-	@echo '';,
-	@echo -n 'wirhub._domainkey.domain.de. 86400 IN TXT v=DKIM1; k=rsa; p=',
-	@openssl rsa -in secret/dkim.pem -pubout -outform der 2>/dev/null | openssl base64 -A;,
-	@echo '';,
+	openssl genrsa -out secret/dkim.pem 2048
+	@echo ''
+	@echo -n 'wirhub._domainkey.domain.de. 86400 IN TXT v=DKIM1; k=rsa; p='
+	@openssl rsa -in secret/dkim.pem -pubout -outform der 2>/dev/null | openssl base64 -A
+	@echo ''
 
 init:
 	COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader
