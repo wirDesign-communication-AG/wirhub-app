@@ -79,8 +79,12 @@ jobs:
 
       - name: Kill running chromedriver
         run: |
-          sudo lsof -i:9515
-          sudo kill $(lsof -i:9515)
+          lsof -i :9515 || echo "No process found on port 9515"
+          PID=$(lsof -ti :9515)
+          if [ -n "$PID" ]; then
+            echo "Killing process $PID"
+            sudo kill -9 $PID
+          fi
 
       - name: Run tests
         run: cd /var/www/wirhub && make test
