@@ -77,18 +77,6 @@ jobs:
         run: |
           sudo chmod -R 777 /var/www/wirhub
 
-      - name: Test chrome - Start chromedriver
-        run: |
-          chromedriver --port=9515 --ignore-certificate-errors --disable-dev-shm-usage --verbose --log-path=/tmp/chromedriver.log --user-data-dir=/tmp/chrome --headless=new --start-maximized --disable-extensions --window-size=1400,1200 --disable-search-engine-choice-screen --no-sandbox --disable-gpu &
-          sleep 2
-
-      - name: Test chrome - Get chromedriver status
-        run: |
-          curl http://localhost:9515/status
-
-      - name: Test chrome - Chromedriver beenden
-        run: killall chromedriver || true
-
       - name: Run tests
         run: cd /var/www/wirhub && make test
 
