@@ -18,9 +18,6 @@
     },
     "classmap-authoritative": false,
     "optimize-autoloader": false,
-    "platform": {
-      "php": "8.2.30"
-    },
     "preferred-install": {
       "wirdesign-communication-ag/wirhub": "source"
     },
