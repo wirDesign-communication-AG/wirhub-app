@@ -1,94 +1,106 @@
 name: 'CI'
 on:
-    pull_request:
-        branches: [ 'main', 'wip/*', 'v3.0.*', 'v3.1',  'v3.1.*' ]
+  pull_request:
+    branches: [ 'main', 'wip/*', 'v3.0.*', 'v3.1',  'v3.1.*' ]
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            -   uses: actions/checkout@v4
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-            -   name: Add GitHub OAuth credentials
-                run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
+      - name: Add GitHub OAuth credentials
+        run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
-            -   name: Install extensions
-                uses: shivammathur/setup-php@v2
-                with:
-                    php-version: '8.4'
-                    extensions: imagick, sqlite3
-                    ini-values: error_log=/home/runner/.symfony5/log/php.log
+      - name: Install extensions
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: imagick, sqlite3
+          ini-values: error_log=/home/runner/.symfony5/log/php.log
 
-            -   name: Install Webserver
-                run: |
-                    sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.4
+      - name: Install Webserver
+        run: |
+          sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.4
 
-            -   name: Install chrome
-                uses: browser-actions/setup-chrome@v2
-                with:
-                    chrome-version: stable
-                    install-chromedriver: true
+      - name: Install chrome
+        uses: browser-actions/setup-chrome@v2
+        with:
+          chrome-version: stable
+          install-chromedriver: true
 
-            -   name: Update chrome binary to custom setup
-                run: |
-                    sudo ln -sf /opt/hostedtoolcache/setup-chrome/chrome/stable/x64/chrome /usr/bin/google-chrome
-                    sudo ln -sf /opt/hostedtoolcache/setup-chrome/chrome/stable/x64/chrome /opt/google/chrome/chrome
+      - name: Update chrome binary to custom setup
+        run: |
+          sudo ln -sf /opt/hostedtoolcache/setup-chrome/chrome/stable/x64/chrome /usr/bin/google-chrome
+          sudo ln -sf /opt/hostedtoolcache/setup-chrome/chrome/stable/x64/chrome /opt/google/chrome/chrome
 
-            -   name: Verify some versions
-                run: |
-                    echo "-- Google Chrome --"
-                    google-chrome --version
-                    echo "-- Chromedriver --"
-                    chromedriver --version
-                    echo "-- Composer --"
-                    composer --version
+      - name: Verify some versions
+        run: |
+          echo "-- Google Chrome --"
+          google-chrome --version
+          echo "-- Chromedriver --"
+          chromedriver --version
+          echo "-- Composer --"
+          composer --version
 
-            -   name: Move project to web
-                run: |
-                    sudo mkdir /var/www/wirhub
-                    sudo mv /home/runner/work/wirhub-app/wirhub-app/* /var/www/wirhub
-                    sudo mv /home/runner/work/wirhub-app/wirhub-app/.env* /var/www/wirhub
-                    sudo mv /home/runner/work/wirhub-app/wirhub-app/.php-* /var/www/wirhub
-                    sudo chown -R www-data:www-data /var/www
+      - name: Move project to web
+        run: |
+          sudo mkdir /var/www/wirhub
+          sudo mv /home/runner/work/wirhub-app/wirhub-app/* /var/www/wirhub
+          sudo mv /home/runner/work/wirhub-app/wirhub-app/.env* /var/www/wirhub
+          sudo mv /home/runner/work/wirhub-app/wirhub-app/.php-* /var/www/wirhub
+          sudo chown -R www-data:www-data /var/www
 
-            -   name: Composer install
-                run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
+      - name: Composer install
+        run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
 
-            -   name: PHP CS Fixer
-                run: /var/www/wirhub/vendor/bin/php-cs-fixer check --stop-on-violation --config=/var/www/wirhub/.php-cs-fixer.dist.php
+      - name: PHP CS Fixer
+        run: /var/www/wirhub/vendor/bin/php-cs-fixer check --stop-on-violation --config=/var/www/wirhub/.php-cs-fixer.dist.php
 
-            -   name: Prepare symfony
-                run: |
-                    sudo -u www-data composer dump-env test --working-dir /var/www/wirhub
-                    sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console cache:clear
-                    sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console assets:install public/
-                    sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console doctrine:schema:update --force
-                    sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions
+      - name: Prepare symfony
+        run: |
+          sudo -u www-data composer dump-env test --working-dir /var/www/wirhub
+          sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console cache:clear
+          sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console assets:install public/
+          sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console doctrine:schema:update --force
+          sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions
 
-            -   name: Finish webserver
-                run: |
-                    sudo a2enmod rewrite
-                    sudo mkdir /var/www/wirhub/var/apache2/
-                    sudo rm /etc/apache2/sites-available/000-default.conf
-                    sudo cp /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/Tests/Config/vhost_github.conf /etc/apache2/sites-available/000-default.conf
-                    sudo apachectl configtest
-                    sudo systemctl restart apache2
+      - name: Finish webserver
+        run: |
+          sudo a2enmod rewrite
+          sudo mkdir /var/www/wirhub/var/apache2/
+          sudo rm /etc/apache2/sites-available/000-default.conf
+          sudo cp /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/Tests/Config/vhost_github.conf /etc/apache2/sites-available/000-default.conf
+          sudo apachectl configtest
+          sudo systemctl restart apache2
 
-            -   name: Update folder permissions
-                run: |
-                    sudo chmod -R 777 /var/www/wirhub
+      - name: Update folder permissions
+        run: |
+          sudo chmod -R 777 /var/www/wirhub
 
-            -   name: Run tests
-                run: cd /var/www/wirhub && make test
+      - name: Test chrome - Start chromedriver
+        run: |
+          chromedriver --port=9515 --ignore-certificate-errors --disable-dev-shm-usage --verbose --log-path=/tmp/chromedriver.log --user-data-dir=/tmp/chrome --headless=new --start-maximized --disable-extensions --window-size=1400,1200 --disable-search-engine-choice-screen --no-sandbox --disable-gpu &
+          sleep 2
 
-            -   name: Archive debugging files
-                uses: actions/upload-artifact@v4
-                if: failure()
-                with:
-                    name: debug
-                    if-no-files-found: ignore
-                    path: |
-                        /var/www/wirhub/.env.local.php
-                        /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/build/debug/*
-                        /var/www/wirhub/var/cache/test/*.log
-                        /var/www/wirhub/var/cache/wdc-styleguide.db
-                        /tmp/chromedriver.log
+      - name: Test chrome - Get chromedriver status
+        run: |
+          curl http://localhost:9515/status
+
+      - name: Test chrome - Chromedriver beenden
+        run: killall chromedriver || true
+
+      - name: Run tests
+        run: cd /var/www/wirhub && make test
+
+      - name: Archive debugging files
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: debug
+          if-no-files-found: ignore
+          path: |
+            /var/www/wirhub/.env.local.php
+            /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/build/debug/*
+            /var/www/wirhub/var/cache/test/*.log
+            /var/www/wirhub/var/cache/wdc-styleguide.db
+            /tmp/chromedriver.log
