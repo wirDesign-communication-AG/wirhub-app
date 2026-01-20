@@ -77,6 +77,15 @@ jobs:
                 run: |
                     sudo chmod -R 777 /var/www/wirhub
 
+            -   name: Test chrome - Start chromedriver
+                run: |
+                    chromedriver --port=9515 --log-path=/tmp/chromedriver.log &
+                    sleep 2
+
+            -   name: Test chrome - Get chromedriver status
+                run: |
+                    curl http://localhost:9515/status
+
             -   name: Run tests
                 run: cd /var/www/wirhub && make test
 
@@ -91,3 +100,4 @@ jobs:
                         /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/build/debug/*
                         /var/www/wirhub/var/cache/test/*.log
                         /var/www/wirhub/var/cache/wdc-styleguide.db
+                        /tmp/chromedriver.log
