@@ -4,7 +4,7 @@ on:
     branches: [ 'main', 'wip/*', 'v3.0.*', 'v3.1',  'v3.1.*' ]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
 
