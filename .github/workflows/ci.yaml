@@ -77,6 +77,11 @@ jobs:
         run: |
           sudo chmod -R 777 /var/www/wirhub
 
+      - name: Kill running chromedriver
+        run: |
+          sudo lsof -i:9515
+          sudo kill $(lsof -i:9515)
+
       - name: Run tests
         run: cd /var/www/wirhub && make test
 
