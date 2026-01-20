@@ -21,6 +21,9 @@
     "preferred-install": {
       "wirdesign-communication-ag/wirhub": "source"
     },
+    "platform": {
+      "php": "8.2.30"
+    },
     "sort-packages": true
   },
   "conflict": {
