@@ -14,7 +14,7 @@ jobs:
       - name: Install extensions
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4'
+          php-version: '8.3'
           extensions: imagick, sqlite3
           ini-values: error_log=/home/runner/.symfony5/log/php.log
 
@@ -92,4 +92,5 @@ jobs:
             /var/www/wirhub/var/cache/test/*.log
             /var/www/wirhub/var/cache/wdc-styleguide.db
             /var/www/wirhub/var/log/*.log
+            /var/www/wirhub/var/error-screenshots/*
             /tmp/chromedriver.log
