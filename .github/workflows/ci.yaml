@@ -61,6 +61,8 @@ jobs:
           chromedriver --version
           echo "-- Composer --"
           composer --version
+          echo "-- PHP --"
+          php --version
 
       - name: Move project to web
         run: |
@@ -97,8 +99,24 @@ jobs:
         run: |
           sudo chmod -R 777 /var/www/wirhub
 
-      - name: Run tests
-        run: cd /var/www/wirhub && make test
+      - name: Test - Lint
+        run: |
+          cd /var/www/wirhub
+          APP_ENV=test php bin/console lint:twig templates/ vendor/wirdesign-communication-ag/wirhub/
+          APP_ENV=test php bin/console lint:yaml config/ vendor/wirdesign-communication-ag/wirhub/Resources/config/
+          APP_ENV=test php bin/console lint:container
+
+      - name: Test - PHPStan
+        run: vendor/bin/phpstan analyse -c phpstan.neon
+
+      - name: Test - App
+        run: APP_ENV=test php bin/console app:test
+
+      - name: Test - WebTestCase and KernelTestCase
+        run: /usr/bin/php8.4 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/WebAndKernel/
+
+      - name: Test - PantherTestCase
+        run: /usr/bin/php8.2 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/Panther/
 
       - name: Archive debugging files
         uses: actions/upload-artifact@v4
