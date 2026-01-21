@@ -18,11 +18,9 @@
     },
     "classmap-authoritative": false,
     "optimize-autoloader": false,
+    "platform-check": false,
     "preferred-install": {
       "wirdesign-communication-ag/wirhub": "source"
-    },
-    "platform": {
-      "php": "8.2.30"
     },
     "sort-packages": true
   },
@@ -71,6 +69,7 @@
     "ext-mbstring": "*",
     "doctrine/doctrine-bundle": "^2.14",
     "doctrine/doctrine-migrations-bundle": "^3.0",
+    "doctrine/instantiator": "2.0.0",
     "doctrine/orm": "^3.5.2",
     "league/uri": "7.5.1",
     "symfony/apache-pack": "^1.0",
