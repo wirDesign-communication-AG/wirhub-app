@@ -31,7 +31,9 @@ jobs:
             php8.2-cgi \
             php8.2-xml \
             php8.2-xml \
-            php8.2-gd
+            php8.2-gd \
+            php8.2-sqlite3 \
+            php8.2-imagick
 
       - name: Install extensions
         uses: shivammathur/setup-php@v2
