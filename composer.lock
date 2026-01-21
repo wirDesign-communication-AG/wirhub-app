@@ -12280,12 +12280,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "16d3385b03b165421c5a8aab868ef443a6eddf88"
+                "reference": "aa1590715ed614cd49b844f87549639441367df4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/16d3385b03b165421c5a8aab868ef443a6eddf88",
-                "reference": "16d3385b03b165421c5a8aab868ef443a6eddf88",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/aa1590715ed614cd49b844f87549639441367df4",
+                "reference": "aa1590715ed614cd49b844f87549639441367df4",
                 "shasum": ""
             },
             "require": {
@@ -12373,7 +12373,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/php8-4",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-01-21T19:58:04+00:00"
+            "time": "2026-01-21T20:07:05+00:00"
         }
     ],
     "packages-dev": [
