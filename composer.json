@@ -81,7 +81,7 @@
     "symfony/framework-bundle": "^7.4",
     "symfony/runtime": "^7.4",
     "symfony/yaml": "^7.4",
-    "wirdesign-communication-ag/wirhub": "v3.1.17.x-dev"
+    "wirdesign-communication-ag/wirhub": "dev-wip/php8-4"
   },
   "scripts": {
     "auto-scripts": {
