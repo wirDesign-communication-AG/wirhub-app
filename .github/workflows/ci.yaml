@@ -11,16 +11,32 @@ jobs:
       - name: Add GitHub OAuth credentials
         run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
+      - name: Install Webserver
+        run: |
+          sudo apt update --allow-releaseinfo-change  && sudo apt install -y apache2 libapache2-mod-php8.4 \
+          php8.2 \
+          php8.2-common \
+          php8.2-zip \
+          php8.2-imagick \
+          php8.2-gd \
+          php8.2-imap \
+          php8.2-intl \
+          php8.2-bcmath \
+          php8.2-curl \
+          php8.2-mbstring \
+          php8.2-mysql \
+          php8.2-cli \
+          php8.2-cgi \
+          php8.2-xml \
+          php8.2-xml \
+          php8.2-gd
+
       - name: Install extensions
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.3'
+          php-version: '8.4'
           extensions: imagick, sqlite3
           ini-values: error_log=/home/runner/.symfony5/log/php.log
-
-      - name: Install Webserver
-        run: |
-          sudo apt update && sudo apt install -y --fix-missing apache2 libapache2-mod-php8.3
 
       - name: Install chrome
         uses: browser-actions/setup-chrome@v2

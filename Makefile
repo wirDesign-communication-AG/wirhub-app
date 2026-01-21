@@ -70,10 +70,10 @@ test:
 	@echo "--------------------------------------"
 	@echo "-------- PHPUnit WebAndKernel --------"
 	@echo "--------------------------------------"
-	php bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/WebAndKernel/
+	/usr/bin/php8.4 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/WebAndKernel/
 	@echo ""
 	@echo ""
 	@echo "--------------------------------------"
 	@echo "----------- PHPUnit Panther ----------"
 	@echo "--------------------------------------"
-	php bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/Panther/
+	/usr/bin/php8.2 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/Panther/
