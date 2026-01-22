@@ -1,19 +1,14 @@
 doctrine:
     dbal:
         url: '%env(resolve:DATABASE_URL)%'
+
+        # IMPORTANT: You MUST configure your server version,
+        # either here or in the DATABASE_URL env var (see .env file)
+        #server_version: '16'
+
         profiling_collect_backtrace: '%kernel.debug%'
-        use_savepoints: true
     orm:
-<<<<<<< Updated upstream
-        auto_generate_proxy_classes: true
-        controller_resolver:
-            auto_mapping: false
-        enable_lazy_ghost_objects: true
-        #enable_native_lazy_objects: true
-        report_fields_where_declared: true
-=======
-        enable_native_lazy_objects: true
->>>>>>> Stashed changes
+        #enable_native_lazy_objects: true Requires PHP8.4
         validate_xml_mapping: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
@@ -34,10 +29,6 @@ when@test:
 when@prod:
     doctrine:
         orm:
-            auto_generate_proxy_classes: false
-            controller_resolver:
-                auto_mapping: true
-            proxy_dir: '%kernel.build_dir%/doctrine/orm/Proxies'
             query_cache_driver:
                 type: pool
                 pool: doctrine.system_cache_pool
