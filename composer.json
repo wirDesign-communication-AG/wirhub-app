@@ -72,6 +72,7 @@
     "doctrine/instantiator": "2.0.0",
     "doctrine/orm": "^3.5.2",
     "league/uri": "7.5.1",
+    "maennchen/zipstream-php": "3.1.2",
     "symfony/apache-pack": "^1.0",
     "symfony/console": "^7.4",
     "symfony/dotenv": "^7.4",
@@ -80,7 +81,7 @@
     "symfony/framework-bundle": "^7.4",
     "symfony/runtime": "^7.4",
     "symfony/yaml": "^7.4",
-    "wirdesign-communication-ag/wirhub": "dev-wip/php8-4"
+    "wirdesign-communication-ag/wirhub": "v3.1.17.x-dev"
   },
   "scripts": {
     "auto-scripts": {
