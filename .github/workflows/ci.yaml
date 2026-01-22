@@ -49,6 +49,11 @@ jobs:
                     sudo mv /home/runner/work/wirhub-app/wirhub-app/.env* /var/www/wirhub
                     sudo mv /home/runner/work/wirhub-app/wirhub-app/.php-* /var/www/wirhub
                     sudo chown -R www-data:www-data /var/www
+                    
+            -   name: Verify platform requirements
+                run: |
+                    /usr/bin/php8.2 /usr/local/bin/composer check-platform-reqs  --working-dir /var/www/wirhub
+                    /usr/bin/php8.4 /usr/local/bin/composer check-platform-reqs  --working-dir /var/www/wirhub
 
             -   name: Composer install
                 run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
