@@ -126,6 +126,11 @@ jobs:
                     cd /var/www/wirhub
                     /usr/bin/php8.4 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/WebAndKernel/
 
+            -   name: Test - WebTestCase and KernelTestCase (Deprecated PHP 8.2)
+                run: |
+                    cd /var/www/wirhub
+                    /usr/bin/php8.2 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/WebAndKernel/
+
             -   name: Test - PantherTestCase
                 run: |
                     cd /var/www/wirhub
