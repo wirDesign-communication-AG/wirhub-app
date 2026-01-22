@@ -8,7 +8,7 @@ doctrine:
 
         profiling_collect_backtrace: '%kernel.debug%'
     orm:
-        enable_native_lazy_objects: true
+        #enable_native_lazy_objects: true Requires PHP8.4
         validate_xml_mapping: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
