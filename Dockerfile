@@ -32,8 +32,8 @@ RUN  apt -q update && apt -q -y upgrade && apt -q -y install apt-transport-https
     imagemagick-6.q16 \
     libxml2 \
     librsvg2-bin \
-    libmagickcore-6.q16-6 \
-    libmagickcore-6.q16-6-extra \
+    libmagickcore-6.q16-7 \
+    libmagickcore-6.q16-7-extra \
     inkscape \
     libapache2-mod-php8.2 \
     unoconv \
