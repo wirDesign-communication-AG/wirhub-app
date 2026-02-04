@@ -18,6 +18,9 @@
     },
     "classmap-authoritative": false,
     "optimize-autoloader": false,
+    "platform": {
+      "php": "8.2.30"
+    },
     "platform-check": false,
     "preferred-install": {
       "wirdesign-communication-ag/wirhub": "source"
@@ -81,7 +84,7 @@
     "symfony/framework-bundle": "^7.4",
     "symfony/runtime": "^7.4",
     "symfony/yaml": "^7.4",
-    "wirdesign-communication-ag/wirhub": "3.1.17"
+    "wirdesign-communication-ag/wirhub": "dev-wip/1325"
   },
   "scripts": {
     "auto-scripts": {
