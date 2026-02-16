@@ -16,7 +16,7 @@ jobs:
                 with:
                     php-version: '8.4'
                     extensions: imagick, sqlite3
-                    ini-values: error_log=/home/runner/.symfony5/log/php.log
+                    ini-values: error_log=/tmp/php.log
 
             -   name: Install chrome
                 uses: browser-actions/setup-chrome@v2
@@ -66,15 +66,6 @@ jobs:
                     sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console doctrine:schema:update --force
                     sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions
 
-            -   name: Finish webserver
-                run: |
-                    sudo a2enmod rewrite
-                    sudo mkdir /var/www/wirhub/var/apache2/
-                    sudo rm /etc/apache2/sites-available/000-default.conf
-                    sudo cp /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/Tests/Config/vhost_github.conf /etc/apache2/sites-available/000-default.conf
-                    sudo apachectl configtest
-                    sudo systemctl restart apache2
-
             -   name: Update folder permissions
                 run: |
                     sudo chmod -R 777 /var/www/wirhub
@@ -101,6 +92,11 @@ jobs:
                     cd /var/www/wirhub
                     /usr/bin/php8.4 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/WebAndKernel/
 
+            -   name: Start Webserver for Panther
+                run: |
+                    cd /var/www/wirhub
+                    APP_ENV=test php -S localhost:8000 -t public/ > /tmp/php-server.log 2>&1 &
+
             -   name: Test - PantherTestCase
                 run: |
                     cd /var/www/wirhub
@@ -120,3 +116,5 @@ jobs:
                         /var/www/wirhub/var/log/*.log
                         /var/www/wirhub/var/error-screenshots/*
                         /tmp/chromedriver.log
+                        /tmp/php.log
+                        /tmp/php-server.log
