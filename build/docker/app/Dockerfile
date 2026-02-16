@@ -13,7 +13,6 @@ COPY composer.json composer.lock ./
 RUN COMPOSER_ALLOW_SUPERUSER=1 composer install \
     --no-dev \
     --no-interaction \
-    --prefer-dist \
     --no-scripts
 
 # App
