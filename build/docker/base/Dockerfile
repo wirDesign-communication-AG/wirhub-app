@@ -48,6 +48,7 @@ RUN  apt -q update  \
     ghostscript \
     postfix \
     wkhtmltopdf \
+    openssh-client \
  && apt-get purge -y software-properties-common \
  && apt-get autoremove -y \
  && rm -rf /var/lib/apt/lists/* \
