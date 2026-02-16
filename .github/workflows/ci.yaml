@@ -53,7 +53,6 @@ jobs:
 
             -   name: Verify platform requirements
                 run: |
-                    /usr/bin/php8.2 /usr/local/bin/composer check-platform-reqs  --working-dir /var/www/wirhub
                     /usr/bin/php8.4 /usr/local/bin/composer check-platform-reqs  --working-dir /var/www/wirhub
 
             -   name: PHP CS Fixer
