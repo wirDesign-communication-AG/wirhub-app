@@ -9,7 +9,7 @@ RUN chmod 0644 /etc/cron.d/wirhub \
 
 
 # Composer (cached)
-COPY composer.json composer.lock ./
+COPY composer.json composer.lock auth.json ./
 RUN COMPOSER_ALLOW_SUPERUSER=1 composer install \
     --no-dev \
     --no-interaction \
