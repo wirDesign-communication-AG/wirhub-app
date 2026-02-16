@@ -18,7 +18,7 @@ RUN COMPOSER_ALLOW_SUPERUSER=1 composer install \
 
 # App
 COPY . .
-COPY build/docker/start.sh ./start.sh
+COPY build/docker/app/start.sh ./start.sh
 
 RUN chmod +x bin/console start.sh \
  && rm -f auth.json \
