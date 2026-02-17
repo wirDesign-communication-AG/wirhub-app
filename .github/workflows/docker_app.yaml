@@ -11,7 +11,7 @@ env:
     IMAGE_NAME: wirdesign-communication-ag/wirhub-app
 
 jobs:
-    image:
+    app:
         runs-on: ubuntu-latest
         permissions:
             contents: read
@@ -77,4 +77,4 @@ jobs:
                     docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${VERSION}
                     docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${VERSION} ghcr.io/${{ env.IMAGE_NAME }}:latest
 
-                    docker push ghcr.io/${{ env.IMAGE_NAME }}:latest
+                    docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest

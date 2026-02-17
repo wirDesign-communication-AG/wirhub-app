@@ -1,14 +1,14 @@
-name: Docker Base Image
+name: Docker Test Image
 
 on:
     schedule:
-        -   cron: '0 12 * * 5'
+        -   cron: '0 16 * * 5'
     push:
         paths:
-            - build/docker/base/Dockerfile
+            - build/docker/test/Dockerfile
 
 jobs:
-    base:
+    test:
         runs-on: ubuntu-latest
         permissions:
             contents: read
@@ -34,7 +34,7 @@ jobs:
                 uses: docker/build-push-action@v6
                 with:
                     context: .
-                    file: build/docker/base/Dockerfile
+                    file: build/docker/test/Dockerfile
                     push: true
                     tags: |
-                        ghcr.io/wirdesign-communication-ag/wirhub-app/base:latest
+                        ghcr.io/wirdesign-communication-ag/wirhub-app/test:latest
