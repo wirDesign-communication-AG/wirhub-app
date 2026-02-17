@@ -77,3 +77,6 @@ RUN sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/g' /
 
 COPY build/docker/base/php/10-opcache.ini /etc/php/8.4/apache2/conf.d
 COPY build/docker/base/virtual_hosts/000-default.conf /etc/apache2/sites-available
+
+ENTRYPOINT []
+CMD ["/bin/bash"]

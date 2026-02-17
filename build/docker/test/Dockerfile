@@ -25,3 +25,6 @@ RUN wget -qO- https://googlechromelabs.github.io/chrome-for-testing/last-known-g
  && unzip /tmp/chromedriver.zip -d /opt \
  && ln -s /opt/chromedriver-linux64/chromedriver /usr/local/bin/chromedriver \
  && rm /tmp/chromedriver.zip
+
+ENTRYPOINT []
+CMD ["/bin/bash"]
