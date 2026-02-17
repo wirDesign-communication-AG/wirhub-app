@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.369.34",
+            "version": "3.369.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5db21cd0e5c8a5b5344596649033acf861a5e117"
+                "reference": "0f3e296342fe965271b5dd0bded4a18bdab8aba5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5db21cd0e5c8a5b5344596649033acf861a5e117",
-                "reference": "5db21cd0e5c8a5b5344596649033acf861a5e117",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0f3e296342fe965271b5dd0bded4a18bdab8aba5",
+                "reference": "0f3e296342fe965271b5dd0bded4a18bdab8aba5",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.34"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.35"
             },
-            "time": "2026-02-13T19:09:12+00:00"
+            "time": "2026-02-16T19:15:41+00:00"
         },
         {
             "name": "brick/math",
@@ -12068,16 +12068,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "2.1.3",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "6976757ba8dd70bf8cbaea0914ad84d8b51a9f46"
+                "reference": "b39f1870fc7c3e9e4a26106df5053354b9260a33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/6976757ba8dd70bf8cbaea0914ad84d8b51a9f46",
-                "reference": "6976757ba8dd70bf8cbaea0914ad84d8b51a9f46",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/b39f1870fc7c3e9e4a26106df5053354b9260a33",
+                "reference": "b39f1870fc7c3e9e4a26106df5053354b9260a33",
                 "shasum": ""
             },
             "require": {
@@ -12124,9 +12124,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/2.1.3"
+                "source": "https://github.com/webmozarts/assert/tree/2.1.4"
             },
-            "time": "2026-02-13T21:01:40+00:00"
+            "time": "2026-02-17T12:17:51+00:00"
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
@@ -12134,12 +12134,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "b0b874648d700c5d88dc4c9ea81224ea6d00101a"
+                "reference": "97e2e859751cfd1fd00e818faa95edc4a1dfb444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/b0b874648d700c5d88dc4c9ea81224ea6d00101a",
-                "reference": "b0b874648d700c5d88dc4c9ea81224ea6d00101a",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/97e2e859751cfd1fd00e818faa95edc4a1dfb444",
+                "reference": "97e2e859751cfd1fd00e818faa95edc4a1dfb444",
                 "shasum": ""
             },
             "require": {
@@ -12227,7 +12227,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.18",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-02-16T12:20:01+00:00"
+            "time": "2026-02-17T15:18:30+00:00"
         }
     ],
     "packages-dev": [
