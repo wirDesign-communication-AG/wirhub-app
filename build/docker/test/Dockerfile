@@ -2,7 +2,8 @@
 FROM ghcr.io/wirdesign-communication-ag/wirhub-app/base:latest
 
 # Enlighten image
-RUN apt purge apache2 libapache2-mod-php vim cron
+RUN apt purge -y apache2 libapache2-mod-php vim cron \
+ && apt autoremove
 
 # Prepare setup
 RUN wget -qO- https://dl.google.com/linux/linux_signing_key.pub \
