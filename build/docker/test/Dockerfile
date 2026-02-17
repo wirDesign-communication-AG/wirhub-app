@@ -6,7 +6,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - \
  && apt purge -y apache2 libapache2-mod-php vim cron \
  && apt autoremove -y \
  && apt update \
- && apt install -y --no-install-recommends nodejs jq \
+ && apt install -y --no-install-recommends nodejs jq php8.4-sqlite3 \
  && rm -rf /var/lib/apt/lists/*
 
 # Chrome
