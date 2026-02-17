@@ -2,7 +2,7 @@
 FROM ghcr.io/wirdesign-communication-ag/wirhub-app/base:latest
 
 # Packages
-RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - \
+RUN wget -qO- https://deb.nodesource.com/setup_24.x | bash - \
  && apt purge -y apache2 libapache2-mod-php vim cron \
  && apt autoremove -y \
  && apt update \
