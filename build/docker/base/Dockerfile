@@ -18,6 +18,7 @@ RUN  apt -q update  \
     vim \
     software-properties-common \
     apache2  \
+    gnupg \
  && add-apt-repository ppa:ondrej/php \
  && add-apt-repository ppa:ondrej/apache2 \
  && apt-get update \
