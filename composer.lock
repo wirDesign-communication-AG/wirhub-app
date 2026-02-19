@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7062240e944f2c15d88488fece63b150",
+    "content-hash": "91484556bc9811bb2b5c163fd2dcfb3c",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.369.35",
+            "version": "3.369.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "0f3e296342fe965271b5dd0bded4a18bdab8aba5"
+                "reference": "bc599ce989b101ee630d5e1a1aeda387632df47b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0f3e296342fe965271b5dd0bded4a18bdab8aba5",
-                "reference": "0f3e296342fe965271b5dd0bded4a18bdab8aba5",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bc599ce989b101ee630d5e1a1aeda387632df47b",
+                "reference": "bc599ce989b101ee630d5e1a1aeda387632df47b",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.35"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.37"
             },
-            "time": "2026-02-16T19:15:41+00:00"
+            "time": "2026-02-18T19:16:34+00:00"
         },
         {
             "name": "brick/math",
@@ -8560,12 +8560,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mcp-bundle.git",
-                "reference": "0ce690e73d4cd8c5e833ba4e8b7692703f804311"
+                "reference": "b3fb8a14722258bb46e13b47ad1db7582db197da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mcp-bundle/zipball/0ce690e73d4cd8c5e833ba4e8b7692703f804311",
-                "reference": "0ce690e73d4cd8c5e833ba4e8b7692703f804311",
+                "url": "https://api.github.com/repos/symfony/mcp-bundle/zipball/b3fb8a14722258bb46e13b47ad1db7582db197da",
+                "reference": "b3fb8a14722258bb46e13b47ad1db7582db197da",
                 "shasum": ""
             },
             "require": {
@@ -8578,13 +8578,14 @@
                 "symfony/http-foundation": "^7.3|^8.0",
                 "symfony/http-kernel": "^7.3|^8.0",
                 "symfony/psr-http-message-bridge": "^7.3|^8.0",
-                "symfony/routing": "^7.3|^8.0"
+                "symfony/routing": "^7.3|^8.0",
+                "symfony/service-contracts": "^2.5|^3"
             },
             "require-dev": {
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-phpunit": "^2.0",
                 "phpstan/phpstan-strict-rules": "^2.0",
-                "phpunit/phpunit": "^11.5.46",
+                "phpunit/phpunit": "^11.5.53",
                 "symfony/monolog-bundle": "^3.10 || ^4.0"
             },
             "default-branch": true,
@@ -8636,7 +8637,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-14T21:28:28+00:00"
+            "time": "2026-02-18T12:13:19+00:00"
         },
         {
             "name": "symfony/mime",
@@ -12129,16 +12130,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "b39f1870fc7c3e9e4a26106df5053354b9260a33"
+                "reference": "79155f94852fa27e2f73b459f6503f5e87e2c188"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/b39f1870fc7c3e9e4a26106df5053354b9260a33",
-                "reference": "b39f1870fc7c3e9e4a26106df5053354b9260a33",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/79155f94852fa27e2f73b459f6503f5e87e2c188",
+                "reference": "79155f94852fa27e2f73b459f6503f5e87e2c188",
                 "shasum": ""
             },
             "require": {
@@ -12185,22 +12186,22 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/2.1.4"
+                "source": "https://github.com/webmozarts/assert/tree/2.1.5"
             },
-            "time": "2026-02-17T12:17:51+00:00"
+            "time": "2026-02-18T14:09:36+00:00"
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.1.18.x-dev",
+            "version": "dev-wip/1391",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "97e2e859751cfd1fd00e818faa95edc4a1dfb444"
+                "reference": "f9b292ffcc099304ba17a6584342854a8bee13dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/97e2e859751cfd1fd00e818faa95edc4a1dfb444",
-                "reference": "97e2e859751cfd1fd00e818faa95edc4a1dfb444",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/f9b292ffcc099304ba17a6584342854a8bee13dc",
+                "reference": "f9b292ffcc099304ba17a6584342854a8bee13dc",
                 "shasum": ""
             },
             "require": {
@@ -12229,6 +12230,7 @@
                 "ext-simplexml": "^8.2",
                 "ext-xml": "^8.2",
                 "ext-zip": "^1.15.4",
+                "ezyang/htmlpurifier": "^4.19.0",
                 "guzzlehttp/guzzle": "^7.5",
                 "hwi/oauth-bundle": "^2.2",
                 "knplabs/knp-menu-bundle": "^3.5.0",
@@ -12285,10 +12287,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.18",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1391",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-02-17T15:18:30+00:00"
+            "time": "2026-02-19T10:02:29+00:00"
         }
     ],
     "packages-dev": [
@@ -12585,16 +12587,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.94.0",
+            "version": "v3.94.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "883b20fb38c7866de9844ab6d0a205c423bde2d4"
+                "reference": "d1a3634e29916367b885250e1fc4dfd5ffe3b091"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/883b20fb38c7866de9844ab6d0a205c423bde2d4",
-                "reference": "883b20fb38c7866de9844ab6d0a205c423bde2d4",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/d1a3634e29916367b885250e1fc4dfd5ffe3b091",
+                "reference": "d1a3634e29916367b885250e1fc4dfd5ffe3b091",
                 "shasum": ""
             },
             "require": {
@@ -12677,7 +12679,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.94.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.94.1"
             },
             "funding": [
                 {
@@ -12685,7 +12687,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-11T16:44:33+00:00"
+            "time": "2026-02-18T12:24:42+00:00"
         },
         {
             "name": "liip/test-fixtures-bundle",
@@ -13478,16 +13480,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.53",
+            "version": "11.5.55",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a997a653a82845f1240d73ee73a8a4e97e4b0607"
+                "reference": "adc7262fccc12de2b30f12a8aa0b33775d814f00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a997a653a82845f1240d73ee73a8a4e97e4b0607",
-                "reference": "a997a653a82845f1240d73ee73a8a4e97e4b0607",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/adc7262fccc12de2b30f12a8aa0b33775d814f00",
+                "reference": "adc7262fccc12de2b30f12a8aa0b33775d814f00",
                 "shasum": ""
             },
             "require": {
@@ -13560,7 +13562,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.53"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.55"
             },
             "funding": [
                 {
@@ -13584,7 +13586,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-10T12:28:25+00:00"
+            "time": "2026-02-18T12:37:06+00:00"
         },
         {
             "name": "react/cache",
