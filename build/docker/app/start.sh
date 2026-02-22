@@ -5,8 +5,6 @@ service apache2 start
 
 service cron start
 
-# TODO: implement command to wait for successful mysql connection
-
 # initialize the project
 echo "--"
 echo "-- Update envs"
@@ -19,6 +17,10 @@ COMPOSER_ALLOW_SUPERUSER=1 composer dump-autoload --no-dev --classmap-authoritat
 echo "--"
 echo "-- Clear cache"
 php bin/console cache:clear
+
+echo "--"
+echo "-- Assets"
+php bin/console assets:install --symlink public/
 
 echo "--"
 echo "-- Migrations"
@@ -35,10 +37,6 @@ php bin/console app:setup
 echo "--"
 echo "-- Update database to latest update"
 php bin/console app:update
-
-echo "--"
-echo "-- Trigger Update after 10 Minutes again to send version"
-(sleep 600 ; (php bin/console app:update)) > /dev/null 2>&1 &
 
 echo "--"
 echo "-- Link secret folder"
