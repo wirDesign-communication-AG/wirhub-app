@@ -1,33 +1,27 @@
-name: 'CI'
+name: 'CI PHP 8.4'
 on:
     pull_request:
-        branches: [ 'main', 'wip/*', 'v3.0.*', 'v3.1',  'v3.1.*' ]
+        branches: [ 'main', 'v3.1', 'v3.1.*' ]
 jobs:
     build:
         runs-on: ubuntu-latest
+        container:
+            image: ghcr.io/wirdesign-communication-ag/wirhub-app/test:latest
+            credentials:
+                username: ${{ github.actor }}
+                password: ${{ secrets.GITHUB_TOKEN }}
         steps:
-            -   uses: actions/checkout@v4
+            -   name: Load project repository
+                uses: actions/checkout@v4
 
             -   name: Add GitHub OAuth credentials
                 run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
-            -   name: Install extensions
-                uses: shivammathur/setup-php@v2
-                with:
-                    php-version: '8.4'
-                    extensions: imagick, sqlite3
-                    ini-values: error_log=/tmp/php.log
+            -   name: Install dependencies
+                run: APP_ENV=test composer install --prefer-dist --no-progress --no-scripts
 
-            -   name: Install chrome
-                uses: browser-actions/setup-chrome@v2
-                with:
-                    chrome-version: stable
-                    install-chromedriver: true
-
-            -   name: Update chrome binary to custom setup
-                run: |
-                    sudo ln -sf /opt/hostedtoolcache/setup-chrome/chrome/stable/x64/chrome /usr/bin/google-chrome
-                    sudo ln -sf /opt/hostedtoolcache/setup-chrome/chrome/stable/x64/chrome /opt/google/chrome/chrome
+            -   name: Install bundle DotEnv file
+                run: cp vendor/wirdesign-communication-ag/wirhub/.env.github .env.test.local
 
             -   name: Verify some versions
                 run: |
@@ -40,67 +34,37 @@ jobs:
                     echo "-- PHP --"
                     php --version
 
-            -   name: Move project to web
-                run: |
-                    sudo mkdir /var/www/wirhub
-                    sudo mv /home/runner/work/wirhub-app/wirhub-app/* /var/www/wirhub
-                    sudo mv /home/runner/work/wirhub-app/wirhub-app/.env* /var/www/wirhub
-                    sudo mv /home/runner/work/wirhub-app/wirhub-app/.php-* /var/www/wirhub
-                    sudo chown -R www-data:www-data /var/www
-
-            -   name: Composer install
-                run: sudo -u www-data composer install --prefer-dist --no-progress --no-scripts --working-dir /var/www/wirhub
-
-            -   name: Verify platform requirements
-                run: |
-                    /usr/bin/php8.4 /usr/local/bin/composer check-platform-reqs  --working-dir /var/www/wirhub
-
             -   name: PHP CS Fixer
-                run: /var/www/wirhub/vendor/bin/php-cs-fixer check --stop-on-violation --config=/var/www/wirhub/.php-cs-fixer.dist.php
+                run: php vendor/bin/php-cs-fixer check --stop-on-violation --config=.php-cs-fixer.dist.php
 
             -   name: Prepare symfony
                 run: |
-                    sudo -u www-data composer dump-env test --working-dir /var/www/wirhub
-                    sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console cache:clear
-                    sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console assets:install public/
-                    sudo -u www-data APP_ENV=test php /var/www/wirhub/bin/console doctrine:schema:update --force
-                    sudo -u www-data mkdir /var/www/wirhub/var/cache/test/sessions
-
-            -   name: Update folder permissions
-                run: |
-                    sudo chmod -R 777 /var/www/wirhub
+                    APP_ENV=test composer dump-env test
+                    APP_ENV=test php bin/console cache:clear
+                    APP_ENV=test php bin/console assets:install public/
+                    APP_ENV=test php bin/console doctrine:schema:update --force
+                    mkdir -p var/cache/test/sessions
 
             -   name: Test - Lint
                 run: |
-                    cd /var/www/wirhub
-                    APP_ENV=test php bin/console lint:twig templates/ vendor/wirdesign-communication-ag/wirhub/
-                    APP_ENV=test php bin/console lint:yaml config/ vendor/wirdesign-communication-ag/wirhub/Resources/config/
+                    APP_ENV=test php bin/console lint:twig templates/
+                    APP_ENV=test php bin/console lint:yaml config/
                     APP_ENV=test php bin/console lint:container
 
             -   name: Test - PHPStan
-                run: |
-                    cd /var/www/wirhub
-                    vendor/bin/phpstan analyse -c phpstan.neon
+                run: vendor/bin/phpstan analyse -c phpstan.neon
 
             -   name: Test - App
-                run: |
-                    cd /var/www/wirhub
-                    APP_ENV=test php bin/console app:test
+                run: APP_ENV=test php bin/console app:test
 
             -   name: Test - WebTestCase and KernelTestCase
-                run: |
-                    cd /var/www/wirhub
-                    /usr/bin/php8.4 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/WebAndKernel/
+                run: php bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/WebAndKernel/
 
             -   name: Start Webserver for Panther
-                run: |
-                    cd /var/www/wirhub
-                    APP_ENV=test php -S localhost:8000 -t public/ > /tmp/php-server.log 2>&1 &
+                run: APP_ENV=test php -S localhost:8000 -t public/ > /tmp/php-server.log 2>&1 &
 
             -   name: Test - PantherTestCase
-                run: |
-                    cd /var/www/wirhub
-                    /usr/bin/php8.4 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/Panther/
+                run: php bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/Panther/
 
             -   name: Archive debugging files
                 uses: actions/upload-artifact@v4
@@ -109,12 +73,10 @@ jobs:
                     name: debug
                     if-no-files-found: ignore
                     path: |
-                        /var/www/wirhub/.env.local.php
-                        /var/www/wirhub/vendor/wirdesign-communication-ag/wirhub/build/debug/*
-                        /var/www/wirhub/var/cache/test/*.log
-                        /var/www/wirhub/var/cache/wdc-styleguide.db
-                        /var/www/wirhub/var/log/*.log
-                        /var/www/wirhub/var/error-screenshots/*
-                        /tmp/chromedriver.log
-                        /tmp/php.log
-                        /tmp/php-server.log
+                        .env.local.php
+                        var/cache/*.log
+                        var/cache/test/*.log
+                        var/error-screenshots/*
+                        var/log/*
+                        var/wdc-styleguide.db
+                        vendor/wirdesign-communication-ag/wirhub/build/debug/*
