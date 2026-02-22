@@ -1,8 +1,6 @@
 parameters:
     bootstrapFiles:
         - tests/bootstrap.php
-    ignoreErrors:
-        - message: "#^Property App\\\\Entity\\\\.*\\:\\:\\$id \\(int\\|null\\) is never assigned int so it can be removed from the property type\\.$#"
     level: 5
     paths:
         - src/
