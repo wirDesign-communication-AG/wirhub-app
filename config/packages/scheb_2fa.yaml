@@ -1,0 +1,24 @@
+# See the configuration reference at https://symfony.com/bundles/SchebTwoFactorBundle/6.x/configuration.html
+scheb_two_factor:
+    backup_codes:
+        enabled: true
+
+    email:
+        enabled: true
+        mailer: AppBundle\Services\User\TwoFactorAuthCodeMailService
+        sender_email: '%env(MAILER_SENDER)%'
+        template: "@App/user/security_login/2fa.html.twig"
+
+    google:
+        enabled: true
+        template: "@App/user/security_login/2fa.html.twig"
+
+    security_tokens:
+        - Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken
+        - Symfony\Component\Security\Http\Authenticator\Token\PostAuthenticationToken
+
+
+    trusted_device:
+        enabled: true
+
+    two_factor_condition: AppBundle\Domain\Security\TwoFactorCondition

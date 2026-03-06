@@ -629,7 +629,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         }>,
  *     },
  *     rate_limiter?: bool|array{ // Rate limiter configuration
- *         enabled?: bool|Param, // Default: false
+ *         enabled?: bool|Param, // Default: true
  *         limiters?: array<string, array{ // Default: []
  *             lock_factory?: scalar|Param|null, // The service ID of the lock factory used by this limiter (or null to disable locking). // Default: "auto"
  *             cache_pool?: scalar|Param|null, // The cache pool to use for storing the current limiter state. // Default: "cache.rate_limiter"
@@ -1191,6 +1191,28 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             samesite?: null|"lax"|"strict"|"none"|Param, // Default: null
  *             always_remember_me?: bool|Param, // Default: false
  *             remember_me_parameter?: scalar|Param|null, // Default: "_remember_me"
+ *         },
+ *         two_factor?: array{
+ *             check_path?: scalar|Param|null, // Default: "/2fa_check"
+ *             post_only?: bool|Param, // Default: true
+ *             auth_form_path?: scalar|Param|null, // Default: "/2fa"
+ *             always_use_default_target_path?: bool|Param, // Default: false
+ *             default_target_path?: scalar|Param|null, // Default: "/"
+ *             success_handler?: scalar|Param|null, // Default: null
+ *             failure_handler?: scalar|Param|null, // Default: null
+ *             authentication_required_handler?: scalar|Param|null, // Default: null
+ *             auth_code_parameter_name?: scalar|Param|null, // Default: "_auth_code"
+ *             trusted_parameter_name?: scalar|Param|null, // Default: "_trusted"
+ *             remember_me_sets_trusted?: scalar|Param|null, // Default: false
+ *             multi_factor?: bool|Param, // Default: false
+ *             prepare_on_login?: bool|Param, // Default: false
+ *             prepare_on_access_denied?: bool|Param, // Default: false
+ *             enable_csrf?: scalar|Param|null, // Default: false
+ *             csrf_parameter?: scalar|Param|null, // Default: "_csrf_token"
+ *             csrf_token_id?: scalar|Param|null, // Default: "two_factor"
+ *             csrf_header?: scalar|Param|null, // Default: null
+ *             csrf_token_manager?: scalar|Param|null, // Default: "scheb_two_factor.csrf_token_manager"
+ *             provider?: scalar|Param|null, // Default: null
  *         },
  *     }>,
  *     access_control?: list<array{ // Default: []
@@ -1757,10 +1779,60 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     http?: array{
  *         path?: scalar|Param|null, // Default: "/_mcp"
  *         session?: array{
- *             store?: "file"|"memory"|Param, // Default: "file"
+ *             store?: "file"|"memory"|"cache"|Param, // Default: "file"
  *             directory?: scalar|Param|null, // Default: "%kernel.cache_dir%/mcp-sessions"
+ *             cache_pool?: scalar|Param|null, // Default: "cache.mcp.sessions"
+ *             prefix?: scalar|Param|null, // Default: "mcp-"
  *             ttl?: int|Param, // Default: 3600
  *         },
+ *     },
+ * }
+ * @psalm-type SchebTwoFactorConfig = array{
+ *     persister?: scalar|Param|null, // Default: "scheb_two_factor.persister.doctrine"
+ *     model_manager_name?: scalar|Param|null, // Default: null
+ *     security_tokens?: list<scalar|Param|null>,
+ *     ip_whitelist?: list<scalar|Param|null>,
+ *     ip_whitelist_provider?: scalar|Param|null, // Default: "scheb_two_factor.default_ip_whitelist_provider"
+ *     two_factor_token_factory?: scalar|Param|null, // Default: "scheb_two_factor.default_token_factory"
+ *     two_factor_provider_decider?: scalar|Param|null, // Default: "scheb_two_factor.default_provider_decider"
+ *     two_factor_condition?: scalar|Param|null, // Default: null
+ *     code_reuse_cache?: scalar|Param|null, // Default: null
+ *     code_reuse_cache_duration?: int|Param, // Default: 60
+ *     code_reuse_default_handler?: scalar|Param|null, // Default: null
+ *     trusted_device?: bool|array{
+ *         enabled?: scalar|Param|null, // Default: false
+ *         manager?: scalar|Param|null, // Default: "scheb_two_factor.default_trusted_device_manager"
+ *         lifetime?: int|Param, // Default: 5184000
+ *         extend_lifetime?: bool|Param, // Default: false
+ *         key?: scalar|Param|null, // Default: null
+ *         cookie_name?: scalar|Param|null, // Default: "trusted_device"
+ *         cookie_secure?: true|false|"auto"|Param, // Default: "auto"
+ *         cookie_domain?: scalar|Param|null, // Default: null
+ *         cookie_path?: scalar|Param|null, // Default: "/"
+ *         cookie_same_site?: scalar|Param|null, // Default: "lax"
+ *     },
+ *     backup_codes?: bool|array{
+ *         enabled?: scalar|Param|null, // Default: false
+ *         manager?: scalar|Param|null, // Default: "scheb_two_factor.default_backup_code_manager"
+ *     },
+ *     email?: bool|array{
+ *         enabled?: scalar|Param|null, // Default: false
+ *         mailer?: scalar|Param|null, // Default: null
+ *         code_generator?: scalar|Param|null, // Default: "scheb_two_factor.security.email.default_code_generator"
+ *         form_renderer?: scalar|Param|null, // Default: null
+ *         sender_email?: scalar|Param|null, // Default: null
+ *         sender_name?: scalar|Param|null, // Default: null
+ *         template?: scalar|Param|null, // Default: "@SchebTwoFactor/Authentication/form.html.twig"
+ *         digits?: int|Param, // Default: 4
+ *     },
+ *     google?: bool|array{
+ *         enabled?: scalar|Param|null, // Default: false
+ *         form_renderer?: scalar|Param|null, // Default: null
+ *         issuer?: scalar|Param|null, // Default: null
+ *         server_name?: scalar|Param|null, // Default: null
+ *         template?: scalar|Param|null, // Default: "@SchebTwoFactor/Authentication/form.html.twig"
+ *         digits?: int|Param, // Default: 6
+ *         leeway?: int|Param, // Default: 0
  *     },
  * }
  * @psalm-type ConfigType = array{
@@ -1779,6 +1851,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     doctrine_migrations?: DoctrineMigrationsConfig,
  *     nelmio_security?: NelmioSecurityConfig,
  *     mcp?: McpConfig,
+ *     scheb_two_factor?: SchebTwoFactorConfig,
  *     "when@dev"?: array{
  *         imports?: ImportsConfig,
  *         parameters?: ParametersConfig,
@@ -1799,6 +1872,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         liip_test_fixtures?: LiipTestFixturesConfig,
  *         nelmio_security?: NelmioSecurityConfig,
  *         mcp?: McpConfig,
+ *         scheb_two_factor?: SchebTwoFactorConfig,
  *     },
  *     "when@prod"?: array{
  *         imports?: ImportsConfig,
@@ -1816,6 +1890,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         doctrine_migrations?: DoctrineMigrationsConfig,
  *         nelmio_security?: NelmioSecurityConfig,
  *         mcp?: McpConfig,
+ *         scheb_two_factor?: SchebTwoFactorConfig,
  *     },
  *     "when@test"?: array{
  *         imports?: ImportsConfig,
@@ -1835,6 +1910,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         liip_test_fixtures?: LiipTestFixturesConfig,
  *         nelmio_security?: NelmioSecurityConfig,
  *         mcp?: McpConfig,
+ *         scheb_two_factor?: SchebTwoFactorConfig,
  *     },
  *     ...<string, ExtensionType|array{ // extra keys must follow the when@%env% pattern or match an extension alias
  *         imports?: ImportsConfig,
