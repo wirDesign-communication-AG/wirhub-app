@@ -4,6 +4,7 @@ scheb_two_factor:
         enabled: true
 
     email:
+        digits: 6
         enabled: true
         mailer: AppBundle\Services\User\TwoFactorAuthCodeMailService
         sender_email: '%env(MAILER_SENDER)%'
