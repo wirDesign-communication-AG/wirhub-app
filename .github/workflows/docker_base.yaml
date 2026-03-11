@@ -2,7 +2,7 @@ name: Docker Base Image
 
 on:
     schedule:
-        -   cron: '0 12 * * 5'
+        -   cron: '0 8 * * 5'
     push:
         branches: [ 'main', 'v3.1', 'v3.1.*' ]
         paths:

@@ -1,4 +1,4 @@
-name: Docker Test Image
+name: Docker Base Image
 
 on:
     schedule:
@@ -6,10 +6,10 @@ on:
     push:
         branches: [ 'main', 'v3.1', 'v3.1.*' ]
         paths:
-            - build/docker/test/Dockerfile
+            - build/docker/base-with-node/Dockerfile
 
 jobs:
-    test:
+    base:
         runs-on: ubuntu-latest
         permissions:
             contents: read
@@ -35,7 +35,7 @@ jobs:
                 uses: docker/build-push-action@v6
                 with:
                     context: .
-                    file: build/docker/test/Dockerfile
+                    file: build/docker/base-with-node/Dockerfile
                     push: true
                     tags: |
-                        ghcr.io/wirdesign-communication-ag/wirhub-app/test:latest
+                        ghcr.io/wirdesign-communication-ag/wirhub-app/base-with-node:latest
