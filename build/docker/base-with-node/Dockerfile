@@ -35,6 +35,7 @@ RUN apt -q update \
     libxss1  \
     libxtst6  \
     xdg-utils \
+    lsb-release \
  && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash \
  && nvm install 24 \
  && n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local \
