@@ -51,6 +51,8 @@ RUN  apt -q update  \
     postfix \
     wkhtmltopdf \
     openssh-client \
+    lsb-release \
+    libxss1 \
  && apt-get purge -y software-properties-common \
  && apt-get autoremove -y \
  && rm -rf /var/lib/apt/lists/* \
