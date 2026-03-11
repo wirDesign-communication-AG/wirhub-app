@@ -42,6 +42,7 @@ jobs:
                         ghcr.io/wirdesign-communication-ag/wirhub-app/base:latest
 
     base-with-node:
+        needs: base
         runs-on: ubuntu-latest
         permissions:
             contents: read
