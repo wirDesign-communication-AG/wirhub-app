@@ -8,7 +8,7 @@ RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | 
  && n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local \
  && mkdir /var/www/.npm && chown -R www-data:www-data /var/www/.npm \
  && mkdir /var/www/.cache && chown -R www-data:www-data /var/www/.cache \
- && echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
+ && echo 0 | tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
 
 ENTRYPOINT []
