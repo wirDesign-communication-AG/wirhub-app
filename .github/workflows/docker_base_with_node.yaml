@@ -1,4 +1,4 @@
-name: Docker Base Image
+name: Docker Base Image with node
 
 on:
     schedule:
