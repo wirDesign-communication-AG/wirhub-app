@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.372.2",
+            "version": "3.373.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d1885c8c5db03c2a23121e6df58ef5693df41b95"
+                "reference": "f4c615488707167871699401cf153f23b75ad3f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d1885c8c5db03c2a23121e6df58ef5693df41b95",
-                "reference": "d1885c8c5db03c2a23121e6df58ef5693df41b95",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f4c615488707167871699401cf153f23b75ad3f4",
+                "reference": "f4c615488707167871699401cf153f23b75ad3f4",
                 "shasum": ""
             },
             "require": {
@@ -92,12 +92,12 @@
                 "aws/aws-php-sns-message-validator": "~1.0",
                 "behat/behat": "~3.0",
                 "composer/composer": "^2.7.8",
-                "dms/phpunit-arraysubset-asserts": "^0.4.0",
+                "dms/phpunit-arraysubset-asserts": "^v0.5.0",
                 "doctrine/cache": "~1.4",
                 "ext-dom": "*",
                 "ext-openssl": "*",
                 "ext-sockets": "*",
-                "phpunit/phpunit": "^9.6",
+                "phpunit/phpunit": "^10.0",
                 "psr/cache": "^2.0 || ^3.0",
                 "psr/simple-cache": "^2.0 || ^3.0",
                 "sebastian/comparator": "^1.2.3 || ^4.0 || ^5.0",
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.372.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.373.1"
             },
-            "time": "2026-03-09T18:21:50+00:00"
+            "time": "2026-03-12T18:21:41+00:00"
         },
         {
             "name": "brick/math",
@@ -2598,16 +2598,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.8.0",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "21dc724a0583619cd1652f673303492272778051"
+                "reference": "7d0ed42f28e42d61352a7a79de682e5e67fec884"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/21dc724a0583619cd1652f673303492272778051",
-                "reference": "21dc724a0583619cd1652f673303492272778051",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/7d0ed42f28e42d61352a7a79de682e5e67fec884",
+                "reference": "7d0ed42f28e42d61352a7a79de682e5e67fec884",
                 "shasum": ""
             },
             "require": {
@@ -2623,6 +2623,7 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
                 "http-interop/http-factory-tests": "0.9.0",
+                "jshttp/mime-db": "1.54.0.1",
                 "phpunit/phpunit": "^8.5.44 || ^9.6.25"
             },
             "suggest": {
@@ -2694,7 +2695,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.8.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.9.0"
             },
             "funding": [
                 {
@@ -2710,7 +2711,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-23T21:21:41+00:00"
+            "time": "2026-03-10T16:41:02+00:00"
         },
         {
             "name": "hwi/oauth-bundle",
@@ -12908,12 +12909,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "6f66334128b55cfb356d2daa45ed14a77409b987"
+                "reference": "59e81a66267c8436d2640a286750eb6ffd6c73d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/6f66334128b55cfb356d2daa45ed14a77409b987",
-                "reference": "6f66334128b55cfb356d2daa45ed14a77409b987",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/59e81a66267c8436d2640a286750eb6ffd6c73d7",
+                "reference": "59e81a66267c8436d2640a286750eb6ffd6c73d7",
                 "shasum": ""
             },
             "require": {
@@ -12953,11 +12954,11 @@
                 "php": "^8.2",
                 "phpoffice/phpspreadsheet": "^5.2.0",
                 "pmdevelopment/microsoft-symfony-mailer": "^1.2.0",
-                "scheb/2fa-backup-code": "^8.4",
-                "scheb/2fa-bundle": "^8.4",
-                "scheb/2fa-email": "^8.4",
-                "scheb/2fa-google-authenticator": "^8.4",
-                "scheb/2fa-trusted-device": "^8.4",
+                "scheb/2fa-backup-code": "^7.0|^8.4",
+                "scheb/2fa-bundle": "^7.0|^8.4",
+                "scheb/2fa-email": "^7.0|^8.4",
+                "scheb/2fa-google-authenticator": "^7.0|^8.4",
+                "scheb/2fa-trusted-device": "^7.0|^8.4",
                 "scssphp/scssphp": "^2.0.1",
                 "symfony/asset": "^7.3|^8.0",
                 "symfony/cache": "^7.3|^8.0",
@@ -13008,7 +13009,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.19",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-03-10T09:13:53+00:00"
+            "time": "2026-03-13T16:09:17+00:00"
         }
     ],
     "packages-dev": [
