@@ -44,12 +44,15 @@ RUN  apt -q update  \
     libmagickcore-6.q16-7-extra \
     inkscape \
     libapache2-mod-php8.4 \
+    python3-setuptools \
     unoconv \
     libreoffice \
     ghostscript \
     postfix \
     wkhtmltopdf \
     openssh-client \
+    lsb-release \
+    libxss1 \
  && apt-get purge -y software-properties-common \
  && apt-get autoremove -y \
  && rm -rf /var/lib/apt/lists/* \

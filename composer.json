@@ -75,15 +75,21 @@
         "ezyang/htmlpurifier": "^4.19",
         "league/uri": "7.5.1",
         "maennchen/zipstream-php": "3.1.2",
+        "scheb/2fa-backup-code": "^8.4",
+        "scheb/2fa-bundle": "^8.4",
+        "scheb/2fa-email": "^8.4",
+        "scheb/2fa-google-authenticator": "^8.4",
+        "scheb/2fa-trusted-device": "^8.4",
         "symfony/apache-pack": "^1.0",
         "symfony/console": "^7.4",
         "symfony/dotenv": "^7.4",
         "symfony/expression-language": "^7.4",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "^7.4",
+        "symfony/rate-limiter": "^8.0",
         "symfony/runtime": "^7.4",
         "symfony/yaml": "^7.4",
-        "wirdesign-communication-ag/wirhub": "3.1.18"
+        "wirdesign-communication-ag/wirhub": "3.1.19"
     },
     "scripts": {
         "auto-scripts": {

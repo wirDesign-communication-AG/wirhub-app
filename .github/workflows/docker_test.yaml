@@ -2,8 +2,9 @@ name: Docker Test Image
 
 on:
     schedule:
-        -   cron: '0 16 * * 5'
+        -   cron: '0 9 * * 5'
     push:
+        branches: [ 'main', 'v3.1', 'v3.1.*' ]
         paths:
             - build/docker/test/Dockerfile
 
