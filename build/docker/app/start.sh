@@ -55,7 +55,15 @@ if grep -q MAILER_URL=sendmail://default .env.local; then
   echo "--"
   echo "-- Setup postfix"
   cp /etc/resolv.conf /var/spool/postfix/etc/resolv.conf
-  uname -n > /etc/mailname
+
+  MAILER_FQDN=$(grep '^MAILER_FQDN=' .env.local | cut -d '=' -f2-)
+
+  if [ -n "$MAILER_FQDN" ]; then
+    echo "$MAILER_FQDN" > /etc/mailname
+  else
+    uname -n > /etc/mailname
+  fi
+
   postconf inet_interfaces=loopback-only
   postconf maillog_file=/var/log/mail.log
   postconf mydestination=localhost
