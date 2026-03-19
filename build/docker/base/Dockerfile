@@ -57,6 +57,7 @@ RUN  apt -q update  \
  && apt-get autoremove -y \
  && rm -rf /var/lib/apt/lists/* \
  && a2enmod rewrite \
+ && a2enmod expires \
  && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
  && echo $TZ > /etc/timezone
 
