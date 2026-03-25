@@ -20,7 +20,7 @@ php bin/console cache:clear
 
 echo "--"
 echo "-- Assets"
-php bin/console assets:install --symlink public/
+php bin/console assets:install public/
 
 echo "--"
 echo "-- Migrations"
