@@ -89,7 +89,7 @@
         "symfony/rate-limiter": "^8.0",
         "symfony/runtime": "^7.4",
         "symfony/yaml": "^7.4",
-        "wirdesign-communication-ag/wirhub": "dev-wip/1419"
+        "wirdesign-communication-ag/wirhub": "dev-wip/1122"
     },
     "scripts": {
         "auto-scripts": {
