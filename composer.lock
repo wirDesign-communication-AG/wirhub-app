@@ -5691,16 +5691,16 @@
         },
         {
             "name": "pmdevelopment/microsoft-symfony-mailer",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pmdevelopment/microsoft-symfony-mailer.git",
-                "reference": "f60b7e9f3a6f95b1555e7ee3ccee5db14aac9dde"
+                "url": "https://github.com/cpy-pst-gmbh/microsoft-symfony-mailer.git",
+                "reference": "d2b64fd4664547a6e5c1c0c4e00dd2608046ce22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmdevelopment/microsoft-symfony-mailer/zipball/f60b7e9f3a6f95b1555e7ee3ccee5db14aac9dde",
-                "reference": "f60b7e9f3a6f95b1555e7ee3ccee5db14aac9dde",
+                "url": "https://api.github.com/repos/cpy-pst-gmbh/microsoft-symfony-mailer/zipball/d2b64fd4664547a6e5c1c0c4e00dd2608046ce22",
+                "reference": "d2b64fd4664547a6e5c1c0c4e00dd2608046ce22",
                 "shasum": ""
             },
             "require": {
@@ -5735,10 +5735,10 @@
             "description": "Microsoft Graph API bridge for symfony mailer",
             "homepage": "https://pmdevelopment.de",
             "support": {
-                "issues": "https://github.com/pmdevelopment/microsoft-symfony-mailer/issues",
-                "source": "https://github.com/pmdevelopment/microsoft-symfony-mailer/tree/v1.2.0"
+                "issues": "https://github.com/cpy-pst-gmbh/microsoft-symfony-mailer/issues",
+                "source": "https://github.com/cpy-pst-gmbh/microsoft-symfony-mailer/tree/v1.2.1"
             },
-            "time": "2025-06-19T10:03:47+00:00"
+            "time": "2026-04-02T11:42:26+00:00"
         },
         {
             "name": "psr/cache",
@@ -12917,12 +12917,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "c94210744334b7d5613b76ab6ec7d615b3daa0a3"
+                "reference": "32506c11525dcff012d9f6a847179142e7f8b72d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/c94210744334b7d5613b76ab6ec7d615b3daa0a3",
-                "reference": "c94210744334b7d5613b76ab6ec7d615b3daa0a3",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/32506c11525dcff012d9f6a847179142e7f8b72d",
+                "reference": "32506c11525dcff012d9f6a847179142e7f8b72d",
                 "shasum": ""
             },
             "require": {
@@ -12961,7 +12961,7 @@
                 "nelmio/security-bundle": "^3.5",
                 "php": "^8.2",
                 "phpoffice/phpspreadsheet": "^5.2.0",
-                "pmdevelopment/microsoft-symfony-mailer": "^1.2.0",
+                "pmdevelopment/microsoft-symfony-mailer": "^1.2.1",
                 "scheb/2fa-backup-code": "^7.0|^8.4",
                 "scheb/2fa-bundle": "^7.0|^8.4",
                 "scheb/2fa-email": "^7.0|^8.4",
@@ -13017,7 +13017,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1419",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-04-02T10:53:11+00:00"
+            "time": "2026-04-02T11:58:33+00:00"
         }
     ],
     "packages-dev": [
