@@ -1306,7 +1306,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             use_underscore?: bool|Param, // Default: true
  *             unordered_list_markers?: list<scalar|Param|null>,
  *         },
- *         ...<mixed>
+ *         ...<string, mixed>
  *     },
  * }
  * @psalm-type MonologConfig = array{
@@ -1516,7 +1516,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         use_authorization_to_get_token?: scalar|Param|null,
  *         paths?: array<string, mixed>,
  *         options?: array<string, scalar|Param|null>,
- *         ...<mixed>
+ *         ...<string, mixed>
  *     }>,
  * }
  * @psalm-type DoctrineMigrationsConfig = array{
@@ -1566,7 +1566,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  * @psalm-type LiipTestFixturesConfig = array{
  *     cache_db?: array{
  *         sqlite?: scalar|Param|null, // Default: null
- *         ...<mixed>
+ *         ...<string, mixed>
  *     },
  *     keep_database_and_schema?: bool|Param, // Default: false
  *     cache_metadata?: bool|Param, // Default: true

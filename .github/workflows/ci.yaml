@@ -12,7 +12,7 @@ jobs:
                 password: ${{ secrets.GITHUB_TOKEN }}
         steps:
             -   name: Load project repository
-                uses: actions/checkout@v4
+                uses: actions/checkout@v6
 
             -   name: Add GitHub OAuth credentials
                 run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
@@ -67,7 +67,7 @@ jobs:
                 run: php bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/Panther/
 
             -   name: Archive debugging files
-                uses: actions/upload-artifact@v4
+                uses: actions/upload-artifact@v7
                 if: failure()
                 with:
                     name: debug
