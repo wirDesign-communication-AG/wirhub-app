@@ -1,0 +1,51 @@
+{
+  "name": "headless",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wirDesign-communication-AG/wirHub-app.git"
+  },
+  "author": "Sven Joder",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@glidejs/glide": "3.7.1",
+    "@popperjs/core": "2.11.8",
+    "ace-builds": "1.43.4",
+    "bootbox": "6.0.4",
+    "bootstrap": "5.3.8",
+    "chokidar": "^5.0.0",
+    "ckeditor5": "^48.0.0",
+    "concat": "^1.0.3",
+    "dotenv": "^17.4.0",
+    "dropzone": "<5.6.0",
+    "echarts": "6.0.0",
+    "esbuild": "^0.27.7",
+    "glightbox": "3.3.1",
+    "iframe-resizer": "4.4.5",
+    "lottie-web": "5.13.0",
+    "masonry-layout": "4.2.2",
+    "material-symbols": "0.44.0",
+    "node-snackbar": "0.1.16",
+    "perfect-scrollbar": "1.5.6",
+    "sass": "^1.99.0",
+    "select2": "4.0.13",
+    "simplemde": "1.11.2",
+    "sortablejs": "1.15.7",
+    "tom-select": "2.5.2",
+    "vite": "^8.0.3",
+    "vite-plugin-static-copy": "^4.0.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.1",
+    "globals": "^17.3.0",
+    "normalize.css": "^8.0.1"
+  },
+  "scripts": {
+    "build": "node vanilla-legacy.js && node vanilla-sass.js && vite build --config vite.base.config.js && vite build --config vite.modules.config.js",
+    "legacy": "node vanilla-legacy.js"
+  },
+  "type": "module"
+}
