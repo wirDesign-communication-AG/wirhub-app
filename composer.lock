@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c14dbfef7a22e20816ae85e62767d02",
+    "content-hash": "6f4cda89e2b48243142c01ddff1415c3",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.376.3",
+            "version": "3.377.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2081f8db174df4bb8842aed3b7b513590ee9d219"
+                "reference": "573c569d20710a902446688a0439b53fef256e3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2081f8db174df4bb8842aed3b7b513590ee9d219",
-                "reference": "2081f8db174df4bb8842aed3b7b513590ee9d219",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/573c569d20710a902446688a0439b53fef256e3a",
+                "reference": "573c569d20710a902446688a0439b53fef256e3a",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.376.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.377.0"
             },
-            "time": "2026-04-03T18:07:33+00:00"
+            "time": "2026-04-07T18:14:36+00:00"
         },
         {
             "name": "brick/math",
@@ -12913,16 +12913,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.1.20",
+            "version": "dev-wip/1122",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "c785e7dae09e4ad7b3ce16a2c8afb2f05176e91f"
+                "reference": "7e85aabe8b798776f586d858d730be40a53eae86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/c785e7dae09e4ad7b3ce16a2c8afb2f05176e91f",
-                "reference": "c785e7dae09e4ad7b3ce16a2c8afb2f05176e91f",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/7e85aabe8b798776f586d858d730be40a53eae86",
+                "reference": "7e85aabe8b798776f586d858d730be40a53eae86",
                 "shasum": ""
             },
             "require": {
@@ -13014,10 +13014,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.20",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1122",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-04-06T14:58:20+00:00"
+            "time": "2026-04-08T09:40:46+00:00"
         }
     ],
     "packages-dev": [
@@ -14843,16 +14843,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "a51dfddbf6a29ed9fbf6e8410fc90c1608df1b5d"
+                "reference": "000b7050b9e4fe98db2192971e56eb0b302b3feb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/a51dfddbf6a29ed9fbf6e8410fc90c1608df1b5d",
-                "reference": "a51dfddbf6a29ed9fbf6e8410fc90c1608df1b5d",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/000b7050b9e4fe98db2192971e56eb0b302b3feb",
+                "reference": "000b7050b9e4fe98db2192971e56eb0b302b3feb",
                 "shasum": ""
             },
             "require": {
@@ -14891,7 +14891,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.4.0"
+                "source": "https://github.com/rectorphp/rector/tree/2.4.1"
             },
             "funding": [
                 {
@@ -14899,7 +14899,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-04T07:37:45+00:00"
+            "time": "2026-04-08T08:43:56+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -16642,7 +16642,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
