@@ -74,11 +74,10 @@ RUN sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/g' /
  && sed -i 's/post_max_size = 8M/post_max_size = 64M/g' /etc/php/8.4/fpm/php.ini \
  && sed -i 's/;date.timezone =/date.timezone = Europe\/Berlin/g' /etc/php/8.4/fpm/php.ini \
  && sed -i 's/memory_limit = 128M/memory_limit = 256M/g' /etc/php/8.4/fpm/php.ini \
- && rm /etc/php/8.4/fpm/conf.d/10-opcache.ini \
- && groupapp -g 33 app \
- && useradd -u 33 -g app -m -s /bin/bash app
+ && rm /etc/php/8.4/fpm/conf.d/10-opcache.ini
 
 COPY build/docker/base/php/10-opcache.ini /etc/php/8.4/fpm/conf.d
+COPY build/docker/base/php/www.conf /etc/php/8.4/fpm/pool.d/www.conf
 
 WORKDIR /var/www/wirhub
 
@@ -105,6 +104,7 @@ RUN chmod +x bin/console start.sh \
  && echo "postfix postfix/main_mailer_type string 'Internet Site'" | debconf-set-selections \
  && composer dump-autoload --optimize
 
+EXPOSE 9000
 
 ENTRYPOINT ["/start.sh"]
 CMD ["/usr/sbin/php-fpm8.4", "-F"]
