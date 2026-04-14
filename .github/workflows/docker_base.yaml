@@ -1,10 +1,10 @@
-name: Docker Base Image
+name: Docker Base Image (PHP-FPM)
 
 on:
     schedule:
         -   cron: '0 8 * * 5'
     push:
-        branches: [ 'main', 'v3.1', 'v3.1.*' ]
+        branches: [ 'main', 'v3.2', 'v3.2.*' ]
         paths:
             - build/docker/base/Dockerfile
             - build/docker/base-with-node/Dockerfile
@@ -32,14 +32,14 @@ jobs:
                     username: ${{ github.actor }}
                     password: ${{ secrets.GITHUB_TOKEN }}
 
-            -   name: Build & Push
-                uses: docker/build-push-action@v6
-                with:
-                    context: .
-                    file: build/docker/base/Dockerfile
-                    push: true
-                    tags: |
-                        ghcr.io/wirdesign-communication-ag/wirhub-app/base:latest
+            #-   name: Build & Push
+            #    uses: docker/build-push-action@v6
+            #    with:
+            #        context: .
+            #        file: build/docker/base/Dockerfile
+            #        push: true
+            #        tags: |
+            #            ghcr.io/wirdesign-communication-ag/wirhub-app/base:latest
 
     base-with-node:
         needs: base
@@ -64,11 +64,11 @@ jobs:
                     username: ${{ github.actor }}
                     password: ${{ secrets.GITHUB_TOKEN }}
 
-            -   name: Build & Push
-                uses: docker/build-push-action@v6
-                with:
-                    context: .
-                    file: build/docker/base-with-node/Dockerfile
-                    push: true
-                    tags: |
-                        ghcr.io/wirdesign-communication-ag/wirhub-app/base-with-node:latest
+            #-   name: Build & Push
+            #    uses: docker/build-push-action@v6
+            #    with:
+           #         context: .
+           #         file: build/docker/base-with-node/Dockerfile
+           #         push: true
+           #         tags: |
+           #             ghcr.io/wirdesign-communication-ag/wirhub-app/base-with-node:latest
