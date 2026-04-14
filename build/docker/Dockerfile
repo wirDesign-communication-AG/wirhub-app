@@ -106,5 +106,5 @@ RUN chmod +x bin/console start.sh \
 
 EXPOSE 9000
 
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["./start.sh"]
 CMD ["/usr/sbin/php-fpm8.4", "-F"]
