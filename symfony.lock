@@ -1,7 +1,4 @@
 {
-    "craue/formflow-bundle": {
-        "version": "3.6.0"
-    },
     "doctrine/annotations": {
         "version": "2.0",
         "recipe": {
@@ -332,7 +329,7 @@
         ]
     },
     "symfony/translation": {
-        "version": "7.3",
+        "version": "8.0",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
@@ -367,7 +364,7 @@
         }
     },
     "symfony/validator": {
-        "version": "7.3",
+        "version": "8.0",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",

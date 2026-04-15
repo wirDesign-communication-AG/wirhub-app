@@ -76,10 +76,34 @@ RUN sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/g' /
  && sed -i 's/memory_limit = 128M/memory_limit = 256M/g' /etc/php/8.4/fpm/php.ini \
  && rm /etc/php/8.4/fpm/conf.d/10-opcache.ini
 
-COPY build/docker/base/php/10-opcache.ini /etc/php/8.4/fpm/conf.d/10-opcache.ini
+COPY build/docker/base/php/10-opcache.ini /etc/php/8.4/fpm/conf.d
 COPY build/docker/base/php/www.conf /etc/php/8.4/fpm/pool.d/www.conf
+
+WORKDIR /var/www/wirhub
+
+# Cronjobs
+COPY build/docker/app/crontab /etc/cron.d/wirhub
+RUN chmod 0644 /etc/cron.d/wirhub \
+ && crontab /etc/cron.d/wirhub
+
+
+# Composer (cached)
+COPY composer.json composer.lock auth.json ./
+RUN COMPOSER_ALLOW_SUPERUSER=1 composer install \
+    --no-dev \
+    --no-interaction \
+    --no-scripts
+
+# App
+COPY . .
+COPY build/docker/app/start.sh ./start.sh
+
+RUN chmod +x bin/console start.sh \
+ && rm -f auth.json \
+ && echo "postfix postfix/mailname string wirdesign.de" | debconf-set-selections \
+ && echo "postfix postfix/main_mailer_type string 'Internet Site'" | debconf-set-selections \
+ && composer dump-autoload --optimize
 
 EXPOSE 9000
 
-ENTRYPOINT []
-CMD ["/bin/bash"]
+ENTRYPOINT ["./start.sh"]

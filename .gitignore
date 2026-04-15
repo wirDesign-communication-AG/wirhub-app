@@ -36,5 +36,6 @@
 /.php-cs-fixer.cache
 ###< friendsofphp/php-cs-fixer ###
 
+auth.json
 /build/debug
 /build/node_modules

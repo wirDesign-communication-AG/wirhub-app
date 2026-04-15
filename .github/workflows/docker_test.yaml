@@ -4,7 +4,7 @@ on:
     schedule:
         -   cron: '0 9 * * 5'
     push:
-        branches: [ 'main', 'v3.1', 'v3.1.*' ]
+        branches: [ 'main', 'v3.2', 'v3.2.*' ]
         paths:
             - build/docker/test/Dockerfile
 
@@ -31,11 +31,11 @@ jobs:
                     username: ${{ github.actor }}
                     password: ${{ secrets.GITHUB_TOKEN }}
 
-            -   name: Build & Push
-                uses: docker/build-push-action@v6
-                with:
-                    context: .
-                    file: build/docker/test/Dockerfile
-                    push: true
-                    tags: |
-                        ghcr.io/wirdesign-communication-ag/wirhub-app/test:latest
+            #-   name: Build & Push
+            #    uses: docker/build-push-action@v6
+            #    with:
+            #        context: .
+            #        file: build/docker/test/Dockerfile
+            #        push: true
+            #        tags: |
+            #            ghcr.io/wirdesign-communication-ag/wirhub-app/test:latest

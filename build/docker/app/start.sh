@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -x
 
-service apache2 start
-
 service cron start
 
 # initialize the project
@@ -43,6 +41,10 @@ echo "-- Link secret folder"
 ln -s /opt/wirhub-secret/ secret
 
 echo "--"
+echo "-- Copy static to public"
+cp -r static/* public/
+
+echo "--"
 echo "-- Hand over directories to webserver"
 chown -R www-data:www-data public/
 chown -R www-data:www-data var/
@@ -71,6 +73,4 @@ if grep -q MAILER_URL=sendmail://default .env.local; then
   postfix start
 fi
 
-# # this will make it run indefinitely
-# apachectl -D FOREGROUND
-tail -f /var/log/apache2/error.log
+/usr/sbin/php-fpm8.4 -F
