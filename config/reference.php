@@ -1779,7 +1779,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     http?: array{
  *         path?: scalar|Param|null, // Default: "/_mcp"
  *         session?: array{
- *             store?: "file"|"memory"|"cache"|Param, // Default: "file"
+ *             store?: "file"|"memory"|"cache"|"framework"|Param, // Default: "file"
  *             directory?: scalar|Param|null, // Default: "%kernel.cache_dir%/mcp-sessions"
  *             cache_pool?: scalar|Param|null, // Default: "cache.mcp.sessions"
  *             prefix?: scalar|Param|null, // Default: "mcp-"
