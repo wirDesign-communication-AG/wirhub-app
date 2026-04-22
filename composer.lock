@@ -13103,12 +13103,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "b18dc214e25572257f99cf9b24f9fd184d0d60b9"
+                "reference": "46e9c906acfe0a6f603bf0ddff5daf70a09b8977"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/b18dc214e25572257f99cf9b24f9fd184d0d60b9",
-                "reference": "b18dc214e25572257f99cf9b24f9fd184d0d60b9",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/46e9c906acfe0a6f603bf0ddff5daf70a09b8977",
+                "reference": "46e9c906acfe0a6f603bf0ddff5daf70a09b8977",
                 "shasum": ""
             },
             "require": {
@@ -13170,6 +13170,7 @@
                 "symfony/serializer": "^7.3|^8.0",
                 "symfony/string": "^7.3|^8.0",
                 "symfony/twig-pack": "^1.0",
+                "twig/cssinliner-extra": "^3.24",
                 "twig/extra-bundle": "^3.3",
                 "twig/intl-extra": "^3.3",
                 "twig/string-extra": "^3.3",
@@ -13203,7 +13204,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.21",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-04-22T11:37:04+00:00"
+            "time": "2026-04-22T13:59:15+00:00"
         }
     ],
     "packages-dev": [
