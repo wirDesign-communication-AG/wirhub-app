@@ -89,7 +89,8 @@
         "symfony/rate-limiter": "^8.0",
         "symfony/runtime": "^7.4",
         "symfony/yaml": "^7.4",
-        "wirdesign-communication-ag/wirhub": "dev-wip/1325"
+        "twig/cssinliner-extra": "^3.24",
+        "wirdesign-communication-ag/wirhub": "v3.1.21.x-dev"
     },
     "scripts": {
         "auto-scripts": {
