@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.379.5",
+            "version": "3.379.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c81342df6e09bbc30d28ea57cc4644bb35c53ce2"
+                "reference": "587f0bafd28a7dc3395b0c55f93f2474657767e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c81342df6e09bbc30d28ea57cc4644bb35c53ce2",
-                "reference": "c81342df6e09bbc30d28ea57cc4644bb35c53ce2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/587f0bafd28a7dc3395b0c55f93f2474657767e2",
+                "reference": "587f0bafd28a7dc3395b0c55f93f2474657767e2",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.379.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.379.6"
             },
-            "time": "2026-04-22T18:13:16+00:00"
+            "time": "2026-04-23T18:11:11+00:00"
         },
         {
             "name": "brick/math",
@@ -1808,16 +1808,16 @@
         },
         {
             "name": "doctrine/migrations",
-            "version": "3.9.6",
+            "version": "3.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "ffd8355cdd8505fc650d9604f058bf62aedd80a1"
+                "reference": "96cb2a89b56c9efb0bac38e606dc0b0f13e650ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/ffd8355cdd8505fc650d9604f058bf62aedd80a1",
-                "reference": "ffd8355cdd8505fc650d9604f058bf62aedd80a1",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/96cb2a89b56c9efb0bac38e606dc0b0f13e650ec",
+                "reference": "96cb2a89b56c9efb0bac38e606dc0b0f13e650ec",
                 "shasum": ""
             },
             "require": {
@@ -1891,7 +1891,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/migrations/issues",
-                "source": "https://github.com/doctrine/migrations/tree/3.9.6"
+                "source": "https://github.com/doctrine/migrations/tree/3.9.7"
             },
             "funding": [
                 {
@@ -1907,7 +1907,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-11T06:46:11+00:00"
+            "time": "2026-04-23T19:33:20+00:00"
         },
         {
             "name": "doctrine/orm",
@@ -13103,12 +13103,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "1ceac8e50a09c16c5c94fc36c71d830ec08596ba"
+                "reference": "1ef6033edc386294692bf988576fda6e47b92d08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/1ceac8e50a09c16c5c94fc36c71d830ec08596ba",
-                "reference": "1ceac8e50a09c16c5c94fc36c71d830ec08596ba",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/1ef6033edc386294692bf988576fda6e47b92d08",
+                "reference": "1ef6033edc386294692bf988576fda6e47b92d08",
                 "shasum": ""
             },
             "require": {
@@ -13204,7 +13204,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.21",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-04-23T11:02:37+00:00"
+            "time": "2026-04-24T10:21:26+00:00"
         }
     ],
     "packages-dev": [
