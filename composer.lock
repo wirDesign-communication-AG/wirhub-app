@@ -13130,12 +13130,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "8413ef343cb6597d2a1b3540dbe089f8d2a6c284"
+                "reference": "656322396e57b17aeb836e2104c29fe0a9076f1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/8413ef343cb6597d2a1b3540dbe089f8d2a6c284",
-                "reference": "8413ef343cb6597d2a1b3540dbe089f8d2a6c284",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/656322396e57b17aeb836e2104c29fe0a9076f1f",
+                "reference": "656322396e57b17aeb836e2104c29fe0a9076f1f",
                 "shasum": ""
             },
             "require": {
@@ -13231,7 +13231,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.1.22",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-05-11T10:31:29+00:00"
+            "time": "2026-05-13T07:56:12+00:00"
         }
     ],
     "packages-dev": [
@@ -15127,16 +15127,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.4.2",
+            "version": "2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "e645b6463c6a88ea5b44b17d3387d35a912c7946"
+                "reference": "891824c6c59f02a56a5dd58ea8edc44e6c0ece29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/e645b6463c6a88ea5b44b17d3387d35a912c7946",
-                "reference": "e645b6463c6a88ea5b44b17d3387d35a912c7946",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/891824c6c59f02a56a5dd58ea8edc44e6c0ece29",
+                "reference": "891824c6c59f02a56a5dd58ea8edc44e6c0ece29",
                 "shasum": ""
             },
             "require": {
@@ -15175,7 +15175,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.4.2"
+                "source": "https://github.com/rectorphp/rector/tree/2.4.3"
             },
             "funding": [
                 {
@@ -15183,7 +15183,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-16T13:07:34+00:00"
+            "time": "2026-05-12T11:17:24+00:00"
         },
         {
             "name": "sebastian/cli-parser",
