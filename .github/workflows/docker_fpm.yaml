@@ -68,7 +68,7 @@ jobs:
                 uses: docker/build-push-action@v6
                 with:
                     context: .
-                    file: build/docker/base-with-node/Dockerfile
+                    file: build/docker/fpm-with-node/Dockerfile
                     push: true
                     tags: |
-                        ghcr.io/wirdesign-communication-ag/wirhub-app/base-with-node:latest
+                        ghcr.io/wirdesign-communication-ag/wirhub-app/fpm-with-node:latest
