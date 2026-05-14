@@ -76,8 +76,8 @@ RUN sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/g' /
  && sed -i 's/memory_limit = 128M/memory_limit = 256M/g' /etc/php/8.4/fpm/php.ini \
  && rm /etc/php/8.4/fpm/conf.d/10-opcache.ini
 
-COPY build/docker/base/php/10-opcache.ini /etc/php/8.4/fpm/conf.d/10-opcache.ini
-COPY build/docker/base/php/www.conf /etc/php/8.4/fpm/pool.d/www.conf
+COPY build/docker/fpm/php/10-opcache.ini /etc/php/8.4/fpm/conf.d/10-opcache.ini
+COPY build/docker/fpm/php/www.conf /etc/php/8.4/fpm/pool.d/www.conf
 
 EXPOSE 9000
 

@@ -1,4 +1,4 @@
-FROM ghcr.io/wirdesign-communication-ag/wirhub-app/base:latest
+FROM ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:latest
 
 RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash \
  && export NVM_DIR="$HOME/.nvm" \

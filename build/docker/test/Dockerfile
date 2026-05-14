@@ -1,9 +1,9 @@
 # v3.2.0 2026-02-17 12:30:00
-FROM ghcr.io/wirdesign-communication-ag/wirhub-app/base:latest
+FROM ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:latest
 
 # Packages
 RUN wget -qO- https://deb.nodesource.com/setup_24.x | bash - \
- && apt purge -y apache2 libapache2-mod-php vim cron \
+ && apt purge -y vim cron \
  && apt autoremove -y \
  && apt update \
  && apt install -y --no-install-recommends nodejs jq php8.4-sqlite3 \

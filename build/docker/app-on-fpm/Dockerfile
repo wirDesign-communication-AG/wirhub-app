@@ -1,9 +1,9 @@
-FROM ghcr.io/wirdesign-communication-ag/wirhub-app/base:latest
+FROM ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:latest
 
 WORKDIR /var/www/wirhub
 
 # Cronjobs
-COPY build/docker/app/crontab /etc/cron.d/wirhub
+COPY build/docker/app-on-fpm/crontab /etc/cron.d/wirhub
 RUN chmod 0644 /etc/cron.d/wirhub \
  && crontab /etc/cron.d/wirhub
 
@@ -17,7 +17,7 @@ RUN COMPOSER_ALLOW_SUPERUSER=1 composer install \
 
 # App
 COPY . .
-COPY build/docker/app/start.sh ./start.sh
+COPY build/docker/app-on-fpm/start.sh ./start.sh
 
 RUN chmod +x bin/console start.sh \
  && rm -f auth.json \

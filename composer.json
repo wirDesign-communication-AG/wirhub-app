@@ -50,6 +50,7 @@
         "symfony/polyfill-php80": "*",
         "symfony/polyfill-php81": "*",
         "symfony/polyfill-php82": "*",
+        "symfony/polyfill-php83": "*",
         "symfony/polyfill-php84": "*"
     },
     "repositories": [
@@ -62,7 +63,7 @@
         }
     ],
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.4",
         "ext-ctype": "*",
         "ext-gd": "*",
         "ext-iconv": "*",
