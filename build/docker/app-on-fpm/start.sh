@@ -73,4 +73,6 @@ if grep -q MAILER_URL=sendmail://default .env.local; then
   postfix start
 fi
 
+touch /tmp/start-sh-finished
+
 /usr/sbin/php-fpm8.4 -F
