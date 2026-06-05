@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.383.2",
+            "version": "3.384.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "11c2de39e4511dc99e44f049c7dfc8087e051867"
+                "reference": "9d3538b3f113cd66b3220f7e37e3d0ff1e0713e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/11c2de39e4511dc99e44f049c7dfc8087e051867",
-                "reference": "11c2de39e4511dc99e44f049c7dfc8087e051867",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9d3538b3f113cd66b3220f7e37e3d0ff1e0713e7",
+                "reference": "9d3538b3f113cd66b3220f7e37e3d0ff1e0713e7",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.383.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.384.3"
             },
-            "time": "2026-06-01T18:08:21+00:00"
+            "time": "2026-06-04T18:11:21+00:00"
         },
         {
             "name": "brick/math",
@@ -13080,12 +13080,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "d48c472561688aae0f749ef29ee3de4ebd1e54b8"
+                "reference": "fdff8a64f69ae637be36e0183e403bc753afc37e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/d48c472561688aae0f749ef29ee3de4ebd1e54b8",
-                "reference": "d48c472561688aae0f749ef29ee3de4ebd1e54b8",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/fdff8a64f69ae637be36e0183e403bc753afc37e",
+                "reference": "fdff8a64f69ae637be36e0183e403bc753afc37e",
                 "shasum": ""
             },
             "require": {
@@ -13184,7 +13184,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.2.0",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-06-02T13:47:49+00:00"
+            "time": "2026-06-05T09:37:13+00:00"
         }
     ],
     "packages-dev": [
@@ -13320,16 +13320,16 @@
         },
         {
             "name": "dg/bypass-finals",
-            "version": "v1.10.0",
+            "version": "v1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dg/bypass-finals.git",
-                "reference": "03e27acff5aa4e1704db371505e7d3da915b4307"
+                "reference": "62d4ea18f8937af7d794b3358c125ecb52862e98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dg/bypass-finals/zipball/03e27acff5aa4e1704db371505e7d3da915b4307",
-                "reference": "03e27acff5aa4e1704db371505e7d3da915b4307",
+                "url": "https://api.github.com/repos/dg/bypass-finals/zipball/62d4ea18f8937af7d794b3358c125ecb52862e98",
+                "reference": "62d4ea18f8937af7d794b3358c125ecb52862e98",
                 "shasum": ""
             },
             "require": {
@@ -13367,9 +13367,9 @@
             ],
             "support": {
                 "issues": "https://github.com/dg/bypass-finals/issues",
-                "source": "https://github.com/dg/bypass-finals/tree/v1.10.0"
+                "source": "https://github.com/dg/bypass-finals/tree/v1.10.1"
             },
-            "time": "2026-06-01T16:48:55+00:00"
+            "time": "2026-06-04T15:48:46+00:00"
         },
         {
             "name": "ergebnis/agent-detector",
@@ -13550,16 +13550,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.95.3",
+            "version": "v3.95.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "3d681493acc0e93283481b1c63c263737df78687"
+                "reference": "3f8f68856837a77e1f1d870354eca3c8747f2f72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3d681493acc0e93283481b1c63c263737df78687",
-                "reference": "3d681493acc0e93283481b1c63c263737df78687",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3f8f68856837a77e1f1d870354eca3c8747f2f72",
+                "reference": "3f8f68856837a77e1f1d870354eca3c8747f2f72",
                 "shasum": ""
             },
             "require": {
@@ -13643,7 +13643,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.3"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.4"
             },
             "funding": [
                 {
@@ -13651,7 +13651,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-29T20:35:26+00:00"
+            "time": "2026-06-03T18:02:44+00:00"
         },
         {
             "name": "liip/test-fixtures-bundle",
@@ -14044,11 +14044,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/dea9c8f2d25cc849391042b71e429c1a4bf82660",
-                "reference": "dea9c8f2d25cc849391042b71e429c1a4bf82660",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e5cc34d491a90e79c216d824f60fe21fd4d93bd6",
+                "reference": "e5cc34d491a90e79c216d824f60fe21fd4d93bd6",
                 "shasum": ""
             },
             "require": {
@@ -14104,20 +14104,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-28T14:44:12+00:00"
+            "time": "2026-06-05T09:00:01+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "14.1.10",
+            "version": "14.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "3719c5b6c045761798238ebacfee1fe06e4ce5be"
+                "reference": "ab8a36c9bd98c51f6cfe665a732bfadf72e18e8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/3719c5b6c045761798238ebacfee1fe06e4ce5be",
-                "reference": "3719c5b6c045761798238ebacfee1fe06e4ce5be",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ab8a36c9bd98c51f6cfe665a732bfadf72e18e8d",
+                "reference": "ab8a36c9bd98c51f6cfe665a732bfadf72e18e8d",
                 "shasum": ""
             },
             "require": {
@@ -14136,7 +14136,7 @@
                 "theseer/tokenizer": "^2.0.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^13.1.13"
+                "phpunit/phpunit": "^13.1.14"
             },
             "suggest": {
                 "ext-pcov": "PHP extension that provides line coverage",
@@ -14145,7 +14145,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "14.1.x-dev"
+                    "dev-main": "14.2.x-dev"
                 }
             },
             "autoload": {
@@ -14174,7 +14174,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/14.1.10"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/14.2.0"
             },
             "funding": [
                 {
@@ -14194,7 +14194,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-01T13:26:42+00:00"
+            "time": "2026-06-05T02:59:08+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -14491,16 +14491,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "13.1.13",
+            "version": "13.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ddf7f25d9ee9652b464475d7f3bacde2613e355e"
+                "reference": "cdd419c33c040c6b570e51dba8ecbe81d399da53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ddf7f25d9ee9652b464475d7f3bacde2613e355e",
-                "reference": "ddf7f25d9ee9652b464475d7f3bacde2613e355e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/cdd419c33c040c6b570e51dba8ecbe81d399da53",
+                "reference": "cdd419c33c040c6b570e51dba8ecbe81d399da53",
                 "shasum": ""
             },
             "require": {
@@ -14514,7 +14514,7 @@
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.4.1",
-                "phpunit/php-code-coverage": "^14.1.9",
+                "phpunit/php-code-coverage": "^14.1.10",
                 "phpunit/php-file-iterator": "^7.0.0",
                 "phpunit/php-invoker": "^7.0.0",
                 "phpunit/php-text-template": "^6.0.0",
@@ -14525,7 +14525,7 @@
                 "sebastian/environment": "^9.3.2",
                 "sebastian/exporter": "^8.1.0",
                 "sebastian/git-state": "^1.0",
-                "sebastian/global-state": "^9.0.0",
+                "sebastian/global-state": "^9.0.1",
                 "sebastian/object-enumerator": "^8.0.0",
                 "sebastian/recursion-context": "^8.0.0",
                 "sebastian/type": "^7.0.1",
@@ -14570,7 +14570,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/13.1.13"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/13.1.14"
             },
             "funding": [
                 {
@@ -14578,7 +14578,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-05-27T14:03:08+00:00"
+            "time": "2026-06-04T06:16:42+00:00"
         },
         {
             "name": "react/cache",
