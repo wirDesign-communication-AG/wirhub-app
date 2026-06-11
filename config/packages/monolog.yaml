@@ -55,8 +55,8 @@ when@prod:
                 max_files: 5
             nested:
                 type: stream
-                path: php://stderr
-                level: debug
+                path: '%kernel.logs_dir%/symfony.log'
+                level: warning
                 formatter: monolog.formatter.json
             console:
                 type: console
