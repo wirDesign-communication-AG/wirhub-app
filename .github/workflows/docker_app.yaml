@@ -2,7 +2,7 @@ name: Docker CI publish package
 
 on:
     push:
-        tags: [ 'v3.2.*', 'v3.2.*.*', 'beta-v3.2.*' ]
+        tags: [ 'v3.2.*', 'v3.2.*.*', 'beta-*' ]
 
 env:
     REGISTRY: ghcr.io
