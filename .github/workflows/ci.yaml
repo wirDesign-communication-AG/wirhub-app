@@ -1,7 +1,7 @@
 name: 'CI PHP 8.4'
 on:
     pull_request:
-        branches: [ 'main', 'v3.1', 'v3.1.*' ]
+        branches: [ 'main', 'v3.2', 'v3.2.*' ]
 jobs:
     build:
         runs-on: ubuntu-latest

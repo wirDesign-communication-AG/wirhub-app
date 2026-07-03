@@ -2,12 +2,10 @@ name: Docker CI publish package
 
 on:
     push:
-        tags: [ 'v*.*.*', 'v*.*.*.*', 'beta-*' ]
+        tags: [ 'v3.2.*', 'v3.2.*.*', 'beta-v3.2.*' ]
 
 env:
-    # Use docker.io for Docker Hub if empty
     REGISTRY: ghcr.io
-    # github.repository as <account>/<repo>
     IMAGE_NAME: wirdesign-communication-ag/wirhub-app
 
 jobs:
@@ -16,16 +14,14 @@ jobs:
         permissions:
             contents: read
             packages: write
-            # This is used to complete the identity challenge
-            # with sigstore/fulcio when running outside of PRs.
             id-token: write
 
         steps:
             -   name: Checkout repository
-                uses: actions/checkout@v4
+                uses: actions/checkout@v6
 
             -   name: Setup Docker buildx
-                uses: docker/setup-buildx-action@v3
+                uses: docker/setup-buildx-action@v4
 
             -   name: Log into registry ${{ env.REGISTRY }}
                 if: github.event_name != 'pull_request'
@@ -37,7 +33,7 @@ jobs:
 
             -   name: Extract Docker metadata
                 id: meta
-                uses: docker/metadata-action@v5
+                uses: docker/metadata-action@v6
                 with:
                     images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
                     flavor: |
@@ -57,10 +53,10 @@ jobs:
 
             -   name: Build and push Docker image
                 id: build-and-push
-                uses: docker/build-push-action@v6
+                uses: docker/build-push-action@v7
                 with:
                     context: .
-                    file: build/docker/app/Dockerfile
+                    file: build/docker/app-on-fpm/Dockerfile
                     push: ${{ github.event_name != 'pull_request' }}
                     tags: ${{ steps.meta.outputs.tags }}
                     labels: ${{ steps.meta.outputs.labels }}
@@ -73,8 +69,6 @@ jobs:
                     !contains(github.ref, 'rc')
                 run: |
                     VERSION=${GITHUB_REF#refs/tags/}
-
                     docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${VERSION}
                     docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${VERSION} ghcr.io/${{ env.IMAGE_NAME }}:latest
-
                     docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest

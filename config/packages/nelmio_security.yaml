@@ -44,6 +44,12 @@ nelmio_security:
                 - 'data:'
                 - 'blob:'
                 - 'self'
+                - 'https://*.ionoscloud.com'
+            media-src:
+                - 'data:'
+                - 'blob:'
+                - 'self'
+                - 'https://*.ionoscloud.com'
             block-all-mixed-content: true
             frame-ancestors:
                 - self
