@@ -65,10 +65,12 @@
     "require": {
         "php": ">=8.4",
         "ext-ctype": "*",
+        "ext-fileinfo": "*",
         "ext-gd": "*",
         "ext-iconv": "*",
         "ext-imagick": "^3.4.3",
         "ext-mbstring": "*",
+        "ext-zip": "*",
         "ezyang/htmlpurifier": "^4.19",
         "maennchen/zipstream-php": "3.1.2",
         "scheb/2fa-backup-code": "^8.4",
@@ -85,7 +87,7 @@
         "symfony/rate-limiter": "^8.0",
         "symfony/runtime": "^8.0",
         "symfony/yaml": "^8.0",
-        "wirdesign-communication-ag/wirhub": "3.2.1"
+        "wirdesign-communication-ag/wirhub": "dev-wip/1357"
     },
     "scripts": {
         "auto-scripts": {
