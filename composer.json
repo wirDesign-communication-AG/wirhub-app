@@ -67,6 +67,7 @@
         "ext-ctype": "*",
         "ext-fileinfo": "*",
         "ext-gd": "*",
+        "ext-gmp": "*",
         "ext-iconv": "*",
         "ext-imagick": "^3.4.3",
         "ext-mbstring": "*",
