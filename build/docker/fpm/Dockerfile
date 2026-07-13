@@ -37,6 +37,7 @@ RUN  apt -q update  \
     php8.4-xml \
     php8.4-gd \
     php8.4-fpm \
+    php8.4-gmp \
     imagemagick-6.q16 \
     libxml2 \
     librsvg2-bin \
