@@ -1,4 +1,4 @@
-# v3.2.2 2026-07-14 12:00:00
+# v3.2.2 2026-07-20 11:30:00
 FROM ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:latest
 
 # Packages
