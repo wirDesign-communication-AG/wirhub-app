@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51b7038034d91faa6374d622074686c4",
+    "content-hash": "0b118022ffc3e05a1020a4fec9ed7a11",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -12788,12 +12788,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "1a274f60ceda20a40bd178c0e6cc9d467c141c27"
+                "reference": "3118456a91c8125a8232edd2709593d5c9f91f73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/1a274f60ceda20a40bd178c0e6cc9d467c141c27",
-                "reference": "1a274f60ceda20a40bd178c0e6cc9d467c141c27",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/3118456a91c8125a8232edd2709593d5c9f91f73",
+                "reference": "3118456a91c8125a8232edd2709593d5c9f91f73",
                 "shasum": ""
             },
             "require": {
@@ -12908,7 +12908,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.2.2",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-07-21T09:04:06+00:00"
+            "time": "2026-07-21T14:02:32+00:00"
         }
     ],
     "packages-dev": [
@@ -16788,7 +16788,6 @@
         "ext-ctype": "*",
         "ext-fileinfo": "*",
         "ext-gd": "*",
-        "ext-gmp": "*",
         "ext-iconv": "*",
         "ext-imagick": "^3.4.3",
         "ext-mbstring": "*",
