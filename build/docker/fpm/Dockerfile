@@ -1,4 +1,4 @@
-# v3.2.0 2026-06-11 10:00
+# v3.2.0 2026-07-14 12:00
 FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -37,6 +37,7 @@ RUN  apt -q update  \
     php8.4-xml \
     php8.4-gd \
     php8.4-fpm \
+    php8.4-gmp \
     imagemagick-6.q16 \
     libxml2 \
     librsvg2-bin \
