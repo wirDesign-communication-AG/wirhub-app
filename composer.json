@@ -65,10 +65,12 @@
     "require": {
         "php": ">=8.4",
         "ext-ctype": "*",
+        "ext-dom": "*",
         "ext-fileinfo": "*",
         "ext-gd": "*",
         "ext-iconv": "*",
         "ext-imagick": "^3.4.3",
+        "ext-libxml": "*",
         "ext-mbstring": "*",
         "ext-zip": "*",
         "ezyang/htmlpurifier": "^4.19",
