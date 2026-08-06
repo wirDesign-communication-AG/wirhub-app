@@ -14,6 +14,12 @@ jobs:
             -   name: Load project repository
                 uses: actions/checkout@v6
 
+            # The job runs as root inside the container while the workspace is owned by the
+            # runner user, so git refuses to read it. actions/checkout only registers the
+            # directory in the global config, which subprocesses like composer do not pick up.
+            -   name: Mark workspace as a safe git directory
+                run: git config --system --add safe.directory "$GITHUB_WORKSPACE"
+
             -   name: Add GitHub OAuth credentials
                 run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 

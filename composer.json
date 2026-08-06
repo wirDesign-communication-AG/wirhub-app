@@ -25,6 +25,7 @@
         "sort-packages": true
     },
     "conflict": {
+        "doctrine/orm": "3.6.8",
         "symfony/symfony": "*"
     },
     "extra": {
