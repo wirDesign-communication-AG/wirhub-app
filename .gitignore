@@ -39,3 +39,4 @@
 auth.json
 /build/debug
 /build/node_modules
+/public/app
