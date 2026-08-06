@@ -32,7 +32,44 @@ jobs:
                     username: ${{ github.actor }}
                     password: ${{ secrets.GITHUB_TOKEN }}
 
-            -   name: Build & Push
+            -   name: Build
+                uses: docker/build-push-action@v7
+                with:
+                    context: .
+                    file: build/docker/fpm/Dockerfile
+                    load: true
+                    tags: fpm:smoke
+                    provenance: false
+                    cache-from: type=registry,ref=ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:buildcache
+                    cache-to: type=registry,ref=ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:buildcache,mode=max,image-manifest=true,oci-mediatypes=true,ignore-error=true
+
+            -   name: Smoke test (LibreOffice, unoconv, Inkscape)
+                run: |
+                    echo "Image size: $(docker image inspect fpm:smoke --format '{{.Size}}' | numfmt --to=iec)"
+                    docker run --rm fpm:smoke bash -eux -c '
+                      cd /tmp
+
+                      php --version
+                      soffice --version
+                      inkscape --version
+                      python3 -c "import uno; print(\"python3-uno ok\")"
+
+                      # txt -> docx -> pdf covers the path used by UnoconvService::convertToPdf
+                      echo "Smoke test with umlauts: ÄÖÜ äöü ß" > smoke.txt
+                      soffice --headless --convert-to docx --outdir . smoke.txt
+                      test -s smoke.docx
+                      unoconv -f pdf -o smoke.pdf smoke.docx
+                      head -c 4 smoke.pdf | grep -q "%PDF"
+
+                      # SVG -> PNG covers the path used by IconListHelper
+                      printf "%s" "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\"><circle cx=\"16\" cy=\"16\" r=\"12\" fill=\"red\"/></svg>" > smoke.svg
+                      inkscape --export-type=png --export-filename=smoke.png smoke.svg
+                      head -c 8 smoke.png | grep -q PNG
+
+                      echo "-- smoke test passed --"
+                    '
+
+            -   name: Push
                 uses: docker/build-push-action@v7
                 with:
                     context: .
@@ -40,6 +77,8 @@ jobs:
                     push: true
                     tags: |
                         ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:latest
+                    provenance: false
+                    cache-from: type=registry,ref=ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:buildcache
 
     fpm-with-node:
         needs: fpm
@@ -72,3 +111,6 @@ jobs:
                     push: true
                     tags: |
                         ghcr.io/wirdesign-communication-ag/wirhub-app/fpm-with-node:latest
+                    provenance: false
+                    cache-from: type=registry,ref=ghcr.io/wirdesign-communication-ag/wirhub-app/fpm-with-node:buildcache
+                    cache-to: type=registry,ref=ghcr.io/wirdesign-communication-ag/wirhub-app/fpm-with-node:buildcache,mode=max,image-manifest=true,oci-mediatypes=true,ignore-error=true

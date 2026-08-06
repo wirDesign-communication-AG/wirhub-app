@@ -1,4 +1,4 @@
-# v3.2.0 2026-07-30 13:00
+# v3.2.3 2026-08-06 - slimmer package selection (--no-install-recommends)
 FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -21,7 +21,7 @@ RUN  apt -q update  \
     gnupg \
  && add-apt-repository ppa:ondrej/php \
  && apt-get update \
- && apt install -y \
+ && apt install -y --no-install-recommends \
     php8.4 \
     php8.4-common \
     php8.4-zip \
@@ -46,7 +46,13 @@ RUN  apt -q update  \
     inkscape \
     python3-setuptools \
     unoconv \
-    libreoffice \
+    python3-uno \
+    libreoffice-core \
+    libreoffice-writer \
+    libreoffice-calc \
+    libreoffice-impress \
+    fonts-dejavu-core \
+    fonts-liberation2 \
     ghostscript \
     postfix \
     wkhtmltopdf \

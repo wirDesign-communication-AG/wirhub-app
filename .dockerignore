@@ -1,0 +1,38 @@
+# Keeps the build context small and makes a local build produce the same
+# content as the fresh checkout on CI.
+#
+# Important: auth.json must NOT be ignored - it is created by the workflow
+# and required by build/docker/app-on-fpm/Dockerfile.
+
+.git
+.github
+.idea/
+
+# Created inside the image by composer install --no-dev
+vendor/
+
+# Runtime and user data (several GB locally)
+var/
+files/*
+!files/.gitkeep
+
+# Must not end up as an empty directory in the image: start.sh creates a
+# symlink here via "ln -s /opt/wirhub-secret/ secret".
+secret
+
+# Created at runtime by assets:install / start.sh
+public/asset
+public/file
+public/app
+public/bundles/
+
+node_modules/
+build/node_modules
+build/debug
+
+.env.local
+.env.local.php
+.env.*.local
+.phpunit.cache/
+.phpunit.result.cache
+.php-cs-fixer.cache
