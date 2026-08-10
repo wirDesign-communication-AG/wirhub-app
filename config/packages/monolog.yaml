@@ -18,6 +18,8 @@ when@dev:
                 path: "%kernel.logs_dir%/%kernel.environment%.log"
                 level: debug
                 channels: [ "!event" ]
+                # The backend under System reads this file, which only works as JSON
+                formatter: monolog.formatter.json
             console:
                 type: console
                 process_psr_3_messages: false
