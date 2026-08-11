@@ -8,6 +8,7 @@ mcp:
         http: true
 
     http:
+        allowed_hosts: false
         path: /_mcp
         session:
             store: file
