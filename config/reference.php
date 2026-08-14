@@ -909,11 +909,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         chain?: array{
  *             providers?: Param|string|list<scalar|Param|null>,
  *         },
- *         entity?: array{
- *             class?: scalar|Param|null, // The full entity class name of your user class.
- *             property?: scalar|Param|null, // Default: null
- *             manager_name?: scalar|Param|null, // Default: null
- *         },
  *         memory?: array{
  *             users?: array<string, array{ // Default: []
  *                 password?: scalar|Param|null, // Default: null
@@ -931,6 +926,11 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             uid_key?: scalar|Param|null, // Default: "sAMAccountName"
  *             filter?: scalar|Param|null, // Default: "({uid_key}={user_identifier})"
  *             password_attribute?: scalar|Param|null, // Default: null
+ *         },
+ *         entity?: array{
+ *             class?: scalar|Param|null, // The full entity class name of your user class.
+ *             property?: scalar|Param|null, // Default: null
+ *             manager_name?: scalar|Param|null, // Default: null
  *         },
  *     }>,
  *     firewalls?: array<string, array{ // Default: []
