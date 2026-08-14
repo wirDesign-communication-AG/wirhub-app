@@ -39,3 +39,6 @@ jobs:
                     push: true
                     tags: |
                         ghcr.io/wirdesign-communication-ag/wirhub-app/test:latest
+                    provenance: false
+                    cache-from: type=registry,ref=ghcr.io/wirdesign-communication-ag/wirhub-app/test:buildcache
+                    cache-to: type=registry,ref=ghcr.io/wirdesign-communication-ag/wirhub-app/test:buildcache,mode=max,image-manifest=true,oci-mediatypes=true,ignore-error=true

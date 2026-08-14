@@ -25,6 +25,7 @@
         "sort-packages": true
     },
     "conflict": {
+        "doctrine/orm": "3.6.8",
         "symfony/symfony": "*"
     },
     "extra": {
@@ -65,10 +66,12 @@
     "require": {
         "php": ">=8.4",
         "ext-ctype": "*",
+        "ext-dom": "*",
         "ext-fileinfo": "*",
         "ext-gd": "*",
         "ext-iconv": "*",
         "ext-imagick": "^3.4.3",
+        "ext-libxml": "*",
         "ext-mbstring": "*",
         "ext-zip": "*",
         "ezyang/htmlpurifier": "^4.19",
@@ -87,7 +90,7 @@
         "symfony/rate-limiter": "^8.0",
         "symfony/runtime": "^8.0",
         "symfony/yaml": "^8.0",
-        "wirdesign-communication-ag/wirhub": "3.2.2"
+        "wirdesign-communication-ag/wirhub": "3.2.3"
     },
     "scripts": {
         "auto-scripts": {
