@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f93d976505b7f35b0a6b336f8b365a8",
+    "content-hash": "0c941ba7b04333fabbb6d92ac2ede868",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.392.2",
+            "version": "3.392.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "19a454280155f5a6fe096c0d4adf1c37508115b2"
+                "reference": "0ca19a44856b2497ae426f800d35ad97ee179d1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/19a454280155f5a6fe096c0d4adf1c37508115b2",
-                "reference": "19a454280155f5a6fe096c0d4adf1c37508115b2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0ca19a44856b2497ae426f800d35ad97ee179d1a",
+                "reference": "0ca19a44856b2497ae426f800d35ad97ee179d1a",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.392.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.392.3"
             },
-            "time": "2026-08-13T18:05:48+00:00"
+            "time": "2026-08-14T18:11:43+00:00"
         },
         {
             "name": "brick/math",
@@ -12833,16 +12833,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "3.2.3",
+            "version": "dev-wip/1493",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "930f9689cb81f43a253ebd43529bea5ad6752853"
+                "reference": "dcfcd042320bdf54c8b6c9267a257d7074dfb50a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/930f9689cb81f43a253ebd43529bea5ad6752853",
-                "reference": "930f9689cb81f43a253ebd43529bea5ad6752853",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/dcfcd042320bdf54c8b6c9267a257d7074dfb50a",
+                "reference": "dcfcd042320bdf54c8b6c9267a257d7074dfb50a",
                 "shasum": ""
             },
             "require": {
@@ -12955,10 +12955,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.2.3",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1493",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-08-14T12:22:19+00:00"
+            "time": "2026-08-17T11:20:58+00:00"
         }
     ],
     "packages-dev": [
@@ -14054,16 +14054,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "14.3.0",
+            "version": "14.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "060a5c93e81afb01e97dbe8930a5d0c9bd46e54e"
+                "reference": "6ce313bb110384148d1dc7695a99175f59529069"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/060a5c93e81afb01e97dbe8930a5d0c9bd46e54e",
-                "reference": "060a5c93e81afb01e97dbe8930a5d0c9bd46e54e",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/6ce313bb110384148d1dc7695a99175f59529069",
+                "reference": "6ce313bb110384148d1dc7695a99175f59529069",
                 "shasum": ""
             },
             "require": {
@@ -14082,7 +14082,7 @@
                 "theseer/tokenizer": "^2.0.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^13.3"
+                "phpunit/phpunit": "^13.3.1"
             },
             "suggest": {
                 "ext-pcov": "PHP extension that provides line coverage",
@@ -14120,7 +14120,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/14.3.0"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/14.3.1"
             },
             "funding": [
                 {
@@ -14140,7 +14140,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-07T07:24:15+00:00"
+            "time": "2026-08-16T05:23:47+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -16829,7 +16829,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "wirdesign-communication-ag/wirhub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
