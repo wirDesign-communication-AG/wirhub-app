@@ -1,10 +1,11 @@
 # Keeps the build context small and makes a local build produce the same
 # content as the fresh checkout on CI.
 #
-# Important: auth.json must NOT be ignored - it is created by the workflow
-# and required by build/docker/app-on-fpm/Dockerfile.
+# auth.json is deliberately excluded: the credentials reach the build as a
+# BuildKit secret, so nothing may carry them in through the context.
 
 .git
+auth.json
 .github
 .idea/
 

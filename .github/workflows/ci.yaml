@@ -26,6 +26,14 @@ jobs:
             -   name: Install dependencies
                 run: APP_ENV=test composer install --prefer-dist --no-progress --no-scripts
 
+            # The bundle no longer commits Resources/public/<version>, and a dev-* requirement
+            # resolves to a branch archive without it, so the assets are built here.
+            # Full npm install: the build toolchain lives in the bundle's devDependencies.
+            -   name: Build bundle assets
+                run: |
+                    npm --prefix ./vendor/wirdesign-communication-ag/wirhub/build ci
+                    npm --prefix ./vendor/wirdesign-communication-ag/wirhub/build run build
+
             -   name: Install bundle DotEnv file
                 run: cp vendor/wirdesign-communication-ag/wirhub/.env.github .env.test.local
 
