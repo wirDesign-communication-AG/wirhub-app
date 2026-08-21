@@ -1,12 +1,15 @@
-# v3.2.2 2026-07-20 11:30:00
+# v3.2.4 2026-08-21 - libasound2t64 for Chrome
 FROM ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:latest
 
 # Packages
+# libasound2t64 is a hard link-time dependency of the Chrome binary below.
+# It used to arrive as a recommends of the fpm base image; since that image
+# switched to --no-install-recommends (v3.2.3) it has to be requested here.
 RUN wget -qO- https://deb.nodesource.com/setup_24.x | bash - \
  && apt purge -y vim cron \
  && apt autoremove -y \
  && apt update \
- && apt install -y --no-install-recommends nodejs jq php8.4-sqlite3 \
+ && apt install -y --no-install-recommends nodejs jq php8.4-sqlite3 libasound2t64 \
  && rm -rf /var/lib/apt/lists/*
 
 # Chrome
