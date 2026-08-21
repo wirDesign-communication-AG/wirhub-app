@@ -46,11 +46,17 @@ jobs:
             -   name: Build and push Docker image
                 id: build-and-push
                 uses: docker/build-push-action@v7
+                env:
+                    # Das Secret ist mehrzeiliges JSON. Inline in "secrets:" wuerde
+                    # nur die erste Zeile ankommen (die Folgezeilen verwirft die
+                    # Action als "not a valid secret"), darum der Umweg ueber eine
+                    # Env-Variable und secret-envs.
+                    COMPOSER_AUTH_JSON: ${{ secrets.COMPOSER_AUTH_JSON }}
                 with:
                     context: .
                     file: build/docker/app-on-fpm/Dockerfile
-                    secrets: |
-                        composer_auth=${{ secrets.COMPOSER_AUTH_JSON }}
+                    secret-envs: |
+                        composer_auth=COMPOSER_AUTH_JSON
                     push: ${{ github.event_name != 'pull_request' }}
                     tags: ${{ steps.meta.outputs.tags }}
                     labels: ${{ steps.meta.outputs.labels }}
