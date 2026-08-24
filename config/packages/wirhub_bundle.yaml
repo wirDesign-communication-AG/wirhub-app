@@ -71,7 +71,12 @@ framework:
             sender: '%env(MAILER_SENDER)%'
     router:
         default_uri: '%env(string:APP_URL)%'
-    trusted_proxies: '172.0.0.0/8,192.0.0.0/8'
+    # Docker's default address pool for local scope networks: docker0 uses
+    # 172.17.0.0/16 and every compose network takes the next free /16 up to
+    # 172.31.0.0/16. Anything wider trusts X-Forwarded-* from hosts that are
+    # not the reverse proxy - the previous value covered public address space
+    # (192.0.0.0/8) and the office LAN (192.168.0.0/16).
+    trusted_proxies: '172.16.0.0/12'
     trusted_headers: [ 'x-forwarded-for', 'x-forwarded-host', 'x-forwarded-proto', 'x-forwarded-port', 'x-forwarded-prefix' ]
 
 hwi_oauth:
@@ -87,6 +92,13 @@ hwi_oauth:
             infos_url: '%env(OAUTH_OPENID_URL_INFOS)%'
             scope: '%env(OAUTH_OPENID_SCOPE)%'
             use_bearer_authorization: true
+            # Sends and verifies the OAuth state parameter. Without it the
+            # callback accepts any code, so an attacker can have a victim
+            # complete a login into the attacker's account. AzureResourceOwner
+            # defaults this to true already, okta sets it below - the generic
+            # resource owner defaults to false.
+            options:
+                csrf: true
             user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
             paths:
                 identifier: sub

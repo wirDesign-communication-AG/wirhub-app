@@ -68,6 +68,18 @@
             ".php-cs-fixer.dist.php"
         ]
     },
+    "google/apiclient": {
+        "version": "2.19",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "2.10",
+            "ref": "07a97ec434d43b7903c78069a04c92adb6442e52"
+        },
+        "files": [
+            "config/packages/google_apiclient.yaml"
+        ]
+    },
     "hwi/oauth-bundle": {
         "version": "2.4",
         "recipe": {
@@ -400,5 +412,8 @@
             "ref": "d37407e250cd7272328c26cce77370880330d4d1"
         },
         "files": []
+    },
+    "wirdesign-communication-ag/wirhub-vcard-creator-bundle": {
+        "version": "1.0.0"
     }
 }
