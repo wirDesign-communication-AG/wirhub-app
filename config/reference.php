@@ -1564,6 +1564,9 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     enable_profiler?: bool|Param, // Whether or not to enable the profiler collector to calculate and visualize migration status. This adds some queries overhead. // Default: false
  *     transactional?: bool|Param, // Whether or not to wrap migrations in a single transaction. // Default: true
  * }
+ * @psalm-type WirdesignWirhubConfig = array{
+ *     asset_base?: scalar|Param|null, // Public path the built Resources/public/<version> is served from. The default is where assets:install publishes it. A project that commits those assets itself, because it deploys to a host that cannot run the build, points this at its own copy instead - "app" for a copy in public/app. Such a copy has to be a complete base, not just the version folder: the css in <version>/css reaches its fonts and images through ../../, so fonts/, images/ and vendors/ of Resources/public have to sit next to it. Left out of that are the stylesheets in Resources/public/css, which the templates address by their full bundles/app path and which stay where assets:install puts them. // Default: "bundles/app"
+ * }
  * @psalm-type WebProfilerConfig = array{
  *     toolbar?: bool|array{ // Profiler toolbar configuration
  *         enabled?: bool|Param, // Default: false
@@ -1875,6 +1878,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     knp_menu?: KnpMenuConfig,
  *     hwi_oauth?: HwiOauthConfig,
  *     doctrine_migrations?: DoctrineMigrationsConfig,
+ *     wirdesign_wirhub?: WirdesignWirhubConfig,
  *     nelmio_security?: NelmioSecurityConfig,
  *     mcp?: McpConfig,
  *     scheb_two_factor?: SchebTwoFactorConfig,
@@ -1892,6 +1896,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         knp_menu?: KnpMenuConfig,
  *         hwi_oauth?: HwiOauthConfig,
  *         doctrine_migrations?: DoctrineMigrationsConfig,
+ *         wirdesign_wirhub?: WirdesignWirhubConfig,
  *         web_profiler?: WebProfilerConfig,
  *         maker?: MakerConfig,
  *         debug?: DebugConfig,
@@ -1914,6 +1919,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         knp_menu?: KnpMenuConfig,
  *         hwi_oauth?: HwiOauthConfig,
  *         doctrine_migrations?: DoctrineMigrationsConfig,
+ *         wirdesign_wirhub?: WirdesignWirhubConfig,
  *         nelmio_security?: NelmioSecurityConfig,
  *         mcp?: McpConfig,
  *         scheb_two_factor?: SchebTwoFactorConfig,
@@ -1932,6 +1938,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         knp_menu?: KnpMenuConfig,
  *         hwi_oauth?: HwiOauthConfig,
  *         doctrine_migrations?: DoctrineMigrationsConfig,
+ *         wirdesign_wirhub?: WirdesignWirhubConfig,
  *         web_profiler?: WebProfilerConfig,
  *         liip_test_fixtures?: LiipTestFixturesConfig,
  *         nelmio_security?: NelmioSecurityConfig,
