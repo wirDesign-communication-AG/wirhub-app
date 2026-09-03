@@ -25,6 +25,10 @@ when@test:
         dbal:
             # "TEST_TOKEN" is typically set by ParaTest
             dbname_suffix: '_test%env(default::TEST_TOKEN)%'
+            # Query counting in the tests (ConfigServiceTest) reads the DebugDataHolder,
+            # which only exists with profiling. Bound to kernel.debug by default, the
+            # suites run with APP_DEBUG=0 in the CI. The backtrace stays off with debug.
+            profiling: true
 
 when@prod:
     doctrine:
