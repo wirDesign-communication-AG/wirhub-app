@@ -1,4 +1,4 @@
-# v3.2.4 2026-08-28 - libasound2t64 for Chrome
+# v3.2.4 2026-09-04 - libasound2t64 for Chrome
 FROM ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:latest
 
 # Packages
