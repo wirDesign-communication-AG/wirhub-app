@@ -26,6 +26,14 @@ jobs:
             -   name: Install dependencies
                 run: APP_ENV=test composer install --prefer-dist --no-progress --no-scripts
 
+            # The bundle no longer commits Resources/public/<version>, and a dev-* requirement
+            # resolves to a branch archive without it, so the assets are built here.
+            # Full npm install: the build toolchain lives in the bundle's devDependencies.
+            -   name: Build bundle assets
+                run: |
+                    npm --prefix ./vendor/wirdesign-communication-ag/wirhub/build ci
+                    npm --prefix ./vendor/wirdesign-communication-ag/wirhub/build run build
+
             -   name: Install bundle DotEnv file
                 run: cp vendor/wirdesign-communication-ag/wirhub/.env.github .env.test.local
 
@@ -66,8 +74,16 @@ jobs:
             -   name: Test - WebTestCase and KernelTestCase
                 run: php bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/WebAndKernel/
 
+            # APP_DEBUG=0 turns off the profiler and the query logging. That is
+            # roughly a fifth of the runtime of the Panther suite, and none of
+            # the tests looks at the collected data. variables_order=EGPCS is
+            # what makes the built-in server read both variables from the
+            # environment at all. The router hands every path that is not a
+            # real file to the front controller - without it the built-in
+            # server answers app routes that end like a file (/asset/file/…/logo.png)
+            # with its own 404.
             -   name: Start Webserver for Panther
-                run: APP_ENV=test php -S localhost:8000 -t public/ > /tmp/php-server.log 2>&1 &
+                run: APP_ENV=test APP_DEBUG=0 php -d variables_order=EGPCS -S localhost:8000 -t public/ vendor/wirdesign-communication-ag/wirhub/Tests/Helper/router.php > /tmp/php-server.log 2>&1 &
 
             -   name: Test - PantherTestCase
                 run: php bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/Panther/

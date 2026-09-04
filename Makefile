@@ -76,4 +76,22 @@ test:
 	@echo "--------------------------------------"
 	@echo "----------- PHPUnit Panther ----------"
 	@echo "--------------------------------------"
-	/usr/bin/php8.2 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/Panther/
+	/usr/bin/php8.4 bin/phpunit -c phpunit.xml.dist vendor/wirdesign-communication-ag/wirhub/Tests/Cases/Panther/
+
+# Webserver for the Panther suite, the same command the CI uses. APP_DEBUG=0 is
+# roughly a fifth faster, but without debug the kernel does not track resources:
+# template, routing and translation changes only show up after
+# "APP_ENV=test bin/console cache:clear", which also drops the Liip database
+# snapshots in the cache dir (they rebuild lazily). variables_order=EGPCS makes
+# the built-in server read APP_ENV and APP_DEBUG from the environment at all.
+# PHP_CLI_SERVER_WORKERS above 1 lets Chrome fetch the assets in parallel, but
+# it also runs simultaneous uploads in parallel: ImageCompareTest drops two
+# images at once and expects the second one refused, with four workers both
+# were accepted in two of five runs. Stay at 1 unless that race is fixed.
+# Usage: make test-server [APP_DEBUG=0] [PHP_CLI_SERVER_WORKERS=4] [PORT=8001]
+# Another PORT needs PANTHER_EXTERNAL_BASE_URI on the phpunit side as well.
+test-server: APP_DEBUG ?= 1
+test-server: PHP_CLI_SERVER_WORKERS ?= 1
+test-server: PORT ?= 8000
+test-server:
+	APP_ENV=test APP_DEBUG=$(APP_DEBUG) PHP_CLI_SERVER_WORKERS=$(PHP_CLI_SERVER_WORKERS) php -d variables_order=EGPCS -S localhost:$(PORT) -t public/ vendor/wirdesign-communication-ag/wirhub/Tests/Helper/router.php
