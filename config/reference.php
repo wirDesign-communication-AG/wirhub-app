@@ -1481,6 +1481,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         filter_value_name?: scalar|Param|null, // Default: "filterValue"
  *         page_name?: scalar|Param|null, // Default: "page"
  *         distinct?: bool|Param, // Default: true
+ *         wrap_queries?: bool|Param, // Default: false
  *         page_out_of_range?: scalar|Param|null, // Default: "ignore"
  *         default_limit?: scalar|Param|null, // Default: 10
  *     },
