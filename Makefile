@@ -1,15 +1,27 @@
 include vendor/wirdesign-communication-ag/wirhub/.env
 export
 
+BUNDLE_ASSETS = vendor/wirdesign-communication-ag/wirhub/Resources/public/${VERSION}
+
 assets:
 	@echo "--------------------------------------"
-	@echo "----------- Remove Assets ------------"
+	@echo "-------- Create bundle assets --------"
 	@echo "--------------------------------------"
-	rm -rf public/app/3.*
+	$(MAKE) bundle-assets
 	@echo "--------------------------------------"
-	@echo "----------- Execute Grunt ------------"
+	@echo "----------- Symlink assets -----------"
 	@echo "--------------------------------------"
-	grunt --base build/ --gruntfile build/Gruntfile.js
+	php bin/console assets:install --symlink
+	@echo "--------------------------------------"
+	@echo "------------ Clean up  ---------------"
+	@echo "--------------------------------------"
+	rm -rf vendor/wirdesign-communication-ag/wirhub/build/node_modules
+
+$(BUNDLE_ASSETS):
+	npm --prefix vendor/wirdesign-communication-ag/wirhub/build ci
+	npm --prefix vendor/wirdesign-communication-ag/wirhub/build run build
+
+bundle-assets: $(BUNDLE_ASSETS)
 
 dkim:
 	openssl genrsa -out secret/dkim.pem 2048
@@ -37,6 +49,7 @@ update:
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
 	COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader
 	COMPOSER_ALLOW_SUPERUSER=1 composer dump-autoload --no-dev --classmap-authoritative
+	$(MAKE) bundle-assets
 	php bin/console doctrine:migrations:migrate --no-interaction
 	php bin/console app:update
 	php bin/console app:theme:refresh
