@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "296a3ce644fb0f4ebf0d5f6a368e46fc",
+    "content-hash": "791125c4f40faae40a610692dbe4a687",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.395.2",
+            "version": "3.395.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d027655c121cc80192275e72d189612efa8dd9a9"
+                "reference": "0756c511a913b57ab5415db6136d8c0c250ace15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d027655c121cc80192275e72d189612efa8dd9a9",
-                "reference": "d027655c121cc80192275e72d189612efa8dd9a9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0756c511a913b57ab5415db6136d8c0c250ace15",
+                "reference": "0756c511a913b57ab5415db6136d8c0c250ace15",
                 "shasum": ""
             },
             "require": {
@@ -153,29 +153,30 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.395.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.395.4"
             },
-            "time": "2026-09-14T20:04:40+00:00"
+            "time": "2026-09-16T18:39:53+00:00"
         },
         {
             "name": "brick/math",
-            "version": "0.18.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "82944324d1c1bdb2c2618e89978d4e2ad78d69ad"
+                "reference": "2effe05d2177c451b86c6a073196a4034c02f211"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/82944324d1c1bdb2c2618e89978d4e2ad78d69ad",
-                "reference": "82944324d1c1bdb2c2618e89978d4e2ad78d69ad",
+                "url": "https://api.github.com/repos/brick/math/zipball/2effe05d2177c451b86c6a073196a4034c02f211",
+                "reference": "2effe05d2177c451b86c6a073196a4034c02f211",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.2"
             },
             "require-dev": {
-                "phpstan/phpstan": "2.1.22",
+                "phpstan/phpstan": "2.2.13",
+                "phpstan/phpstan-phpunit": "2.0.18",
                 "phpunit/phpunit": "^11.5"
             },
             "type": "library",
@@ -206,7 +207,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.18.0"
+                "source": "https://github.com/brick/math/tree/1.0.0"
             },
             "funding": [
                 {
@@ -214,7 +215,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-14T18:21:03+00:00"
+            "time": "2026-09-12T10:28:18+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -1942,16 +1943,16 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.19.0",
+            "version": "v4.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "b287d2a16aceffbf6e0295559b39662612b77fcf"
+                "reference": "5e0539132d934f936fbae2c88b55d58f9438623f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/b287d2a16aceffbf6e0295559b39662612b77fcf",
-                "reference": "b287d2a16aceffbf6e0295559b39662612b77fcf",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/5e0539132d934f936fbae2c88b55d58f9438623f",
+                "reference": "5e0539132d934f936fbae2c88b55d58f9438623f",
                 "shasum": ""
             },
             "require": {
@@ -1997,9 +1998,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.19.0"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.19.1"
             },
-            "time": "2025-10-17T16:34:55+00:00"
+            "time": "2026-09-15T15:42:51+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -3123,21 +3124,22 @@
         },
         {
             "name": "league/oauth2-client",
-            "version": "2.9.0",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth2-client.git",
-                "reference": "26e8c5da4f3d78cede7021e09b1330a0fc093d5e"
+                "reference": "8cedfef9d01a8d1fd2ecfabb41734b17592c4b71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/26e8c5da4f3d78cede7021e09b1330a0fc093d5e",
-                "reference": "26e8c5da4f3d78cede7021e09b1330a0fc093d5e",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/8cedfef9d01a8d1fd2ecfabb41734b17592c4b71",
+                "reference": "8cedfef9d01a8d1fd2ecfabb41734b17592c4b71",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5",
+                "guzzlehttp/guzzle": "^6.5.8 || ^7.8.2 || ^8.0",
+                "guzzlehttp/psr7": "^1.9.1 || ^2.6.3 || ^3.0",
                 "php": "^7.1 || >=8.0.0 <8.6.0"
             },
             "require-dev": {
@@ -3182,9 +3184,9 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/oauth2-client/issues",
-                "source": "https://github.com/thephpleague/oauth2-client/tree/2.9.0"
+                "source": "https://github.com/thephpleague/oauth2-client/tree/2.9.1"
             },
-            "time": "2025-11-25T22:17:17+00:00"
+            "time": "2026-09-16T13:14:31+00:00"
         },
         {
             "name": "league/uri",
@@ -3973,16 +3975,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "v3.6.0",
+            "version": "v3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "77f24d76f2c589ef5a46cb70f999676d696b2ea7"
+                "reference": "459e111b793dd80d43f134fe14011f2ec0018237"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/77f24d76f2c589ef5a46cb70f999676d696b2ea7",
-                "reference": "77f24d76f2c589ef5a46cb70f999676d696b2ea7",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/459e111b793dd80d43f134fe14011f2ec0018237",
+                "reference": "459e111b793dd80d43f134fe14011f2ec0018237",
                 "shasum": ""
             },
             "require": {
@@ -4014,9 +4016,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v3.6.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v3.7.0"
             },
-            "time": "2026-09-02T17:44:39+00:00"
+            "time": "2026-09-16T18:29:37+00:00"
         },
         {
             "name": "microsoft/microsoft-graph-core",
@@ -5237,16 +5239,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "5.9.0",
+            "version": "5.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "05e99ebf61238a70227b4d9cc02d0030d34f6339"
+                "reference": "eb18727acf6b1f4cc67145a52ab04f9fd4c28d53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/05e99ebf61238a70227b4d9cc02d0030d34f6339",
-                "reference": "05e99ebf61238a70227b4d9cc02d0030d34f6339",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/eb18727acf6b1f4cc67145a52ab04f9fd4c28d53",
+                "reference": "eb18727acf6b1f4cc67145a52ab04f9fd4c28d53",
                 "shasum": ""
             },
             "require": {
@@ -5275,6 +5277,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "dev-main",
                 "dompdf/dompdf": "^2.0 || ^3.0",
                 "ext-intl": "*",
+                "ext-openssl": "*",
                 "friendsofphp/php-cs-fixer": "^3.2",
                 "mitoteam/jpgraph": "^10.5",
                 "mpdf/mpdf": "^8.1.1",
@@ -5284,11 +5287,12 @@
                 "phpstan/phpstan-phpunit": "^1.0 || ^2.0",
                 "phpunit/phpunit": "^10.5 || ^11.0",
                 "squizlabs/php_codesniffer": "^3.7",
-                "tecnickcom/tcpdf": "^6.5"
+                "tecnickcom/tcpdf": ">=6.8.0 <7.0.0"
             },
             "suggest": {
                 "dompdf/dompdf": "Option for rendering PDF with PDF Writer",
                 "ext-intl": "PHP Internationalization Functions, required for NumberFormat Wizard and StringHelper::setLocale()",
+                "ext-openssl": "Handline Agile-encrypted Xlsx spreadsheets",
                 "mitoteam/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
                 "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
                 "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
@@ -5340,9 +5344,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/5.9.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/5.10.0"
             },
-            "time": "2026-07-12T19:17:39+00:00"
+            "time": "2026-09-17T03:54:50+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -6135,20 +6139,20 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "4.9.3",
+            "version": "4.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "1df15849d00943a67d677dc9cfd80795f038c9f8"
+                "reference": "75d73f48d02797c2c285a7e9f348fadc0102ffe2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/1df15849d00943a67d677dc9cfd80795f038c9f8",
-                "reference": "1df15849d00943a67d677dc9cfd80795f038c9f8",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/75d73f48d02797c2c285a7e9f348fadc0102ffe2",
+                "reference": "75d73f48d02797c2c285a7e9f348fadc0102ffe2",
                 "shasum": ""
             },
             "require": {
-                "brick/math": ">=0.8.16 <=0.18",
+                "brick/math": "^0.8.16 || ^0.9 || ^0.10 || ^0.11 || ^0.12 || ^0.13 || ^0.14 || ^0.15 || ^0.16 || ^0.17 || ^0.18 || ^0.19 || ^0.20 || ^1.0",
                 "php": "^8.0",
                 "ramsey/collection": "^1.2 || ^2.0"
             },
@@ -6207,9 +6211,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "source": "https://github.com/ramsey/uuid/tree/4.9.3"
+                "source": "https://github.com/ramsey/uuid/tree/4.9.4"
             },
-            "time": "2026-06-18T03:57:49+00:00"
+            "time": "2026-09-16T11:39:30+00:00"
         },
         {
             "name": "scheb/2fa-backup-code",
@@ -12931,16 +12935,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "dev-wip/1542",
+            "version": "v3.2.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "940db2a8727af5b4b7a8ed7970c45c2ad96506df"
+                "reference": "2b8ef8d5faed0b623e75a54101dc298504dbd995"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/940db2a8727af5b4b7a8ed7970c45c2ad96506df",
-                "reference": "940db2a8727af5b4b7a8ed7970c45c2ad96506df",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/2b8ef8d5faed0b623e75a54101dc298504dbd995",
+                "reference": "2b8ef8d5faed0b623e75a54101dc298504dbd995",
                 "shasum": ""
             },
             "require": {
@@ -13056,10 +13060,10 @@
             ],
             "description": "wirDesign wirHub, formerly known as brandHub and StyleGuide",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/wip/1542",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.2.5",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-09-15T13:46:17+00:00"
+            "time": "2026-09-17T09:36:44+00:00"
         }
     ],
     "packages-dev": [
