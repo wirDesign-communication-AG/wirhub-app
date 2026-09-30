@@ -45,6 +45,16 @@ RUN chmod +x bin/console start.sh \
  && composer dump-autoload --optimize
 
 
+# Build metadata for /status. Appended to .env.prod because nothing else gets
+# through to the application: php-fpm clears the environment of its workers,
+# and "composer dump-env prod" in start.sh only dumps what the .env files hold.
+# Kept as the last step, the arguments differ with every build and would
+# invalidate the cache of every step after them.
+ARG APP_IMAGE_TAG=""
+ARG APP_COMMIT=""
+RUN printf '\nAPP_IMAGE_TAG=%s\nAPP_COMMIT=%s\n' "$APP_IMAGE_TAG" "$APP_COMMIT" >> .env.prod
+
+
 EXPOSE 9000
 
 # Start php
