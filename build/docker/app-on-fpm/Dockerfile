@@ -42,7 +42,19 @@ COPY build/docker/app-on-fpm/start.sh ./start.sh
 RUN chmod +x bin/console start.sh \
  && echo "postfix postfix/mailname string wirdesign.de" | debconf-set-selections \
  && echo "postfix postfix/main_mailer_type string 'Internet Site'" | debconf-set-selections \
- && composer dump-autoload --optimize
+ && COMPOSER_ALLOW_SUPERUSER=1 composer dump-autoload --no-dev --classmap-authoritative
+
+# Everything below only depends on the image content, so it is done once here
+# instead of on every container start. Env values are only resolved at runtime,
+# the container does not read them while it is compiled.
+#
+# public/ is a bind mount that hides whatever the image puts there, so the
+# assets go to public-dist/ and start.sh syncs the changed files over. Symlinks
+# keep the ~300 MB of bundle assets from being stored in the image twice.
+RUN php bin/console cache:warmup \
+ && mkdir public-dist \
+ && php bin/console assets:install public-dist --symlink --relative \
+ && chown -R www-data:www-data var/
 
 
 # Build metadata for /status. Appended to .env.prod because nothing else gets
