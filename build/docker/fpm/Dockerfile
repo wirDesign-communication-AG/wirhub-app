@@ -1,4 +1,4 @@
-# v3.2.3 2026-08-06 - slimmer package selection (--no-install-recommends)
+# v3.2.6 2026-10-06 - rsync
 FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -59,6 +59,7 @@ RUN  apt -q update  \
     openssh-client \
     lsb-release \
     libxss1 \
+    rsync \
  && apt-get purge -y software-properties-common \
  && apt-get autoremove -y \
  && rm -rf /var/lib/apt/lists/* \
