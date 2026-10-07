@@ -13326,16 +13326,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub-vcard-creator-bundle",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub-vcard-creator-bundle.git",
-                "reference": "b493d6497d33df156a13da2f3a44c7890f837c1a"
+                "reference": "1a20f3891a9ecc5823da1534595075846ef765b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub-vcard-creator-bundle/zipball/b493d6497d33df156a13da2f3a44c7890f837c1a",
-                "reference": "b493d6497d33df156a13da2f3a44c7890f837c1a",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub-vcard-creator-bundle/zipball/1a20f3891a9ecc5823da1534595075846ef765b1",
+                "reference": "1a20f3891a9ecc5823da1534595075846ef765b1",
                 "shasum": ""
             },
             "require": {
@@ -13404,10 +13404,10 @@
             ],
             "description": "wirDesign wirHub vCard Creator bundle",
             "support": {
-                "source": "https://github.com/wirDesign-communication-AG/wirhub-vcard-creator-bundle/tree/v1.0.1",
+                "source": "https://github.com/wirDesign-communication-AG/wirhub-vcard-creator-bundle/tree/v1.0.2",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub-vcard-creator-bundle/issues"
             },
-            "time": "2026-10-02T08:26:13+00:00"
+            "time": "2026-10-07T14:40:54+00:00"
         }
     ],
     "packages-dev": [
