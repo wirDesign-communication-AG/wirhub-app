@@ -98,7 +98,7 @@
         "symfony/runtime": "^8.0",
         "symfony/yaml": "^8.0",
         "wirdesign-communication-ag/wirhub": "v3.2.6.x-dev",
-	"wirdesign-communication-ag/wirhub-vcard-creator-bundle": "^1.0"
+        "wirdesign-communication-ag/wirhub-vcard-creator-bundle": "^1.0"
     },
     "scripts": {
         "auto-scripts": {
