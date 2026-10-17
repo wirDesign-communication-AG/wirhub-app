@@ -8,17 +8,18 @@ echo "--"
 echo "-- Update envs"
 COMPOSER_ALLOW_SUPERUSER=1 composer dump-env prod
 
-echo "--"
-echo "-- Preload autoload"
-COMPOSER_ALLOW_SUPERUSER=1 composer dump-autoload --no-dev --classmap-authoritative
-
-echo "--"
-echo "-- Clear cache"
-php bin/console cache:clear
+# Autoloader and cache are built in the image, see Dockerfile
 
 echo "--"
 echo "-- Assets"
-php bin/console assets:install public/
+# --checksum: every image has fresh timestamps, so only the content tells what changed.
+# --copy-links: public-dist only holds symlinks into vendor/, the webserver needs the files.
+if command -v rsync > /dev/null; then
+  rsync -a --copy-links --checksum --delete --chown=www-data:www-data public-dist/bundles/ public/bundles/
+else
+  # Base image built before rsync was added
+  php bin/console assets:install public/
+fi
 
 echo "--"
 echo "-- Migrations"
@@ -46,11 +47,8 @@ cp -r static/* public/
 
 echo "--"
 echo "-- Hand over directories to webserver"
-chown -R www-data:www-data public/
-chown -R www-data:www-data var/
-chown -R www-data:www-data files/
-chown -R www-data:www-data /opt/wirhub-secret/
-chown -R www-data:www-data /var/lib/php/sessions
+# Only touches what is not owned by www-data yet, files/ holds every upload. -h keeps symlinks from changing their target.
+find public/ var/ files/ /opt/wirhub-secret/ /var/lib/php/sessions \( ! -user www-data -o ! -group www-data \) -exec chown -h www-data:www-data {} +
 
 
 if grep -q MAILER_URL=sendmail://default .env.local; then

@@ -57,6 +57,11 @@ jobs:
                     file: build/docker/app-on-fpm/Dockerfile
                     secret-envs: |
                         composer_auth=COMPOSER_AUTH_JSON
+                    # Shown by /status. "version" is the tag with the highest
+                    # priority of the metadata step, which is the git tag.
+                    build-args: |
+                        APP_IMAGE_TAG=${{ steps.meta.outputs.version }}
+                        APP_COMMIT=${{ github.sha }}
                     push: ${{ github.event_name != 'pull_request' }}
                     tags: ${{ steps.meta.outputs.tags }}
                     labels: ${{ steps.meta.outputs.labels }}

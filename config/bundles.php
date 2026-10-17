@@ -20,4 +20,5 @@ return [
     Nelmio\SecurityBundle\NelmioSecurityBundle::class => ['all' => true],
     Symfony\AI\McpBundle\McpBundle::class => ['all' => true],
     Scheb\TwoFactorBundle\SchebTwoFactorBundle::class => ['all' => true],
+    WirDesignCommunicationAg\WirHubVCardCreatorBundle\WirHubVCardCreatorBundle::class => ['all' => true],
 ];
