@@ -13198,12 +13198,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "c054cbc73343d8832e2de41fbf6287554cf821a7"
+                "reference": "b680b2d599b4e97aab679bc6fc91e5dcee8e1c80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/c054cbc73343d8832e2de41fbf6287554cf821a7",
-                "reference": "c054cbc73343d8832e2de41fbf6287554cf821a7",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/b680b2d599b4e97aab679bc6fc91e5dcee8e1c80",
+                "reference": "b680b2d599b4e97aab679bc6fc91e5dcee8e1c80",
                 "shasum": ""
             },
             "require": {
@@ -13322,7 +13322,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.2.6",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-10-17T08:04:03+00:00"
+            "time": "2026-10-17T08:28:06+00:00"
         },
         {
             "name": "wirdesign-communication-ag/wirhub-vcard-creator-bundle",
