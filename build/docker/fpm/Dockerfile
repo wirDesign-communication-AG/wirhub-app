@@ -1,4 +1,4 @@
-# v3.2.6 2026-10-06 - rsync
+# v3.2.7 2026-10-21 - PHP 8.4.27
 FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
