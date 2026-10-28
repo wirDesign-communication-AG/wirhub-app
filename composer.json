@@ -97,7 +97,7 @@
         "symfony/rate-limiter": "^8.0",
         "symfony/runtime": "^8.0",
         "symfony/yaml": "^8.0",
-        "wirdesign-communication-ag/wirhub": "3.2.6",
+        "wirdesign-communication-ag/wirhub": "dev-wip/1358",
         "wirdesign-communication-ag/wirhub-vcard-creator-bundle": "^1.0"
     },
     "scripts": {
