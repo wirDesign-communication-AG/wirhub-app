@@ -1,4 +1,4 @@
-# v3.2.4 2026-09-04 - libasound2t64 for Chrome
+# v3.2.7 2026-10-21 - Rebuild on fpm with PHP 8.4.27 from packages.sury.org
 FROM ghcr.io/wirdesign-communication-ag/wirhub-app/fpm:latest
 
 # Packages

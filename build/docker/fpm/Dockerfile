@@ -1,13 +1,17 @@
-# v3.2.6 2026-10-06 - rsync
+# v3.2.7 2026-10-21 - PHP 8.4.27 from packages.sury.org
 FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Berlin
 
 # Packages
-RUN  apt -q update  \
+# PHP comes from packages.sury.org instead of the Launchpad PPA, which its
+# maintainer is phasing out. Same packages and paths, different download host.
+RUN  echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/80-retries \
+ && apt -q update  \
  && apt -q -y --no-install-recommends install \
     apt-transport-https \
+    ca-certificates \
     tzdata \
     make \
     wget \
@@ -16,10 +20,12 @@ RUN  apt -q update  \
     cron \
     git \
     vim \
-    software-properties-common \
     apache2  \
     gnupg \
- && add-apt-repository ppa:ondrej/php \
+ && wget -qO /tmp/debsuryorg-archive-keyring.deb https://packages.sury.org/debsuryorg-archive-keyring.deb \
+ && dpkg -i /tmp/debsuryorg-archive-keyring.deb \
+ && rm /tmp/debsuryorg-archive-keyring.deb \
+ && echo "deb [signed-by=/usr/share/keyrings/debsuryorg-archive-keyring.gpg] https://packages.sury.org/php/ $(. /etc/os-release && echo $VERSION_CODENAME) main" > /etc/apt/sources.list.d/php.list \
  && apt-get update \
  && apt install -y --no-install-recommends \
     php8.4 \
@@ -60,8 +66,6 @@ RUN  apt -q update  \
     lsb-release \
     libxss1 \
     rsync \
- && apt-get purge -y software-properties-common \
- && apt-get autoremove -y \
  && rm -rf /var/lib/apt/lists/* \
  && a2enmod rewrite \
  && a2enmod expires \
