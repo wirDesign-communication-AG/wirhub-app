@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e97b161da379fa936dd77dca5f7b0c8f",
+    "content-hash": "b289dcecb44c92b70967f6d71bc60a98",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -13133,16 +13133,16 @@
         },
         {
             "name": "wirdesign-communication-ag/wirhub",
-            "version": "v3.2.7.x-dev",
+            "version": "3.2.7",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wirDesign-communication-AG/wirhub.git",
-                "reference": "3da1f5e44ccf0d8eccc344a329aa674de8bb582f"
+                "reference": "041b20206aa429a95b107d258d68c30d584755c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/3da1f5e44ccf0d8eccc344a329aa674de8bb582f",
-                "reference": "3da1f5e44ccf0d8eccc344a329aa674de8bb582f",
+                "url": "https://api.github.com/repos/wirDesign-communication-AG/wirhub/zipball/041b20206aa429a95b107d258d68c30d584755c8",
+                "reference": "041b20206aa429a95b107d258d68c30d584755c8",
                 "shasum": ""
             },
             "require": {
@@ -13260,7 +13260,7 @@
                 "source": "https://github.com/wirDesign-communication-AG/wirhub/tree/v3.2.7",
                 "issues": "https://github.com/wirDesign-communication-AG/wirhub/issues"
             },
-            "time": "2026-11-06T12:00:24+00:00"
+            "time": "2026-11-06T14:08:52+00:00"
         },
         {
             "name": "wirdesign-communication-ag/wirhub-vcard-creator-bundle",
@@ -17166,9 +17166,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wirdesign-communication-ag/wirhub": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
